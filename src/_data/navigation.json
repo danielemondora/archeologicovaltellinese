@@ -1,0 +1,38 @@
+{
+	"items": [
+		{
+			"text": "Home",
+			"url": "/"
+		},
+		{
+			"text": "Istituto",
+			"url": "/istituto/",
+      "children": [
+        {
+          "text": "Storia",
+          "url": "/storia/"
+        },
+        {
+          "text": "Statuto",
+          "url": "/statuto/"
+        },
+        {
+          "text": "Direttivo",
+          "url": "/direttivo/"
+        }
+      ]
+		},
+    {
+      "text": "Pubblicazioni",
+      "url": "/pubblicazioni/"
+    },
+    {
+			"text": "Notizie",
+			"url": "/notizie/"
+		},
+    {
+      "text": "Diventa Socio",
+      "url": "/diventa-socio/"
+    }
+	]
+}

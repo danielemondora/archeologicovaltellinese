@@ -1,0 +1,5 @@
+.footer {
+  margin-top: var(--space-s);
+
+  padding-block: var(--space-s);
+}

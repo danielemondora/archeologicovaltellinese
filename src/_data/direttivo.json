@@ -1,0 +1,41 @@
+{
+  "titolo": "Comitato Direttivo",
+  "carica": {
+    "dal": "09.09.2023",
+    "al": "09.09.2026"
+  },
+  "membri": [
+    {
+      "ruolo": "Direttore",
+      "nome": "Francesco Pace"
+    },
+    {
+      "ruolo": "Vicedirettore",
+      "nome": "Giuseppe Cola"
+    },
+    {
+      "ruolo": "Segretario",
+      "nome": "Giuseppe Cola"
+    },
+    {
+      "ruolo": "Consigliere",
+      "nome": "Bertalli Stefano"
+    },
+    {
+      "ruolo": "Consigliere",
+      "nome": "Alessandra Baruta"
+    },
+    {
+      "ruolo": "Tesoriere",
+      "nome": "Deriu Alessandro"
+    },
+    {
+      "ruolo": "Consigliere",
+      "nome": "Gianluigi Garbellini"
+    },
+    {
+      "ruolo": "Consigliere",
+      "nome": "Gianpaolo Mottarelli"
+    }
+  ]
+}

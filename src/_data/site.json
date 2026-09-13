@@ -1,0 +1,53 @@
+{
+  "name": "Istituto Archeologico Valtellinese",
+  "legalName": "Istituto Archeologico Valtellinese",
+  "description": "",
+  "url": "https://www.archeologicovaltellinese.it",
+  "domain": "archeologicovaltellinese.it",
+  "language": "it",
+  "locale": "it_IT",
+
+  "author": {
+    "name": "Daniele Mondora",
+    "email": "info@mondora.eu"
+  },
+
+  "company": {
+    "vat": "",
+    "partitaIva": "",
+    "codiceFiscale": "92013040149",
+    "rea": "",
+    "pec": "",
+    "codiceUnivoco": "",
+    "founded": "1973"
+  },
+
+  "contact": {
+    "email": "info@archologicovaltellinese.it",
+    "phone": ""
+  },
+
+  "address": {
+    "street": "Via Fabio Besta 8",
+    "postalCode": "23036",
+    "city": "Teglio (SO)",
+    "region": "Lombardia",
+    "country": "Italia",
+    "countryCode": "IT"
+  },
+
+  "social": {
+    "facebook": "https://www.facebook.com/acmesolutions/",
+    "linkedin": "",
+    "instagram": "",
+    "whatsapp": "",
+    "googleMaps": ""
+  },
+
+  "seo": {
+    "titleSeparator": " - ",
+    "defaultTitle": "Istituto Archeologico Valtellinese",
+    "defaultDescription": "",
+    "defaultImage": "/assets/images/og-image.jpg"
+  }
+}

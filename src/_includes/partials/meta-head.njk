@@ -1,0 +1,70 @@
+{%- if page.url == '/' -%}
+  {%- set pageTitle = site.seo.defaultTitle -%}
+{%- else -%}
+  {%- set pageTitle = title + site.seo.titleSeparator + site.seo.defaultTitle if title else site.name -%}
+{%- endif -%}
+
+{%- set autoDescription = site.seo.defaultDescription if page.url == '/' else (content | striptags | truncate(160) if content else site.description) -%}
+{%- set pageDescription = description if description else autoDescription -%}
+{%- set pageUrl = site.url + page.url -%}
+
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ pageDescription }}" />
+
+<!-- Search Engines -->
+{% if noindex %}
+<meta name="robots" content="noindex,follow">
+<meta name="googlebot" content="noindex,follow">
+{% else %}
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+{% endif %}
+
+<!-- Made with Eleventy! -->
+<meta name="generator" content="{{ eleventy.generator }}" />
+
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no" />
+
+<link rel="canonical" href="{{ pageUrl }}" />
+
+{# Open Graph / Facebook #}
+<meta property="og:site_name" content="{{ site.name }}" />
+<meta property="og:title" content="{{ pageTitle }}" />
+<meta property="og:description" content="{{ pageDescription }}" />
+<meta property="og:url" content="{{ pageUrl }}" />
+<meta property="og:type" content="{{ ogType or 'website' }}"/>
+<meta property="og:locale" content="{{ site.locale }}" />
+
+{% set socialImage = ogImage or site.seo.defaultImage %}
+<meta property="og:image" content="{{ site.url }}{{ socialImage }}" />
+
+
+<!-- Immagine condivisione social -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+{% if page.url == '/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.name }}",
+  "legalName": "{{ site.legalName }}",
+  "url": "{{ site.url }}",
+  "logo": "{{ site.url }}{{ site.assets.logo }}",
+  "email": "{{ site.contact.email }}",
+  "telephone": "{{ site.contact.phone }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ site.address.street }}",
+    "postalCode": "{{ site.address.postalCode }}",
+    "addressLocality": "{{ site.address.city }}",
+    "addressRegion": "{{ site.address.region }}",
+    "addressCountry": "{{ site.address.countryCode }}"
+  }
+}
+</script>
+{% endif %}

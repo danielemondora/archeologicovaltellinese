@@ -1,0 +1,14 @@
+# Node modules
+node_modules
+
+# generated files
+dist
+
+# cache
+.cache
+
+# secret data
+.env
+
+# wrangler
+.wrangler

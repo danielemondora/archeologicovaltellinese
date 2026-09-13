@@ -1,0 +1,34 @@
+{% set assetHash = global.random() %}
+
+<!DOCTYPE html>
+<html lang="{{ lang | default('it') }}">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {% include "partials/meta-head.njk" %}
+
+  <!-- Custom CSS e JS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/bundle.js" defer></script>
+
+</head>
+
+<body>
+  
+  <div class="site-wrap">
+    {% include "partials/header.njk" %}
+    
+    {% block content %}
+    {% if content %}
+      {{ content | safe }}
+    {% endif %}
+    {% endblock %}
+
+    {% include "partials/footer.njk" %}
+  </div>
+
+</body>
+
+</html>

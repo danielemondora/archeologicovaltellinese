@@ -1,0 +1,24 @@
+<header class="header | content-grid | bg-primary | text-on-primary">
+  <div class="breakout | splitter">
+
+    <a href="/" class="text-step-2">{{ site.name }}</a>
+
+    <nav class="repel">
+      {% for item in navigation.items %}
+      {% if item.children %}
+      <select name="navigation" onchange="if (this.value) window.location.href=this.value;">
+        <option value="" disabled selected>{{ item.text | upper }}</option>
+        {% for child in item.children %}
+        <option value="{{ child.url }}">{{ child.text }}</option>
+        {% endfor %}
+      </select>
+      {% else %}
+      <a href="{{ item.url }}" class="{% if loop.last %}button{% endif %}">
+        {{ item.text | upper }}
+      </a>
+      {% endif %}
+      {% endfor %}
+    </nav>
+
+  </div>
+</header>

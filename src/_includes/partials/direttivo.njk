@@ -1,0 +1,19 @@
+<section class="direttivo | bg-primary-glare ">
+
+  <h2>{{ direttivo.titolo }}</h2>
+
+  <p>
+    In carica dal {{ direttivo.carica.dal }}
+    al {{ direttivo.carica.al }}
+  </p>
+
+  <ul role="list">
+    {% for membro in direttivo.membri %}
+    <li>
+      <h3>{{ membro.ruolo }}</h3>
+      <p>{{ membro.nome }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+
+</section>

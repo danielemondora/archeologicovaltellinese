@@ -1,0 +1,1626 @@
+{
+  "notiziari": [
+    {
+      "numero": 1,
+      "anno": 2003,
+      "slug": "notiziario-01",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 5,
+          "titolo": "Presentazione",
+          "autori": null
+        },
+        {
+          "pagina": 7,
+          "titolo": "Reviviscenza dell'Istituto Archeologico valtellinese",
+          "autori": "Mario Giovanni Simonelli"
+        },
+        {
+          "pagina": 10,
+          "titolo": "Statuto",
+          "autori": null
+        },
+        {
+          "pagina": 15,
+          "titolo": "La collezione archeologica di Teglio",
+          "autori": "Gianluigi Garbellini"
+        },
+        {
+          "pagina": 19,
+          "titolo": "Archeologia linguistica",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 49,
+          "titolo": "Intervento sul rinvenimento delle stele di Caven",
+          "autori": "Francesco Mazzoni"
+        },
+        {
+          "pagina": 55,
+          "titolo": "Pietre sacre",
+          "autori": "Mario Giovanni Simonelli"
+        },
+        {
+          "pagina": 75,
+          "titolo": "\"Crap de la Madona\"",
+          "autori": "Pierluigi Annibaldi"
+        },
+        {
+          "pagina": 87,
+          "titolo": "I massi a coppelle del monte Vallecetta",
+          "autori": "Ivano Gambarri, Francesco Pace"
+        },
+        {
+          "pagina": 97,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "anno": 2004,
+      "slug": "notiziario-02",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 5,
+          "titolo": "San Martino di Serravalle negli scritti di Don Carlo Bozzi",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 28,
+          "titolo": "San Martino di Serravalle \" Tempio viario\"",
+          "autori": "Daide Pace"
+        },
+        {
+          "pagina": 38,
+          "titolo": "Breve notizia sugli affreschi di San Martino di Serravalle",
+          "autori": "Carlo Bertelli"
+        },
+        {
+          "pagina": 41,
+          "titolo": "Comunicazione sulle incisioni rupestri di Grosio",
+          "autori": "Mario Giovanni Simonelli"
+        },
+        {
+          "pagina": 53,
+          "titolo": "Arcaici altari rupestri in Valtellina",
+          "autori": "Mario Giovanni Simonelli"
+        },
+        {
+          "pagina": 62,
+          "titolo": "Rivisitazione di alcuni siti di atre rupestre schematica in Valtellina",
+          "autori": "Ivano Gambarri Francesco Pace"
+        },
+        {
+          "pagina": 73,
+          "titolo": "Cruciformi nel Comune di Faedo",
+          "autori": "Pierluigi Annibaldi"
+        },
+        {
+          "pagina": 80,
+          "titolo": "La stele \"Cornal 4\"",
+          "autori": "Ivano Gambarri"
+        },
+        {
+          "pagina": 85,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 87,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "anno": 2005,
+      "slug": "notiziario-03",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 5,
+          "titolo": "Le vie del cielo",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 19,
+          "titolo": "Toponomastica e archeologia",
+          "autori": "Gabriele Antonioli"
+        },
+        {
+          "pagina": 29,
+          "titolo": "I pittogrammi di Caven",
+          "autori": "Mario Giovanni Simonelli"
+        },
+        {
+          "pagina": 44,
+          "titolo": "Teglio, scavi archeologici nell'area della chiesa di San Pietro",
+          "autori": "Gianluigi Garbellini"
+        },
+        {
+          "pagina": 50,
+          "titolo": "Circolazione monetaria nell'alta Valtellina. Le testimonianze da San Martino di Serravalle",
+          "autori": "Leopoldo Pozzi"
+        },
+        {
+          "pagina": 55,
+          "titolo": "Siti di arte rupestre non figurativa nella media e alta Valtellina",
+          "autori": "Ivano Gambarri - Francesco Pace"
+        },
+        {
+          "pagina": 71,
+          "titolo": "San Martino di Serravalle, nella documentazione dell'Archivio Davide Pace",
+          "autori": "Francesco Pace ( a cura di )"
+        },
+        {
+          "pagina": 89,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Francesco Pace ( a cura di )"
+        },
+        {
+          "pagina": 93,
+          "titolo": "I segni della storia",
+          "autori": "Alunni di 3^ e 4^ classe della scuola primaria di Mazzo"
+        },
+        {
+          "pagina": 95,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "anno": 2006,
+      "slug": "notiziario-04",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 5,
+          "titolo": "Trivigno nodo di strade",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 13,
+          "titolo": "Incisioni rupestri e siti ad alta quota",
+          "autori": "Ausilio Priuli"
+        },
+        {
+          "pagina": 33,
+          "titolo": "Il Demignone in Val Belviso, sito archeologico ma non solo",
+          "autori": "Gianluigi Garbellini"
+        },
+        {
+          "pagina": 54,
+          "titolo": "Simboli scutiformi e tradizione topografica in Valtellina",
+          "autori": "Angelo Martinotti"
+        },
+        {
+          "pagina": 89,
+          "titolo": "Rilievo di un antico sistema cultuale in Val di Sacco",
+          "autori": "Massimo Frera"
+        },
+        {
+          "pagina": 105,
+          "titolo": "La figurazione petroglifica del \"filetto\" di Stazzona",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 110,
+          "titolo": "Teglio nella documentazione dell'archivio Davide Pace",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 134,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 153,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "anno": 2007,
+      "slug": "notiziario-05",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 1,
+          "titolo": "Celle del latte in alta quota ( prima parte )",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 33,
+          "titolo": "Gli scutiformi di Grosotto",
+          "autori": "Angelo Martinotti"
+        },
+        {
+          "pagina": 60,
+          "titolo": "La dama di Castionetto",
+          "autori": "Pierluigi Annibaldi"
+        },
+        {
+          "pagina": 63,
+          "titolo": "L'antica metallurgia del ferro",
+          "autori": "Costantino Storti"
+        },
+        {
+          "pagina": 74,
+          "titolo": "Teglio nella documentazione dell'archivio Davide Pace",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 91,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 113,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "anno": 2008,
+      "slug": "notiziario-06",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 1,
+          "titolo": "Celle del latte in alta quota ( seconda parte )",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 17,
+          "titolo": "I crot della Valposchiavo",
+          "autori": "Dario Monigatti"
+        },
+        {
+          "pagina": 25,
+          "titolo": "Le origini della falsa cupola",
+          "autori": "Edoardo Micati"
+        },
+        {
+          "pagina": 31,
+          "titolo": "La chiesa dei SS. Faustino e Giovita",
+          "autori": "Adriano Gaspani"
+        },
+        {
+          "pagina": 49,
+          "titolo": "Una matrice medievale per la fusione di tessere rinvenuta a Sondrio",
+          "autori": "Leopoldo Pozzi, Jaques Labrot"
+        },
+        {
+          "pagina": 55,
+          "titolo": "Documentazione protostoriche a Tresivio",
+          "autori": "Mario Bertolone"
+        },
+        {
+          "pagina": 89,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 99,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "anno": 2009,
+      "slug": "notiziario-07",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 1,
+          "titolo": "Piccole strade per grandi sogni",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 21,
+          "titolo": "Che lingua si parlava in Valtellina prima dell'arrivo dei Romani?",
+          "autori": "Guido Borghi"
+        },
+        {
+          "pagina": 29,
+          "titolo": "Il veterano Caius Kaninius Sissius",
+          "autori": "Davide Pace +"
+        },
+        {
+          "pagina": 37,
+          "titolo": "Sottosopra: un contributo allo studio delle figure capovolte nell'arte rupestre della Rupe Magna in valtellina",
+          "autori": "Angelo Fossati"
+        },
+        {
+          "pagina": 51,
+          "titolo": "Incisioni coppelliformi nel territorio di Grosio e Grosotto",
+          "autori": "Ivano Gambarri - Francesco Pace"
+        },
+        {
+          "pagina": 65,
+          "titolo": "Amuletl e talismani. Oggetti misteriosi o matrici per tessere?",
+          "autori": "Leopoldo Pozzi"
+        },
+        {
+          "pagina": 73,
+          "titolo": "Boschi, colture e pascoli nella media Valtellina durante gli ultimi settemila anni",
+          "autori": "Roberta Pini - Cesare Ravazzi"
+        },
+        {
+          "pagina": 83,
+          "titolo": "I petroglifi del Lago Nero in Val Belviso",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 97,
+          "titolo": "La capanna a falsa cupola",
+          "autori": "Edoardo Micati"
+        },
+        {
+          "pagina": 105,
+          "titolo": "La preda benedida",
+          "autori": "Ilario Silvestri"
+        },
+        {
+          "pagina": 107,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 121,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "anno": 2010,
+      "slug": "notiziario-08",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 1,
+          "titolo": "Incisioni rupestri e insediamenti antichi, per la storia dell'antropizzazione dell'alta Valle Camonica",
+          "autori": "Ausilio Priui"
+        },
+        {
+          "pagina": 29,
+          "titolo": "Tracce di antichi insediamenti e sentieri sul versante della Reit in bassa Valfurva",
+          "autori": "Giuseppe Cola"
+        },
+        {
+          "pagina": 41,
+          "titolo": "La spada di Fumarogo",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 59,
+          "titolo": "L'ascia di Tola",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 61,
+          "titolo": "Petroglifici schematici nel territorio di Valdisotto ( SO )",
+          "autori": "Francesco Pace - Ivano Gambarri"
+        },
+        {
+          "pagina": 73,
+          "titolo": "Gli scivoli della fertilità",
+          "autori": "Leopoldo Pozzi"
+        },
+        {
+          "pagina": 83,
+          "titolo": "Un \"frammento problematico\". Una matrice per tessere da Mazzo in Valtellina",
+          "autori": "Leopoldo Pozzi"
+        },
+        {
+          "pagina": 87,
+          "titolo": "Le figure antropomorfe incomplete sulla Rupe Magna di Grosio ( Valtellina ) : analisi del fenomeno",
+          "autori": "Francesca Morello"
+        },
+        {
+          "pagina": 107,
+          "titolo": "\"Paesaggi umani\" dell'età del Rame nella preistoria Valtellinese",
+          "autori": "Angelo Martinotti"
+        },
+        {
+          "pagina": 127,
+          "titolo": "La scansione cronologica delle figure antropomorfe nell'arte rupestre della Valtellina",
+          "autori": "Angelo Fossati"
+        },
+        {
+          "pagina": 141,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 159,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "anno": 2011,
+      "slug": "notiziario-09",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 1,
+          "titolo": "Le Biorche ( Piateda ): rupe istoriata",
+          "autori": "Pierluigi Annibaldi, Hannes"
+        },
+        {
+          "pagina": 11,
+          "titolo": "I pugnali di Piattamala",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 26,
+          "titolo": "Petroglifi schematici nella valle del Bitto di Albaredo ( Orobie Valtel linesi )",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 48,
+          "titolo": "Il castello di Roccascissa a Berbenno",
+          "autori": "Silvana Catelotti, Susanna Festoli"
+        },
+        {
+          "pagina": 57,
+          "titolo": "Giornata di studio per Maria Reggiani Rajna",
+          "autori": "Hannes"
+        },
+        {
+          "pagina": 61,
+          "titolo": "La dama bianca",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 76,
+          "titolo": "Idronimia indoeuropea di possibile databilità tardo paleolitico - mesolitica nelle Valli dell' Adda e della Mera",
+          "autori": "Guido Borghi"
+        },
+        {
+          "pagina": 91,
+          "titolo": "Significare il confine. I simboli della delimitazione nelle testimonianze documentarie fra medioevo ed età noderna in Valtellina e nelle Alpi centrali",
+          "autori": "Massimo della Misericordia"
+        },
+        {
+          "pagina": 107,
+          "titolo": "Determinazione dei confini al passo del Gavia tra Bormio e Dalegno nel 1547",
+          "autori": "Giuseppe Cola"
+        },
+        {
+          "pagina": 111,
+          "titolo": "Pietra con segni di confine nel territorio di Tirano",
+          "autori": "Pierluigi Annibaldi"
+        },
+        {
+          "pagina": 112,
+          "titolo": "La \"Cuna del Bau\" e le incisioni di Berbenno",
+          "autori": "Silvana Catelotti, Susanna Festoli"
+        },
+        {
+          "pagina": 114,
+          "titolo": "Segni di confine in Valgerola",
+          "autori": "Cirillo Ruffoni"
+        },
+        {
+          "pagina": 117,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 135,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "anno": 2012,
+      "slug": "notiziario-10",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 1,
+          "titolo": "Le incisioni rupestri di Tresivio ( SO ) e il simbolismo dell' ascia nell'età del bronzo in Italia settentrionale -- ( prima parte )",
+          "autori": "Angelo Martinotti"
+        },
+        {
+          "pagina": 26,
+          "titolo": "Asce enee rinvenute in Valtellina",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 37,
+          "titolo": "Scoperti petroglifi antropomorfi anche sulle rocce di Sondrio",
+          "autori": "Gianpaolo Mottarelli"
+        },
+        {
+          "pagina": 41,
+          "titolo": "P etroglifi antropomorfi e pediformi nel territorio comunale di Sondrio - Nota preliminare -",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 61,
+          "titolo": "Novità archeologiche nella chiesa di S. Eufemia di Teglio",
+          "autori": "Gianluigi Garbellini"
+        },
+        {
+          "pagina": 69,
+          "titolo": "Tracce di antiche abitazioni in Valfurva. Stato della ricerca",
+          "autori": "Giuseppe Cola"
+        },
+        {
+          "pagina": 82,
+          "titolo": "Alla ricerca del bau a Berbenno",
+          "autori": "Silvana Catelotti, Susanna Festoli"
+        },
+        {
+          "pagina": 90,
+          "titolo": "Caratteristiche linguistiche del leponzio",
+          "autori": "Massimo Vai"
+        },
+        {
+          "pagina": 101,
+          "titolo": "Osservazioni linguistiche sull'iscrizione del Voltino",
+          "autori": "Massimo Vai"
+        },
+        {
+          "pagina": 111,
+          "titolo": "Una piccola patria dai grandi orizzonti. I nomi della delimitazione confinaria: barriera invalicabile e provocazione a trasgredire",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 136,
+          "titolo": "Una controversia tra i comuni di Bormio e della Val Monastero nel 1536 -- ( documento di archivio del Comune di Bormio )",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 138,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 149,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "anno": 2013,
+      "slug": "notiziario-11",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 1,
+          "titolo": "Ricordo di Carlo Rodolfi",
+          "autori": "Bruno Ciapponi Landi"
+        },
+        {
+          "pagina": 3,
+          "titolo": "Le incisioni rupestri di Tresivio ( SO ) e il simbolismo dell' ascia nell'età del bronzo in Italia settentrionale -- ( seconda parte )",
+          "autori": "Angelo Martinotti"
+        },
+        {
+          "pagina": 21,
+          "titolo": "Le false coppelle",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 29,
+          "titolo": "Il mistero della selva de la Cuascia di Teglio",
+          "autori": "Gianluigi Garbellini"
+        },
+        {
+          "pagina": 40,
+          "titolo": "Tracce di antichi insediamenti nel territorio di Valdisotto.",
+          "autori": "Giuseppe Cola"
+        },
+        {
+          "pagina": 43,
+          "titolo": "La chiesa parrocchiale di S- Bartolomeo a Caspano di Civo e il suo \"sagrato\". Note storiche",
+          "autori": "Giulio Perotti"
+        },
+        {
+          "pagina": 54,
+          "titolo": "La chiesa parrocchiale di S- Bartolomeo a Sondrio",
+          "autori": "Alessandra Baruta"
+        },
+        {
+          "pagina": 59,
+          "titolo": "Ipotesi di localizzazione della primitiva chiesa dei SS Giacomo e Filippo a Taronno di Sondalo (SO)",
+          "autori": "Stefano Pruneri"
+        },
+        {
+          "pagina": 66,
+          "titolo": "Rumori dai millenni. Alcune denominazioni della raganella della settimana santa",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 91,
+          "titolo": "La gara",
+          "autori": "Silvana Catelotti, Susanna Festoli"
+        },
+        {
+          "pagina": 92,
+          "titolo": "Origine indoeuropea locale della celticità insubrica e leponzia",
+          "autori": "Guido Borghi"
+        },
+        {
+          "pagina": 115,
+          "titolo": "I simboli della delimitazione in Valtellina - Segni di confine fra i comuni di Berbenno e Buglio",
+          "autori": "Silvana Catelotti, Susanna Festoli"
+        },
+        {
+          "pagina": 123,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 143,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 12,
+      "anno": 2014,
+      "slug": "notiziario-12",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 1,
+          "titolo": "Una lama di accetta dell'età del Rame dalla val Belviso ( Sondrio)",
+          "autori": "Francesco Fedele"
+        },
+        {
+          "pagina": 7,
+          "titolo": "Tecniche di incisione e metodi di documentazione dell' arte rupestre in area centro-alpina: una panoramica aggiornata",
+          "autori": "Alberto Marretta"
+        },
+        {
+          "pagina": 21,
+          "titolo": "Considerazioni sulla Triplice Cinta incisa sulla lastra marmorea rinvenuta all'interno dell'altare della chiesa di S. Martino di Serravalle (Sondrio)",
+          "autori": "Marisa Uberti"
+        },
+        {
+          "pagina": 39,
+          "titolo": "Un ciottolo misterioso dalla Valtellina",
+          "autori": "Leopoldo Pozzi"
+        },
+        {
+          "pagina": 45,
+          "titolo": "Teglio: i misteri di un masso erratico",
+          "autori": "Gianluigi Garbellini"
+        },
+        {
+          "pagina": 53,
+          "titolo": "La rete viaria nel territorio di Teglio",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 61,
+          "titolo": "Il GIS ( Geographic information System) e l'Archeologia. Il caso di Tresivio",
+          "autori": "Alessandra Baruta"
+        },
+        {
+          "pagina": 69,
+          "titolo": "La grotta della Cameraccia in Valle dell'Alpe (Valfurva)",
+          "autori": "Giuseppe Cola"
+        },
+        {
+          "pagina": 76,
+          "titolo": "Giochi sulla pietra nel sagrato di San Bartolomeo a Caspano di Civo",
+          "autori": "Luca Gavazzi"
+        },
+        {
+          "pagina": 86,
+          "titolo": "Considerazioni su un tavoliere da gioco inciso nella galleria porticata della chiesa di San Bartolomeo a Caspano di Civo (Sondrio)",
+          "autori": "Marisa Uberti"
+        },
+        {
+          "pagina": 94,
+          "titolo": "Longobardi in Valtellina e Valchiavenna",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 130,
+          "titolo": "La \"flama de San Lorenz\" al mot de Tadè (Oga in Valdisotto)",
+          "autori": "Ilario Silvestri"
+        },
+        {
+          "pagina": 133,
+          "titolo": "Le costruzioni a falsa cupola in pietra a secco nel territorio del Comune di Villa di Tirano",
+          "autori": "Flaminio Benetti"
+        },
+        {
+          "pagina": 145,
+          "titolo": "Simbolo araldico al Crap del Mainet (Albosaggia -SO)",
+          "autori": "Gian Primo Falappi"
+        },
+        {
+          "pagina": 149,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 163,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 13,
+      "anno": 2015,
+      "slug": "notiziario-13",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 1,
+          "titolo": "Pergul. Ricordo di Ivan Fassin",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 17,
+          "titolo": "Saxorum veneratio",
+          "autori": "Maurizio Rossi"
+        },
+        {
+          "pagina": 39,
+          "titolo": "Ricostruzione di un tracciato storico per il Passo di Verva nella Val Grosina Orientale",
+          "autori": "Stefano Pruneri"
+        },
+        {
+          "pagina": 65,
+          "titolo": "Ritorno a Piuro. Nuove indagini archeologiche a \"Belfort\"",
+          "autori": "Andrea Breda, Emiliano Garatti, Gianni Lisignoli"
+        },
+        {
+          "pagina": 81,
+          "titolo": "Figure zoomorfe nei petroglifi valtellinesi",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 107,
+          "titolo": "Le incisioni lineari d'età storica di Somasassa di Teglio ( SO )",
+          "autori": "Angelo Martinotti, Francesco Pace"
+        },
+        {
+          "pagina": 133,
+          "titolo": "Massi incavati in Valgerola: quale funzione?",
+          "autori": "Cirillo Ruffoni"
+        },
+        {
+          "pagina": 137,
+          "titolo": "Blot nàibel. La paura di essere nudo",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 149,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 153,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 14,
+      "anno": 2016,
+      "slug": "notiziario-14",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 1,
+          "titolo": "Vestigia di culto arcaico su rupi del territorio grosino",
+          "autori": "Davide Pace +"
+        },
+        {
+          "pagina": 29,
+          "titolo": "Grosio ( SO ). Ipotesi di ricostruzione del tracciato della serra viscontea in rapporto alla viabilità storica",
+          "autori": "Stefano Pruneri"
+        },
+        {
+          "pagina": 59,
+          "titolo": "I massi avelli della provincia di Sondrio",
+          "autori": "Paola Bordigone"
+        },
+        {
+          "pagina": 85,
+          "titolo": "L'area archeologica di Cornale nel territorio di Teglio",
+          "autori": "Gianluigi Garbellini"
+        },
+        {
+          "pagina": 97,
+          "titolo": "Le casote",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 113,
+          "titolo": "Il vino nell'età del ferro atesina come paradigma delle diversità tra Alpi e Mediterraneo",
+          "autori": "Luca Pisoni, Umberto Tecchiati"
+        },
+        {
+          "pagina": 137,
+          "titolo": "L'ultima transumanza. L'equipaggiamento dell' uomo venuto dai ghiacci",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 161,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 167,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 15,
+      "anno": 2017,
+      "slug": "notiziario-15",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 1,
+          "titolo": "Trent'anni fa la frana della Val Pola",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 9,
+          "titolo": "Duecentodieci anni fa la frana di Sernio",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 25,
+          "titolo": "S. Pietro di Teglio. Il mistero dei petroglifi del campanile",
+          "autori": "Gianluigi Garbellini"
+        },
+        {
+          "pagina": 37,
+          "titolo": "Carta archeologica della Valtellina in epoca medievale. Le fortificazioni",
+          "autori": "Alessandra Baruta"
+        },
+        {
+          "pagina": 45,
+          "titolo": "Grosio: Rupe Magna e Dosso Giroldo. Le modificazioni della superficie istoriata dalla scperta ad oggi",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 67,
+          "titolo": "Il Parco delle Incisioni Ruperti di Grosio nel pensiero di Davide Pace",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 69,
+          "titolo": "La stele eneolitica \"cosidetta Tirano - Lovero\" . Il ritrovamento e il recupero",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 77,
+          "titolo": "Grosio ( SO ). Il tracciato della serra viscontea. Aggiornamento",
+          "autori": "Stefano Pruneri"
+        },
+        {
+          "pagina": 87,
+          "titolo": "La muraglia di Serravalle. Iptesi di localizzazione",
+          "autori": "Stefano Pruneri"
+        },
+        {
+          "pagina": 107,
+          "titolo": "Prata Camportaccio. Le antiche cave di pietra ollare di Madrea",
+          "autori": "Stefano Galli"
+        },
+        {
+          "pagina": 115,
+          "titolo": "Villa di Chiavenna. Al sasc di crusgét (Il sasso delle crocette)",
+          "autori": "Stefano Galli"
+        },
+        {
+          "pagina": 123,
+          "titolo": "Paludi ingorde",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 131,
+          "titolo": "Nuove riflessioni sul frammento di lastra figurata d'età protostorica \"da Cividate Camuno\" ( Valcamonica, BS)",
+          "autori": "Alberto Marretta, Angelo Martinotti"
+        },
+        {
+          "pagina": 173,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 185,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 16,
+      "anno": 2018,
+      "slug": "notiziario-16",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 1,
+          "titolo": "Teglio (SO), località Cornal. Vecchi e nuovi dati",
+          "autori": "Roberto Caimi , Gianluigi Garbellini, Francesco Pace, Maria Giuseppina Ruggiero, Marco Tremari"
+        },
+        {
+          "pagina": 23,
+          "titolo": "Grosio (SO), Dosso Giroldo coppelle nella luce del solstizio d'inverno",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 35,
+          "titolo": "Tra preistoria e storia: i petroglifi di Val Febbrar o (Valchiavenna) con particolare riguardo per il Ripiano delle crocI a Borghetto e per alcuni motivi ricorrenti di coppelle",
+          "autori": "Francesco Fedele"
+        },
+        {
+          "pagina": 85,
+          "titolo": "Dosso Giroldo. (Grosio, SO), Piati del Corf, petroglifi su parete verticale",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 105,
+          "titolo": "Il rilievo di Bormio: ancora novità a 70 anni dalla scoperta",
+          "autori": "Francesca Roncoroni"
+        },
+        {
+          "pagina": 133,
+          "titolo": "Il Museo Archeologico della Valchiavenna",
+          "autori": "Paola Bordigone"
+        },
+        {
+          "pagina": 147,
+          "titolo": "Punta di lancia da Santa Caterina Valfurva",
+          "autori": "Maria Giuseppina Ruggiero, Angela Guglielmetti"
+        },
+        {
+          "pagina": 153,
+          "titolo": "Le fortificazioni della Valle della Porta",
+          "autori": "Stefano Pruneri"
+        },
+        {
+          "pagina": 183,
+          "titolo": "Petroglifi nel ghiaccio",
+          "autori": "Giuseppe Cola"
+        },
+        {
+          "pagina": 207,
+          "titolo": "L' iscrizione di Cividate Camuno rivisitata. Una nota",
+          "autori": "Alessandro Morandi"
+        },
+        {
+          "pagina": 211,
+          "titolo": "Il fulmine, fascino e sgomento",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 237,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 245,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 17,
+      "anno": 2019,
+      "slug": "notiziario-17",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 5,
+          "titolo": "Ritrovamento di una stele incisa dell'età del rame, a Sondalo (SO), località Migiondo. Prima nota.",
+          "autori": "Roberto Caimi , Ivano Gambarri , Angelo Martinotti, Francesco Pace, Maria Giuseppina Ruggiero"
+        },
+        {
+          "pagina": 25,
+          "titolo": "Grosio, Dosso Giroldo. I petroglifi della roccia 11",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 49,
+          "titolo": "Archeologia in Valtellina",
+          "autori": "Alessandra Baruta"
+        },
+        {
+          "pagina": 57,
+          "titolo": "Gli hoenfunde protostorici delle Alpi Lombarde: censimento, disribuzione geografica e loro significato storico culturale",
+          "autori": "Lorenzo Catena, Umberto Tecchiati"
+        },
+        {
+          "pagina": 79,
+          "titolo": "Caius Caninius Sissium al rientro in Valtellina dopo honesta missio",
+          "autori": "Elena Gritti"
+        },
+        {
+          "pagina": 91,
+          "titolo": "Il castello di Lovero (SO). Ricerche in corso",
+          "autori": "Stefano Pruneri"
+        },
+        {
+          "pagina": 103,
+          "titolo": "Cosio (SO). Il castello dei Vicedomini, ipotesi ricostruttiva",
+          "autori": "Stefano Pruneri"
+        },
+        {
+          "pagina": 123,
+          "titolo": "Le costruzioni in Pietra a Secco nel paesaggio culturale Valtellinese",
+          "autori": "Dario Foppoli"
+        },
+        {
+          "pagina": 147,
+          "titolo": "\"Conservare e valorizzare il paesaggio della media Valtellina\"",
+          "autori": "Severino Bongiolatti"
+        },
+        {
+          "pagina": 157,
+          "titolo": "Dolcezza e ferocia dal presente alla preistoria. Alcune denominazione dei mustelidi",
+          "autori": "Remo Bracchi"
+        },
+        {
+          "pagina": 171,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 177,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 18,
+      "anno": 2020,
+      "slug": "notiziario-18",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 5,
+          "titolo": "Un ricordo di Bruno Ciapponi Landi",
+          "autori": "Raffaella Poggiani Keller"
+        },
+        {
+          "pagina": 9,
+          "titolo": "Scavo e documentazione del sito archeologico di Castione Andevenno (SO) loc. La Ganda. Notizie preliminari",
+          "autori": "Angelo Martinotti, Marco Redaelli, Maria Giuseppina Ruggiero"
+        },
+        {
+          "pagina": 19,
+          "titolo": "Grosio (SO) Dosso Giroldo, petroglifi su roccia adiacente a Ca del Cap",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 33,
+          "titolo": "Elementi per lo studio dell'insediamento pre-protostorico in Valtellina",
+          "autori": "Raffaella Poggiani Keller, Franco Magri, con appendice di Domenico Lo Vetro"
+        },
+        {
+          "pagina": 75,
+          "titolo": "Metafore di opposizione e conflitto nell'Età del Rame dell'Italia Settentrionale: la statua-stele di Tirano-Lçovero",
+          "autori": "Francesca Fapanni, Umberto Tecchiati"
+        },
+        {
+          "pagina": 105,
+          "titolo": "I crotti di Piattamala Tirano (SO). Indagini archeologiche e valorizzazione",
+          "autori": "Raffaella Poggiani Keller, Bruno Ciapponi Landi, Nicola Cappellozza"
+        },
+        {
+          "pagina": 127,
+          "titolo": "Teglio (SO), località La Cuascia. Rilevamento di un antico complesso insediativo.",
+          "autori": "Raffaella Poggiani Keller, Gianluigi Garbellini, Marco Tremari"
+        },
+        {
+          "pagina": 161,
+          "titolo": "La carta del Rischio Archeologico del del Comune di Sondrio, all'interno del Piano di Governo del Territorio",
+          "autori": "Marco Tremari"
+        },
+        {
+          "pagina": 165,
+          "titolo": "La Sezione Archeologica del Museo Valtellinese di Storia ed Arte",
+          "autori": "Maria Rosaria Gargiulo"
+        },
+        {
+          "pagina": 175,
+          "titolo": "Valchiavenna: possibile correlazione tra le croci incise su roccia e le antiche rogazioni",
+          "autori": "Stefano Galli"
+        },
+        {
+          "pagina": 201,
+          "titolo": "I castelli di Grosio nelle vecchie testimonianze visive",
+          "autori": "Alessandro Deriu"
+        },
+        {
+          "pagina": 215,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 225,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 19,
+      "anno": 2021,
+      "slug": "notiziario-19",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 5,
+          "titolo": "Una nuova stele maschile dell'età del Rame da Bianzone (SO). Comunicazione preliminare",
+          "autori": "Angelo Martinotti, Stefano Rossi"
+        },
+        {
+          "pagina": 21,
+          "titolo": "Studio del contenuto in fosforo organico e inorganico in suoli di interesse archeologico: il caso di Pian dei Cavalli",
+          "autori": "Roberto Castaldi, Francesco Fedele (premessa)"
+        },
+        {
+          "pagina": 49,
+          "titolo": "La fusaiola di Teglio",
+          "autori": "Marta Bazzanella, Francesco Pace"
+        },
+        {
+          "pagina": 55,
+          "titolo": "Grosio, Dosso Giroldo. \"Rupe degli armigeri\", nuove evidenze",
+          "autori": "Francesco Pace, Alessandro Deriu"
+        },
+        {
+          "pagina": 73,
+          "titolo": "Castione Andevenno (SO), petroglifi in località Ca di Bungi.",
+          "autori": "Francesco Pace,"
+        },
+        {
+          "pagina": 83,
+          "titolo": "Ossevazioni sugli insediamenti preistorici e protostorici su rilievo dell' Area Prealpina e Alpina Lombarda.",
+          "autori": "Elena Manieri, Lorenzo Catena, Umberto Tecchiati"
+        },
+        {
+          "pagina": 123,
+          "titolo": "Incisioni rupestri in Valchiavenna: alcuni ritrovamenti del 2020",
+          "autori": "Stefano Galli"
+        },
+        {
+          "pagina": 153,
+          "titolo": "Prime indagini archeologiche al castrum de Malenco",
+          "autori": "Federico Zoni"
+        },
+        {
+          "pagina": 171,
+          "titolo": "Il castello di Sondalo (SO). Ipotesi ricostruttiva",
+          "autori": "Alessandro Deriu, Stefano Pruneri"
+        },
+        {
+          "pagina": 197,
+          "titolo": "La chiesa di S. Gottardo a Sernio",
+          "autori": "Chiara Marveggio"
+        },
+        {
+          "pagina": 211,
+          "titolo": "Costruzioni a falsa cupola in Valposchiavo e Valtellina",
+          "autori": "Yolanda Serena Alther"
+        },
+        {
+          "pagina": 247,
+          "titolo": "Strumenti di gioco?",
+          "autori": "Cirillo Ruffoni"
+        },
+        {
+          "pagina": 251,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 267,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 20,
+      "anno": 2022,
+      "slug": "notiziario-20",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 5,
+          "titolo": "Tracce di frequentazione mesolitica nella Valle del Gavia (SO)",
+          "autori": "Giuseppe Cola"
+        },
+        {
+          "pagina": 11,
+          "titolo": "Grosio, Dosso Giroldo. \"Rupe degli armigeri\", nuove osservazioni",
+          "autori": "Francesco Pace, Alessandro Deriu"
+        },
+        {
+          "pagina": 31,
+          "titolo": "Incisioni rupestri in Valchiavenna: l'euforia per le nuove scoperte e le basi per un primo censimento",
+          "autori": "Stefano Galli"
+        },
+        {
+          "pagina": 73,
+          "titolo": "Antiquarium Tellinum di Palazzo Besta a Teglio; l'ampliamento del percorso espositivo tra studi, progettazione e interventi",
+          "autori": "Stefania Bossi , Maria Giuseppina Ruggiero, Angelo Martinotti, Chiara Cubito"
+        },
+        {
+          "pagina": 99,
+          "titolo": "Etnoarcheologia pastorale nelle valli di S. Antonio in comune di Corteno Golgi (BS)",
+          "autori": "Ausilio Priuli"
+        },
+        {
+          "pagina": 125,
+          "titolo": "Valgrosina arcaica. Dal lessico alla toponomastica per giungere alle piu' antiche attestazioni documentarie",
+          "autori": "Gabriele Antonioli"
+        },
+        {
+          "pagina": 139,
+          "titolo": "I pascoli d'alta quota nelle valli del Bitto: documenti storici e reperti",
+          "autori": "Cirillo Ruffoni"
+        },
+        {
+          "pagina": 155,
+          "titolo": "Santa Maria di Lovero: dal sacello altomedievale all'edificio romanico",
+          "autori": "Alessandro D'Alfonso"
+        },
+        {
+          "pagina": 171,
+          "titolo": "Palazzo Pievani e la chiesa di S. Giacomo a Tirano",
+          "autori": "Chiara Marveggio"
+        },
+        {
+          "pagina": 181,
+          "titolo": "Il sistema dell'alpeggio nelle Alpi Lombarde: credenze, leggende, riti",
+          "autori": "Michele Corti"
+        },
+        {
+          "pagina": 197,
+          "titolo": "Val Fraele: riti e credenze",
+          "autori": "Ilario Silvestri"
+        },
+        {
+          "pagina": 201,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 215,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 21,
+      "anno": 2023,
+      "slug": "notiziario-21",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 5,
+          "titolo": "Bivacchi mesolitici nella Valle dell'Alpe (Comune di Valfurva) indagini preliminari",
+          "autori": "Giuseppe Cola"
+        },
+        {
+          "pagina": 11,
+          "titolo": "Grosio, Dosso Giroldo. \"Rupe degli armigeri\", nuove acquisizioni",
+          "autori": "Francesco Pace, Alessandro Deriu, Ivano Gambarri"
+        },
+        {
+          "pagina": 17,
+          "titolo": "Rocce e tavole a coppelle nella regione alpina. Storia delle ricerche",
+          "autori": "Andrea Arcà, Francesco Rubat Borel"
+        },
+        {
+          "pagina": 31,
+          "titolo": "Una giornata fortunata",
+          "autori": "Stefano Galli"
+        },
+        {
+          "pagina": 45,
+          "titolo": "Incisioni rupestri nel territorio di Aprica e Pian Gembro",
+          "autori": "Ausilio Priuli"
+        },
+        {
+          "pagina": 89,
+          "titolo": "Segni rupestri \"minori\" nella media Valtellina. La roccia con pediforme in località Rodolo, Colorina (SO): documentazione e valorizzazione",
+          "autori": "Francesco Ghilotti , Angelo Martinotti, Gottfried Parrer"
+        },
+        {
+          "pagina": 115,
+          "titolo": "Fra ricerca archeologica e didattica: le incisioni rupestri in località Bongiascia (SO) in una scuola della provincia di Sondrio",
+          "autori": "Claudia Fredella, Caterina Brunalli"
+        },
+        {
+          "pagina": 151,
+          "titolo": "Gli scavi presso la chiesa di Santa Caterina ad Albosaggia: nuovi dati per lo studio del popolamento nel versante Orobico della Valtellina",
+          "autori": "Alessandro D'Alfonso"
+        },
+        {
+          "pagina": 173,
+          "titolo": "Mazzo di Valtellina (SO), castello di Pedenale. Sondaggi archeologici",
+          "autori": "Marco Redaelli"
+        },
+        {
+          "pagina": 179,
+          "titolo": "Nuove ricerche storico- archeologiche nel Parco Nazionale dello Stelvio. Lo studio delle torri di Fraele e il progetto di storia ambientale",
+          "autori": "Federico Zoni, Stefano Morosini, Riccardo Rao"
+        },
+        {
+          "pagina": 199,
+          "titolo": "I baitelli di Sernio in località Pergul",
+          "autori": "Chiara Marveggio"
+        },
+        {
+          "pagina": 207,
+          "titolo": "Iscrizioni retiche in celtico",
+          "autori": "Guido Borghi"
+        },
+        {
+          "pagina": 227,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 235,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 22,
+      "anno": 2024,
+      "slug": "notiziario-22",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 5,
+          "titolo": "I soci defunti",
+          "autori": null
+        },
+        {
+          "pagina": 7,
+          "titolo": "Manufatto ligne o da Piz Minor ( Livigno, SO )",
+          "autori": "Maria Giuseppina Ruggiero, Marco Baioni, Walter Basile, Nicoletta Martinelli , Olivia Pignatelli"
+        },
+        {
+          "pagina": 17,
+          "titolo": "La Tripla Cinta o \"Filetto\" prima che diventasse un gioco. \"Filetti o Triplice cinte\" nella paleoiconografia rupestre",
+          "autori": "Ausilio Priuli, Chiara Priuli"
+        },
+        {
+          "pagina": 65,
+          "titolo": "Sondalo (SO),località Ròz di Gai, Rinvenimento masso coppellato",
+          "autori": "Stefano Pruneri"
+        },
+        {
+          "pagina": 67,
+          "titolo": "La chiesa di San Giacomo di Fraele. La riscoperta di un ospedale di passo tra Italia e Svizzera nel Parco Nazionale dello Stelvio",
+          "autori": "Federico Zoni"
+        },
+        {
+          "pagina": 83,
+          "titolo": "Due edifici medievali in Valtellina: San Giacomo di Colorina e SS. Colombano e Giacomo di Ravoledo",
+          "autori": "Alessandro D'Alfonso"
+        },
+        {
+          "pagina": 97,
+          "titolo": "La chiesa di S. Giorgio a Grosio. Nuovi dati dagli scavi archeologici del 2024",
+          "autori": "Chiara Marveggio"
+        },
+        {
+          "pagina": 105,
+          "titolo": "I baitelli diSernio in località Pergul. Aggiornamento agli interventi di recupero del 2024",
+          "autori": "Chiara Marveggio"
+        },
+        {
+          "pagina": 111,
+          "titolo": "Prospettive di ricerca di un sito di altitudine: la grotta della Cameraccia in Valle dell'Alpe, Valfurva (2500 m.s.l.m.)",
+          "autori": "Giuseppe Cola"
+        },
+        {
+          "pagina": 129,
+          "titolo": "Indagini preliminari alla grotta della Cameraccia in Valle dell'Alpe, (Valfurva)",
+          "autori": "Giuseppe Cola"
+        },
+        {
+          "pagina": 133,
+          "titolo": "La leggenda dei grosini del piano e degli uomini della valle",
+          "autori": "Stefano Pruneri"
+        },
+        {
+          "pagina": 137,
+          "titolo": "Gli antichi borghi medievali dei \" Mortèe\" e della \"Motta dei Cecchi\" sul confine tra i territori comunali di Verceia e Dubino",
+          "autori": "Stefano Galli"
+        },
+        {
+          "pagina": 159,
+          "titolo": "Evoluzione degli insediamenti nella Valle dei Forni (SO), dal Tardo Medioevo ai giorni nostri",
+          "autori": "Giuseppe Cola"
+        },
+        {
+          "pagina": 205,
+          "titolo": "La stele eneolitica \"cosidetta Tirano Lovero\", aggiornamento",
+          "autori": "Eleonora Muggironi"
+        },
+        {
+          "pagina": 207,
+          "titolo": "Gli incisori dei petrglifi valtellinesi e l'Uomo del Similaun parlavano la stessa lingua?",
+          "autori": "Guido Borghi"
+        },
+        {
+          "pagina": 225,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 233,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        }
+      ]
+    },
+    {
+      "numero": 23,
+      "anno": 2025,
+      "slug": "notiziario-23",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 5,
+          "titolo": "Scoperto ricchissimo sito paleontologico nel Parco delle Orobie Valtellinesi con fossili che risalgono a 280 milioni di anni fa",
+          "autori": "Comunicato Stampa"
+        },
+        {
+          "pagina": 15,
+          "titolo": "Icnofossili in Valgerola",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 23,
+          "titolo": "Un abitato protostorico sotto il castello: nuovi dati dallo scavo del Castrum di Malenco (Caspoggio)",
+          "autori": "Umberto Tecchiati, Federico Zoni, Fiorenza Gulino"
+        },
+        {
+          "pagina": 37,
+          "titolo": "Gli scavi presso SS. Giacomo e Filippo a Chiesa in Valmalenco: una cappella medievale sulla via del passo del Muretto",
+          "autori": "Alessandro D'Alfonso"
+        },
+        {
+          "pagina": 69,
+          "titolo": "La roccia della Sassella, lavori di valorizzazione della roccia incisa",
+          "autori": "Marco Redaelli"
+        },
+        {
+          "pagina": 77,
+          "titolo": "Una enigmatica iscrizione a S. Giorgio di Novate Mezzola: appunti per una storia della ricerca. 1. La prima segnalazione",
+          "autori": "Franco Benetti"
+        },
+        {
+          "pagina": 85,
+          "titolo": "L' iscrizione di S. Giorgio di Cola: appunti per una storia della ricerca. 2. La prima ipotesi di lettura (Remo Bracchi) e conseguenti interpretazioni",
+          "autori": "Guido Borghi"
+        },
+        {
+          "pagina": 93,
+          "titolo": "Albosaggia \"Conquista bianca\" fra i ghiacci?",
+          "autori": "Guido Borghi"
+        },
+        {
+          "pagina": 105,
+          "titolo": "La chiesa di San Giorgio a Grosio, nuovi dati sugli scavi archeologici del 2024",
+          "autori": "Chiara Marveggio"
+        },
+        {
+          "pagina": 109,
+          "titolo": "Incisioni rupestri della Valle di Pejo, alle porte dell'alta Valtellina",
+          "autori": "Ausilio Priuli"
+        },
+        {
+          "pagina": 141,
+          "titolo": "Il ruolo del fuoco nella storia del paesaggio",
+          "autori": "Roberta Pini"
+        },
+        {
+          "pagina": 145,
+          "titolo": "I ritrovamenti archeologici presso Madonna del Piano di Bianzone",
+          "autori": "Filippo Molteni"
+        },
+        {
+          "pagina": 151,
+          "titolo": "Segnalazioni in breve",
+          "autori": "Autori vari"
+        },
+        {
+          "pagina": 165,
+          "titolo": "Atti dell'Istituto Archeologico Valtellinese",
+          "autori": null
+        },
+        {
+          "pagina": 1,
+          "titolo": "Frequentazione antropica e megaresti vegetali oltre il limite attuale del bosco nella Valle del Gavia",
+          "autori": "Giuseppe Cola",
+          "volume": 2
+        }
+      ]
+    },
+    {
+      "numero": 24,
+      "anno": 2026,
+      "slug": "notiziario-24",
+      "immagine": null,
+      "download": null,
+      "indice": [
+        {
+          "pagina": 1,
+          "titolo": null,
+          "autor": null
+        }
+      ]
+    }
+  ]
+}
