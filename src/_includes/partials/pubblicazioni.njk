@@ -1,0 +1,12 @@
+<section class="pubblicazioni flow">
+  <h1>Scopri il Notiziario</h1>
+  <div class="grid">
+    {% for item in pubblicazioni.notiziari %}
+    <article class="card bg-secondary">
+      <h3>Notiziario N°{{ item.numero }}</h3>
+      <a href="/notiziario/{{ item.numero }}/">Scopri di più</a>
+    </article>
+    {% endfor %}
+  </div>
+
+</section>

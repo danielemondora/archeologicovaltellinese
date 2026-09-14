@@ -1,8 +1,24 @@
 <footer class="footer | bg-primary | text-on-primary">
   <div class="content-grid">
-    <div class="breakout">
-      <h3>{{ site.name }}</h3>
-      <p>Questa è la descrizione del sito web</p>
+    <div class="breakout | flow">
+
+      <h3 class="weight-bold">{{ site.name }}</h3>
+
+      <div class="footer-address">
+        <ul role="list">
+          <li>{{ site.address.street }}</li>
+          <li>{{ site.address.postalCode }}{{ site.address.city }}</li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <span>Email: <a href="mailto:{{ site.contact.email }}" class="">{{ site.contact.email }}</a></span>
+      </div>
+
+      <div>
+        <span>&copy; {% year %} - {{ site.name }}</span>
+      </div>
+
     </div>
   </div>
 </footer>

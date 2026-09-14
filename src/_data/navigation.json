@@ -27,12 +27,8 @@
       "url": "/pubblicazioni/"
     },
     {
-			"text": "Notizie",
-			"url": "/notizie/"
-		},
-    {
-      "text": "Diventa Socio",
-      "url": "/diventa-socio/"
-    }
+			"text": "News",
+			"url": "/news/"
+		}
 	]
 }

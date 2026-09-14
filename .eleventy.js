@@ -5,6 +5,9 @@ import * as esbuild from 'esbuild';
 import fs from "node:fs";
 import path from "node:path";
 
+import markdownIt from 'markdown-it';
+import markdownItFootnote from 'markdown-it-footnote';
+
 export default function (eleventyConfig) {
 
   // PLUGIN
@@ -17,6 +20,14 @@ export default function (eleventyConfig) {
       decoding: 'async',
     },
   });
+
+  const markdownLib = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true
+  }).use(markdownItFootnote);
+
+  eleventyConfig.setLibrary("md", markdownLib);
 
   // SHORTCODE
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
@@ -37,7 +48,8 @@ export default function (eleventyConfig) {
   // PASSTHROUGH
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy({"src/assets/images/favicon/": "/"});
-  eleventyConfig.addPassthroughCopy('src/assets/fonts');
+  eleventyConfig.addPassthroughCopy("src/assets/fonts");
+  eleventyConfig.addPassthroughCopy({"src/assets/images/logo.jpg": "/logo.jpg"});
 
   // BUILD CON ESBUILD
   eleventyConfig.on('eleventy.before', async () => {
