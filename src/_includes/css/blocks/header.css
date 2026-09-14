@@ -19,12 +19,23 @@
 
   cursor: pointer;
 }
+.site-nav__logo {
+  display: inline-block;
+  line-height: 1.15;
+  text-decoration: none;
+  color: inherit;
+  
+  /* Su mobile: va a capo parola per parola */
+  max-width: min-content;
+  white-space: normal;
+}
 
-.site-nav__logo img {
-  display: block;
-  width: 100%;
-  max-width: 150px;
-  height: 100%;
+/* Da 48em (768px) in su: torna su una sola riga */
+@media (min-width: 48em) {
+  .site-nav__logo {
+    max-width: none;
+    white-space: nowrap;
+  }
 }
 
 /* Menu popup */

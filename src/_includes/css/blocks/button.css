@@ -64,9 +64,9 @@
   );
 }
 
-.button:active {
+/* .button:active {
   transform: scale(99%);
-}
+} */
 
 .button[data-button-variant="primary"] {
   --button-bg: var(--color-primary);

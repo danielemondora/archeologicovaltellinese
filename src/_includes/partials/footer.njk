@@ -1,22 +1,24 @@
-<footer class="footer | bg-primary | text-on-primary">
+<footer class="footer | bg-footer | text-on-primary">
   <div class="content-grid">
-    <div class="breakout | flow">
+    <div class="flow">
 
       <h3 class="weight-bold">{{ site.name }}</h3>
 
       <div class="footer-address">
         <ul role="list">
           <li>{{ site.address.street }}</li>
-          <li>{{ site.address.postalCode }}{{ site.address.city }}</li>
+          <li>{{ site.address.postalCode }}&nbsp;{{ site.address.city }}</li>
+          <li>C.F. {{site.company.codiceFiscale }} </li>
         </ul>
       </div>
 
       <div class="footer__contact">
         <span>Email: <a href="mailto:{{ site.contact.email }}" class="">{{ site.contact.email }}</a></span>
       </div>
-
-      <div>
-        <span>&copy; {% year %} - {{ site.name }}</span>
+      
+      <div class="copyright">
+        <p>Copyright &copy; {% year %} - {{ site.name }}</p>
+        <p><span>Sito web realizzato da <a href="mailto:{{- site.author.email -}}">{{- site.author.name -}}</a></span></p>
       </div>
 
     </div>

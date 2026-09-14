@@ -11,9 +11,25 @@
   --step-3: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
   --step-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
   --step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+  --step-6: clamp(3.3592rem, 2.7828rem + 2.5621vw, 4.7684rem);
+  --step-7: clamp(4.0311rem, 3.2418rem + 3.508vw, 5.9605rem);
+  --step-8: clamp(4.8373rem, 3.7682rem + 4.7514vw, 7.4506rem);
 }
 
 :root {  
   /* Base font dimension */
   --text-base: var(--step-0); 
 }
+
+/* DIMENSIONI TESTO */
+.text-step--2 { font-size: var(--step--2); }
+.text-step--1 { font-size: var(--step--1); }
+.text-step-0  { font-size: var(--step-0); }
+.text-step-1  { font-size: var(--step-1); }
+.text-step-2  { font-size: var(--step-2); }
+.text-step-3  { font-size: var(--step-3); }
+.text-step-4  { font-size: var(--step-4); }
+.text-step-5  { font-size: var(--step-5); }
+.text-step-6  { font-size: var(--step-6); }
+.text-step-7  { font-size: var(--step-7); }
+.text-step-8  { font-size: var(--step-8); }

@@ -1,0 +1,7 @@
+/**
+ * PANEL
+ * aggiunge margin e padding
+ */
+.panel {
+  padding-block: var(--space-l);
+}

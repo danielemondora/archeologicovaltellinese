@@ -54,6 +54,7 @@
   --bg-body: var(--background);
   --bg-surface: var(--color-white);
   --bg-surface-subtle: var(--color-grey-100);
+  --bg-footer: var(--color-terracotta-600);
 
   /* Tipografia */
   --text-main: var(--color-grey-600);
@@ -61,9 +62,9 @@
   --text-on-primary: var(--color-white);
 
   /* Branding (Blu Primario) */
-  --color-primary: var(--color-blue-300);
-  --color-primary-hover: var(--color-blue-400);
-  --color-primary-text: var(--color-blue-500);
+  --color-primary: var(--color-blue-400);
+  --color-primary-hover: var(--color-blue-500);
+  --color-primary-text: var(--color-blue-600);
   --color-primary-glare: var(--color-blue-100);
 
   /* Branding (Terracotta Secondario) */

@@ -5,7 +5,7 @@ permalink: /storia/
 ---
 # REVIVISCENZA DELL’ISTITUTO ARCHEOLOGICO VALTELLINESE
 
-*Mario Giovanni Simonelli*
+di *Mario Giovanni Simonelli*
 
 Il quattro ottobre 1973 a Sondrio, presso lo studio notarile Surace, si costituì l’Istituto Archeologico Valtellinese. I soci fondatori: [Davide Pace](14DavidePace.html), Guiscardo Guicciardi, Elisabetta Sertoli, Carlo Bozzi, Costantino Storti, Francesco Pace e Pierluigi Annibaldi.
 
@@ -34,8 +34,6 @@ A quasi trent’anni dalla fondazione, l’Istituto Archeologico Valtellinese ab
 Riprende l’avventura della ricerca arcaica in amicizia, aperta ad ogni incontro e contributo. Chiunque desideri associarsi può richiederlo, senza particolari formalità, al direttore Francesco Pace (Via Tirso 9, 20052 - Monza).
 
 Il passato dell’Istituto è prestigioso, desideriamo proiettarci verso il futuro vivendo con intensità operosa il presente. In sintonia con la legislazione statuale in materia, con la Soprintendenza Archeologica della Lombardia, con gli Enti locali e con gli istituti di formazione e di cultura presenti sul territorio.
-
----
 
 ### NOTE
 
