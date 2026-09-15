@@ -11,9 +11,19 @@ import markdownItFootnote from 'markdown-it-footnote';
 export default function (eleventyConfig) {
 
   // PLUGIN
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+  /* eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["avif", "webp", "jpeg"],
     widths: [320, 640, 960, 1200, 1400],
+    defaultAttributes: {
+      loading: 'lazy',
+      sizes: 'auto',
+      decoding: 'async',
+    },
+  }); */
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    formats: ["jpeg"],
+    widths: [1400],
     defaultAttributes: {
       loading: 'lazy',
       sizes: 'auto',

@@ -10,7 +10,7 @@ pagination:
   alias: notiziari
 ---
 <h1>Scopri il Notiziario</h1>
-  
+
 <p>Il Notiziario è un opuscolo nel quale vengono approfonditi aspetti peculiari dell'archeologia ed in particolare di
   quella valtellinese. Trova spazio anche la cultura che affonda le radici nel passato attraverso leggende, tradizioni,
   l'etimologia e la toponomastica legate anche al vasto patrimonio dialettale</p>
@@ -20,10 +20,10 @@ pagination:
   <div class="flow">
     {% for item in notiziari %}
     <article class="card-notiziario">
-      
+
       <!-- Immagine a Sinistra -->
       <div class="card-notiziario__media">
-          <img src="../assets/images/notiziario.jpg" alt="" aria-hidden="true"/>
+        <img src="../assets/images/notiziario.jpg" alt="" aria-hidden="true" />
       </div>
 
       <!-- Info a Destra -->
@@ -33,14 +33,14 @@ pagination:
 
         <div class="card-notiziario__actions cluster">
 
-          <a href="/notiziario/{{ item.numero }}/" class="button" data-button-variant="primary">
+          <wa-button href="/notiziario/{{ item.numero }}/">
             Scopri di più<span class="visually-hidden">sul Notiziario N°{{ item.numero }}</span>
-          </a>
+          </wa-button>
 
           {% if item.download %}
-            <a href="{{ item.download }}" download class="button" data-button-variant="primary">
-              Scarica PDF<span class="visually-hidden">del Notiziario N°{{ item.numero }}</span>
-            </a>
+          <wa-button href="{{ item.download }}" download>
+            Scarica PDF<span class="visually-hidden">del Notiziario N°{{ item.numero }}</span>
+          </wa-button>
           {% endif %}
         </div>
       </div>
@@ -67,7 +67,7 @@ pagination:
           </span>
           {% endif %}
         </li>
-  
+
         {% for pageHref in pagination.hrefs %}
         <li class="pagination__item">
           {% if page.url == pageHref %}
@@ -81,7 +81,7 @@ pagination:
           {% endif %}
         </li>
         {% endfor %}
-  
+
         <li class="pagination__item pagination__item--next">
           {% if pagination.href.next %}
           <a href="{{ pagination.href.next }}" class="button" data-ghost-button aria-label="Pagina successiva">
@@ -99,74 +99,74 @@ pagination:
     </nav>
   </div>
   {% endif %}
-  
+
 </section>
 
 <style>
-.card-notiziario {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-s);
-  padding: var(--space-s);
-  background-color: var(--color-grey-100);
-  border: solid 1px var(--color-grey-200);
-  border-radius: 0.5em;
-}
-
-.card-notiziario__media img {
-  width: auto;
-  max-width: 100%;
-  max-height: 250px;
-  margin-inline: auto;
-  height: auto;
-  display: block;
-  border-radius: 0.25em;
-}
-
-/* Da desktop in poi: layout affiancato */
-@media (min-width: 48em) {
   .card-notiziario {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: var(--space-m);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+    padding: var(--space-s);
+    background-color: var(--color-grey-100);
+    border: solid 1px var(--color-grey-200);
+    border-radius: 0.5em;
   }
 
   .card-notiziario__media img {
-    width: 100%;
-    max-height: none;
-    margin-inline: 0;
+    width: auto;
+    max-width: 100%;
+    max-height: 250px;
+    margin-inline: auto;
+    height: auto;
+    display: block;
+    border-radius: 0.25em;
   }
-}
 
-.pagination__nav ol {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  gap: var(--space-3xs-2xs);
-}
+  /* Da desktop in poi: layout affiancato */
+  @media (min-width: 48em) {
+    .card-notiziario {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: var(--space-m);
+    }
 
-.pagination .button[aria-current="page"],
-.pagination .button[data-active="true"] {
-  background-color: var(--button-hover-bg);
-  color: var(--bg-body);
-  border-color: var(--button-bg);
-}
+    .card-notiziario__media img {
+      width: 100%;
+      max-height: none;
+      margin-inline: 0;
+    }
+  }
 
-.pagination .button[aria-disabled="true"] {
-  opacity: 0.5;
-  cursor: not-allowed;
-  pointer-events: none;
-}
+  .pagination__nav ol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: var(--space-3xs-2xs);
+  }
 
-.pagination__label {
-  display: none;
-}
+  .pagination .button[aria-current="page"],
+  .pagination .button[data-active="true"] {
+    background-color: var(--button-hover-bg);
+    color: var(--bg-body);
+    border-color: var(--button-bg);
+  }
 
-@media (min-width: 48em) {
+  .pagination .button[aria-disabled="true"] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
   .pagination__label {
-    display: inline;
-    margin-inline: 0.25rem;
+    display: none;
   }
-}
+
+  @media (min-width: 48em) {
+    .pagination__label {
+      display: inline;
+      margin-inline: 0.25rem;
+    }
+  }
 </style>

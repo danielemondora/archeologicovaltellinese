@@ -20,12 +20,12 @@ eleventyComputed:
 
     {% if item.download %}
     <div class="single-notiziario__action">
-      <a href="{{ item.download }}" download class="button" data-button-variant="primary">Scarica il PDF</a>
+      <wa-button href="{{ item.download }}" download>Scarica il PDF</wa-button>
     </div>
     {% endif %}
 
     <div class="single-notiziario__back">
-      <a href="/pubblicazioni/" class="button" data-ghost-button>Torna all'indice</a>
+      <wa-button href="/pubblicazioni/">Torna all'indice</wa-button>
     </div>
 
   </header>
