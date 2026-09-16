@@ -25,4 +25,98 @@
 
   /* Custom pairs */
   --space-s-l: clamp(1.125rem, 0.5625rem + 2.5vw, 2.5rem);
+
+  --border-radius: 0.5em
+}
+
+/* ================================
+   Padding
+   ================================ */
+
+.p-s   { padding: var(--space-s); }
+.p-m   { padding: var(--space-m); }
+.p-l   { padding: var(--space-l); }
+.p-xl  { padding: var(--space-xl); }
+
+
+/* ================================
+   Padding Inline
+   ================================ */
+
+.px-s  { padding-inline: var(--space-s); }
+.px-m  { padding-inline: var(--space-m); }
+.px-l  { padding-inline: var(--space-l); }
+.px-xl { padding-inline: var(--space-xl); }
+
+
+/* ================================
+   Padding Block
+   ================================ */
+
+.py-s    { padding-block: var(--space-s); }
+.py-m    { padding-block: var(--space-m); }
+.py-l    { padding-block: var(--space-l); }
+.py-xl   { padding-block: var(--space-xl); }
+.py-2xl  { padding-block: var(--space-2xl); }
+.py-3xl  { padding-block: var(--space-3xl); }
+
+
+/* ================================
+   Margin
+   ================================ */
+
+.m-s  { margin: var(--space-s); }
+.m-m  { margin: var(--space-m); }
+.m-l  { margin: var(--space-l); }
+
+
+/* ================================
+   Margin Inline
+   ================================ */
+
+.mx-auto { margin-inline: auto; }
+
+.mx-s  { margin-inline: var(--space-s); }
+.mx-m  { margin-inline: var(--space-m); }
+.mx-l  { margin-inline: var(--space-l); }
+
+
+/* ================================
+   Margin Block
+   ================================ */
+
+.my-s  { margin-block: var(--space-s); }
+.my-m  { margin-block: var(--space-m); }
+.my-l  { margin-block: var(--space-l); }
+
+
+/* ================================
+   Margin Block Start / End
+   ================================ */
+
+.mt-s  { margin-block-start: var(--space-s); }
+.mt-m  { margin-block-start: var(--space-m); }
+.mt-l  { margin-block-start: var(--space-l); }
+
+.mb-s  { margin-block-end: var(--space-s); }
+.mb-m  { margin-block-end: var(--space-m); }
+.mb-l  { margin-block-end: var(--space-l); }
+
+
+/* ================================
+   Gap
+   ================================ */
+
+.gap-xs { gap: var(--space-xs); }
+.gap-s  { gap: var(--space-s); }
+.gap-m  { gap: var(--space-m); }
+.gap-l  { gap: var(--space-l); }
+
+
+/* ================================
+   Border Radius
+   ================================ */
+
+.radius {
+  border-radius: var(--border-radius);
 }

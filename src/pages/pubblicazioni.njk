@@ -19,7 +19,7 @@ pagination:
 
   <div class="flow">
     {% for item in notiziari %}
-    <article class="card-notiziario">
+    <article class="card-notiziario | card">
 
       <!-- Immagine a Sinistra -->
       <div class="card-notiziario__media">
@@ -107,10 +107,6 @@ pagination:
     display: flex;
     flex-direction: column;
     gap: var(--space-s);
-    padding: var(--space-s);
-    background-color: var(--color-grey-100);
-    border: solid 1px var(--color-grey-200);
-    border-radius: 0.5em;
   }
 
   .card-notiziario__media img {
@@ -120,7 +116,7 @@ pagination:
     margin-inline: auto;
     height: auto;
     display: block;
-    border-radius: 0.25em;
+    border-radius: var(--border-radius);
   }
 
   /* Da desktop in poi: layout affiancato */

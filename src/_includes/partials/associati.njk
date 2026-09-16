@@ -9,55 +9,23 @@
       </p>
     </header>
 
-    <div class="associati__info | cluster">
+    <section class="associati__form-wrapper | flow | card">
 
-      <div class="associati__card">
-        <h3>Quota Annuale</h3>
-        <dl>
-          <div>
-            <dt>Socio ordinario</dt>
-            <dd>25&nbsp;€</dd>
-          </div>
-          <div>
-            <dt>Socio sostenitore</dt>
-            <dd>30&nbsp;€</dd>
-          </div>
-        </dl>
-      </div>
-
-      <div class="associati__card">
-        <h3>Come Pagare</h3>
-        <p>
-          Puoi versare la quota durante gli eventi organizzati
-          dall'Istituto, in occasione dell'Assemblea oppure tramite
-          bonifico bancario.
-        </p>
-
-        <p>
-          <strong>IBAN</strong><br>
-          <span>{{ site.company.iban }}</span>
-        </p>
-
-      </div>
-    </div>
-
-    <div class="associati__form-wrapper | flow">
-
-      <header>
+      <header class="associati__form-header">
         <h3>Invia la tua richiesta</h3>
         <p>
           Compila tutti i campi obbligatori contrassegnati.
         </p>
       </header>
 
-      <form id="form-associati" class="form-associati flow">
+      <form id="form-associati" class="form-associati | flow">
 
         <wa-input id="nome" name="nome" label="Nome" required placeholder="Mario"></wa-input>
 
         <wa-input id="cognome" name="cognome" label="Cognome" required placeholder="Rossi"></wa-input>
 
         <wa-input id="indirizzo" name="indirizzo" label="Indirizzo di Residenza" required
-          placeholder="Es. Via Roma 1, 23100 Sondrio (SO)"></wa-input>
+          placeholder="Via Roma 1, 23100 Sondrio (SO)"></wa-input>
 
         <wa-input type="date" id="data-nascita" name="data-nascita" label="Data di Nascita" required></wa-input>
 
@@ -67,23 +35,37 @@
         <wa-textarea id="note" name="note" label="Note" rows="4" placeholder="Lasciaci un messaggio"></wa-textarea>
 
         <wa-button type="submit" variant="primary">Invia Richiesta</wa-button>
-
-        <div class="form-associati__privacy">
-          <p>
-            I dati forniti saranno utilizzati per gestire la richiesta
-            di associazione. Prima dell'invio, consulta
-            <a href="/privacy-policy">
-              l'informativa sulla privacy
-            </a>.
-          </p>
-        </div>
-
       </form>
-    </div>
 
-    <aside class="associati__alternative">
-      <h3>Preferisci scrivere direttamente?</h3>
+      <div class="form-associati__privacy">
+        <p class="text-step--2">
+          I dati forniti saranno utilizzati per gestire la richiesta
+          di associazioni. Prima dell'invio, ricordati di consultare
+          <a href="/privacy-policy">l'informativa sulla privacy</a>.
+        </p>
+      </div>
 
+    </section>
+
+    <section class="card">
+      <h3>Come pagare</h3>
+      <p>
+        Puoi versare la quota di iscrizione durante gli eventi organizzati
+        dall'istituto oppure
+        tramite bonifico bancario all'IBAN {{ site.company.iban }} presso
+        Crédit Agricole.
+      </p>
+      <p>La quota annuale di iscrizione è necessaria per ricevere il
+        <a href="/pubblicazioni/">Notiziario dell'Istituto</a>
+      </p>
+      <ul role="list">
+        <li><span><strong>Socio Ordinario:</strong> 25&euro;</span></li>
+        <li><span><strong>Socio Sostenitore:</strong> 30&euro;</span></li>
+      </ul>
+    </section>
+
+    <aside class="associati__alternative | card | ">
+      <h3>Preferisci scriverci direttamente?</h3>
       <p>
         Puoi anche inviare i tuoi dati via email a
         <a href="mailto:{{ site.contact.email }}">
@@ -91,6 +73,8 @@
         </a>
       </p>
     </aside>
+
+
 
   </div>
 </section>
