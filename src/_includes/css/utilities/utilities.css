@@ -5,6 +5,7 @@
 .bg-surface { background-color: var(--bg-surface); }
 .bg-primary { background-color: var(--color-primary); }
 .bg-primary-glare { background-color: var(--color-primary-glare); }
+.bg-primary-shade { background-color: var(--color-primary-shade); }
 .bg-secondary { background-color: var(--color-secondary); }
 .bg-footer { background-color: var(--bg-footer);}
 

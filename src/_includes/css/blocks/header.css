@@ -1,0 +1,19 @@
+.site-head {
+  border-top: 5px solid var(--color-primary);
+  border-bottom: 5px solid var(--color-primary-shade);
+}
+
+.navigation ul {
+  --repel-justify: normal;
+}
+
+.navigation a[aria-current="page"] {
+  color: var(--color-primary-text);
+}
+
+/* GESTIONE POPOVER */
+.navigation [popover] {
+  top: var(--header-height);
+  margin: 0;
+  width: 100%;
+}

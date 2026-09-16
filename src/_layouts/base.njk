@@ -19,14 +19,14 @@
 </head>
 
 <body>
-  
+
   <div class="site-wrap">
-    <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
-    {% include "partials/header.njk" %}
     
+    {% include "partials/header.njk" %}
+
     {% block content %}
     {% if content %}
-      {{ content | safe }}
+    {{ content | safe }}
     {% endif %}
     {% endblock %}
 

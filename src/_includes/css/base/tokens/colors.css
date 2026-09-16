@@ -65,6 +65,7 @@
   --color-primary: var(--color-blue-400);
   --color-primary-hover: var(--color-blue-500);
   --color-primary-text: var(--color-blue-600);
+  --color-primary-shade: var(--color-blue-600);
   --color-primary-glare: var(--color-blue-100);
 
   /* Branding (Terracotta Secondario) */

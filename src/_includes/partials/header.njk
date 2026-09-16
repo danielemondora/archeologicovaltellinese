@@ -1,39 +1,30 @@
-<header class="site-header | content-grid | py-s">
-  <div class="breakout | repel">
-
-    <nav id="main-nav" aria-label="Navigazione principale">
-      <ul role="list" class="cluster">
-        {% for item in navigation.items %}
-        {% if item.children and item.children.length %}
-
-        <!-- ELEMENTI CON CHILDREN DROPDOWN -->
-        <li>
-          <wa-dropdown>
-            <wa-button appearance="plain" slot="trigger" with-caret class="text-step-0">{{ item.text
-              }}</wa-button>
-            {% for item in item.children %}
-            <wa-dropdown-item href="{{ item.url }}" class="text-step-0">{{ item.text }}</wa-dropdown-item>
+<header class="site-head | bg-primary | text-on-primary" role="banner">
+  <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
+  <div class="wrapper | py-s" data-variant='large'>
+    <div class="site-head__inner | splitter">
+      <a href="/" aria-label="Istituto Archeologico Valtellinese Home" class="site-head__brand">
+        <span>IAV</span>
+      </a>
+      <div>
+        <nav class="navigation" aria-label="primary">
+          <ul role="list" class="repel">
+            {% for item in navigation.items %}
+            {% if item.children and item.children.length %}
+            <li><button popovertarget="{{- item.text -}}_panel" type="button">{{- item.text -}}</button></li>
+            <div id="{{- item.text -}}_panel" popover>
+              <ul role="list">
+                {% for item in item.children %}
+                <li><a href="{{ item.url }}" class="" {% if page.url==item.url %}aria-current="page" {% endif %}>{{ item.text }}</a></li>
+                {% endfor %}
+              </ul>              
+            </div>
+            {% else %}
+            <li><a href="{{ item.url }}" class="" {% if page.url==item.url %}aria-current="page" {% endif %}>{{ item.text }}</a></li>
+            {% endif %}
             {% endfor %}
-          </wa-dropdown>
-        </li>
-
-        {% else %}
-
-        <!-- ELEMENTI SINGOLI -->
-        <li>
-          <a class="site-nav__link" href="{{ item.url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>
-            {{ item.text }}
-          </a>
-        </li>
-
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </nav>
-
-    <div>
-      <wa-button variant="brand" pill href="#associati">Diventa Socio</wa-button>
+          </ul>
+        </nav>
+      </div>
     </div>
-
   </div>
 </header>

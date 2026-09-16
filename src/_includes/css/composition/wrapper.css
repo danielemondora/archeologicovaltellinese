@@ -4,7 +4,7 @@
  * centers the contents
  */
 .wrapper {
-  --_wrapper-max-width: var(--wrapper-max-width, 80rem);
+  --_wrapper-max-width: var(--wrapper-max-width, 60rem);
   --_wrapper-padding-inline: var(--wrapper-padding-inline, clamp(1rem, 5vw, var(--space-s-m)));
   --_wrapper-margin-inline: var(--wrapper-margin-inline, auto);
   --_wrapper-position: var(--wrapper-position, relative);
@@ -13,6 +13,10 @@
   padding-inline: var(--_wrapper-padding-inline);
   margin-inline: var(--_wrapper-margin-inline);
   position: var(--_wrapper-position);
+}
+
+.wrapper[data-variant='large'] {
+  --wrapper-max-width: 80rem;
 }
 
 .wrapper[data-variant='small'] {

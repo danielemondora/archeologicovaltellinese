@@ -10,7 +10,7 @@
 @import "utilities/utilities.css";
 @import "utilities/visually-hidden.css";
 
-@import "composition/content-grid.css";
+/* @import "composition/content-grid.css"; */
 @import "composition/flow.css";
 @import "composition/site-wrap.css";
 @import "composition/splitter.css";
