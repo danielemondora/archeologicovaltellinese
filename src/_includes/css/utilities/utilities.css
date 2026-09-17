@@ -28,3 +28,29 @@
 .weight-bold { font-weight: 700; }
 
 .text-center { text-align: center;}
+
+.btn-reset {
+  /* Rimuove sfondi e bordi di default */
+  background: none;
+  border: none;
+  
+  /* Rimuove margini e padding predefiniti */
+  padding: 0;
+  margin: 0;
+  
+  /* Eredita il font e il colore del testo dall'elemento padre */
+  font: inherit;
+  color: inherit;
+  
+  /* Mostra la manina quando ci passi sopra col mouse */
+  cursor: pointer;
+  
+  /* Rimuove l'outline di default, ereditandolo o gestendolo a parte */
+  outline: inherit;
+}
+
+/* Opzionale: migliora l'accessibilità rimuovendo l'outline solo al click del mouse, 
+   mantenendolo per la navigazione da tastiera (Tab) */
+.btn-reset:focus:not(:focus-visible) {
+  outline: none;
+}

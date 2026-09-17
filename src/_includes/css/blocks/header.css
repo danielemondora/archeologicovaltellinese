@@ -1,19 +1,83 @@
 .site-head {
+  anchor-name: --site-head;
   border-top: 5px solid var(--color-primary);
   border-bottom: 5px solid var(--color-primary-shade);
 }
 
-.navigation ul {
-  --repel-justify: normal;
-}
+.site-head [popover] {
+  position: fixed;
+  inset-block-start: anchor(--site-head bottom);
 
-.navigation a[aria-current="page"] {
-  color: var(--color-primary-text);
-}
-
-/* GESTIONE POPOVER */
-.navigation [popover] {
-  top: var(--header-height);
   margin: 0;
+  border: 0;
+
+  padding: var(--space-s);
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav [popover] {
+  position: fixed;
+  inset-inline-start: anchor(left); 
+}
+
+.dropdown-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+}
+
+.dropdown-trigger svg {
+  display: block;
+}
+
+.mobile-nav {
+  inset-inline: 0;
+
   width: 100%;
+  max-width: none;
+  max-height: calc(100dvh - anchor(--site-head bottom));
+
+  text-align: right;
+}
+
+.mobile-nav::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  clip-path: inset(100px 0 0 0);
+  transition: display 0.3s allow-discrete, overlay 0.3s allow-discrete, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.mobile-nav:popover-open::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  .mobile-nav:popover-open::backdrop {
+    opacity: 0;
+  }
+}
+
+.mobile-nav__trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.mobile-nav__trigger svg {
+  display: block;
+}
+
+@media (min-width: 48rem) {
+  .desktop-nav {
+    display: inline-block;
+  }
+  .mobile-nav__trigger {
+    display: none;
+  }
 }

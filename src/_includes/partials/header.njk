@@ -1,4 +1,4 @@
-<header class="site-head | bg-primary | text-on-primary" role="banner">
+<header class="site-head | bg-primary | text-on-primary | text-step-1" role="banner">
   <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
   <div class="wrapper | py-s" data-variant='large'>
     <div class="site-head__inner | splitter">
@@ -6,20 +6,75 @@
         <span>IAV</span>
       </a>
       <div>
-        <nav class="navigation" aria-label="primary">
+
+        {# Navigazione Desktop #}
+        <nav class="desktop-nav" aria-label="primary">
           <ul role="list" class="repel">
             {% for item in navigation.items %}
             {% if item.children and item.children.length %}
-            <li><button popovertarget="{{- item.text -}}_panel" type="button">{{- item.text -}}</button></li>
-            <div id="{{- item.text -}}_panel" popover>
-              <ul role="list">
-                {% for item in item.children %}
-                <li><a href="{{ item.url }}" class="" {% if page.url==item.url %}aria-current="page" {% endif %}>{{ item.text }}</a></li>
+            <li>
+              <button
+                class="btn-reset dropdown-trigger"
+                popovertarget="panel-{{ loop.index }}"
+                type="button"
+                style="anchor-name: --nav-{{- loop.index -}}">
+                {{ item.text }}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true" width="1em" height="1em"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg>
+              </button>
+              <div id="panel-{{ loop.index }}" popover style="position-anchor: --nav-{{ loop.index }}">
+                <ul role="list" class="flow">
+                {% for child in item.children %}
+                <li>
+                  <a class="" href="{{ child.url }}" {% if page.url==child.url %}aria-current="page" {% endif %}>
+                    {{child.text }}
+                  </a>
+                </li>
                 {% endfor %}
-              </ul>              
-            </div>
+              </ul>
+              </div>
+            </li>
             {% else %}
-            <li><a href="{{ item.url }}" class="" {% if page.url==item.url %}aria-current="page" {% endif %}>{{ item.text }}</a></li>
+            <li>
+              <a class="" href="{{ item.url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>
+                {{item.text }}
+              </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
+
+        {# Navigazione Mobile #}
+        <button aria-label="Apri la Navigazione Principale" popovertarget="mobile-nav" class="mobile-nav__trigger | btn-reset"
+          type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true" width="32"
+            height="32"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+            <path
+              d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+          </svg>
+        </button>
+        <nav class="mobile-nav" id="mobile-nav" popover>
+          <ul role="list" class="flow">
+            {% for item in navigation.items %}
+            {% if item.children and item.children.length %}
+            <li>
+              <span class="weight-bold">{{ item.text }}</span>
+              <ul role="list">
+                {% for child in item.children %}
+                <li>
+                  <a class="" href="{{ child.url }}" {% if page.url==child.url %}aria-current="page" {% endif %}>
+                    {{child.text }}
+                  </a>
+                </li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% else %}
+            <li>
+              <a class="" href="{{ item.url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>
+                {{item.text }}
+              </a>
+            </li>
             {% endif %}
             {% endfor %}
           </ul>
