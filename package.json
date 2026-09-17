@@ -5,12 +5,14 @@
   "main": ".eleventy.js",
   "scripts": {
     "11ty:build": "eleventy",
-    "11ty:serve": "eleventy --serve --quiet --incremental",
+    "11ty:watch": "eleventy --watch --quiet --ignore-initial",
+    "11ty:benchmark": "cross-env DEBUG=Eleventy:Benchmark* npm run build",
     "build": "cross-env NODE_ENV=production npm run 11ty:build",
-    "start": "npm run util:rimraf && npm run 11ty:build && npm run 11ty:serve",
+    "util:rimraf": "rimraf dist",
+    "util:killport": "kill-port 8787",
+    "start": "npm-run-all util:rimraf util:killport 11ty:build --parallel 11ty:watch wrangler:dev",
     "wrangler:dev": "wrangler dev --live-reload",
-    "wrangler:deploy": "wrangler deploy",
-    "util:rimraf": "rimraf dist"
+    "wrangler:deploy": "wrangler deploy"
   },
   "keywords": [],
   "author": "Daniele Mondora",
