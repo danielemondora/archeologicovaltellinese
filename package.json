@@ -6,6 +6,7 @@
   "scripts": {
     "11ty:build": "eleventy",
     "11ty:watch": "eleventy --watch --quiet --ignore-initial",
+    "11ty": "eleventy --serve",
     "11ty:benchmark": "cross-env DEBUG=Eleventy:Benchmark* npm run build",
     "build": "cross-env NODE_ENV=production npm run 11ty:build",
     "util:rimraf": "rimraf dist",

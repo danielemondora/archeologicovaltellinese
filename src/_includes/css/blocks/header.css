@@ -4,6 +4,10 @@
   border-bottom: 5px solid var(--color-primary-shade);
 }
 
+.site-head__brand * {
+  display: block;
+}
+
 .site-head [popover] {
   position: fixed;
   inset-block-start: anchor(--site-head bottom);
@@ -11,7 +15,7 @@
   margin: 0;
   border: 0;
 
-  padding: var(--space-s);
+  padding: var(--space-xs);
 }
 
 .desktop-nav {
