@@ -1,5 +1,11 @@
 .footer {
   margin-top: var(--space-s);
-
   padding-block: var(--space-s);
+
+  border-top: 5px solid var(--color-primary-shade);
+  border-bottom: 5px solid var(--color-primary);
+}
+
+.footer h3 {
+  color: var(--color-primary-text);
 }

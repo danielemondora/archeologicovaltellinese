@@ -23,7 +23,12 @@
 		},
     {
       "text": "Pubblicazioni",
-      "url": "/pubblicazioni/"
+      "children": [
+        {
+          "text": "Notiziario",
+          "url": "/pubblicazioni/notiziario/"
+        }
+      ]
     },
     {
 			"text": "News",
