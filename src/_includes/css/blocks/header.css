@@ -1,123 +1,168 @@
 /* ==========================================================================
-   1. SITE HEADER & BRAND (Impostazioni globali header)
+   1. IMPOSTAZIONI GLOBALI HEADER & BRAND
    ========================================================================== */
 .site-head {
   anchor-name: --site-head;
   border-top: 5px solid var(--color-primary);
   border-bottom: 5px solid var(--color-primary-shade);
+  position: relative;
 }
 
-.site-head__brand * {
+/* Puntiamo direttamente a img/svg per evitare che * rompa futuri elementi */
+.site-head__brand img,
+.site-head__brand svg {
   display: block;
   height: 64px;
   width: auto;
 }
 
-/* Stile base per tutti i popover figli della testata */
-.site-head [popover] {
-  position: static;
-  inset-block-start: anchor(--site-head bottom);
-  margin: 0;
-  border: 0;
-  padding: var(--space-s);
-  background-color: var(--color-primary);
-  color: var(--text-on-primary);
+html:has(#mobile-popover:popover-open) {
+  overflow: hidden;
+  overscroll-behavior: none;
 }
-
 
 /* ==========================================================================
-   2. NAVIGAZIONE DESKTOP
+   2. REGOLE CONDIVISE (Accessibilità, Stati e Reset)
    ========================================================================== */
-.desktop-nav {
-  display: none;
-}
+/* Stati Hover e Active sui link principali (Desktop) */
 
-/* Stati Hover e Active sui link */
-.desktop-nav li:hover {
-  color: var(--color-primary-text);
-}
 
-.nav-item a[data-state='active'],
-.nav-item a[aria-current='page'] {
-  color: var(--color-primary-text);
-}
-
-/* Accessibilità: Stato di focus visibile per la navigazione da tastiera */
+/* Focus visibile per la navigazione da tastiera */
 .nav-item a:focus-visible,
 .dropdown-trigger:focus-visible,
-.mobile-nav__trigger:focus-visible {
+.mobile-nav__trigger:focus-visible,
+.desktop-dropdown summary:focus-visible,
+.mobile-accordion summary:focus-visible {
   outline: 2px solid var(--text-on-primary);
   outline-offset: 4px;
   border-radius: 4px;
 }
 
-
-/* --- A. Contenitore Popover Desktop (Animazione e Stile) --- */
-.desktop-nav [popover] {
-  inset-inline-start: anchor(left);
-  border-inline: 5px solid var(--color-primary-shade);
-  border-bottom: 5px solid var(--color-primary-shade);
-  border-bottom-left-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-
-  /* STATO CHIUSO: partenza/fine animazione */
-  opacity: 0;
-  transform: translateY(-10px);
-
-  /* Proprietà allow-discrete fondamentali per animare il display */
-  transition:
-    opacity 0.2s ease,
-    transform 0.2s ease,
-    overlay 0.2s allow-discrete,
-    display 0.2s allow-discrete;
+/* Reset nativo per TUTTI i tag <summary> (Desktop + Mobile) */
+.desktop-dropdown summary,
+.mobile-accordion>summary {
+  list-style: none;
+  cursor: pointer;
 }
 
-/* STATO APERTO: Solo il popover attualmente aperto prende queste regole */
-.desktop-nav [popover]:popover-open {
-  opacity: 1;
-  transform: translateY(0);
+.desktop-dropdown summary::-webkit-details-marker,
+.mobile-accordion>summary::-webkit-details-marker {
+  display: none;
 }
 
-/* STARTING STYLE: Da dove parte l'animazione quando passa da display:none a block */
-@starting-style {
-  .desktop-nav [popover]:popover-open {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
+/* Animazione fluida per le freccette SVG (Desktop + Mobile) */
+.desktop-dropdown summary svg,
+.mobile-accordion>summary svg {
+  transition: transform 0.2s ease;
 }
 
+.desktop-dropdown[open] summary svg,
+.mobile-accordion[open]>summary svg {
+  transform: rotate(90deg);
+}
 
-/* --- B. Pulsante Dropdown Desktop (Testo + Freccia) --- */
-.dropdown-trigger {
+/* ==========================================================================
+   3. NAVIGAZIONE DESKTOP
+   ========================================================================== */
+.desktop-nav {
+  display: none;
+}
+
+/* Struttura Dropdown e Pannello */
+.desktop-dropdown {
+  position: relative;
+}
+
+.desktop-dropdown summary {
   display: inline-flex;
   align-items: center;
   gap: var(--space-3xs);
 }
 
-.dropdown-trigger * {
+.desktop-dropdown__panel {
+  position: absolute;
+  top: calc(100% + var(--space-2xs));
+  left: 0;
+  z-index: 10;
+  min-width: 200px;
+  background-color: var(--color-primary);
+  border: 5px solid var(--color-primary-shade);
+  padding: var(--space-2s) var(--space-3xs);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Animazione di apertura pannello */
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.desktop-dropdown[open] .desktop-dropdown__panel {
+  animation: slideDownFade 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: top left;
+}
+
+.desktop-dropdown__panel a {
   display: block;
-}
+  width: fit-content;
 
-/* Prepariamo la freccia SVG all'animazione */
-.dropdown-trigger svg {
-  transition: transform 0.2s ease;
+  margin: var(--space-2xs) var(--space-s);
+  color: var(--text-on-primary);
 }
-
-/* ANIMAZIONE FRECCIA: Usiamo .nav-item:has(...) così animiamo 
-   SOLO la freccia del <li> che contiene il popover aperto! */
-.nav-item:has(> [popover]:popover-open) .dropdown-trigger svg {
-  transform: rotate(90deg);
-}
-
 
 /* ==========================================================================
-   3. NAVIGAZIONE MOBILE
+   ANIMAZIONE LINEA (Link Principali, Summary e Sottomenu)
    ========================================================================== */
-.mobile-nav [popover] {
-  width: 100%;
-  max-width: none;
-  text-align: right;
+
+.nav-item>a,
+.desktop-dropdown summary,
+.desktop-dropdown__panel a {
+  position: relative;
+  padding-block: var(--space-3xs);
 }
+
+/* Creazione della linea */
+.nav-item>a::after,
+.desktop-dropdown summary::after,
+.desktop-dropdown__panel a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-on-primary);
+
+  /* Animazione dal centro */
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Aggiustamento specifico: linea un po' più bassa per i sottomenu */
+.desktop-dropdown__panel a::after {
+  bottom: -2px;
+}
+
+/* Espansione della linea (Hover, Focus e stato Aperto) */
+.nav-item>a:hover::after,
+.desktop-dropdown:hover summary::after,
+.desktop-dropdown[open] summary::after,
+.desktop-dropdown__panel a:hover::after,
+.desktop-dropdown__panel a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* ==========================================================================
+   4. NAVIGAZIONE MOBILE (Basata su Popover nativo)
+   ========================================================================== */
 
 .mobile-nav__trigger {
   display: flex;
@@ -127,7 +172,6 @@
   min-height: 44px;
 }
 
-/* --- Icona Burger Mobile --- */
 .mobile-nav__burger-icon {
   display: flex;
   flex-direction: column;
@@ -146,8 +190,7 @@
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* --- Animazione Burger -> Croce Mobile --- */
-/* Si attiva solo quando il #mobile-popover specifico è aperto */
+/* Animazione Burger -> Croce */
 .mobile-nav:has(#mobile-popover:popover-open) .mobile-nav__burger-icon span:nth-child(1) {
   transform: translateY(calc(0.5em - 1px)) rotate(45deg);
 }
@@ -161,16 +204,96 @@
   transform: translateY(calc(-0.5em + 1px)) rotate(-45deg);
 }
 
+/* --- B. Popover Mobile (Pannello a comparsa) --- */
+#mobile-popover {
+  /* Reset stile popover */
+  margin: 0;
+  border: 0;
+  padding: var(--space-s);
+  background-color: var(--color-primary);
+  color: var(--text-on-primary);
+  width: 100%;
+  max-width: none;
+
+  position: fixed;
+  position-anchor: --site-head;
+  inset-block-start: anchor(--site-head bottom);
+  inset-inline: 0;
+  inset-block-end: 0;
+
+  margin: 0;
+
+  /* Partenza/Arrivo Animazione (chiuso) */
+  opacity: 0;
+  transform: translateY(-20px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    overlay 0.3s allow-discrete,
+    display 0.3s allow-discrete;
+}
+
+#mobile-popover:popover-open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@starting-style {
+  #mobile-popover:popover-open {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* --- C. Stile Interno Menu Mobile --- */
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  padding-block: var(--space-s);
+}
+
+.mobile-nav-item:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.mobile-nav-item>a,
+.mobile-accordion>summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--space-s);
+}
+
+.mobile-sub-menu {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: var(--space-s);
+  margin-inline-start: var(--space-s);
+  margin-bottom: var(--space-s);
+}
+
+.mobile-sub-menu a {
+  display: block;
+  padding-block: var(--space-xs);
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-sub-menu a[aria-current="page"] {
+  opacity: 1;
+}
 
 /* ==========================================================================
-   4. MEDIA QUERIES
+   5. MEDIA QUERIES
    ========================================================================== */
 @media (min-width: 48rem) {
   .desktop-nav {
-    display: block; /* Mostra menu desktop sui grandi schermi */
+    display: block;
+    /* Mostra menu desktop sui grandi schermi */
   }
 
-  .mobile-nav__trigger {
-    display: none; /* Nasconde il pulsante burger sui grandi schermi */
+  .mobile-nav {
+    display: none;
+    /* Nasconde l'intero blocco mobile (trigger compreso) */
   }
 }

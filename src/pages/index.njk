@@ -3,8 +3,23 @@ permalink: /
 title: Home
 layout: base.njk
 ---
-<main id="main-content" class="wrapper">
+<main id="main-content" class="wrapper | flow">
+
+  <div class="foto flow">
+    <h1>{{site.name}}</h1>
+    <img src="/assets/images/lovero_stele.png" alt="">
+    <img src="/assets/images/grosio_giroldo_coppelle_figure_geometrice.png" alt="">
+    <img src="/assets/images/teglio_caven_stele_3.png" alt="">
+  </div>
+ 
   
   {% include "partials/associati.njk" %}
 
 </main>
+
+<style>
+  .foto img {
+    width: 100%;
+    height: auto;
+  }
+</style>

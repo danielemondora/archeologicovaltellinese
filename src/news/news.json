@@ -1,0 +1,4 @@
+{
+  "layout": "news.njk",
+  "permalink": "/news/{{ title | slugify }}/index.html"
+}

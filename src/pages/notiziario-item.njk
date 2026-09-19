@@ -1,0 +1,140 @@
+---
+pagination:
+  data: pubblicazioni.notiziari
+  size: 1
+  alias: item
+
+permalink: "/pubblicazioni/notiziario/item/{{ item.numero | slugify }}/index.html"
+layout: page.njk
+
+eleventyComputed:
+  title: "Notiziario N°{{ item.numero }}"
+---
+
+<div class="single-notiziario">
+
+  <!-- Colonna Sinistra: Titolo e Navigazione -->
+  <header class="single-notiziario__sidebar | flow">
+    <h1 class="headline">Notiziario N° {{ item.numero }} <span class="single-notiziario__anno">({{ item.anno }})</span>
+    </h1>
+
+    {% if item.download %}
+    <div class="single-notiziario__action">
+      <wa-button href="{{ item.download }}" download>Scarica il PDF</wa-button>
+    </div>
+    {% endif %}
+
+    <div class="single-notiziario__back">
+      <wa-button href="/pubblicazioni/notiziario/">Torna all'indice</wa-button>
+    </div>
+
+  </header>
+
+  <!-- Colonna Destra: Copertina, Download e Indice -->
+  <article class="single-notiziario__main flow">
+
+    
+    <div class="single-notiziario__cover">
+      <img src="../assets/images/notiziario.jpg" alt="" aria-hidden="true">
+    </div>
+
+    <section class="single-notiziario__index flow">
+      <h2>Indice</h2>
+
+      <div class="indice-list">
+        {% for articolo in item.indice %}
+        <div class="indice-item">
+          <div class="indice-titolo">
+            <span class="text-primary font-bold">{{ articolo.titolo }}</span>
+            <span class="text-step--1 indice-pagina">Pag. {{ articolo.pagina }}</span>
+          </div>
+          {% if articolo.autori %}
+          <p class="text-step--1 text-muted">{{ articolo.autori }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+  </article>
+
+</div>
+
+<style>
+  /* Layout Mobile-First (1 colonna) */
+  .single-notiziario {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-m, 2rem);
+    margin-block: var(--space-l, 2.5rem);
+  }
+
+  .single-notiziario__anno {
+    display: inline-block;
+    font-weight: normal;
+    color: var(--color-text-muted, #666);
+  }
+
+  .single-notiziario__back {
+    margin-top: var(--space-s, 1rem);
+  }
+
+  .single-notiziario__cover img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Gestione Indice */
+  .indice-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs, 1rem);
+  }
+
+  .indice-titolo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .indice-pagina {
+    white-space: nowrap;
+  }
+
+  .indice-item {
+    position: relative;
+    padding-bottom: var(--space-xs, 0.75rem);
+  }
+
+  .indice-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid var(--text-main);
+    margin-top: var(--space-xs);
+  }
+
+  /* Rimuove la linea dall'ultimo elemento */
+  .indice-item:last-child::after {
+    display: none;
+  }
+
+  /* Layout Desktop (Titolo a SINISTRA, Pagina/Contenuto a DESTRA) */
+  @media (min-width: 52em) {
+    .single-notiziario {
+      grid-template-columns: 1fr 2fr;
+      /* 1/3 per la colonna sinistra, 2/3 per la colonna destra */
+      gap: var(--space-l, 3.5rem);
+      align-items: start;
+    }
+
+    /* Rende la colonna di sinistra fissa durante lo scorrimento se la pagina è lunga */
+    .single-notiziario__sidebar {
+      position: sticky;
+      top: 2rem;
+    }
+  }
+</style>
