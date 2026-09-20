@@ -2,13 +2,11 @@
    1. IMPOSTAZIONI GLOBALI HEADER & BRAND
    ========================================================================== */
 .site-head {
-  anchor-name: --site-head;
   border-top: 5px solid var(--color-primary);
   border-bottom: 5px solid var(--color-primary-shade);
   position: relative;
 }
 
-/* Puntiamo direttamente a img/svg per evitare che * rompa futuri elementi */
 .site-head__brand img,
 .site-head__brand svg {
   display: block;
@@ -16,16 +14,9 @@
   width: auto;
 }
 
-html:has(#mobile-popover:popover-open) {
-  overflow: hidden;
-  overscroll-behavior: none;
-}
-
 /* ==========================================================================
    2. REGOLE CONDIVISE (Accessibilità, Stati e Reset)
    ========================================================================== */
-/* Stati Hover e Active sui link principali (Desktop) */
-
 
 /* Focus visibile per la navigazione da tastiera */
 .nav-item a:focus-visible,
@@ -204,28 +195,30 @@ html:has(#mobile-popover:popover-open) {
   transform: translateY(calc(-0.5em + 1px)) rotate(-45deg);
 }
 
-/* --- B. Popover Mobile (Pannello a comparsa) --- */
+/* --- B. Popover Mobile (Pannello a comparsa laterale) --- */
 #mobile-popover {
-  /* Reset stile popover */
   margin: 0;
   border: 0;
   padding: var(--space-s);
   background-color: var(--color-primary);
   color: var(--text-on-primary);
-  width: 100%;
-  max-width: none;
-
+  
+  /* Posizionamento Off-canvas a sinistra */
   position: fixed;
-  position-anchor: --site-head;
-  inset-block-start: anchor(--site-head bottom);
-  inset-inline: 0;
-  inset-block-end: 0;
+  inset-block: 0;           /* Occupa tutta l'altezza (top 0, bottom 0) */
+  inset-inline-start: 0;    /* Ancorato a sinistra */
+  inset-inline-end: auto;   /* Svincolato da destra */
+  width: 85vw;              /* Larghezza del menu */
+  max-width: 350px;
+  height: 100dvh;
 
-  margin: 0;
+  /* Abilita lo scroll interno al menu */
+  overflow-y: auto;
+  overscroll-behavior: contain;
 
   /* Partenza/Arrivo Animazione (chiuso) */
   opacity: 0;
-  transform: translateY(-20px);
+  transform: translateX(-100%); /* Nascosto oltre il margine sinistro */
   transition:
     opacity 0.3s ease,
     transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
@@ -233,15 +226,32 @@ html:has(#mobile-popover:popover-open) {
     display 0.3s allow-discrete;
 }
 
+/* Oscura il resto della pagina quando il menu è aperto */
+#mobile-popover::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 
+    opacity 0.3s ease, 
+    overlay 0.3s allow-discrete, 
+    display 0.3s allow-discrete;
+}
+
 #mobile-popover:popover-open {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
+}
+
+#mobile-popover:popover-open::backdrop {
+  opacity: 1;
 }
 
 @starting-style {
   #mobile-popover:popover-open {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateX(-100%);
+  }
+  #mobile-popover:popover-open::backdrop {
+    opacity: 0;
   }
 }
 
@@ -264,7 +274,7 @@ html:has(#mobile-popover:popover-open) {
   padding-block: var(--space-s);
 }
 
-.mobile-sub-menu {
+.mobile-accordion .mobile-sub-menu {
   display: flex;
   flex-direction: column;
   padding-inline-start: var(--space-s);
@@ -289,11 +299,9 @@ html:has(#mobile-popover:popover-open) {
 @media (min-width: 48rem) {
   .desktop-nav {
     display: block;
-    /* Mostra menu desktop sui grandi schermi */
   }
 
   .mobile-nav {
     display: none;
-    /* Nasconde l'intero blocco mobile (trigger compreso) */
   }
 }
