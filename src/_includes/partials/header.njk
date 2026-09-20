@@ -11,114 +11,14 @@
       <div>
 
         {# Navigazione Desktop #}
-        <nav class="desktop-nav" aria-label="Navigazione principale">
-          <ul role="list" class="repel">
-
-            {% for item in navigation.items %}
-
-            {% if item.children and item.children.length %}
-
-            <li class="nav-item">
-              <!-- AGGIUNTO: name="desktop-menu" per chiudere gli altri in automatico -->
-              <details class="desktop-dropdown" name="desktop-menu">
-
-                <summary class="dropdown-trigger | btn-reset">
-                  {{ item.text }}
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"
-                    width="1em"
-                    height="1em"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-                    <path
-                      d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z" />
-                  </svg>
-                </summary>
-
-                <div class="desktop-dropdown__panel">
-                  <ul role="list" class="flow">
-                    {% for child in item.children %}
-                    <li>
-                      <a href="{{ child.url }}" {% if page.url==child.url %}aria-current="page" {% endif %}>
-                        {{ child.text }}
-                      </a>
-                    </li>
-                    {% endfor %}
-                  </ul>
-                </div>
-              </details>
-            </li>
-
-            {% else %}
-            <li class="nav-item">
-              <a class="" href="{{ item.url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>
-                {{item.text }}
-              </a>
-            </li>
-            {% endif %}
-            {% endfor %}
-          </ul>
-        </nav>
+        {% include "partials/nav-desktop.njk" %}
 
         {# Navigazione Mobile #}
-        <div class="mobile-nav">
-          <button aria-label="Apri la Navigazione Principale" popovertarget="mobile-popover"
-            class="mobile-nav__trigger | btn-reset" type="button">
-
-            <span class="mobile-nav__burger-icon" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-
-          </button>
-
-          <nav id="mobile-popover" class="wrapper" popover aria-label="Navigazione principale">
-            <div class="mobile-menu-inner">
-              <ul role="list" class="mobile-nav-list">
-
-                {% for item in navigation.items %}
-                {% if item.children and item.children.length %}
-
-                <li class="mobile-nav-item">
-                  <details class="mobile-accordion">
-                    <summary class="weight-bold">
-                      {{ item.text }}
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor"
-                        aria-hidden="true" width="1em"
-                        height="1em"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-                        <path
-                          d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z" />
-                      </svg>
-                    </summary>
-
-                    <ul role="list" class="mobile-sub-menu">
-                      {% for child in item.children %}
-                      <li>
-                        <a href="{{ child.url }}" {% if page.url==child.url %}aria-current="page" {% endif %}>
-                          {{ child.text }}
-                        </a>
-                      </li>
-                      {% endfor %}
-                    </ul>
-                  </details>
-                </li>
-
-                {% else %}
-
-                <li class="mobile-nav-item">
-                  <a href="{{ item.url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>
-                    {{ item.text }}
-                  </a>
-                </li>
-
-                {% endif %}
-                {% endfor %}
-
-              </ul>
-            </div>
-          </nav>
-
-        </div>
+        {% include "partials/nav-mobile.njk" %}
 
       </div>
+
     </div>
+  </div>
   </div>
 </header>
