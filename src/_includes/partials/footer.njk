@@ -1,26 +1,49 @@
-<footer class="footer | bg-primary | text-on-primary">
-  <div class="wrapper" data-variant='large'>
-    <div class="flow">
+<footer class="site-footer | bg-primary text-on-primary">
 
-      <h3 class="weight-bold">{{ site.name }}</h3>
+  <div class="wrapper | flow flow-space-xl" data-variant='large'>
 
-      <div class="footer-address">
-        <ul role="list">
-          <li>{{ site.address.street }}</li>
-          <li>{{ site.address.postalCode }}&nbsp;{{ site.address.city }}</li>
-          <li>C.F. {{site.company.codiceFiscale }} </li>
-        </ul>
+    <div class="grid" data-layout='50-50'>
+
+      {# COLONNA BRAND #}
+      <div class="flow flow-space-xs">
+        <h2 class="weight-bold text-step-2">{{ site.name }}</h2>
+        <p class="text-step--1">
+          {{ site.description }}
+        </p>
       </div>
 
-      <div class="footer__contact">
-        <a href="mailto:{{ site.contact.email }}" class="">{{ site.contact.email }}</a>
-      </div>
-      
-      <div class="copyright">
-        <p>Copyright &copy; {% year %} - {{ site.name }}</p>
-        <p class="text-step--1">Sito web realizzato da <a href="mailto:{{- site.author.email -}}">{{- site.author.name -}}</a></p>
+      {# COLONNA INDIRIZZO E CONTATTI #}
+      <div class="flow">
+        <div class="flow flow-space-2xs">
+          <h3 class="weight-bold text-step-0">Sede</h3>
+          <div>
+            <ul role="list" class="flow flow-space-3xs | text-step--1">
+              <li>{{ site.address.street }}</li>
+              <li>{{ site.address.postalCode }} {{ site.address.city }}</li>
+              <li>C.F. {{site.company.codiceFiscale }} </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flow flow-space-2xs">
+          <h3 class="weight-bold text-step-0">Contatti</h3>
+          <div>
+            <ul role="list" class="flow text-step--1">
+              <li>
+                <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
     </div>
+
+    {# COPYRIGHT #}
+    <div class="site-footer__copy | repel | text-step--1">
+      <p>&copy; {% year %} {{ site.name }}</p>
+      <p>Realizzato da <a href="mailto:{{- site.author.email -}}" class="weight-bold">{{- site.author.name -}}</a></p>
+    </div>
+
   </div>
 </footer>

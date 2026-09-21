@@ -1,11 +1,20 @@
-.footer {
-  margin-top: var(--space-s);
-  padding-block: var(--space-s);
-
-  border-top: 5px solid var(--color-primary-shade);
-  border-bottom: 5px solid var(--color-primary);
+.site-footer {
+  padding-block: var(--space-xl) var(--space-s); 
 }
 
-.footer h3 {
-  color: var(--color-primary-text);
+.site-footer h2 {
+  max-width: 20ch;
+}
+
+.site-footer p {
+  max-width: 35ch;
+}
+
+.site-footer li, p {
+  opacity: 0.75;
+}
+
+.site-footer__copy {
+  padding-block-start: var(--space-xs);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }

@@ -1,3 +1,14 @@
-<section>
-  
+<section class="hero | text-on-primary">
+  <!-- Immagine in HTML con priorità di caricamento massima -->
+  <img src="/assets/images/grosio_giroldo_armigeri.png" alt="" fetchpriority="high" loading="eager" />
+
+  <!-- Contenuto della Hero -->
+  <div class="wrapper | hero__content flow" data-variant="large">
+    <h1 class="weight-bold text-step-4">
+      {{ site.name }}
+    </h1>
+    <p class="text-step-1 measure-short">
+      {{ site.description }}
+    </p>
+  </div>
 </section>

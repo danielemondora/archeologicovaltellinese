@@ -2,9 +2,14 @@
    IMPOSTAZIONI GLOBALI HEADER & BRAND
    ========================================================================== */
 .site-head {
+  position: sticky;
+  top: 0;
+
   border-top: 5px solid var(--color-primary);
   border-bottom: 5px solid var(--color-primary-shade);
-  position: relative;
+
+  z-index: 100;
+
 }
 
 .site-head__brand img,
