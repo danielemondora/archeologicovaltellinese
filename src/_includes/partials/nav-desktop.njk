@@ -19,7 +19,7 @@
       <div id="desktop-menu-{{ loop.index }}" popover class="desktop-dropdown__panel">
         <ul role="list" class="flow">
           {% for child in item.children %}
-          <li><a href="{{ child.url }}" {% if page.url==child.url %}aria-current="page" {% endif %}>{{
+          <li><a href="{{ child.url }}" class="" {% if page.url==child.url %}aria-current="page" {% endif %}>{{
               child.text }}</a></li>
           {% endfor %}
         </ul>

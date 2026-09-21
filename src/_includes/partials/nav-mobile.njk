@@ -40,7 +40,7 @@
             <ul role="list" class="mobile-sub-menu">
               {% for child in item.children %}
               <li>
-                <a href="{{ child.url }}" {% if page.url==child.url %}aria-current="page" {% endif %}>
+                <a class="" href="{{ child.url }}" {% if page.url==child.url %}aria-current="page" {% endif %}>
                   {{ child.text }}
                 </a>
               </li>
@@ -52,7 +52,7 @@
         {% else %}
 
         <li class="mobile-nav-item">
-          <a href="{{ item.url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>
+          <a class="" href="{{ item.url }}" {% if page.url==item.url %}aria-current="page" {% endif %}>
             {{ item.text }}
           </a>
         </li>

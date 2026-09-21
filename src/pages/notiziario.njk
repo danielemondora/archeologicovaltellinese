@@ -5,164 +5,94 @@ permalink: "/pubblicazioni/notiziario/{% if pagination.pageNumber > 0 %}{{ pagin
 templateEngine: njk
 pagination:
   data: pubblicazioni.notiziari
-  size: 10
+  size: 6
   reverse: true
   alias: notiziari
 ---
 <h1>Scopri il Notiziario</h1>
 
-<p>Il Notiziario è un opuscolo nel quale vengono approfonditi aspetti peculiari dell'archeologia ed in particolare di
-  quella valtellinese. Trova spazio anche la cultura che affonda le radici nel passato attraverso leggende, tradizioni,
-  l'etimologia e la toponomastica legate anche al vasto patrimonio dialettale</p>
+<p>
+  Il Notiziario è un opuscolo nel quale vengono approfonditi aspetti peculiari
+  dell'archeologia ed in particolare di quella valtellinese. Trova spazio anche
+  la cultura che affonda le radici nel passato attraverso leggende, tradizioni,
+  l'etimologia e la toponomastica legate anche al vasto patrimonio dialettale.
+</p>
 
-<section class="pubblicazioni | flow">
+<section class="flow">
 
-  <div class="flow">
+  <div class="grid">
     {% for item in notiziari %}
-    <article class="card-notiziario | card">
+    <article class="card | flow">
+      <div class="grid">
+        <div class="notiziario__cover">
+          <img src="../assets/images/notiziario.jpg" alt="" aria-hidden="true" />
+        </div>
 
-      <!-- Immagine a Sinistra -->
-      <div class="card-notiziario__media">
-        <img src="../assets/images/notiziario.jpg" alt="" aria-hidden="true" />
-      </div>
+        <div class="flow">
+          <h2>Notiziario N°{{ item.numero }}border: 1px solid var(--border-strong);</h2>
 
-      <!-- Info a Destra -->
-      <div class="card-notiziario__content | flow">
-        <h2>Notiziario N°{{ item.numero }}</h2>
-        <p class="text-primary">Anno {{ item.anno }}</p>
+          <p>Anno {{ item.anno }}</p>
 
-        <div class="card-notiziario__actions cluster">
+          <div class="cluster">
+            <a href="/pubblicazioni/notiziario/item/{{ item.numero }}/">
+              Scopri di più
+              <span class="visually-hidden">
+                sul Notiziario N°{{ item.numero }}
+              </span>
+            </a>
 
-          <wa-button href="/pubblicazioni/notiziario/item/{{ item.numero }}/">
-            Scopri di più<span class="visually-hidden">sul Notiziario N°{{ item.numero }}</span>
-          </wa-button>
-
-          {% if item.download %}
-          <wa-button href="{{ item.download }}" download>
-            Scarica PDF<span class="visually-hidden">del Notiziario N°{{ item.numero }}</span>
-          </wa-button>
-          {% endif %}
+            {% if item.download %}
+            <a href="{{ item.download }}" download>
+              Scarica PDF
+              <span class="visually-hidden">
+                del Notiziario N°{{ item.numero }}
+              </span>
+            </a>
+            {% endif %}
+          </div>
         </div>
       </div>
-
     </article>
     {% endfor %}
+
   </div>
 
-  <!-- Controlli di Paginazione -->
   {% if pagination.pages.length > 1 %}
-  <div class="pagination">
-    <nav class="pagination__nav" aria-label="Paginazione notiziari">
-      <ol role="list">
-        <li class="pagination__item pagination__item--prev">
-          {% if pagination.href.previous %}
-          <a href="{{ pagination.href.previous }}" class="button" data-ghost-button aria-label="Pagina precedente">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="pagination__label">Precedente</span>
-          </a>
-          {% else %}
-          <span aria-disabled="true" class="button" data-ghost-button>
-            <span aria-hidden="true">&laquo;</span>
-            <span class="pagination__label">Precedente</span>
-          </span>
-          {% endif %}
-        </li>
+  <nav aria-label="Paginazione notiziari" class="notiziario__pagination">
+    <ul role="list" class="cluster">
+      {% if pagination.href.previous %}
+      <li>
+        <a class="" href="{{ pagination.href.previous }}" rel="prev">
+          « <span class="visually-hidden">Pagina precedente</span>
+        </a>
+      </li>
+      {% endif %}
 
-        {% for pageHref in pagination.hrefs %}
-        <li class="pagination__item">
-          {% if page.url == pageHref %}
-          <a href="{{ pageHref }}" aria-current="page" class="button" data-ghost-button data-active="true">
-            <span class="visually-hidden">Pagina </span>{{ loop.index }}
-          </a>
-          {% else %}
-          <a href="{{ pageHref }}" class="button" data-ghost-button>
-            <span class="visually-hidden">Pagina </span>{{ loop.index }}
-          </a>
-          {% endif %}
-        </li>
-        {% endfor %}
-
-        <li class="pagination__item pagination__item--next">
-          {% if pagination.href.next %}
-          <a href="{{ pagination.href.next }}" class="button" data-ghost-button aria-label="Pagina successiva">
-            <span class="pagination__label">Successiva</span>
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-          {% else %}
-          <span aria-disabled="true" class="button" data-ghost-button>
-            <span class="pagination__label">Successiva</span>
-            <span aria-hidden="true">&raquo;</span>
-          </span>
-          {% endif %}
-        </li>
-      </ol>
-    </nav>
-  </div>
+      {% for pageHref in pagination.hrefs %}
+      <li>
+        {% if page.url == pageHref %}
+        <a class="" href="{{ pageHref }}" aria-current="page">
+          <span class="visually-hidden">Pagina </span>{{ loop.index }}
+        </a>
+        {% else %}
+        <a class="" href="{{ pageHref }}">
+          <span class="visually-hidden">Pagina </span>{{ loop.index }}
+        </a>
+        {% endif %}
+      </li>
+      {% endfor %}
+  
+      {% if pagination.href.next %}
+      <li>
+        <a class="" href="{{ pagination.href.next }}" rel="next">
+          <span class="visually-hidden">Pagina successiva</span>
+          &raquo;
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+  
   {% endif %}
 
 </section>
-
-<style>
-  .card-notiziario {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-s);
-  }
-
-  .card-notiziario__media img {
-    width: auto;
-    max-width: 100%;
-    max-height: 250px;
-    margin-inline: auto;
-    height: auto;
-    display: block;
-    border-radius: var(--border-radius);
-  }
-
-  /* Da desktop in poi: layout affiancato */
-  @media (min-width: 48em) {
-    .card-notiziario {
-      display: grid;
-      grid-template-columns: 140px 1fr;
-      gap: var(--space-m);
-    }
-
-    .card-notiziario__media img {
-      width: 100%;
-      max-height: none;
-      margin-inline: 0;
-    }
-  }
-
-  .pagination__nav ol {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: var(--space-3xs-2xs);
-  }
-
-  .pagination .button[aria-current="page"],
-  .pagination .button[data-active="true"] {
-    background-color: var(--button-hover-bg);
-    color: var(--bg-body);
-    border-color: var(--button-bg);
-  }
-
-  .pagination .button[aria-disabled="true"] {
-    opacity: 0.5;
-    cursor: not-allowed;
-    pointer-events: none;
-  }
-
-  .pagination__label {
-    display: none;
-  }
-
-  @media (min-width: 48em) {
-    .pagination__label {
-      display: inline;
-      margin-inline: 0.25rem;
-    }
-  }
-</style>

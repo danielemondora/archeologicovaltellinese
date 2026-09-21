@@ -1,12 +1,31 @@
 /* ==========================================================================
    IMPOSTAZIONI GLOBALI HEADER & BRAND
    ========================================================================== */
+
+:root {
+  --bg-header: var(--color-stone-50);
+  --bg-header-scrolled: rgba(255, 255, 255, 0.94);
+
+  --header-text: var(--color-stone-900);
+  --header-text-muted: var(--color-stone-600);
+
+  --header-border: var(--color-stone-200);
+
+  --header-accent: var(--color-earth-600);
+  --header-accent-hover: var(--color-earth-700);
+
+  --header-link: var(--color-slate-800);
+  --header-link-hover: var(--color-slate-700);
+}
+
 .site-head {
   position: sticky;
   top: 0;
 
-  border-top: 5px solid var(--color-primary);
-  border-bottom: 5px solid var(--color-primary-shade);
+  color: var(--header-text);
+  background-color: var(--bg-header);
+  border-top: 5px solid var(--bg-header);
+  border-bottom: 5px solid var(--header-border);
 
   z-index: 100;
 

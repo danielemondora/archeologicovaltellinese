@@ -1,0 +1,10 @@
+.notiziario__cover {
+  width: min(100%, 10rem);
+  margin-inline: auto;
+}
+
+.notiziario__pagination {
+  display: flex;
+  justify-content: center;
+  font-size: var(--step-2);
+}

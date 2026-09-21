@@ -86,24 +86,6 @@
   --button-hover-color: var(--text-on-primary);
 }
 
-.button[data-button-variant="positive"] {
-  --button-bg: var(--color-green-500);
-  --button-color: var(--color-white);
-  --button-border-color: var(--color-green-500);
-  
-  --button-hover-bg: var(--color-green-400);
-  --button-hover-color: var(--color-white);
-}
-
-.button[data-button-variant="negative"] {
-  --button-bg: var(--color-red-500);
-  --button-color: var(--color-white);
-  --button-border-color: var(--color-red-500);
-  
-  --button-hover-bg: var(--color-red-400);
-  --button-hover-color: var(--color-white);
-}
-
 .button[data-ghost-button] {
   --button-bg: transparent;
   --button-border-color: currentColor;

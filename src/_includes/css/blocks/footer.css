@@ -1,5 +1,8 @@
 .site-footer {
-  padding-block: var(--space-xl) var(--space-s); 
+  padding-block: var(--space-xl) var(--space-s);
+
+  border-top: 5px solid var(--color-primary-active);
+  border-bottom: 5px solid var(--color-primary);
 }
 
 .site-footer h2 {

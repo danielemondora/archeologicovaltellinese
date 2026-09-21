@@ -1,10 +1,10 @@
 /* 1. Fondamentali (Variabili e Reset) */
+@import "base/reset.css";
+
 @import "base/tokens/fonts.css";
 @import "base/tokens/colors.css";
 @import "base/tokens/spacing.css";
 @import "base/tokens/typography.css";
-
-@import "base/reset.css";
 
 /* 2. Regole globali e utilità */
 @import "utilities/utilities.css";
@@ -28,6 +28,7 @@
 @import "blocks/hero.css";
 @import "blocks/card.css";
 @import "blocks/skip-link.css";
+@import "blocks/notiziario.css";
 
 
 body {
@@ -47,6 +48,16 @@ img[loading="eager"] {
 picture img {
   color: transparent;
   font-size: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -71,6 +82,21 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+:is(h1, h2, h3, h4):first-child {
+  margin-block-start: 0;
+}
+
+:is(h1, h2, h3, h4)+* {
+  --flow-space: 0.5em;
+  margin-block-start: var(--flow-space);
+}
+
+p {
+  text-wrap: pretty;
 }
 
 ul[role='list'],
@@ -83,4 +109,20 @@ ol[role='list'] {
 ::selection {
   color: var(--text-on-primary);
   background: var(--color-primary);
+}
+
+/* Gestione focus per accessibilità */
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid  var(--text-main);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }

@@ -1,36 +1,43 @@
-<section class="associati wrapper" id="associati" aria-labelledby="associati-title">
-  <div class="flow">
+<section class="associati | wrapper flow" id="associati" data-variant="large" aria-labelledby="associati-title">
 
-    <header>
-      <h2 id="associati-title">Diventa Socio dell'Istituto</h2>
-      <p class="associati__intro">
-        Entrare a far parte dell'{{ site.name }} è semplice.
-        Compila il modulo qui sotto e invia la tua richiesta di associazione.
-      </p>
-    </header>
+  <header class="flow">
+    <h2 id="associati-title">Diventa Socio dell'Istituto</h2>
+    <p class="associati__intro">
+      Entrare a far parte dell'{{ site.name }} è semplice.
+      Compila il modulo qui sotto e invia la tua richiesta di associazione.
+    </p>
+  </header>
 
-    <section class="associati__form-wrapper | flow | card">
+  <!-- MACRO LAYOUT: Usiamo la tua variante 50-50 -->
+  <!-- Mantengo align-items: start inline (o usa una tua utility class se l'hai) 
+       per evitare che la sidebar si allunghi seguendo l'altezza del form -->
+  <div class="grid" data-layout="50-50">
+
+    <!-- COLONNA PRINCIPALE (Form) -->
+    <section class="associati__form-wrapper | card flow">
 
       <header class="associati__form-header">
         <h3>Invia la tua richiesta</h3>
-        <p>
-          Compila tutti i campi obbligatori contrassegnati.
-        </p>
+        <p>Compila tutti i campi obbligatori contrassegnati.</p>
       </header>
 
       <form id="form-associati" class="form-associati | flow">
 
-        <wa-input id="nome" name="nome" label="Nome" required placeholder="Mario"></wa-input>
-
-        <wa-input id="cognome" name="cognome" label="Cognome" required placeholder="Rossi"></wa-input>
+        <!-- MICRO LAYOUT: Usiamo la tua .grid base (auto-fill a 16rem) -->
+        <div class="grid">
+          <wa-input id="nome" name="nome" label="Nome" required placeholder="Mario"></wa-input>
+          <wa-input id="cognome" name="cognome" label="Cognome" required placeholder="Rossi"></wa-input>
+        </div>
 
         <wa-input id="indirizzo" name="indirizzo" label="Indirizzo di Residenza" required
           placeholder="Via Roma 1, 23100 Sondrio (SO)"></wa-input>
 
-        <wa-input type="date" id="data-nascita" name="data-nascita" label="Data di Nascita" required></wa-input>
-
-        <wa-input id="cf" name="cf" label="Codice Fiscale" required pattern="[a-zA-Z0-9]{16}"
-          placeholder="RSSMRA92S08F205F" autocapitalize="characters"></wa-input>
+        <!-- MICRO LAYOUT: Usiamo di nuovo la tua .grid base -->
+        <div class="grid">
+          <wa-input type="date" id="data-nascita" name="data-nascita" label="Data di Nascita" required></wa-input>
+          <wa-input id="cf" name="cf" label="Codice Fiscale" required pattern="[a-zA-Z0-9]{16}"
+            placeholder="RSSMRA92S08F205F" autocapitalize="characters"></wa-input>
+        </div>
 
         <wa-textarea id="note" name="note" label="Note" rows="4" placeholder="Lasciaci un messaggio"></wa-textarea>
 
@@ -39,78 +46,67 @@
 
       <div class="form-associati__privacy">
         <p class="text-step--2">
-          I dati forniti saranno utilizzati per gestire la richiesta
-          di associazioni. Prima dell'invio, ricordati di consultare
-          <a href="/privacy-policy">l'informativa sulla privacy</a>.
+          I dati forniti saranno utilizzati per gestire la richiesta di associazione.
+          Prima dell'invio, consultare <a href="/privacy-policy">l'informativa sulla privacy</a>.
         </p>
       </div>
 
     </section>
 
-    <section class="card">
-      <h3>Come pagare</h3>
-      <p>
-        Puoi versare la quota di iscrizione durante gli eventi organizzati
-        dall'istituto oppure
-        tramite bonifico bancario all'IBAN {{ site.company.iban }} presso
-        Crédit Agricole.
-      </p>
-      <p>La quota annuale di iscrizione è necessaria per ricevere il
-        <a href="/pubblicazioni/">Notiziario dell'Istituto</a>
-      </p>
-      <ul role="list">
-        <li><span><strong>Socio Ordinario:</strong> 25&euro;</span></li>
-        <li><span><strong>Socio Sostenitore:</strong> 30&euro;</span></li>
-      </ul>
-    </section>
+    <aside class="associati__sidebar | flow">
 
-    <aside class="associati__alternative | card | ">
-      <h3>Preferisci scriverci direttamente?</h3>
-      <p>
-        Puoi anche inviare i tuoi dati via email a
-        <a href="mailto:{{ site.contact.email }}">
-          {{ site.contact.email }}
-        </a>
-      </p>
+      <section class="card flow">
+        <h3>Informazioni e Pagamento</h3>
+
+        <p>
+          Puoi versare la quota di iscrizione durante gli eventi organizzati
+          dall'istituto oppure tramite bonifico bancario:
+        </p>
+
+        <div class="associati__iban-box flow">
+          <p class="text-step--1">IBAN (Crédit Agricole)</p>
+          <strong>{{ site.company.iban }}</strong>
+        </div>
+
+        <p class="text-step--1">
+          La quota annuale è necessaria per ricevere regolarmente il
+          <a href="/pubblicazioni/notiziario/">Notiziario dell'Istituto</a>.
+        </p>
+
+        <hr>
+
+        <!-- Formattazione pulita delle quote come lista o griglia visiva -->
+        <div class="flow">
+          <h4 class="text-step-0">Quote annuali</h4>
+          <div>
+            <ul role="list" class="flow">
+              <li class="repel">
+                <span>Socio Ordinario</span>
+                <strong>25&euro;</strong>
+              </li>
+              <li class="repel">
+                <span>Socio Sostenitore</span>
+                <strong>30&euro;</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card di contatto unificata o pulita -->
+      <section class="associati__alternative | card flow">
+        <h3>Hai bisogno di aiuto?</h3>
+        <p>
+          Se preferisci scriverci direttamente o hai dubbi sulla procedura, puoi contattare la segreteria via email a:
+        </p>
+        <p>
+          <a href="mailto:{{ site.contact.email }}">
+            <strong>{{ site.contact.email }}</strong>
+          </a>
+        </p>
+      </section>
+
     </aside>
-
-
 
   </div>
 </section>
-
-<script>
-  document.getElementById('form-associati').addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    const emailDestinazione = 'info@archeologicovaltellinese.it';
-
-    const nome = document.getElementById('nome').value;
-    const cognome = document.getElementById('cognome').value;
-    const indirizzo = document.getElementById('indirizzo').value;
-    const cf = document.getElementById('cf').value;
-    const dataNascitaRaw = document.getElementById('data-nascita').value;
-    let dataNascitaFormat = '';
-    if (dataNascitaRaw) {
-      const [anno, mese, giorno] = dataNascitaRaw.split('-');
-      dataNascitaFormat = `${giorno}/${mese}/${anno}`;
-    }
-    const note = document.getElementById('note').value;
-
-    const subject = `Richiesta Associazione: ${nome} ${cognome}`;
-
-    const body = `Salve, vorrei inviare la mia richiesta di associazione all'Istituto Archeologico Valtellinese.
-
-    Dati Personali:
-    Nome: ${nome}
-    Cognome: ${cognome}
-    Indirizzo: ${indirizzo}
-    Data di Nascita: ${dataNascitaFormat}
-    Codice Fiscale: ${cf}
-
-    Note:
-    ${note || 'Niente da aggiungere.'}`;
-
-    window.location.href = `mailto:${emailDestinazione}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  });
-</script>

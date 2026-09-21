@@ -1,89 +1,223 @@
-/* 
+/*
   tokens/colors.css
-  @link https://leonardocolor.io
+
+  Istituto archeologico — Valtellina
+  ------------------------------------------------
+  Identity:
+    Stone     → pietra / neutralità
+    Slate     → istituzionalità / montagna
+    Earth     → archeologia / terra / reperti
+    Forest    → Valtellina / paesaggio alpino
 */
+
 :root {
-  --background: #fafaf8;
-  --color-white: #ffffff;
-  --color-black: #000000;
+  /* ==================================================
+     STONE
+     Neutral / surfaces / typography
+     ================================================== */
 
-  /* GREY */
-  --color-grey-100: #d7d6d5;
-  --color-grey-200: #b6b5b4;
-  --color-grey-300: #979493;
-  --color-grey-400: #797574;
-  --color-grey-500: #5b5855;
-  --color-grey-600: #403b39;
+  --color-stone-50: #F8F6F1;
+  --color-stone-100: #EEECE5;
+  --color-stone-200: #DCD9D0;
+  --color-stone-300: #C5C1B6;
+  --color-stone-400: #A5A198;
+  --color-stone-500: #817D74;
+  --color-stone-600: #625F58;
+  --color-stone-700: #494741;
+  --color-stone-800: #32332F;
+  --color-stone-900: #252825;
+  --color-stone-950: #181B19;
 
-  /* TERRACOTTA */
-  --color-terracotta-100: #e4d3c9;
-  --color-terracotta-200: #cdaf9d;
-  --color-terracotta-300: #b68c72;
-  --color-terracotta-400: #916f5b;
-  --color-terracotta-500: #6c5343;
-  --color-terracotta-600: #4a382e;
 
-  /* BLUE */
-  --color-blue-100: #c8d9e3;
-  --color-blue-200: #9ab9cc;
-  --color-blue-300: #709ab4;
-  --color-blue-400: #597a8f;
-  --color-blue-500: #435b6b;
-  --color-blue-600: #2d3e49;
+  /* ==================================================
+     SLATE
+     Primary / institutional / mountain
+     ================================================== */
 
-  /* SYSTEM */
-  --color-red-100: #efcfcf;
-  --color-red-200: #e1a7a7;
-  --color-red-300: #d37b7b;
-  --color-red-400: #c44e4e;
-  --color-red-500: #9c3434;
-  --color-red-600: #6b2424;
+  --color-slate-50: #F1F5F5;
+  --color-slate-100: #DEE7E8;
+  --color-slate-200: #C5D2D4;
+  --color-slate-300: #A8BABD;
+  --color-slate-400: #8BA1A5;
+  --color-slate-500: #6D878C;
+  --color-slate-600: #536E73;
+  --color-slate-700: #405B61;
+  --color-slate-800: #31484D;
+  --color-slate-900: #263B3F;
+  --color-slate-950: #19282B;
 
-  --color-green-100: #c3dcd3;
-  --color-green-200: #92bfaf;
-  --color-green-300: #5ea189;
-  --color-green-400: #2c8365;
-  --color-green-500: #0e6446;
-  --color-green-600: #0a4430;
+
+  /* ==================================================
+     EARTH
+     Secondary / archaeology / material
+     ================================================== */
+
+  --color-earth-50: #FAF5F1;
+  --color-earth-100: #F1E5DC;
+  --color-earth-200: #E3CEC0;
+  --color-earth-300: #D0AE99;
+  --color-earth-400: #B88E70;
+  --color-earth-500: #9D7057;
+  --color-earth-600: #82563F;
+  --color-earth-700: #704B38;
+  --color-earth-800: #5A3B2D;
+  --color-earth-900: #493025;
+  --color-earth-950: #2E1D16;
+
+
+  /* ==================================================
+     FOREST
+     Tertiary / landscape / Valtellina
+     ================================================== */
+
+  --color-forest-50: #F2F6F2;
+  --color-forest-100: #E0EAE2;
+  --color-forest-200: #C7D7CA;
+  --color-forest-300: #A9BEAE;
+  --color-forest-400: #829D89;
+  --color-forest-500: #64866C;
+  --color-forest-600: #4F7158;
+  --color-forest-700: #3C6047;
+  --color-forest-800: #334F3A;
+  --color-forest-900: #294635;
+  --color-forest-950: #1C3024;
+
+
+  /* ==================================================
+     SYSTEM
+     ================================================== */
+
+  --color-red-50: #FEF5F4;
+  --color-red-100: #F5DEDB;
+  --color-red-200: #EBC0BA;
+  --color-red-300: #DB9A91;
+  --color-red-400: #C87167;
+  --color-red-500: #AD5148;
+  --color-red-600: #913D35;
+  --color-red-700: #78332D;
+  --color-red-800: #612A26;
+  --color-red-900: #4C2521;
+  --color-red-950: #301815;
+
+  --color-green-50: #F2F7F3;
+  --color-green-100: #DFECE2;
+  --color-green-200: #C0D8C6;
+  --color-green-300: #9FBEA7;
+  --color-green-400: #78A383;
+  --color-green-500: #578764;
+  --color-green-600: #3E6D4C;
+  --color-green-700: #31583D;
+  --color-green-800: #294933;
+  --color-green-900: #213B2A;
+  --color-green-950: #17281D;
 }
+
+/* ======================================================
+   SEMANTIC TOKENS
+   ====================================================== */
 
 :root {
   color-scheme: light;
 
-  /* Sfondi e Superfici */
-  --bg-body: var(--background);
-  --bg-surface: var(--color-white);
-  --bg-surface-subtle: var(--color-grey-100);
-  --bg-footer: var(--color-terracotta-600);
+  /* --------------------------------
+     Surfaces
+     -------------------------------- */
 
-  /* Tipografia */
-  --text-main: var(--color-grey-600);
-  --text-muted: var(--color-grey-400);
-  --text-on-primary: var(--color-white);
+  --bg-body: var(--color-stone-50);
+  --bg-surface: #FFFFFF;
+  --bg-surface-subtle: var(--color-stone-100);
+  --bg-surface-muted: var(--color-stone-200);
 
-  /* Branding (Blu Primario) */
-  --color-primary: var(--color-blue-400);
-  --color-primary-hover: var(--color-blue-500);
-  --color-primary-text: var(--color-blue-600);
-  --color-primary-shade: var(--color-blue-600);
-  --color-primary-glare: var(--color-blue-100);
+  --bg-primary: var(--color-slate-700);
+  --bg-primary-hover: var(--color-slate-800);
 
-  /* Branding (Terracotta Secondario) */
-  --color-secondary: var(--color-terracotta-300);
-  --color-secondary-hover: var(--color-terracotta-400);
-  --color-secondary-text: var(--color-terracotta-500);
-  --color-secondary-glare: var(--color-terracotta-100);
+  --bg-secondary: var(--color-earth-100);
+  --bg-secondary-hover: var(--color-earth-200);
 
-  /* Bordi e Divisori */
-  --border-subtle: var(--color-grey-100);
-  --border-strong: var(--color-grey-300);
+  --bg-tertiary: var(--color-forest-100);
 
-  /* Stati di Sistema */
+  /* --------------------------------
+     Typography
+     -------------------------------- */
+
+  --text-main: var(--color-stone-900);
+  --text-secondary: var(--color-stone-700);
+  --text-muted: var(--color-stone-600);
+  --text-disabled: var(--color-stone-400);
+
+  --text-on-primary: #FFFFFF;
+  --text-on-secondary: var(--color-earth-900);
+  --text-on-tertiary: var(--color-forest-900);
+
+
+  /* --------------------------------
+     Primary — Slate
+     -------------------------------- */
+
+  --color-primary: var(--color-slate-700);
+  --color-primary-hover: var(--color-slate-800);
+  --color-primary-active: var(--color-slate-900);
+
+  --color-primary-text: var(--color-slate-800);
+
+  --color-primary-subtle: var(--color-slate-100);
+  --color-primary-glare: var(--color-slate-50);
+
+
+  /* --------------------------------
+     Secondary — Earth
+     -------------------------------- */
+
+  --color-secondary: var(--color-earth-700);
+  --color-secondary-hover: var(--color-earth-800);
+  --color-secondary-active: var(--color-earth-900);
+
+  --color-secondary-text: var(--color-earth-700);
+
+  --color-secondary-subtle: var(--color-earth-100);
+  --color-secondary-glare: var(--color-earth-50);
+
+
+  /* --------------------------------
+     Tertiary — Forest
+     -------------------------------- */
+
+  --color-tertiary: var(--color-forest-700);
+  --color-tertiary-hover: var(--color-forest-800);
+  --color-tertiary-active: var(--color-forest-900);
+
+  --color-tertiary-text: var(--color-forest-700);
+
+  --color-tertiary-subtle: var(--color-forest-100);
+
+
+  /* --------------------------------
+     Borders
+     -------------------------------- */
+
+  --border-subtle: var(--color-stone-200);
+  --border-default: var(--color-stone-300);
+  --border-strong: var(--color-stone-400);
+
+  --border-primary: var(--color-slate-300);
+
+
+  /* --------------------------------
+     Focus
+     -------------------------------- */
+
+  --color-focus: var(--color-slate-700);
+
+
+  /* --------------------------------
+     System
+     -------------------------------- */
+
   --color-error-bg: var(--color-red-100);
-  --color-error-text: var(--color-red-500);
-  --color-success-bg: var(--color-green-100);
-  --color-success-text: var(--color-green-500);
+  --color-error-text: var(--color-red-700);
+  --color-error-border: var(--color-red-300);
 
-  /* Focus visibile per accessibilità */
-  --color-focus: var(--color-blue-400);
+  --color-success-bg: var(--color-green-100);
+  --color-success-text: var(--color-green-700);
+  --color-success-border: var(--color-green-300);
 }
