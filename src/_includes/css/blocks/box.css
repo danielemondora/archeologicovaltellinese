@@ -1,7 +1,0 @@
-.box {
-  background-color: var(--bg-surface-subtle);
-  padding: var(--space-xs);
-
-  border: solid 1px var(--border-strong);
-  border-radius: var(--border-radius);
-}
