@@ -1,5 +1,96 @@
 ---
 layout: page.njk
 title: News
-permalink: /news/
+permalink: "/news/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}"
+templateEngine: njk
+
+pagination:
+  data: collections.news
+  size: 10
+  alias: news
 ---
+
+<header class="flow">
+  <h1>News</h1>
+  <p class="measure">
+    Tutte le novità, gli eventi e le comunicazioni.
+  </p>
+</header>
+
+<section class="flow">
+
+  <div class="grid">
+    {% for item in news %}
+    <article class="card | flow">
+
+      <header class="flow">
+        <p class="text-step--1 text-muted">
+          <time datetime="{{ item.date | htmlDateFilter }}">
+            {{ item.date | dateFilter }}
+          </time>
+        </p>
+
+        <h2>
+          <a class="" href="{{ item.url }}">
+            {{ item.data.title }}
+          </a>
+        </h2>
+      </header>
+
+      {% if item.data.description %}
+      <p>
+        {{ item.data.description }}
+      </p>
+      {% endif %}
+
+      <div class="cluster">
+        <a href="{{ item.url }}">
+          Leggi la news
+        </a>
+      </div>
+
+    </article>
+    {% endfor %}
+  </div>
+
+  {% if pagination.pages.length > 1 %}
+  <nav aria-label="Paginazione news">
+    <ul role="list" class="cluster">
+
+      {% if pagination.href.previous %}
+      <li>
+        <a href="{{ pagination.href.previous }}" rel="prev">
+          &laquo;
+          <span class="visually-hidden">Pagina precedente</span>
+        </a>
+      </li>
+      {% endif %}
+
+      {% for pageHref in pagination.hrefs %}
+      <li>
+        {% if page.url == pageHref %}
+        <a href="{{ pageHref }}" aria-current="page">
+          {{ loop.index }}
+        </a>
+        {% else %}
+        <a href="{{ pageHref }}" class="text-muted">
+          {{ loop.index }}
+        </a>
+        {% endif %}
+      </li>
+      {% endfor %}
+
+      {% if pagination.href.next %}
+      <li>
+        <a href="{{ pagination.href.next }}" rel="next">
+          <span class="visually-hidden">Pagina successiva</span>
+          &raquo;
+        </a>
+      </li>
+      {% endif %}
+
+    </ul>
+  </nav>
+  {% endif %}
+
+</section>

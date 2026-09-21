@@ -19,6 +19,7 @@
 @import "composition/grid.css";
 @import "composition/panel.css";
 @import "composition/repel.css";
+@import "composition/sidebar.css";
 
 /* 3. Blocchi e Componenti */
 @import "blocks/button.css";
@@ -29,6 +30,7 @@
 @import "blocks/card.css";
 @import "blocks/skip-link.css";
 @import "blocks/notiziario.css";
+@import "blocks/notiziario-item.css";
 
 
 body {

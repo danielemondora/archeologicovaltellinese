@@ -15,9 +15,6 @@ ideally, as a minimum.
 to change how empty grid tracks are handled */
 
 .grid {
-  --grid-placement: auto-fill;
-  --grid-min-item-size: 16rem;
-  
   display: grid;
   grid-template-columns: repeat(
     var(--grid-placement, auto-fill),

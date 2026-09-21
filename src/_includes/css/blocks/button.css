@@ -5,10 +5,10 @@
   --button-padding: 0.7em 1.2em;
   --button-gap: var(--space-2xs, 0.5em);
 
-  --button-bg: var(--text-main);
-  --button-color: var(--bg-body); 
-  --button-hover-bg: var(--color-grey-500);
-  --button-hover-color: var(--bg-body);
+  --button-bg: var(--bg-secondary);
+  --button-color: var(--text-main); 
+  --button-hover-bg: var(--bg-secondary-hover);
+  --button-hover-color: var(--text-main);
   
   --button-border-width: 2px;
   --button-border-style: solid;
@@ -54,19 +54,9 @@
   color: var(--button-hover-color);
 }
 
-.button:focus {
-  outline-width: var(--button-outline-width, var(--button-border-width));
-  outline-style: var(--button-outline-style, var(--button-border-style));
-  outline-color: var(--button-outline-color, var(--button-border-color));
-  outline-offset: var(
-    --button-outline-offset,
-    calc(var(--button-border-width) * 2)
-  );
-}
-
-/* .button:active {
+.button:active {
   transform: scale(99%);
-} */
+}
 
 .button[data-button-variant="primary"] {
   --button-bg: var(--color-primary);

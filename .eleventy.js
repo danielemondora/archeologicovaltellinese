@@ -61,6 +61,12 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
   eleventyConfig.addPassthroughCopy({"src/assets/images/logo.jpg": "/logo.jpg"});
 
+  eleventyConfig.addCollection("news", (collectionApi) => {
+    return collectionApi
+      .getFilteredByGlob("./src/news/**/*.md")
+      .sort((a, b) => b.date - a.date);
+  });
+
   // BUILD CON ESBUILD
   eleventyConfig.on('eleventy.before', async () => {
     // 1. Bundle JavaScript 

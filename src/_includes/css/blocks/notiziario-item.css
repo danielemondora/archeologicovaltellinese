@@ -1,0 +1,7 @@
+.notiziario-item__index-element:not(:last-child){
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.notiziario-item__cover {
+    width: min(100%, 20rem);
+}

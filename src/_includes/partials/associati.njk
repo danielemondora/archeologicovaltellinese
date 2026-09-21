@@ -1,6 +1,6 @@
-<section class="associati | wrapper flow" id="associati" data-variant="large" aria-labelledby="associati-title">
+<section class="associati | flow" id="associati" aria-labelledby="associati-title">
 
-  <header class="flow">
+  <header class="wrapper">
     <h2 id="associati-title">Diventa Socio dell'Istituto</h2>
     <p class="associati__intro">
       Entrare a far parte dell'{{ site.name }} è semplice.
@@ -8,105 +8,103 @@
     </p>
   </header>
 
-  <!-- MACRO LAYOUT: Usiamo la tua variante 50-50 -->
-  <!-- Mantengo align-items: start inline (o usa una tua utility class se l'hai) 
-       per evitare che la sidebar si allunghi seguendo l'altezza del form -->
-  <div class="grid" data-layout="50-50">
+  <div class="wrapper" data-variant="large">
+    <div class="grid" data-layout="thirds">
 
-    <!-- COLONNA PRINCIPALE (Form) -->
-    <section class="associati__form-wrapper | card flow">
+      <!-- COLONNA PRINCIPALE (Form) -->
+      <section class="associati__form-wrapper | card flow">
 
-      <header class="associati__form-header">
-        <h3>Invia la tua richiesta</h3>
-        <p>Compila tutti i campi obbligatori contrassegnati.</p>
-      </header>
+        <header class="associati__form-header">
+          <h3>Invia la tua richiesta</h3>
+          <p>Compila tutti i campi obbligatori contrassegnati.</p>
+        </header>
 
-      <form id="form-associati" class="form-associati | flow">
+        <form id="form-associati" class="form-associati | flow">
 
-        <!-- MICRO LAYOUT: Usiamo la tua .grid base (auto-fill a 16rem) -->
-        <div class="grid">
-          <wa-input id="nome" name="nome" label="Nome" required placeholder="Mario"></wa-input>
-          <wa-input id="cognome" name="cognome" label="Cognome" required placeholder="Rossi"></wa-input>
-        </div>
-
-        <wa-input id="indirizzo" name="indirizzo" label="Indirizzo di Residenza" required
-          placeholder="Via Roma 1, 23100 Sondrio (SO)"></wa-input>
-
-        <!-- MICRO LAYOUT: Usiamo di nuovo la tua .grid base -->
-        <div class="grid">
-          <wa-input type="date" id="data-nascita" name="data-nascita" label="Data di Nascita" required></wa-input>
-          <wa-input id="cf" name="cf" label="Codice Fiscale" required pattern="[a-zA-Z0-9]{16}"
-            placeholder="RSSMRA92S08F205F" autocapitalize="characters"></wa-input>
-        </div>
-
-        <wa-textarea id="note" name="note" label="Note" rows="4" placeholder="Lasciaci un messaggio"></wa-textarea>
-
-        <wa-button type="submit" variant="primary">Invia Richiesta</wa-button>
-      </form>
-
-      <div class="form-associati__privacy">
-        <p class="text-step--2">
-          I dati forniti saranno utilizzati per gestire la richiesta di associazione.
-          Prima dell'invio, consultare <a href="/privacy-policy">l'informativa sulla privacy</a>.
-        </p>
-      </div>
-
-    </section>
-
-    <aside class="associati__sidebar | flow">
-
-      <section class="card flow">
-        <h3>Informazioni e Pagamento</h3>
-
-        <p>
-          Puoi versare la quota di iscrizione durante gli eventi organizzati
-          dall'istituto oppure tramite bonifico bancario:
-        </p>
-
-        <div class="associati__iban-box flow">
-          <p class="text-step--1">IBAN (Crédit Agricole)</p>
-          <strong>{{ site.company.iban }}</strong>
-        </div>
-
-        <p class="text-step--1">
-          La quota annuale è necessaria per ricevere regolarmente il
-          <a href="/pubblicazioni/notiziario/">Notiziario dell'Istituto</a>.
-        </p>
-
-        <hr>
-
-        <!-- Formattazione pulita delle quote come lista o griglia visiva -->
-        <div class="flow">
-          <h4 class="text-step-0">Quote annuali</h4>
-          <div>
-            <ul role="list" class="flow">
-              <li class="repel">
-                <span>Socio Ordinario</span>
-                <strong>25&euro;</strong>
-              </li>
-              <li class="repel">
-                <span>Socio Sostenitore</span>
-                <strong>30&euro;</strong>
-              </li>
-            </ul>
+          <!-- MICRO LAYOUT: Usiamo la tua .grid base (auto-fill a 16rem) -->
+          <div class="grid">
+            <wa-input id="nome" name="nome" label="Nome" required placeholder="Mario"></wa-input>
+            <wa-input id="cognome" name="cognome" label="Cognome" required placeholder="Rossi"></wa-input>
           </div>
+
+          <wa-input id="indirizzo" name="indirizzo" label="Indirizzo di Residenza" required
+            placeholder="Via Roma 1, 23100 Sondrio (SO)"></wa-input>
+
+          <!-- MICRO LAYOUT: Usiamo di nuovo la tua .grid base -->
+          <div class="grid">
+            <wa-input type="date" id="data-nascita" name="data-nascita" label="Data di Nascita" required></wa-input>
+            <wa-input id="cf" name="cf" label="Codice Fiscale" required pattern="[a-zA-Z0-9]{16}"
+              placeholder="RSSMRA92S08F205F" autocapitalize="characters"></wa-input>
+          </div>
+
+          <wa-textarea id="note" name="note" label="Note" rows="4" placeholder="Lasciaci un messaggio"></wa-textarea>
+
+          <wa-button type="submit" variant="primary">Invia Richiesta</wa-button>
+        </form>
+
+        <div class="form-associati__privacy">
+          <p class="text-step--2">
+            I dati forniti saranno utilizzati per gestire la richiesta di associazione.
+            Prima dell'invio, consultare <a href="/privacy-policy">l'informativa sulla privacy</a>.
+          </p>
         </div>
+
       </section>
 
-      <!-- Card di contatto unificata o pulita -->
-      <section class="associati__alternative | card flow">
-        <h3>Hai bisogno di aiuto?</h3>
-        <p>
-          Se preferisci scriverci direttamente o hai dubbi sulla procedura, puoi contattare la segreteria via email a:
-        </p>
-        <p>
-          <a href="mailto:{{ site.contact.email }}">
-            <strong>{{ site.contact.email }}</strong>
-          </a>
-        </p>
-      </section>
+      <aside class="associati__sidebar | flow">
 
-    </aside>
+        <section class="card flow">
+          <h3>Informazioni e Pagamento</h3>
 
+          <p>
+            Puoi versare la quota di iscrizione durante gli eventi organizzati
+            dall'istituto oppure tramite bonifico bancario:
+          </p>
+
+          <div class="associati__iban-box flow">
+            <p class="text-step--1">IBAN (Crédit Agricole)</p>
+            <strong>{{ site.company.iban }}</strong>
+          </div>
+
+          <p class="text-step--1">
+            La quota annuale è necessaria per ricevere regolarmente il
+            <a href="/pubblicazioni/notiziario/">Notiziario dell'Istituto</a>.
+          </p>
+
+          <hr>
+
+          <!-- Formattazione pulita delle quote come lista o griglia visiva -->
+          <div class="flow">
+            <h4 class="text-step-0">Quote annuali</h4>
+            <div>
+              <ul role="list" class="flow">
+                <li class="repel">
+                  <span>Socio Ordinario</span>
+                  <strong>25&euro;</strong>
+                </li>
+                <li class="repel">
+                  <span>Socio Sostenitore</span>
+                  <strong>30&euro;</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card di contatto unificata o pulita -->
+        <section class="associati__alternative | card flow">
+          <h3>Hai bisogno di aiuto?</h3>
+          <p>
+            Se preferisci scriverci direttamente o hai dubbi sulla procedura, puoi contattare la segreteria via email a:
+          </p>
+          <p>
+            <a href="mailto:{{ site.contact.email }}">
+              <strong>{{ site.contact.email }}</strong>
+            </a>
+          </p>
+        </section>
+
+      </aside>
+    </div>
   </div>
 </section>

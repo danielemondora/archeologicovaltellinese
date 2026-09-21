@@ -1,14 +1,14 @@
 <section class="hero | text-on-primary">
-  <!-- Immagine in HTML con priorità di caricamento massima -->
   <img src="/assets/images/grosio_giroldo_armigeri.png" alt="" fetchpriority="high" loading="eager" />
 
-  <!-- Contenuto della Hero -->
-  <div class="wrapper | hero__content flow" data-variant="large">
-    <h1 class="weight-bold text-step-4">
+  <div class="wrapper | flow" data-variant="large">
+    <h1 class="weight-bold text-step-4 py-l">
       {{ site.name }}
     </h1>
-    <p class="text-step-1 measure-short">
-      {{ site.description }}
-    </p>
+
+    <div class="cluster | py-l" style="--gutter: var(--space-xs)">
+      <a class="button" href="#associati" data-button-variant="primary">Diventa Socio</a>
+      <a class="button" href="/storia/">Scopri l'Istituto</a>
+    </div>
   </div>
 </section>

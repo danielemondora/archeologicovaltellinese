@@ -6,5 +6,5 @@
 .notiziario__pagination {
   display: flex;
   justify-content: center;
-  font-size: var(--step-2);
+  font-size: var(--step-1);
 }

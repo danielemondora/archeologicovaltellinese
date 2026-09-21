@@ -1,56 +1,233 @@
-/* utilities.css */
+/* ==================================================
+   BACKGROUND
+   ================================================== */
 
-/* COLORI BACKGROUND */
-.bg-body { background-color: var(--bg-body); }
-.bg-surface { background-color: var(--bg-surface); }
-.bg-primary { background-color: var(--color-primary); }
-.bg-primary-glare { background-color: var(--color-primary-glare); }
-.bg-primary-shade { background-color: var(--color-primary-shade); }
-.bg-secondary { background-color: var(--color-secondary); }
-.bg-footer { background-color: var(--bg-footer);}
-
-/* COLORI TESTO */
-.text-main { color: var(--text-main); }
-.text-muted { color: var(--text-muted); }
-.text-primary { color: var(--color-primary); }
-.text-secondary { color: var(--color-secondary); }
-/* Classe utility per forzare il testo bianco sopra fondi scuri */
-.text-on-primary { color: var(--text-on-primary); }
-
-/* FAMIGLIE FONT */
-.font-base { font-family: var(--font-base); }
-.font-display { font-family: var(--font-display); }
-
-/* PESO TESTO */
-.weight-regular { font-weight: 400; }
-.weight-medium { font-weight: 500; }
-.weight-semibold { font-weight: 600; }
-.weight-bold { font-weight: 700; }
-
-.text-center { text-align: center;}
-
-.btn-reset {
-  /* Rimuove sfondi e bordi di default */
-  background: none;
-  border: none;
-  
-  /* Rimuove margini e padding predefiniti */
-  padding: 0;
-  margin: 0;
-  
-  /* Eredita il font e il colore del testo dall'elemento padre */
-  font: inherit;
-  color: inherit;
-  
-  /* Mostra la manina quando ci passi sopra col mouse */
-  cursor: pointer;
-  
-  /* Rimuove l'outline di default, ereditandolo o gestendolo a parte */
-  outline: inherit;
+/* Page */
+.bg-body {
+  background-color: var(--bg-body);
 }
 
-/* Opzionale: migliora l'accessibilità rimuovendo l'outline solo al click del mouse, 
-   mantenendolo per la navigazione da tastiera (Tab) */
+/* Surface / Card */
+.bg-surface {
+  background-color: var(--bg-surface);
+}
+
+/* Subtle surface / Card secondaria */
+.bg-surface-subtle {
+  background-color: var(--bg-surface-subtle);
+}
+
+/* Muted surface */
+.bg-surface-muted {
+  background-color: var(--bg-surface-muted);
+}
+
+
+/* Primary */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-primary-glare {
+  background-color: var(--color-primary-glare);
+}
+
+.bg-primary-shade {
+  background-color: var(--color-primary-shade);
+}
+
+
+/* Secondary */
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-secondary-glare {
+  background-color: var(--color-secondary-glare);
+}
+
+.bg-secondary-shade {
+  background-color: var(--color-secondary-shade);
+}
+
+
+/* Tertiary / Forest */
+.bg-tertiary {
+  background-color: var(--color-tertiary);
+}
+
+.bg-tertiary-glare {
+  background-color: var(--color-tertiary-glare);
+}
+
+
+/* ==================================================
+   TEXT COLOR
+   ================================================== */
+
+/* Base typography */
+.text-main {
+  color: var(--text-main);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-disabled {
+  color: var(--text-disabled);
+}
+
+
+/* Brand */
+.text-primary {
+  color: var(--color-primary-text);
+}
+
+.text-secondary-brand {
+  color: var(--color-secondary-text);
+}
+
+.text-tertiary {
+  color: var(--color-tertiary-text);
+}
+
+
+/* Text on dark/colored surfaces */
+.text-on-primary {
+  color: var(--text-on-primary);
+}
+
+.text-on-secondary {
+  color: var(--text-on-secondary);
+}
+
+.text-on-tertiary {
+  color: var(--text-on-tertiary);
+}
+
+
+/* Header / Footer */
+.text-header {
+  color: var(--header-text);
+}
+
+.text-header-muted {
+  color: var(--header-text-muted);
+}
+
+.text-footer {
+  color: var(--footer-text);
+}
+
+.text-footer-muted {
+  color: var(--footer-text-muted);
+}
+
+
+/* ==================================================
+   BORDERS
+   ================================================== */
+
+.border-subtle {
+  border-color: var(--border-subtle);
+}
+
+.border-default {
+  border-color: var(--border-default);
+}
+
+.border-strong {
+  border-color: var(--border-strong);
+}
+
+.border-primary {
+  border-color: var(--border-primary);
+}
+
+
+/* ==================================================
+   TYPOGRAPHY — FONT FAMILY
+   ================================================== */
+
+.font-base {
+  font-family: var(--font-base);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+
+/* ==================================================
+   TYPOGRAPHY — WEIGHT
+   ================================================== */
+
+.weight-regular {
+  font-weight: 400;
+}
+
+.weight-medium {
+  font-weight: 500;
+}
+
+.weight-semibold {
+  font-weight: 600;
+}
+
+.weight-bold {
+  font-weight: 700;
+}
+
+
+/* ==================================================
+   TEXT ALIGNMENT
+   ================================================== */
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+/* ==================================================
+   BUTTON / INTERACTIVE RESET
+   ================================================== */
+
+.btn-reset {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  font: inherit;
+  color: inherit;
+
+  cursor: pointer;
+}
+
 .btn-reset:focus:not(:focus-visible) {
   outline: none;
+}
+
+
+/* ==================================================
+   FOCUS
+   ================================================== */
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
 }
