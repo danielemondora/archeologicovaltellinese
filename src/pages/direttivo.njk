@@ -1,9 +1,9 @@
 ---
-layout: page.njk
-title: Direttivo
+layout: article.njk
+title: Comitato Direttivo
 permalink: /direttivo/
 ---
-<section class="direttivo flow">
+<section class="direttivo | flow">
 
   <header class="flow">
     <h1>{{ direttivo.titolo }}</h1>
@@ -11,22 +11,18 @@ permalink: /direttivo/
       In carica dal <strong>{{ direttivo.carica.dal }}</strong> al <strong>{{ direttivo.carica.al }}</strong>
     </p>
   </header>
-  <div>
-    <ul class="grid" data-layout="thirds" role="list">
-      {% for membro in direttivo.membri %}
-      <li class="card-membro flow flow-space-3xs">
-        <span class="card-membro__ruolo text-step--1 text-primary uppercase font-bold">
-          {{ membro.ruolo }}
-        </span>
-        <h2 class="card-membro__nome text-step-1">
-          {{ membro.nome }}
-        </h2>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
 
-<style>
-  
-</style>
+  <div>
+    <ol role="list" class="grid">
+      {%- for membro in direttivo.membri -%}
+      <li>
+        <h2>{{ membro.nome }}</h2>
+        <span class="text-step--1 text-primary">
+          {{- membro.ruolo -}}
+        </span>
+      </li>
+      {%- endfor -%}
+    </ol>
+  </div>
+
+</section>

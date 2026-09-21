@@ -19,15 +19,15 @@ pagination:
 </p>
 
 <p>
-  La maggior parte delle pubblicazioni sono disponibili per il <strong>download</strong> mentre per
-  i nuovi notiziari i soci ed i ricercatori possono contattare l'Istituto: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+  La maggior parte delle pubblicazioni sono disponibili per il <strong>download</strong>. Per
+  i nuovi notiziari i soci ed i ricercatori interessati possono contattare l'Istituto.
 </p>
 
 <section class="flow">
 
   <div class="grid">
     {% for item in notiziari %}
-    <article class="card | flow">
+    <article class="box | flow">
       <div class="grid">
         {% if item.immagine %}
       <img src="{{ item.immagine }}" alt="" aria-hidden="true">

@@ -1,7 +1,15 @@
 .card {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--gutter, var(--space-xs));
+
   background-color: var(--bg-surface-subtle);
   padding: var(--space-xs);
 
   border: solid 1px var(--border-strong);
-  border-radius: var(--border-radius);
+}
+
+.card > :last-child {
+  margin-block-start: auto;
 }

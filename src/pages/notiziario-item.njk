@@ -13,14 +13,16 @@ eleventyComputed:
 ---
 <div class="notiziario-item | sidebar | wrapper">
   <header class="flow">
+
     <h1>
       Notiziario N° {{ item.numero }}
       <span class="text-muted">({{ item.anno }})</span>
     </h1>
 
     <div class="cluster">
+
       {% if item.download %}
-      <a href="{{ item.download }}" download>
+      <a class="button" data-button-variant="primary" href="{{ item.download }}" download>
         Scarica il PDF
       </a>
       {% endif %}
@@ -28,6 +30,7 @@ eleventyComputed:
       <a class="button" data-button-variant="primary" href="/pubblicazioni/notiziario/">
         Torna all'indice
       </a>
+      
     </div>
     
     <div>

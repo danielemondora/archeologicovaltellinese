@@ -1,7 +1,7 @@
 ---
 title: "Davide Pace: Storia, Scoperte e Memorie"
 permalink: "/davide-pace/"
-layout: "page.njk"
+layout: "article.njk"
 description: "Le scoperte archeologiche in Valtellina, la Rupe Magna e l'eredità di Davide Pace."
 ---
 

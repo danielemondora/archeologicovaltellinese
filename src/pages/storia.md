@@ -1,5 +1,5 @@
 ---
-layout: page.njk
+layout: article.njk
 title: Storia
 permalink: /storia/
 ---

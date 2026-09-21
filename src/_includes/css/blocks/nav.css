@@ -92,6 +92,10 @@
    3. NAVIGAZIONE MOBILE
    ========================================================================== */
 
+.mobile-nav {
+  font-size: var(--step-1);
+}
+
 .mobile-nav__trigger {
   display: flex;
   align-items: center;

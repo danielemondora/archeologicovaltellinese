@@ -9,47 +9,19 @@ pagination:
   size: 10
   alias: news
 ---
-
-<header class="flow">
-  <h1>News</h1>
-  <p class="measure">
-    Tutte le novità, gli eventi e le comunicazioni.
-  </p>
-</header>
-
 <section class="flow">
+  <header class="flow">
+    <h1>News</h1>
+    <p class="measure">
+      Tutte le novità, gli eventi e le comunicazioni.
+    </p>
+  </header>
 
   <div class="grid">
     {% for item in news %}
-    <article class="card | flow">
 
-      <header class="flow">
-        <p class="text-step--1 text-muted">
-          <time datetime="{{ item.date | htmlDateFilter }}">
-            {{ item.date | dateFilter }}
-          </time>
-        </p>
+    {% include "partials/news-card.njk" %}
 
-        <h2>
-          <a class="" href="{{ item.url }}">
-            {{ item.data.title }}
-          </a>
-        </h2>
-      </header>
-
-      {% if item.data.description %}
-      <p>
-        {{ item.data.description }}
-      </p>
-      {% endif %}
-
-      <div class="cluster">
-        <a href="{{ item.url }}">
-          Leggi la news
-        </a>
-      </div>
-
-    </article>
     {% endfor %}
   </div>
 

@@ -1,54 +1,17 @@
-<section class="flow">
-  <div class="wrapper">
-    <header class="repel">
-      <h2>Ultime news</h2>
-      <a href="/news/">Tutte le news</a>
-    </header>
-  </div>
+<section class="wrapper | flow">
 
-  <div class="wrapper">
-    <div class="grid">
+  <header class="repel">
+    <h2>Ultime Notizie</h2>
+    <a href="/news/">Tutte le news</a>
+  </header>
 
-      {% for item in collections.news %}
-      {% if loop.index <= 3 %}
-      
-      <article class="card | flow">
+  <div class="grid">
 
-        {# HEADER #}
-        <header class="flow">
+    {% for item in collections.news %}
+    {% if loop.index <= 3 %} 
+    
+    {% include "partials/news-card.njk" %}
 
-          <p class="text-step--1 text-muted">
-            <time datetime="{{ item.date | htmlDateFilter }}">
-              {{ item.date | dateFilter }}
-            </time>
-          </p>
-
-          <h3>
-            <a class="" href="{{ item.url }}">
-              {{ item.data.title }}
-            </a>
-          </h3>
-
-        </header>
-
-        {# DESCRIZIONE #}
-        {% if item.data.description %}
-
-        <p>{{ item.data.description }}</p>
-
-        {% endif %}
-
-        {# LINK #}
-        <div class="cluster">
-          <a href="{{ item.url }}">
-            Leggi la news
-          </a>
-        </div>
-
-      </article>
-      
-      {% endif %}
-      {% endfor %}
-    </div>
-  </div>
+    {% endif %}
+    {% endfor %}
 </section>

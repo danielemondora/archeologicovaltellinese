@@ -30,7 +30,7 @@
           <div>
             <ul role="list" class="flow text-step--1">
               <li>
-                <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+                <a class="" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
               </li>
             </ul>
           </div>
@@ -40,9 +40,9 @@
     </div>
 
     {# COPYRIGHT #}
-    <div class="site-footer__copy | repel | text-step--1">
+    <div class="site-footer__copy | splitter | text-step--1">
       <p>&copy; {% year %} {{ site.name }}</p>
-      <p>Realizzato da <a href="mailto:{{- site.author.email -}}" class="weight-bold">{{- site.author.name -}}</a></p>
+      <p>Sito Web realizzato da <a href="mailto:{{- site.author.email -}}" class="weight-bold">{{- site.author.name -}}</a></p>
     </div>
 
   </div>

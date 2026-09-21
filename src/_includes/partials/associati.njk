@@ -8,11 +8,10 @@
     </p>
   </header>
 
-  <div class="wrapper" data-variant="large">
+  <div class="wrapper">
     <div class="grid" data-layout="thirds">
 
-      <!-- COLONNA PRINCIPALE (Form) -->
-      <section class="associati__form-wrapper | card flow">
+      <section class="associati__form-wrapper | box flow">
 
         <header class="associati__form-header">
           <h3>Invia la tua richiesta</h3>
@@ -21,7 +20,6 @@
 
         <form id="form-associati" class="form-associati | flow">
 
-          <!-- MICRO LAYOUT: Usiamo la tua .grid base (auto-fill a 16rem) -->
           <div class="grid">
             <wa-input id="nome" name="nome" label="Nome" required placeholder="Mario"></wa-input>
             <wa-input id="cognome" name="cognome" label="Cognome" required placeholder="Rossi"></wa-input>
@@ -30,7 +28,6 @@
           <wa-input id="indirizzo" name="indirizzo" label="Indirizzo di Residenza" required
             placeholder="Via Roma 1, 23100 Sondrio (SO)"></wa-input>
 
-          <!-- MICRO LAYOUT: Usiamo di nuovo la tua .grid base -->
           <div class="grid">
             <wa-input type="date" id="data-nascita" name="data-nascita" label="Data di Nascita" required></wa-input>
             <wa-input id="cf" name="cf" label="Codice Fiscale" required pattern="[a-zA-Z0-9]{16}"
@@ -39,7 +36,9 @@
 
           <wa-textarea id="note" name="note" label="Note" rows="4" placeholder="Lasciaci un messaggio"></wa-textarea>
 
-          <wa-button type="submit" variant="primary">Invia Richiesta</wa-button>
+          <button type="submit" class="button">
+            Invia Richiesta
+          </button>
         </form>
 
         <div class="form-associati__privacy">
@@ -53,7 +52,7 @@
 
       <aside class="associati__sidebar | flow">
 
-        <section class="card flow">
+        <section class="box flow">
           <h3>Informazioni e Pagamento</h3>
 
           <p>
@@ -73,7 +72,6 @@
 
           <hr>
 
-          <!-- Formattazione pulita delle quote come lista o griglia visiva -->
           <div class="flow">
             <h4 class="text-step-0">Quote annuali</h4>
             <div>
@@ -92,7 +90,7 @@
         </section>
 
         <!-- Card di contatto unificata o pulita -->
-        <section class="associati__alternative | card flow">
+        <section class="associati__alternative | box flow">
           <h3>Hai bisogno di aiuto?</h3>
           <p>
             Se preferisci scriverci direttamente o hai dubbi sulla procedura, puoi contattare la segreteria via email a:

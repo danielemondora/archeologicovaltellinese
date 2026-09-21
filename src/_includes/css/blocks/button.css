@@ -5,15 +5,15 @@
   --button-padding: 0.7em 1.2em;
   --button-gap: var(--space-2xs, 0.5em);
 
-  --button-bg: var(--bg-secondary);
-  --button-color: var(--text-main); 
-  --button-hover-bg: var(--bg-secondary-hover);
-  --button-hover-color: var(--text-main);
+  --button-bg: var(--text-main);
+  --button-color: var(--text-on-primary); 
+  --button-hover-bg: var(--text-muted);
+  --button-hover-color: var(--text-on-primary);
   
   --button-border-width: 2px;
   --button-border-style: solid;
   --button-border-color: var(--button-bg);
-  --button-radius: 0.5em;
+  --button-radius: 0;
 
   /* Layout and spacing */
   display: inline-flex;
@@ -82,6 +82,6 @@
   --button-color: currentColor;
 }
 
-.button[data-button-radius="hard"] {
-  --button-radius: 0;
+.button[data-button-radius="morbido"] {
+  --button-radius: var(--border-radius);
 }

@@ -1,10 +1,9 @@
 .hero {
   margin-top: calc(var(--space-xl) * -1);
-
   position: relative;
   display: grid;
   align-items: center;
-  min-block-size: min(70vh, 40rem);
+  min-block-size: min(75vh, 45rem);
   overflow: hidden;
 }
 
@@ -21,6 +20,11 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgb(0 0 0 / 0.3);
+  background: linear-gradient(
+    135deg, 
+    rgb(0 0 0 / 0.8) 0%, 
+    rgb(0 0 0 / 0.4) 50%, 
+    rgb(0 0 0 / 0.1) 100%
+  );
   z-index: -1;
 }

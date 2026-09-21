@@ -20,17 +20,20 @@
 @import "composition/panel.css";
 @import "composition/repel.css";
 @import "composition/sidebar.css";
+@import "composition/full-width.css";
 
 /* 3. Blocchi e Componenti */
 @import "blocks/button.css";
 @import "blocks/footer.css";
 @import "blocks/header.css";
 @import "blocks/nav.css";
+@import "blocks/box.css";
 @import "blocks/hero.css";
 @import "blocks/card.css";
 @import "blocks/skip-link.css";
 @import "blocks/notiziario.css";
 @import "blocks/notiziario-item.css";
+
 
 
 body {
@@ -68,7 +71,7 @@ a {
 }
 
 a:not([class]) {
-  background: linear-gradient(var(--color-primary), var(--color-primary)) 100% 92.5%;
+  background: linear-gradient(var(--border-primary), var(--border-primary)) 100% 92.5%;
   background-repeat: repeat-x;
   background-size: 100% 25%;
   transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;

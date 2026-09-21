@@ -158,6 +158,8 @@
   --color-primary-hover: var(--color-slate-800);
   --color-primary-active: var(--color-slate-900);
 
+
+
   --color-primary-text: var(--color-slate-800);
 
   --color-primary-subtle: var(--color-slate-100);
@@ -199,7 +201,7 @@
   --border-default: var(--color-stone-300);
   --border-strong: var(--color-stone-400);
 
-  --border-primary: var(--color-slate-300);
+  --border-primary: var(--color-slate-400);
 
 
   /* --------------------------------

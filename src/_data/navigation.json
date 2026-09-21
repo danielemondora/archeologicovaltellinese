@@ -12,10 +12,6 @@
           "url": "/storia/"
         },
         {
-          "text": "Davide Pace",
-          "url": "/davide-pace/"
-        },
-        {
           "text": "Statuto",
           "url": "/statuto/"
         },
@@ -33,17 +29,26 @@
           "url": "/pubblicazioni/notiziario/"
         },
         {
-          "text": "Bibliografia",
-          "url": "/davide-pace/bibliografia/"
-        },
-        {
           "text": "Risorse",
           "url": "/risorse/"
         }
       ]
     },
     {
-      "text": "Luoghi",
+      "text": "Davide Pace",
+      "children": [
+        {
+          "text": "Storia",
+          "url": "/davide-pace/"
+        },
+        {
+          "text": "Bibliografia",
+          "url": "/davide-pace/bibliografia/"
+        }
+      ]
+    },
+    {
+      "text": "Storie",
       "children": [
         {
           "text": "Grosio",
@@ -52,6 +57,10 @@
         {
           "text": "Teglio",
           "url": "/teglio/"
+        },
+        {
+          "text": "Migiondo",
+          "url": "/migiondo/"
         }
       ]
     },

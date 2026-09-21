@@ -1,0 +1,10 @@
+.full-width {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  
+  block-size: clamp(15rem, 50vh, 30rem);
+  object-fit: cover;
+  display: block;
+}

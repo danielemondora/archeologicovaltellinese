@@ -1,7 +1,7 @@
 {
   "name": "Istituto Archeologico Valtellinese",
   "legalName": "Istituto Archeologico Valtellinese",
-  "description": "Scopri il patrimonio dell'Istituto Archeologico Valtellinese: scavi, ricerche, tradizioni, toponomastica e la pubblicazione ufficiale Il Notiziario.",
+  "description": "Benvenuti sul sito ufficiale dell'Istituto Archeologico Valtellinese. Scopri, studia e vivi il patrimonio storico della Valtellina, dalle incisioni rupestri ai grandi ritrovamenti.",
   "url": "https://www.archeologicovaltellinese.it",
   "domain": "archeologicovaltellinese.it",
   "language": "it",
@@ -38,7 +38,7 @@
   },
 
   "social": {
-    "facebook": "https://www.facebook.com/acmesolutions/",
+    "facebook": "https://www.facebook.com/IstitutoArcheologicoValtellinese",
     "linkedin": "",
     "instagram": "",
     "whatsapp": "",
