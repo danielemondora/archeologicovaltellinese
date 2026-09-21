@@ -5,6 +5,9 @@ description: Conferenza per i 60 anni dalla scoperta delle incisioni rupestri de
 ---
 
 # 60 Anni dalla Scoperta della Rupe Magna: Evento e Visite Guidate a Grosio
+
+[[toc]]
+
 A sessant'anni dalla storica scoperta delle incisioni rupestri, Grosio celebra la Rupe Magna, la roccia istoriata più grande ed importante d'Europa, punto di riferimento per l'archeologia valtellinese.
 
 ## L'Incontro: "Rupe Magna: 60 anni dalla scoperta"

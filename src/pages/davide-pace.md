@@ -5,6 +5,10 @@ layout: "article.njk"
 description: "Le scoperte archeologiche in Valtellina, la Rupe Magna e l'eredità di Davide Pace."
 ---
 
+# Davide Pace, il fondatore
+
+[[toc]]
+
 ## L'Intuizione e la Scoperta della Rupe Magna
 
 > "Improvvisamente - a me perscrutante attentissimo dalla vettura rapida il fianco della valle sciorinantesi nuova - apparve fugace l'arce. L'arce che presentivo: quale vagamente avevo ambito esistesse, quale mi attendevo che anche l'alta Valtellina potesse ostendere".

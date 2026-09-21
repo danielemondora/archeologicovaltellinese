@@ -23,6 +23,7 @@
 @import "composition/full-width.css";
 
 /* 3. Blocchi e Componenti */
+@import "blocks/back-to-top.css";
 @import "blocks/button.css";
 @import "blocks/footer.css";
 @import "blocks/header.css";
@@ -32,8 +33,7 @@
 @import "blocks/skip-link.css";
 @import "blocks/notiziario.css";
 @import "blocks/notiziario-item.css";
-
-
+@import "blocks/toc.css";
 
 body {
   background-color: var(--bg-body);
@@ -70,15 +70,12 @@ a {
 }
 
 a:not([class]) {
-  background: linear-gradient(var(--border-primary), var(--border-primary)) 100% 92.5%;
-  background-repeat: repeat-x;
-  background-size: 100% 25%;
-  transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+  text-decoration: none;
+  color: var(--color-primary-text);
 }
 
 a:not([class]):hover {
-  color: var(--text-on-primary);
-  background-size: 100% 100%;
+  text-decoration: underline;
 }
 
 h1,
@@ -123,10 +120,4 @@ ol[role='list'] {
 *:focus-visible {
   outline: 2px solid  var(--text-main);
   outline-offset: 4px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
 }

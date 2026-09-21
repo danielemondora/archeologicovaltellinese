@@ -6,6 +6,8 @@ date: 2026-08-07
 
 # Assemblea Annuale dei Soci IAV 2026: Convocazione e Intervento Scientifico a Tirano
 
+[[toc]]
+
 L'**Istituto Archeologico Valtellinese (IAV)** convoca tutti i soci e gli appassionati per l'**Assemblea Annuale dei Soci**, che si terrà **sabato 5 settembre 2026** a **Tirano**.
 
 L'incontro rappresenterà un importante momento di condivisione delle attività associative e dei bilanci, seguito da un approfondimento scientifico di grande rilievo sull'archeologia e la storia del nostro territorio.

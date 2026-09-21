@@ -12,6 +12,8 @@ description: "Approfondimento storico sui castelli di Grosio: dal castrum vecchi
 # La Storia dei Castelli di Grosio
 *di Gabriele Antonioli*
 
+[[toc]]
+
 La Valtellina e la Valchiavenna sono costellate di numerosi resti di fortificazioni. Erette in epoca medievale a tutela di diritti e privilegi feudali, continuano a testimoniare l’importanza strategica attribuita in passato alle due valli situate a ridosso dei passi alpini. Il forte degrado in cui versano, dovuto solo in parte alle ingiurie del tempo, è generalmente iniziato a partire dal 1526 con la requisizione e lo smantellamento imposti dal Governo delle Tre Leghe nell’intento di privare i territori da poco acquisiti di punti di riferimento e di forza che avrebbero potuto essere sfruttati in una eventuale insurrezione. Al di là di qualsiasi considerazione sul contenuto del patto di Teglio, che avrebbe dovuto sancire rapporti di amicizia se non di fratellanza fra le nostre valli e il Governo grigione, si può facilmente dedurre che col rendere inoffensivi questi simboli di potere e di autonomia divenne inequivocabilmente palese il nostro stato di sudditi.
 
 ![Immagine: Castelli in seppia](../assets/images/grosio/castelli-seppia.png)
@@ -48,7 +50,7 @@ Il cristianesimo si innestò nel solco della tradizione romana e, con la forza d
 
 ---
 
-### Vicende storiche riguardanti il castrum de Groxio detto anche castello vecchio o di san Faustino.
+### Vicende storiche riguardanti il castrum de Groxio detto anche castello vecchio o di san Faustino
 
 Come abbiamo già ricordato, nel 1150 il vescovo di Como aveva riconfermato ad Artuico de Venosta e a suo figlio Eganone il capitanato sulla pieve di Mazzo, già goduto in precedenza da Bertaro de Misenti, riservandosi la giurisdizione diretta sul castello di Grosio e su tutte le terre pertinenti a detta castellanza. Placate le animosità e ristabiliti i rispettivi ruoli, in epoca successiva ritroveremo nuovamente i Venosta come custodi della rocca di Grosio ma non è ben chiaro quando ciò sia avvenuto. Nella investitura fatta da Enrico della Torre, che resse la diocesi comasca tra il 1161 e il 1167, venivano riconosciuti a questa famiglia diritti e prerogative che il vescovo in precedenza si era riservato quali la giurisdizione penale e il fodro regale oltre ad una rendita di 60 mogge da esigersi in Grossura. Benché non se ne faccia esplicita menzione, si ipotizza che già in quella occasione, con la piena investitura dei diritti capitaneali sulla pieve, anche il castello grosino sia ritornato sotto il controllo dei Venosta. Se così fosse, a partire da questo momento le vicende della fortificazione, che rimarrà comunque di proprietà vescovile fino al XV sec., saranno strettamente legate alle alterne fortune di detta famiglia.
 
@@ -64,7 +66,7 @@ Come per altro è stato confermato anche dai recenti scavi, la costruzione si sv
 
 ---
 
-### La chiesa dei santi Faustino e Giovita.
+### La chiesa dei santi Faustino e Giovita
 
 All’estremità meridionale del colle dei castelli di Grosio è posta la chiesa dei santi Faustino e Giovita. Benché i muri perimetrali siano stati completamente rasi al suolo a seguito dello sfruttamento della superficie a scopi agricoli avvenuto nel corso del XVIII-XIX sec., l’area su cui sorgeva è facilmente individuabile attraverso la piccola torre campanaria che ne affianca l’abside. Una relazione di fine 1800, ci fornisce i seguenti elementi descrittivi: “Come tutte le chiese de’ primi secoli della predicazione dell’Evangelio, anche questa aveva l’altare a levante, che guardava a occidente, e ciò è mostrato anche oggi dal muro semicircolare rimasto sulla roccia a sfidare le secolari intemperie e le mani vandaliche. Si entrava per due porte, l’una in comunicazione col castello, verso nord, e l’altra a ovest che metteva all’abitazione del beneficiato. Era a volta interamente dipinta, come l’attestano gli intonaci delle rovine esistenti tuttavia sotto il leggero strato di terra coltivata a vigna, che invero è alimentata dai calcinacci. Sotto il pavimento, sorretto da volta, era un sotterraneo che riceveva luce da mezzodì, e che forse serviva per tomba de’ sacerdoti e comandanti del forte”. Avremo modo più oltre di commentare e di puntualizzare alcune di queste affermazioni che comunque ci forniscono già una globale descrizione della costruzione.
 
@@ -84,7 +86,7 @@ La fiscalità dimostrata dai vescovi nella puntuale applicazione dei decreti del
 
 ---
 
-### Il castello nuovo o visconteo.
+### Il castello nuovo o visconteo
 
 Nel corso del 1300, sul lato nord del breve pianoro del colle di Grosio, fu eretto un nuovo fortilizio ben più possente del vecchio castello vescovile di san Faustino. Tale struttura, benché affidata alla custodia della stessa famiglia dei Venosta, non fu concepita come complementare a quella più antica, ma venne realizzata dai Visconti, nuovi signori della Valtellina per rispondere a precise esigenze strategiche. Gli avvenimenti che determinarono la sua costruzione possono essere così sintetizzati. Il 2 luglio 1335 entrava trionfalmente in Como Azzone Visconti, già signore di Milano, dove veniva eletto “perpetuo e generale signore della città e del vescovado di Como”. La Valtellina, che dipendeva dal comune lariano, si sottometteva docilmente al dominio dei Visconti ma Bormio, legata a Ulrico di Matsch, preferiva giurare fedeltà al vescovo di Coira nel tentativo di salvaguardare autonomia e privilegi daziari. I Visconti intrapresero allora varie iniziative per superare le resistenze dei Bormini, ma questi per oltre quindici anni rintuzzarono le pretese dei signori di Milano. La tregua prorogata nel 1339 da Giovanni Visconti risultava già rotta nel 1343 e l’anno successivo era stato allestito un esercito contro i Bormini che aveva però operato invano per tre mesi tra Grosio e Sondalo. Nel 1348 Luchino Visconti aveva anche applicato sanzioni economiche bloccando il commercio del vino ma i Bormini, oltrepassata Serravalle, avevano occupato la rocca di Boffalora e la loro avanguardia aveva cozzato con l’esercito visconteo mosso da Grosio. Nello stesso anno però Bormio veniva presa con la forza e, oltre a dover accettare un podestà visconteo, veniva sottoposta ad un censo di 400 fiorini d’oro.
 

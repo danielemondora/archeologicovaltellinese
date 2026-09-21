@@ -7,14 +7,14 @@ permalink: /statuto/
 # Statuto dell'Istituto Archeologico Valtellinese
 In vigore dal 3 Dicembre 2011
 
-### Art. 1
+## Art. 1
 L'Associazione denominata Istituto Archeologico Valtellinese (IAV), ideata dal prof. Davide Pace, fu costituita con atto pubblico a Sondrio il quattro ottobre millenovecentosettantatre alla presenza dei signori Guiscardo Guicciardi, Elisabetta Sertoli, Carlo Bozzi, Costantino Storti, Francesco Pace e Pierluigi Annibaldi.
 
 L'associazione, la cui durata è illimitata, si configura come Associazione di promozione sociale ai sensi della Legge 383/2000 e successive modifiche nel rispetto degli articoli 36 e seguenti del Codice Civile.
 
 La sede legale è a Teglio (Palazzo Besta) e la sede operativa dove riterrà opportuno per il perseguimento degli scopi sociali.
 
-### Art. 2
+## Art. 2
 L'Istituto Archeologico Valtellinese, attenendosi alla lettera e allo spirito del prof. Davide Pace, fondatore e primo Direttore:
 
 * persegue con organica sistematicità l'illustrazione dell'antichità della provincia di Sondrio;
@@ -29,10 +29,10 @@ L'Istituto Archeologico Valtellinese, attenendosi alla lettera e allo spirito de
 * introduce nella ricerca archeologica coloro che ne rivelino nitidamente la vocazione;
 * provvede alla pubblicazione di un Notiziario annuale, compatibilmente con le risorse finanziarie disponibili, e promuove con ogni mezzo la divulgazione delle ricerche.
 
-### Art. 3
+## Art. 3
 L'Associazione, apolitica e apartitica, non persegue fini di lucro e svolge attività di utilità sociale a favore degli associati e di terzi.
 
-### Art. 4
+## Art. 4
 Sono soci effettivi tutti coloro che si impegnano a versare una quota annua fissata dall'Assemblea generale. Appartengono a tale categoria anche i soci che nell'ottobre 1973 contribuirono a fondare l'Associazione.
 
 La durata della qualifica di socio è illimitata ed è esclusa la temporalità della partecipazione alla vita associativa. Il pagamento della quota associativa dà diritto a ricevere il Notiziario.
@@ -43,7 +43,7 @@ Sono soci onorari coloro che, a giudizio del Comitato direttivo, hanno contribui
 
 L'ammissione all'Associazione deve essere richiesta per iscritto al Comitato direttivo.
 
-### Art. 5
+## Art. 5
 La qualità di socio si perde:
 * per decesso;
 * per morosità nel pagamento della quota associativa per due anni consecutivi;
@@ -51,7 +51,7 @@ La qualità di socio si perde:
 
 La perdita della qualità di socio è deliberata dal Comitato Direttivo.
 
-### Art. 6
+## Art. 6
 Le entrate dell'Associazione possono essere costituite da:
 * quote associative e contributi di simpatizzanti;
 * contributi di privati, dello Stato, di Enti, di Organismi internazionali, di Istituzioni pubbliche finalizzati al sostegno di specifiche e documentate attività e progetti;
@@ -67,18 +67,18 @@ Le prestazioni fornite dagli aderenti sono prevalentemente gratuite, salvo event
 
 In caso di necessità l'Associazione può intrattenere rapporti di lavoro retribuiti.
 
-### Art. 7
+## Art. 7
 I contributi degli associati e i beni acquistati con questi contributi costituiscono il fondo comune dell'Associazione. I singoli associati non possono chiedere la divisione del fondo comune, né pretenderne la quota in caso di recesso.
 
 Le quote sociali non sono trasferibili, né rivalutabili.
 
-### Art. 8
+## Art. 8
 Gli organi dell'associazione sono:
 1. l'Assemblea dei soci;
 2. il Comitato Direttivo;
 3. il Direttore.
 
-### Art. 9
+## Art. 9
 L'Assemblea dei soci è costituita da tutti gli aderenti all'Associazione in regola con il pagamento delle quote. Ogni socio maggiorenne ha diritto al voto.
 
 L'Assemblea viene convocata almeno una volta l'anno entro quattro mesi dalla chiusura dell'esercizio sociale per l'approvazione del bilancio/rendiconto economico finanziario consuntivo e preventivo.
@@ -110,7 +110,7 @@ L'Assemblea ordinaria ha i seguenti compiti:
 
 L'Assemblea straordinaria delibera sulla modifica dello Statuto, sullo scioglimento dell'Associazione e sulla devoluzione del patrimonio.
 
-### Art. 10
+## Art. 10
 I membri del Comitato direttivo, eletti dall'Assemblea dei soci, durano in carica tre anni e possono essere rieletti.
 
 Il Comitato direttivo elegge al proprio interno il Direttore, il Vicedirettore-Segretario e il Tesoriere.
@@ -123,14 +123,14 @@ Il Comitato Direttivo propone all'Assemblea dei soci il programma culturale dell
 
 Il Comitato direttivo non può deliberare spese senza copertura finanziaria.
 
-### Art. 11
+## Art. 11
 **Competenze:**
 
 * **Il Direttore** è rappresentante legale dell'Associazione nei confronti di terzi ed in giudizio; convoca e presiede il Comitato Direttivo e l'Assemblea dei soci; cura i rapporti con enti, persone e organismi; effettua pagamenti a firma congiunta con il Tesoriere; delega ad altri soci compiti speciali per conto dell'Associazione, previo parere del Comitato direttivo.
 * **Il Vicedirettore-Segretario** esercita le funzioni di Direttore in assenza o impedimento di questi; cura i rapporti con i mezzi di informazione; verbalizza le riunioni del Comitato direttivo; organizza e cura le attività inerenti il tesseramento, l'archivio, la corrispondenza e i registri non contabili.
 * **Il Tesoriere** effettua pagamenti a firma congiunta con il Direttore; redige i registri contabili e i bilanci; svolge tutte le attività relative all'amministrazione economico-finanziaria.
 
-### Art. 12
+## Art. 12
 L'Assemblea dei soci ha facoltà di eleggere, anche tra non aderenti, un Collegio dei Revisori dei Conti, composto da tre membri. Il Collegio dura in carica tre anni e i suoi membri sono rieleggibili. Il Collegio elegge al proprio interno il Presidente. La carica di revisore è incompatibile con quella di membro del Comitato direttivo.
 
 Il Collegio, come previsto dalle leggi vigenti:
@@ -140,12 +140,12 @@ Il Collegio, come previsto dalle leggi vigenti:
 
 I revisori hanno facoltà di assistere alle assemblee e alle riunioni del Comitato direttivo, senza diritto di voto. Di ogni adunanza del Collegio deve essere redatto verbale da conservarsi nel relativo registro tenuto dal Collegio medesimo.
 
-### Art. 13
+## Art. 13
 L'Assemblea ha facoltà di eleggere un Collegio di Garanzia costituito da tre componenti, rieleggibili e scelti anche tra i non aderenti.
 
 Il Collegio ha il compito di esaminare le controversie tra gli aderenti, tra questi e l'Associazione o i suoi organi, tra i membri degli organi e tra gli organi stessi.
 
-### Art. 14
+## Art. 14
 L'esercizio economico ha inizio il primo aprile e si chiude il trentuno marzo dell'anno successivo.
 
 Entro il mese di luglio di ogni anno deve essere sottoposto all'assemblea dei soci per l'approvazione il rendiconto relativo all'anno precedente.
@@ -153,10 +153,10 @@ Entro il mese di luglio di ogni anno deve essere sottoposto all'assemblea dei so
 Il rendiconto deve essere depositato presso il Tesoriere almeno 20 giorni prima della data fissata per l'assemblea in modo che i soci e i Revisori dei conti eventualmente eletti ne possano prendere visione.
 
 
-### Art. 15
+## Art. 15
 Lo Statuto può essere modificato con delibera a maggioranza dei soci presenti all'assemblea straordinaria appositamente indetta. L'assemblea è validamente costituita, in prima convocazione, con la presenza di almeno la metà dei soci più uno, in seconda convocazione qualunque sia il numero degli intervenuti.
 
 È consentita l'espressione del voto per delega e ciascun socio può essere latore di una sola delega.
 
-### Art. 16
+## Art. 16
 L'eventuale scioglimento dell'Associazione è deliberato da un'assemblea straordinaria con il voto favorevole di almeno tre quarti degli associati. Il patrimonio, dedotte le passività e sentito l'organismo di controllo di cui alla legge 662/96, verrà devoluto ad altra associazione con finalità analoghe o a fini di utilità sociale, salvo diversa destinazione imposta dalla legge. In nessun caso possono essere distribuiti beni, utili e riserve ai soci.

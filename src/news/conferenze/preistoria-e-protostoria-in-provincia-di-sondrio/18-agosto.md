@@ -7,6 +7,8 @@ keywords: "Preistoria provincia di Sondrio, Protostoria Valtellina, Francesco Pa
 
 # Preistoria e Protostoria in Provincia di Sondrio: Incontro al Museo Civico di Bormio
 
+[[toc]]
+
 Un affascinante viaggio nel tempo alla scoperta delle origini più antiche della Valtellina e delle sue valli. **Martedì 18 agosto 2026**, nell'ambito della rassegna *"Martedì al Museo"*, si terrà la conferenza ad ingresso libero **"Preistoria e Protostoria in provincia di Sondrio"**.
 
 L'incontro si svolgerà alle **ore 17:30** nella splendida cornice della **Sc’tua Granda** di **Palazzo De Simoni** (sede del Museo Civico di Bormio), situato in Via Buon Consiglio 25 a Bormio (SO).

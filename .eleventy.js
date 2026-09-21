@@ -4,16 +4,19 @@ import htmlmin from 'html-minifier-terser';
 import * as esbuild from 'esbuild';
 import fs from "node:fs";
 import path from "node:path";
+import slugify from 'slugify';
 
 import markdownIt from 'markdown-it';
 import markdownItFootnote from 'markdown-it-footnote';
+import markdownItAnchor from 'markdown-it-anchor';
+import markdownItTocDoneRight from 'markdown-it-toc-done-right';
 
 export default function (eleventyConfig) {
 
   // PLUGIN
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    formats: ["avif", "webp"],
-    widths: [320, 640, 960, 1200, 1400],
+    formats: ["avif"],
+    widths: [320, 768, 1400],
     defaultAttributes: {
       loading: 'lazy',
       sizes: 'auto',
@@ -21,19 +24,38 @@ export default function (eleventyConfig) {
     },
   });
 
+  /* MARKDOWN-IT anchor e toc */
+  const customSlugify = (s) => slugify(s, {
+    lower: true,
+    strict: true
+  });
+
   const markdownLib = markdownIt({
     html: true,
     breaks: true,
     linkify: true
-  }).use(markdownItFootnote);
+  })
+    .use(markdownItAnchor, {
+      level: [2, 3],
+      slugify: customSlugify,
+      permalink: markdownItAnchor.permalink.headerLink({
+        class: 'header-anchor',
+        symbol: '#'
+      })
+    })
+    .use(markdownItTocDoneRight, {
+      level: [2, 3],
+      containerClass: 'toc',
+      slugify: customSlugify
+    });
 
   eleventyConfig.setLibrary("md", markdownLib);
 
   // SHORTCODE
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
-  eleventyConfig.addShortcode("allergenIcon", function(filename) {
+  eleventyConfig.addShortcode("allergenIcon", function (filename) {
     const filePath = path.join(process.cwd(), "src/assets/images/allergeni", filename);
-    
+
     try {
       return fs.readFileSync(filePath, "utf8");
     } catch (e) {
@@ -47,9 +69,9 @@ export default function (eleventyConfig) {
 
   // PASSTHROUGH
   eleventyConfig.addPassthroughCopy("_redirects");
-  eleventyConfig.addPassthroughCopy({"src/assets/images/favicon/": "/"});
+  eleventyConfig.addPassthroughCopy({ "src/assets/images/favicon/": "/" });
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
-  eleventyConfig.addPassthroughCopy({"src/assets/images/logo.jpg": "/logo.jpg"});
+  eleventyConfig.addPassthroughCopy({ "src/assets/images/logo.jpg": "/logo.jpg" });
 
   eleventyConfig.addCollection("news", (collectionApi) => {
     return collectionApi
