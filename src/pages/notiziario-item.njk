@@ -31,7 +31,11 @@ eleventyComputed:
     </div>
     
     <div>
+      {% if item.immagine %}
+      <img src="{{ item.immagine }}" alt="" aria-hidden="true" class="notiziario-item__cover">
+      {% else %}
       <img src="../assets/images/notiziario.jpg" alt="" aria-hidden="true" class="notiziario-item__cover">
+      {% endif %}
     </div>
   </header>
 

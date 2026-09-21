@@ -1,8 +1,8 @@
 {
   "titolo": "Comitato Direttivo",
   "carica": {
-    "dal": "09.09.2023",
-    "al": "09.09.2026"
+    "dal": "05.09.2026",
+    "al": "05.09.2029"
   },
   "membri": [
     {
@@ -18,24 +18,24 @@
       "nome": "Giuseppe Cola"
     },
     {
-      "ruolo": "Consigliere",
-      "nome": "Bertalli Stefano"
+      "ruolo": "Tesoriere",
+      "nome": "Deriu Alessandro"
     },
     {
       "ruolo": "Consigliere",
       "nome": "Alessandra Baruta"
     },
     {
-      "ruolo": "Tesoriere",
-      "nome": "Deriu Alessandro"
+      "ruolo": "Consigliere",
+      "nome": "Daniele Mondora"
     },
     {
       "ruolo": "Consigliere",
-      "nome": "Gianluigi Garbellini"
+      "nome": "Bertalli Stefano"
     },
     {
       "ruolo": "Consigliere",
-      "nome": "Gianpaolo Mottarelli"
+      "nome": "Ivano Gambarri"
     }
   ]
 }

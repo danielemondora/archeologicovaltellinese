@@ -7,7 +7,7 @@ permalink: /storia/
 
 di *Mario Giovanni Simonelli*
 
-Il quattro ottobre 1973 a Sondrio, presso lo studio notarile Surace, si costituì l’Istituto Archeologico Valtellinese. I soci fondatori: [Davide Pace](14DavidePace.html), Guiscardo Guicciardi, Elisabetta Sertoli, Carlo Bozzi, Costantino Storti, Francesco Pace e Pierluigi Annibaldi.
+Il quattro ottobre 1973 a Sondrio, presso lo studio notarile Surace, si costituì l’Istituto Archeologico Valtellinese. I soci fondatori: [Davide Pace](/davide-pace/), Guiscardo Guicciardi, Elisabetta Sertoli, Carlo Bozzi, Costantino Storti, Francesco Pace e Pierluigi Annibaldi.
 
 Già nella primavera di quello stesso anno, il primo direttore dell’Istituto, Davide Pace, aveva anticipato alla stampa locale l’avvento della nuova associazione culturale:
 

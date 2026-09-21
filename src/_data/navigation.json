@@ -12,6 +12,10 @@
           "url": "/storia/"
         },
         {
+          "text": "Davide Pace",
+          "url": "/davide-pace/"
+        },
+        {
           "text": "Statuto",
           "url": "/statuto/"
         },
@@ -27,6 +31,27 @@
         {
           "text": "Notiziario",
           "url": "/pubblicazioni/notiziario/"
+        },
+        {
+          "text": "Bibliografia",
+          "url": "/davide-pace/bibliografia/"
+        },
+        {
+          "text": "Risorse",
+          "url": "/risorse/"
+        }
+      ]
+    },
+    {
+      "text": "Luoghi",
+      "children": [
+        {
+          "text": "Grosio",
+          "url": "/grosio/"
+        },
+        {
+          "text": "Teglio",
+          "url": "/teglio/"
         }
       ]
     },
