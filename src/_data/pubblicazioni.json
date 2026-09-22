@@ -619,7 +619,7 @@
       "numero": 11,
       "anno": 2013,
       "slug": "notiziario-11",
-      "immagine": null,
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-11.jpg",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-11-2013.pdf",
       "indice": [
         {
@@ -698,7 +698,7 @@
       "numero": 12,
       "anno": 2014,
       "slug": "notiziario-12",
-      "immagine": null,
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-12.jpg",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-12-2012.pdf",
       "indice": [
         {
@@ -846,7 +846,7 @@
       "numero": 14,
       "anno": 2016,
       "slug": "notiziario-14",
-      "immagine": null,
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-14.jpg",
       "download": null,
       "indice": [
         {
@@ -900,7 +900,7 @@
       "numero": 15,
       "anno": 2017,
       "slug": "notiziario-15",
-      "immagine": null,
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-15.jpg",
       "download": null,
       "indice": [
         {
@@ -984,7 +984,7 @@
       "numero": 16,
       "anno": 2018,
       "slug": "notiziario-16",
-      "immagine": null,
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-16.jpg",
       "download": null,
       "indice": [
         {
@@ -1058,7 +1058,7 @@
       "numero": 17,
       "anno": 2019,
       "slug": "notiziario-17",
-      "immagine": null,
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-17.jpg",
       "download": null,
       "indice": [
         {
@@ -1127,7 +1127,7 @@
       "numero": 18,
       "anno": 2020,
       "slug": "notiziario-18",
-      "immagine": null,
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-18.jpg",
       "download": null,
       "indice": [
         {
@@ -1201,7 +1201,7 @@
       "numero": 19,
       "anno": 2021,
       "slug": "notiziario-19",
-      "immagine": null,
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-19.jpg",
       "download": null,
       "indice": [
         {
@@ -1280,7 +1280,7 @@
       "numero": 20,
       "anno": 2022,
       "slug": "notiziario-20",
-      "immagine": null,
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-20.jpg",
       "download": null,
       "indice": [
         {
@@ -1354,7 +1354,7 @@
       "numero": 21,
       "anno": 2023,
       "slug": "notiziario-21",
-      "immagine": null,
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-21.jpg",
       "download": null,
       "indice": [
         {
@@ -1433,7 +1433,7 @@
       "numero": 22,
       "anno": 2024,
       "slug": "notiziario-22",
-      "immagine": null,
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-22.jpg",
       "download": null,
       "indice": [
         {
@@ -1607,20 +1607,35 @@
           "volume": 2
         }
       ]
+    }
+  ],
+  "tellina-opuscola": [
+    {
+      "numero": 1,
+      "anno": 1969,
+      "titolo": "Nuove acquisizioni antiquarie nel territorio di Teglio",
+      "autori": "Davide Pace",
+      "slug": "tellina-opuscola-1",
+      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscola/copertine/tellina-opuscola-1.jpg",
+      "download": null
     },
     {
-      "numero": 24,
-      "anno": 2026,
-      "slug": "notiziario-24",
-      "immagine": null,
-      "download": null,
-      "indice": [
-        {
-          "pagina": 1,
-          "titolo": null,
-          "autor": null
-        }
-      ]
+      "numero": 2,
+      "anno": 1972,
+      "titolo": "Petroglifi di Grosio",
+      "autori": "Davide Pace",
+      "slug": "tellina-opuscola-1",
+      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscola/copertine/tellina-opuscola-2.jpg",
+      "download": null
+    },
+    {
+      "numero": 3,
+      "anno": 1974,
+      "titolo": "Sviluppo nell'investigazione archeologica nel sistma petroglifico di Grosio",
+      "autori": "Davide Pace",
+      "slug": "tellina-opuscola-1",
+      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscola/copertine/tellina-opuscola-3.jpg",
+      "download": null
     }
   ]
 }

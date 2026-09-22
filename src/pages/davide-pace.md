@@ -5,7 +5,7 @@ layout: "article.njk"
 description: "Le scoperte archeologiche in Valtellina, la Rupe Magna e l'eredità di Davide Pace."
 ---
 
-# Davide Pace, il fondatore
+# Il Fondatore: Davide Pace
 
 [[toc]]
 
@@ -54,8 +54,7 @@ Fin dal 1955 diede vita in Lomellina, a Groppello Cairoli (PV), ad un museo loca
 
 Nel 1978, come auspicato da Davide Pace anni prima, il **Parco delle incisioni rupestri di Grosio** diventa realtà. Questo traguardo fu possibile anche grazie alla donazione, avvenuta nel 1982, dei resti dei castelli e dell'area archeologica da parte della marchesa Margherita Pallavicino Mossi (vedova di Giovanni Visconti Venosta), ultima erede della nobile famiglia un tempo feudataria dei manieri grosini.
 
-![Immagine: Ca del Cap](../assets/images/davide-pace/ca-del-cap.jpg)
-*"Ca del Cap",  Centro studi e documentazione "Davide Pace"*
+![*"Ca del Cap",  Centro studi e documentazione "Davide Pace"*](../assets/images/davide-pace/ca-del-cap.jpg)
 
 Nel 1998, con scopo archivistico-museale, viene ristrutturato l'antico edificio rurale situato all'interno del parco. L'edificio, noto come *Ca del Cap*, viene dedicato alla memoria dell'archeologo scomparso due anni prima, diventando ufficialmente il **"Centro studi Davide Pace"**.
 

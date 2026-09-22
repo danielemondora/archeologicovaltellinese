@@ -1,10 +1,27 @@
+/* notiziario.njk + notiziario-item.njk */
 .notiziario__cover {
-  width: min(100%, 10rem);
+  width: min(100%, 20rem);
   margin-inline: auto;
+  
+  aspect-ratio: 2 / 3; 
+  object-fit: cover;
+  display: block;   
 }
 
+.notiziario__cover--placeholder {
+  background-color: var(--bg-surface-subtle);
+  border: 1px dashed var(--border-strong);
+  border-radius: 4px;
+}
+
+/* notiziario.njk */
 .notiziario__pagination {
   display: flex;
   justify-content: center;
   font-size: var(--step-1);
+}
+
+/* notiziario-item.njk */
+.notiziario-item__index-element:not(:last-child){
+  border-bottom: 1px solid var(--border-subtle);
 }

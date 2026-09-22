@@ -27,37 +27,41 @@ pagination:
 
   <div class="grid">
     {% for item in notiziari %}
-    <article class="box | flow">
-      <div class="grid">
+    <article class="flow">
+      <div class="card">
+
         {% if item.immagine %}
-      <img src="{{ item.immagine }}" alt="" aria-hidden="true">
-      {% else %}
-      <img src="../assets/images/notiziario.jpg" alt="" aria-hidden="true">
-      {% endif %}
+        <img class="notiziario__cover" src="{{ item.immagine }}" alt="" aria-hidden="true">
+        {% else %}
+        <div class="notiziario__cover notiziario__cover--placeholder" aria-hidden="true"></div>
+        {% endif %}
 
         <div class="flow">
           <h2>Notiziario N°{{ item.numero }}</h2>
 
           <p>Anno {{ item.anno }}</p>
-
-          <div class="cluster" style="--gutter: var(--space-2xs)">
-            <a class="button" data-button-variant="primary" href="/pubblicazioni/notiziario/item/{{ item.numero }}/">
-              Scopri di più
-              <span class="visually-hidden">
-                sul Notiziario N°{{ item.numero }}
-              </span>
-            </a>
-
-            {% if item.download %}
-            <a class="button" data-button-variant="primary" href="{{ item.download }}" download>
-              Download
-              <span class="visually-hidden">
-                del Notiziario N°{{ item.numero }}
-              </span>
-            </a>
-            {% endif %}
-          </div>
         </div>
+
+        <div class="cluster" style="--gutter: var(--space-2xs)">
+
+          <a class="button" data-button-variant="primary" href="/pubblicazioni/notiziario/item/{{ item.numero }}/">
+            Scopri di più
+            <span class="visually-hidden">
+              sul Notiziario N°{{ item.numero }}
+            </span>
+          </a>
+
+          {% if item.download %}
+          <a class="button" data-button-variant="primary" href="{{ item.download }}" download>
+            Download
+            <span class="visually-hidden">
+              del Notiziario N°{{ item.numero }}
+            </span>
+          </a>
+          {% endif %}
+
+        </div>
+
       </div>
     </article>
     {% endfor %}

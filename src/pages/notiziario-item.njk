@@ -12,6 +12,8 @@ eleventyComputed:
   title: "Notiziario N°{{ item.numero }}"
 ---
 <div class="notiziario-item | sidebar | wrapper">
+
+  {# HEADER CON NAVIGAZIONE ED IMMAGINE #}
   <header class="flow">
 
     <h1>
@@ -30,26 +32,27 @@ eleventyComputed:
       <a class="button" data-button-variant="primary" href="/pubblicazioni/notiziario/">
         Torna all'indice
       </a>
-      
+
     </div>
-    
+
     <div>
       {% if item.immagine %}
-      <img src="{{ item.immagine }}" alt="" aria-hidden="true" class="notiziario-item__cover">
+      <img class="notiziario__cover" src="{{ item.immagine }}" alt="" aria-hidden="true">
       {% else %}
-      <img src="../assets/images/notiziario.jpg" alt="" aria-hidden="true" class="notiziario-item__cover">
+      <div class="notiziario__cover notiziario__cover--placeholder" aria-hidden="true"></div>
       {% endif %}
     </div>
   </header>
 
+  {# INDICE ELEMENTO #}
   <article class="flow">
-  
+
     <h2>Indice</h2>
-  
+
     <div class="flow">
+
       {% for articolo in item.indice %}
       <div class="notiziario-item__index-element | flow">
-  
         {% if articolo.autori %}
         <p class="text-step--1 text-muted">
           {{ articolo.autori }}
@@ -61,13 +64,10 @@ eleventyComputed:
         <p class="font-bold">
           {{ articolo.titolo }}
         </p>
-  
       </div>
       {% endfor %}
+
     </div>
   </article>
-</div>
 
-<style>
-  
-</style>
+</div>
