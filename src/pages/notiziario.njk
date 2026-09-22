@@ -1,6 +1,6 @@
 ---
 layout: page.njk
-title: Pubblicazioni
+title: IL Notiziario
 permalink: "/pubblicazioni/notiziario/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}"
 templateEngine: njk
 pagination:
@@ -31,9 +31,9 @@ pagination:
       <div class="card">
 
         {% if item.immagine %}
-        <img class="notiziario__cover" src="{{ item.immagine }}" alt="" aria-hidden="true">
+        <img class="card__cover" src="{{ item.immagine }}" alt="" aria-hidden="true">
         {% else %}
-        <div class="notiziario__cover notiziario__cover--placeholder" aria-hidden="true"></div>
+        <div class="card__cover card__cover--placeholder" aria-hidden="true"></div>
         {% endif %}
 
         <div class="flow">

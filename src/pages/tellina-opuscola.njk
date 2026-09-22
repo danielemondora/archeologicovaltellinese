@@ -1,0 +1,37 @@
+---
+layout: page.njk
+title: Tellina Opuscola
+permalink: "/pubblicazioni/tellina-opuscola/"
+templateEngine: njk
+---
+
+<h1>I Tellina Opuscola</h1>
+
+<p>I Tellina Opuscola contengono informazioni riguardo le scoperte di Davide Pace</p>
+
+<section class="flow">
+
+  <div class="grid">
+    {% for item in pubblicazioni.tellinaOpuscola %}
+    <article class="flow">
+      <div class="card">
+
+        {% if item.immagine %}
+        <img class="card__cover" src="{{ item.immagine }}" alt="" aria-hidden="true">
+        {% else %}
+        <div class="card__cover card__cover--placeholder" aria-hidden="true"></div>
+        {% endif %}
+
+        <div class="flow">
+          <h2>Tellina Opuscola N°{{ item.numero }}</h2>
+
+          <p>Anno {{ item.anno }}</p>
+        </div>
+        
+      </div>
+    </article>
+    {% endfor %}
+
+  </div>
+
+</section>

@@ -29,8 +29,33 @@
           "url": "/pubblicazioni/notiziario/"
         },
         {
+          "text": "Tellina Opuscola",
+          "url": "/pubblicazioni/tellina-opuscola/"
+        },
+        {
           "text": "Risorse",
           "url": "/risorse/"
+        }
+      ]
+    },
+    {
+      "text": "Storie",
+      "children": [
+        {
+          "text": "I Castelli di Grosio",
+          "url": "/grosio/"
+        },
+        {
+          "text": "Antiquarium Tellinum",
+          "url": "/antiquarium-tellinum/"
+        },
+        {
+          "text": "La Stele di Migiondo",
+          "url": "/migiondo/"
+        },
+        {
+          "text": "La Stele Cornal 5",
+          "url": "/cornal/"
         }
       ]
     },
@@ -44,23 +69,6 @@
         {
           "text": "Bibliografia",
           "url": "/davide-pace/bibliografia/"
-        }
-      ]
-    },
-    {
-      "text": "Storie",
-      "children": [
-        {
-          "text": "Grosio",
-          "url": "/grosio/"
-        },
-        {
-          "text": "Teglio",
-          "url": "/teglio/"
-        },
-        {
-          "text": "Migiondo",
-          "url": "/migiondo/"
         }
       ]
     },

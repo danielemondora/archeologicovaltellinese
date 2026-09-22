@@ -49,6 +49,6 @@
     "titleSeparator": " - ",
     "defaultTitle": "Istituto Archeologico Valtellinese",
     "defaultDescription": "Benvenuti sul sito ufficiale dell'Istituto Archeologico Valtellinese. Scopri, studia e vivi il patrimonio storico della Valtellina, dalle incisioni rupestri ai grandi ritrovamenti.",
-    "defaultImage": "/assets/images/og-image.jpg"
+    "defaultImage": "/og-image.png"
   }
 }
