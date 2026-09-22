@@ -10,10 +10,5 @@
     "directory": "./dist",
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
-  },
-  
-  // Run the site build before publishing via `wrangler deploy`
-  "build": {
-    "command": "npm run build"
   }
 }

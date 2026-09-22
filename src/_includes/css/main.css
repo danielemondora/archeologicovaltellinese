@@ -23,7 +23,6 @@
 @import "composition/full-width.css";
 
 /* 3. Blocchi e Componenti */
-@import "blocks/back-to-top.css";
 @import "blocks/button.css";
 @import "blocks/footer.css";
 @import "blocks/header.css";
@@ -70,12 +69,26 @@ a {
 }
 
 a:not([class]) {
-  text-decoration: none;
   color: var(--color-primary-text);
+  
+  text-decoration: underline;
+  
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+  
+  text-decoration-skip-ink: auto; 
+  
+  transition: text-decoration-thickness 0.2s ease, color 0.2s ease;
 }
 
 a:not([class]):hover {
-  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+a:not([class]):focus-visible {
+  outline: 2px solid var(--color-primary-text);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 h1,

@@ -4,12 +4,12 @@ import htmlmin from 'html-minifier-terser';
 import * as esbuild from 'esbuild';
 import fs from "node:fs";
 import path from "node:path";
-import slugify from 'slugify';
 
 import markdownIt from 'markdown-it';
 import markdownItFootnote from 'markdown-it-footnote';
 import markdownItAnchor from 'markdown-it-anchor';
 import markdownItTocDoneRight from 'markdown-it-toc-done-right';
+import markdownItImplicitFigures from 'markdown-it-implicit-figures';
 
 export default function (eleventyConfig) {
 
@@ -24,20 +24,17 @@ export default function (eleventyConfig) {
     },
   });
 
-  /* MARKDOWN-IT anchor e toc */
-  const customSlugify = (s) => slugify(s, {
-    lower: true,
-    strict: true
-  });
+  const eleventySlugify = eleventyConfig.getFilter("slugify");
 
   const markdownLib = markdownIt({
     html: true,
     breaks: true,
     linkify: true
   })
+    .use(markdownItFootnote)
     .use(markdownItAnchor, {
       level: [2, 3],
-      slugify: customSlugify,
+      slugify: eleventySlugify,
       permalink: markdownItAnchor.permalink.headerLink({
         class: 'header-anchor',
         symbol: '#'
@@ -46,7 +43,12 @@ export default function (eleventyConfig) {
     .use(markdownItTocDoneRight, {
       level: [2, 3],
       containerClass: 'toc',
-      slugify: customSlugify
+      slugify: eleventySlugify
+    })
+    .use(markdownItImplicitFigures, {
+      figcaption: true,
+      keepAlt: true,
+      link: false
     });
 
   eleventyConfig.setLibrary("md", markdownLib);
@@ -81,25 +83,27 @@ export default function (eleventyConfig) {
 
   // BUILD CON ESBUILD
   eleventyConfig.on('eleventy.before', async () => {
-    // 1. Bundle JavaScript 
-    await esbuild.build({
-      entryPoints: ['src/_includes/scripts/bundle.js'],
-      bundle: true,
-      minify: true,
-      sourcemap: true,
-      target: ['es2020'],
-      outfile: 'dist/assets/js/bundle.js',
-    });
-
-    // 2. Bundle CSS
-    await esbuild.build({
-      entryPoints: ['src/_includes/css/main.css'],
-      bundle: true,
-      minify: true,
-      sourcemap: true,
-      outfile: 'dist/assets/css/main.css',
-      external: ['*.woff2', '*.woff', '*.ttf'],
-    });
+    // Fai partire entrambe le build in parallelo
+    await Promise.all([
+      // 1. Bundle JavaScript
+      esbuild.build({
+        entryPoints: ['src/_includes/scripts/bundle.js'],
+        bundle: true,
+        minify: true,
+        sourcemap: true,
+        target: ['es2020'],
+        outfile: 'dist/assets/js/bundle.js',
+      }),
+      // 2. Bundle CSS
+      esbuild.build({
+        entryPoints: ['src/_includes/css/main.css'],
+        bundle: true,
+        minify: true,
+        sourcemap: true,
+        outfile: 'dist/assets/css/main.css',
+        external: ['*.woff2', '*.woff', '*.ttf'],
+      })
+    ]);
   });
 
   // html minification

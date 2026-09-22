@@ -1,2 +1,2 @@
 import './formAssociati.js';
-import './backToTop.js';
+import './scrollTopButton.js';

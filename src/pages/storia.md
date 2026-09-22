@@ -13,9 +13,9 @@ Già nella primavera di quello stesso anno, il primo direttore dell’Istituto, 
 
 > “*È nato l’Istituto Archeologico Valtellinese. È nato in semplicità. In alacre semplicità intende germinare fiorire fruttificare. È nato dal fervore fausto per cui Teglio può comporre nell’Antiquarium Tellinum la stupenda documentazione megalitica. È nato dal fervore strenuo per cui Grosio può contemplarsi nella rivelatrice magnitudine dell’arcaico monumento petroglifico. È nato dall’improvviso rifulgere copioso dell’antichità valtellinese, degna di essere perseguita con matura autonoma coscienza ovunque la valle dell’Adda e le terre contigue arrisero all’avvento primigenio dell’uomo e si stimarono felici dello spirito creatore dell’uomo e si dischiusero sacre alle reliquie dell’uomo*”[^1].
 
-![Gli Armigeri della Rupe Magna a Grosio](/assets/images/grosio_giroldo_armigeri.png)
-
 La fondazione dell’Istituto non si concretizzò all’improvviso, apparve, piuttosto, come frutto maturo della strategia d’amore intrapresa da Davide per ammaliare gli studiosi e gli incolti valtellinesi ai segreti ancestrali della propria terra.
+
+![Gli Armigeri della Rupe Magna a Grosio](/assets/images/grosio_giroldo_armigeri.png)
 
 La cultura locale, negli anni sessanta, era animata da valenti e stimati studiosi. Nel benemerito Bollettino della Società Storica Valtellinese si rispecchia fedelmente la elaborazione culturale di quel prestigioso, ancorché ristretto, cenacolo[^2]. Davide Pace iniziò la sua collaborazione con la Società Storica Valtellinese nel 1965, con il saggio *Nuove acquisizione antiquarie nel territorio di Teglio*[^3]. Lo stile letterario del contributo suscitò non poche riserve nel comitato di redazione. D’altra parte i reperti illustrati erano ragguardevoli e non potevano non essere segnalati[^4]. Renzo Sertoli Salis intervenne personalmente a modificare alcune parti del testo, suscitando le rimostranze dell’archeologo monzese[^5]. Ad ogni modo l’incontro fecondo con l’archeologa tellina Maria Reggiani Rajna[^6], con Renzo Sertoli Salis e con altri studiosi suscitò l’effetto di un sasso lanciato in uno stagno. Così, infatti, Davide Pace descrisse, con stile inconfondibile, il suo incedere nell’avventura tellina: 
 
