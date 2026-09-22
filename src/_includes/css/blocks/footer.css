@@ -1,23 +1,9 @@
-.site-footer {
-  padding-block: var(--space-xl) var(--space-s);
-
-  border-top: 5px solid var(--color-primary-active);
-  border-bottom: 5px solid var(--color-primary);
+.site-footer__main {
+  padding-block: var(--space-xl);
+  background-color: var(--bg-footer-main);
 }
 
-.site-footer h2 {
-  max-width: 20ch;
-}
-
-.site-footer p {
-  max-width: 35ch;
-}
-
-.site-footer li, .site-footer p {
-  opacity: 0.75;
-}
-
-.site-footer__copy {
-  padding-block-start: var(--space-xs);
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+.site-footer__bottom {
+  padding-block: var(--space-xs);
+  background-color: var(--bg-primary);
 }

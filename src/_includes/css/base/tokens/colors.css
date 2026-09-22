@@ -81,35 +81,6 @@
   --color-forest-800: #334F3A;
   --color-forest-900: #294635;
   --color-forest-950: #1C3024;
-
-
-  /* ==================================================
-     SYSTEM
-     ================================================== */
-
-  --color-red-50: #FEF5F4;
-  --color-red-100: #F5DEDB;
-  --color-red-200: #EBC0BA;
-  --color-red-300: #DB9A91;
-  --color-red-400: #C87167;
-  --color-red-500: #AD5148;
-  --color-red-600: #913D35;
-  --color-red-700: #78332D;
-  --color-red-800: #612A26;
-  --color-red-900: #4C2521;
-  --color-red-950: #301815;
-
-  --color-green-50: #F2F7F3;
-  --color-green-100: #DFECE2;
-  --color-green-200: #C0D8C6;
-  --color-green-300: #9FBEA7;
-  --color-green-400: #78A383;
-  --color-green-500: #578764;
-  --color-green-600: #3E6D4C;
-  --color-green-700: #31583D;
-  --color-green-800: #294933;
-  --color-green-900: #213B2A;
-  --color-green-950: #17281D;
 }
 
 /* ======================================================
@@ -136,6 +107,8 @@
 
   --bg-tertiary: var(--color-forest-100);
 
+  --bg-footer-main: var(--color-slate-500);
+
   /* --------------------------------
      Typography
      -------------------------------- */
@@ -157,8 +130,6 @@
   --color-primary: var(--color-slate-700);
   --color-primary-hover: var(--color-slate-800);
   --color-primary-active: var(--color-slate-900);
-
-
 
   --color-primary-text: var(--color-slate-800);
 
@@ -209,17 +180,4 @@
      -------------------------------- */
 
   --color-focus: var(--color-slate-700);
-
-
-  /* --------------------------------
-     System
-     -------------------------------- */
-
-  --color-error-bg: var(--color-red-100);
-  --color-error-text: var(--color-red-700);
-  --color-error-border: var(--color-red-300);
-
-  --color-success-bg: var(--color-green-100);
-  --color-success-text: var(--color-green-700);
-  --color-success-border: var(--color-green-300);
 }

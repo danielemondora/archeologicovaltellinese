@@ -1,22 +1,17 @@
-<footer class="site-footer | bg-primary text-on-primary">
+<footer class="site-footer | text-on-primary">
 
-  <div class="wrapper | flow flow-space-xl" data-variant='large'>
+  <section class="site-footer__main">
+    <div class="wrapper" data-variant="large">
+      <div class="grid" data-layout="thirds">
+        
+        <header>
+          <h2 class="weight-bold text-step-2">{{ site.name }}</h2>
+          <p class="text-step--1">{{ site.description }}</p>
+        </header>
 
-    <div class="grid" data-layout='50-50'>
-
-      {# COLONNA BRAND #}
-      <div class="flow flow-space-xs">
-        <h2 class="weight-bold text-step-2">{{ site.name }}</h2>
-        <p class="text-step--1">
-          {{ site.description }}
-        </p>
-      </div>
-
-      {# COLONNA INDIRIZZO E CONTATTI #}
-      <div class="flow">
-        <div class="flow flow-space-2xs">
-          <h3 class="weight-bold text-step-0">Sede</h3>
-          <div>
+        <div>
+          <h3>Sede</h3>
+          <div class="text-step--1">
             <ul role="list" class="flow flow-space-3xs | text-step--1">
               <li>{{ site.address.street }}</li>
               <li>{{ site.address.postalCode }} {{ site.address.city }}</li>
@@ -25,25 +20,35 @@
           </div>
         </div>
 
-        <div class="flow flow-space-2xs">
-          <h3 class="weight-bold text-step-0">Contatti</h3>
-          <div>
+        <div>
+          <h3>Contatti</h3>
+          <div class="text-step--1">
             <ul role="list" class="flow text-step--1">
               <li>
                 <a class="" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
               </li>
+              <li>
+                <a class="" href="{{ site.contact.facebook }}">Vai alla pagina Facebook</a>
+              </li>
             </ul>
           </div>
         </div>
+
       </div>
-
     </div>
+  </section>
 
-    {# COPYRIGHT #}
-    <div class="site-footer__copy | splitter | text-step--1">
-      <p>&copy; {% year %} {{ site.name }}</p>
-      <p>Sito Web realizzato da <a href="mailto:{{- site.author.email -}}" class="weight-bold">{{- site.author.name -}}</a></p>
+  <section class="site-footer__bottom | text-step--2">
+    <div class="wrapper" data-variant="large">
+      <span>
+        Sito Web realizzato da
+        <a href="mailto:{{- site.author.email -}}" class="weight-bold">{{- site.author.name-}}</a>
+      </span>
+      <div class="cluster">
+        <a class="" href="">Privacy</a>
+      <a class="" href="">Contatti</a>
+      </div>
     </div>
+  </section>
 
-  </div>
 </footer>
