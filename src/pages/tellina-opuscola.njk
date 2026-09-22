@@ -17,7 +17,7 @@ templateEngine: njk
       <div class="card">
 
         {% if item.immagine %}
-        <img class="card__cover" src="{{ item.immagine }}" alt="" aria-hidden="true">
+        <img class="card__cover" src="{{ item.immagine }}" alt="" aria-hidden="true" eleventy:ignore>
         {% else %}
         <div class="card__cover card__cover--placeholder" aria-hidden="true"></div>
         {% endif %}

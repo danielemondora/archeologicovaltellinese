@@ -55,15 +55,6 @@ export default function (eleventyConfig) {
 
   // SHORTCODE
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
-  eleventyConfig.addShortcode("allergenIcon", function (filename) {
-    const filePath = path.join(process.cwd(), "src/assets/images/allergeni", filename);
-
-    try {
-      return fs.readFileSync(filePath, "utf8");
-    } catch (e) {
-      return `<!-- Icona non trovata: ${filename} -->`;
-    }
-  });
 
   // FILTRI
   eleventyConfig.addFilter('dateFilter', dateFilter);
