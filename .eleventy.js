@@ -7,14 +7,14 @@ import markdownIt from 'markdown-it';
 import markdownItFootnote from 'markdown-it-footnote';
 import markdownItAnchor from 'markdown-it-anchor';
 import markdownItTocDoneRight from 'markdown-it-toc-done-right';
-import markdownItImplicitFigures from 'markdown-it-implicit-figures';
+import implicitFigures from 'markdown-it-implicit-figures';
 
 export default function (eleventyConfig) {
 
   // PLUGIN
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["avif"],
-    widths: [320, 768, 1400],
+    widths: [320, 768, 1200],
     defaultAttributes: {
       loading: 'lazy',
       sizes: 'auto',
@@ -43,7 +43,7 @@ export default function (eleventyConfig) {
       containerClass: 'toc',
       slugify: eleventySlugify
     })
-    .use(markdownItImplicitFigures, {
+    .use(implicitFigures, {
       figcaption: true,
       keepAlt: true,
       link: false
@@ -60,9 +60,8 @@ export default function (eleventyConfig) {
 
   // PASSTHROUGH
   eleventyConfig.addPassthroughCopy("_redirects");
-  eleventyConfig.addPassthroughCopy({ "src/assets/images/favicon/": "/" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/favicon": "/" });
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
-  eleventyConfig.addPassthroughCopy({ "src/assets/images/logo.jpg": "/logo.jpg" });
   eleventyConfig.addPassthroughCopy({ "src/assets/images/grosio_giroldo_armigeri.png": "/og-image.png" });
 
 

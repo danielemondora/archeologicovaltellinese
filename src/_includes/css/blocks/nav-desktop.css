@@ -1,0 +1,53 @@
+/* ==========================================================================
+   NAVIGAZIONE DESKTOP
+   ========================================================================== */
+
+/* Nascondi di default su mobile */
+.desktop-nav {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .desktop-nav {
+    display: block;
+  }
+
+  .dropdown-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3xs);
+    background: transparent;
+  }
+
+  .dropdown-trigger svg {
+    transition: transform 0.3s ease;
+  }
+
+  .nav-item:has(.desktop-dropdown__panel:popover-open) .dropdown-trigger svg {
+    transform: rotate(180deg);
+  }
+
+  /* --- POPOVER DESKTOP --- */
+  .desktop-dropdown__panel[popover] {
+    margin: 0;
+    padding: var(--space-2s) var(--space-3xs);
+    margin-block-start: var(--space-2xs);
+
+    min-width: 200px;
+    background-color: var(--bg-header);
+    border: 5px solid var(--header-border);
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4);
+    color: var(--header-text);
+
+    position-anchor: auto;
+    position: absolute;
+    inset-block-start: anchor(bottom);
+    inset-inline-start: anchor(left);
+  }
+
+  .desktop-dropdown__panel a {
+    display: block;
+    width: fit-content;
+    margin: var(--space-2xs) var(--space-s);
+  }
+}

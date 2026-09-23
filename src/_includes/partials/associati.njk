@@ -1,81 +1,49 @@
+{# assocaiti.njk #}
 <section class="associati | flow" id="associati" aria-labelledby="associati-title">
 
   <header class="wrapper">
-    <h2 id="associati-title">Diventa Socio dell'Istituto</h2>
-    <p class="associati__intro">
-      Entrare a far parte dell'{{ site.name }} è semplice.
-      Compila il modulo qui sotto e invia la tua richiesta di associazione.
+    <h1 id="associati-title">Diventa Socio dell'Istituto Archeologico Valtellinese</h1>
+    <p class="text-step-1">
+      Sostieni attivamente la ricerca, la tutela e la divulgazione del <strong>patrimonio archeologico della Valtellina</strong>.
+    </p>
+    <p>
+      Sostieni attivamente la ricerca, la tutela e la divulgazione del <strong>patrimonio archeologico della Valtellina</strong>.
+      L'associazione è aperta ad appassionati, studenti e studiosi tutti:
+      compila il modulo sottostante per inviare la tua richiesta di ammissione.
     </p>
   </header>
 
   <div class="wrapper">
     <div class="grid" data-layout="thirds">
 
-      <section class="associati__form-wrapper | box flow">
+      {% include "partials/associati-form.njk" %}
 
-        <header class="associati__form-header">
-          <h3>Invia la tua richiesta</h3>
-          <p>Compila tutti i campi obbligatori contrassegnati.</p>
-        </header>
-
-        <form id="form-associati" class="form-associati | flow">
-
-          <div class="grid">
-            <wa-input id="nome" name="nome" label="Nome" required placeholder="Mario"></wa-input>
-            <wa-input id="cognome" name="cognome" label="Cognome" required placeholder="Rossi"></wa-input>
-          </div>
-
-          <wa-input id="indirizzo" name="indirizzo" label="Indirizzo di Residenza" required
-            placeholder="Via Roma 1, 23100 Sondrio (SO)"></wa-input>
-
-          <div class="grid">
-            <wa-input type="date" id="data-nascita" name="data-nascita" label="Data di Nascita" required></wa-input>
-            <wa-input id="cf" name="cf" label="Codice Fiscale" required pattern="[a-zA-Z0-9]{16}"
-              placeholder="RSSMRA92S08F205F" autocapitalize="characters"></wa-input>
-          </div>
-
-          <wa-textarea id="note" name="note" label="Note" rows="4" placeholder="Lasciaci un messaggio"></wa-textarea>
-
-          <button type="submit" class="button">
-            Invia Richiesta
-          </button>
-        </form>
-
-        <div class="form-associati__privacy">
-          <p class="text-step--2">
-            I dati forniti saranno utilizzati per gestire la richiesta di associazione.
-            Prima dell'invio, consultare <a href="/privacy-policy">l'informativa sulla privacy</a>.
-          </p>
-        </div>
-
-      </section>
-
-      <aside class="associati__sidebar | flow">
+      <aside class="flow">
 
         <section class="box flow">
-          <h3>Informazioni e Pagamento</h3>
+          <h2>Quota associativa e Pagamento</h2>
 
           <p>
-            Puoi versare la quota di iscrizione durante gli eventi organizzati
-            dall'istituto oppure tramite bonifico bancario:
+            Il versamento della quota annuale supporta gli eventi organizzati dall'Istituto e le pubblicazioni scientifiche.
+            Il pagamento può essere effettuato di persona oppure tramite bonifico bancario:
           </p>
 
-          <div class="associati__iban-box flow">
-            <p >IBAN (Crédit Agricole)</p>
-            <strong class="text-step--1">{{ site.company.iban }}</strong>
+          <div class="flow">
+            <p><strong>IBAN (Crédit Agricole)</strong></p>
+            <code class="text-step--1">{{ site.company.iban }}</code>
           </div>
 
           <p class="text-step--1">
-            La quota annuale è necessaria per ricevere regolarmente il
+            L'iscrizione annuale in regola garantisce ai soci il diritto a ricevere gratuitamente l'edizione cartacea del
             <a href="/pubblicazioni/notiziario/">Notiziario dell'Istituto</a>.
           </p>
 
           <hr>
 
           <div class="flow">
-            <h4 class="text-step-0">Quote annuali</h4>
+            <h3 class="text-step-0">Quote annuali</h3>
             <div>
-              <ul role="list" class="flow">
+              <ul role="list">
                 <li class="repel">
                   <span>Socio Ordinario</span>
                   <strong>25&euro;</strong>
@@ -89,17 +57,16 @@
           </div>
         </section>
 
-        <!-- Card di contatto unificata o pulita -->
-        <section class="associati__alternative | box flow">
-          <h3>Hai bisogno di aiuto?</h3>
+        <section class="box flow">
+          <h3>Contatta la Segreteria</h3>
           <p>
-            Se preferisci scriverci direttamente o hai dubbi sulla procedura, puoi contattare la segreteria via email a:
-          </p>
-          <p>
+            Per richieste di chiarimento sulle procedure di tesseramento, sui rinnovi o sulle agevolazioni,
+            la nostra segreteria è a disposizione all'indirizzo email:
             <a href="mailto:{{ site.contact.email }}">
               <strong>{{ site.contact.email }}</strong>
             </a>
           </p>
+          <p>Scopri di più nella <a href="/contatti/">sezione contatti</a> del sito web.</p>
         </section>
 
       </aside>

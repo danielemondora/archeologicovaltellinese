@@ -27,6 +27,8 @@
 @import "blocks/footer.css";
 @import "blocks/header.css";
 @import "blocks/nav.css";
+@import "blocks/nav-desktop.css";
+@import "blocks/nav-mobile.css";
 @import "blocks/hero.css";
 @import "blocks/card.css";
 @import "blocks/skip-link.css";
@@ -95,14 +97,14 @@ a {
 
 a:not([class]) {
   color: var(--color-primary-text);
-  
+
   text-decoration: underline;
-  
+
   text-underline-offset: 0.15em;
   text-decoration-thickness: 1px;
-  
-  text-decoration-skip-ink: auto; 
-  
+
+  text-decoration-skip-ink: auto;
+
   transition: text-decoration-thickness 0.2s ease, color 0.2s ease;
 }
 
@@ -143,6 +145,10 @@ ol[role='list'] {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 ::selection {

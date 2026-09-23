@@ -5,30 +5,47 @@ description: "Recapiti e dati istituzionali dell'Istituto Archeologico Valtellin
 permalink: /contatti/
 ---
 
-<h1>Contatti</h1>
+<header class="flow">
+  <h1>Contatti</h1>
 
-<p>
-  Per richiedere informazioni sulle nostre attività di ricerca, per la consultazione dell'archivio storico
-  o per qualsiasi altra comunicazione, è possibile mettersi in contatto con la segreteria dell'<strong>{{ site.name }}</strong> attraverso i seguenti recapiti.
-</p>
+  <p>
+    Per richiedere informazioni sulle nostre attività di ricerca, per la consultazione dell'archivio storico
+    o per qualsiasi altra comunicazione, è possibile mettersi in contatto con la segreteria dell'<strong>{{ site.name }}</strong> attraverso i seguenti recapiti.
+  </p>
+</header>
 
-<div class="flow">
-  <section>
-    <h2>Sede e Recapiti</h2>
-    <address>
-      <strong>Indirizzo:</strong><br>
-      {{ site.address.street }}<br>
-      {{ site.address.postalCode }} {{ site.address.city }} ({{ site.address.region }})<br>
-      {{ site.address.country }}<br><br>
+<section class="flow">
+  <h2>Sede e Recapiti</h2>
+  <address class="flow" style="font-style: normal;">
+      <h3>Indirizzo</h3>
+      <div>
+        <ul role="list">
+          <li>{{ site.address.street }}</li>
+          <li>{{ site.address.postalCode }} {{ site.address.city }} ({{ site.address.region }})</li>
+          <li>{{ site.address.country }}</li>
+        </ul>
+      </div>
 
-      <strong>Email:</strong> <br>
+      <h3>Email</h3>
       <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
     </address>
-  </section>
+</section>
 
-  <section>
-    <h2>Dati Istituzionali</h2>
-    <ul>
+{% if site.social.facebook %}
+<section class="flow">
+  <h2>Canali Ufficiali</h2>
+  <p>
+    Per rimanere aggiornati sulle ultime scoperte, conferenze e pubblicazioni,
+    vi invitiamo a seguire, oltre a questo sito web, la nostra
+    pagina <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer">Facebook ufficiale</a>.
+  </p>
+</section>
+{% endif %}
+
+<section class="flow">
+  <h2>Dati Istituzionali</h2>
+  <div>
+    <ul role="list">
       <li><strong>Anno di fondazione:</strong> {{ site.company.founded }}</li>
       <li><strong>Codice Fiscale:</strong> {{ site.company.codiceFiscale }}</li>
       <li>
@@ -36,15 +53,10 @@ permalink: /contatti/
         <small><em>(Attivo per il versamento delle quote associative e le erogazioni liberali)</em></small>
       </li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  {% if site.social.facebook %}
-  <section>
-    <h2>Canali Ufficiali</h2>
-    <p>
-      Per rimanere aggiornati sulle ultime scoperte, conferenze e pubblicazioni,
-      vi invitiamo a seguire la nostra pagina <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer">Facebook ufficiale</a>.
-    </p>
-  </section>
-  {% endif %}
-</div>
+<section class="flow">
+  <h2>Diventa Socio dell'Istituto Archeologico Valtellinese</h2>
+  {% include "partials/associati-form.njk" %}
+</section>

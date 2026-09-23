@@ -7,6 +7,7 @@
 {%- set autoDescription = site.seo.defaultDescription if page.url == '/' else (content | striptags | truncate(160) if content else site.description) -%}
 {%- set pageDescription = description if description else autoDescription -%}
 {%- set pageUrl = site.url + page.url -%}
+{% set socialImage = ogImage or site.seo.defaultImage %}
 
 <title>{{ pageTitle }}</title>
 <meta name="description" content="{{ pageDescription }}" />
@@ -28,6 +29,13 @@
 
 <link rel="canonical" href="{{ pageUrl }}" />
 
+<!-- Immagine condivisione social -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
 {# Open Graph / Facebook #}
 <meta property="og:site_name" content="{{ site.name }}" />
 <meta property="og:title" content="{{ pageTitle }}" />
@@ -35,16 +43,14 @@
 <meta property="og:url" content="{{ pageUrl }}" />
 <meta property="og:type" content="{{ ogType or 'website' }}"/>
 <meta property="og:locale" content="{{ site.locale }}" />
-
-{% set socialImage = ogImage or site.seo.defaultImage %}
 <meta property="og:image" content="{{ site.url }}{{ socialImage }}" />
+<meta property="og:image:alt" content="{{ pageTitle }}" />
 
-
-<!-- Immagine condivisione social -->
-<link rel="icon" href="/favicon.ico" sizes="any" />
-<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ pageTitle }}" />
+<meta name="twitter:description" content="{{ pageDescription }}" />
+<meta name="twitter:image" content="{{ site.url }}{{ socialImage }}" />
 
 {% if page.url == '/' %}
 <script type="application/ld+json">
@@ -54,7 +60,7 @@
   "name": "{{ site.name }}",
   "legalName": "{{ site.legalName }}",
   "url": "{{ site.url }}",
-  "logo": "{{ site.url }}{{ site.assets.logo }}",
+  "logo": "{{ site.url }}{{ site.seo.logo }}",
   "email": "{{ site.contact.email }}",
   "telephone": "{{ site.contact.phone }}",
   "address": {

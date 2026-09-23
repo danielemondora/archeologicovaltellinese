@@ -8,6 +8,14 @@
 			"text": "Istituto",
       "children": [
         {
+          "text": "Chi Siamo",
+          "url": "/chi-siamo/"
+        },
+        {
+          "text": "Diventa Socio",
+          "url": "/diventa-socio/"
+        },
+        {
           "text": "Storia",
           "url": "/storia/"
         },

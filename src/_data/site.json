@@ -1,7 +1,7 @@
 {
   "name": "Istituto Archeologico Valtellinese",
   "legalName": "Istituto Archeologico Valtellinese",
-  "description": "Benvenuti sul sito ufficiale dell'Istituto Archeologico Valtellinese. Scopri, studia e vivi il patrimonio storico della Valtellina, dalle incisioni rupestri ai grandi ritrovamenti.",
+  "description": "Dal 1973 tuteliamo e valorizziamo il patrimonio archeologico della Valtellina. Un viaggio nella nostra storia, dalle antiche incisioni rupestri alle grandi scoperte in Provincia di Sondrio.",
   "url": "https://www.archeologicovaltellinese.it",
   "domain": "archeologicovaltellinese.it",
   "language": "it",
@@ -31,7 +31,8 @@
   "address": {
     "street": "Via Fabio Besta 8",
     "postalCode": "23036",
-    "city": "Teglio (SO)",
+    "city": "Teglio",
+    "province": "SO",
     "region": "Lombardia",
     "country": "Italia",
     "countryCode": "IT"
@@ -47,8 +48,9 @@
 
   "seo": {
     "titleSeparator": " - ",
-    "defaultTitle": "Istituto Archeologico Valtellinese",
-    "defaultDescription": "Benvenuti sul sito ufficiale dell'Istituto Archeologico Valtellinese. Scopri, studia e vivi il patrimonio storico della Valtellina, dalle incisioni rupestri ai grandi ritrovamenti.",
-    "defaultImage": "/og-image.png"
+    "defaultTitle": "IAV - Istituto Archeologico Valtellinese",
+    "defaultDescription": "Scopri l'Istituto Archeologico Valtellinese (IAV). Dal 1973 studiamo, tuteliamo e valorizziamo le incisioni rupestri e il patrimonio archeologico della Valtellina.",
+    "defaultImage": "/og-image.png",
+    "logo": "/favicon.svg"
   }
 }

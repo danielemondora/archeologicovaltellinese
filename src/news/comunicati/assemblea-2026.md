@@ -1,5 +1,5 @@
 ---
-title: "Assemblea Annuale dei Soci IAV 2026: Convocazione e Intervento Scientifico a Tirano"
+title: "Assemblea Annuale dei Soci IAV 2026"
 description: "Partecipa all'Assemblea Annuale dei Soci dell'Istituto Archeologico Valtellinese il 5 settembre 2026 a Tirano. A seguire, la conferenza sui siti alpini e il castello di Tresivio."
 date: 2026-08-07
 ---
