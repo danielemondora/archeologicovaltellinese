@@ -1,0 +1,50 @@
+---
+layout: page.njk
+title: Contatti
+description: "Recapiti e dati istituzionali dell'Istituto Archeologico Valtellinese."
+permalink: /contatti/
+---
+
+<h1>Contatti</h1>
+
+<p>
+  Per richiedere informazioni sulle nostre attività di ricerca, per la consultazione dell'archivio storico
+  o per qualsiasi altra comunicazione, è possibile mettersi in contatto con la segreteria dell'<strong>{{ site.name }}</strong> attraverso i seguenti recapiti.
+</p>
+
+<div class="flow">
+  <section>
+    <h2>Sede e Recapiti</h2>
+    <address>
+      <strong>Indirizzo:</strong><br>
+      {{ site.address.street }}<br>
+      {{ site.address.postalCode }} {{ site.address.city }} ({{ site.address.region }})<br>
+      {{ site.address.country }}<br><br>
+
+      <strong>Email:</strong> <br>
+      <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+    </address>
+  </section>
+
+  <section>
+    <h2>Dati Istituzionali</h2>
+    <ul>
+      <li><strong>Anno di fondazione:</strong> {{ site.company.founded }}</li>
+      <li><strong>Codice Fiscale:</strong> {{ site.company.codiceFiscale }}</li>
+      <li>
+        <strong>IBAN:</strong> <code>{{ site.company.iban }}</code><br>
+        <small><em>(Attivo per il versamento delle quote associative e le erogazioni liberali)</em></small>
+      </li>
+    </ul>
+  </section>
+
+  {% if site.social.facebook %}
+  <section>
+    <h2>Canali Ufficiali</h2>
+    <p>
+      Per rimanere aggiornati sulle ultime scoperte, conferenze e pubblicazioni,
+      vi invitiamo a seguire la nostra pagina <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer">Facebook ufficiale</a>.
+    </p>
+  </section>
+  {% endif %}
+</div>
