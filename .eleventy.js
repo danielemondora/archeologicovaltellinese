@@ -2,8 +2,6 @@ import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 import { dateFilter, htmlDateFilter } from './src/_includes/filters/date-filters.js';
 import htmlmin from 'html-minifier-terser';
 import * as esbuild from 'esbuild';
-import fs from "node:fs";
-import path from "node:path";
 
 import markdownIt from 'markdown-it';
 import markdownItFootnote from 'markdown-it-footnote';

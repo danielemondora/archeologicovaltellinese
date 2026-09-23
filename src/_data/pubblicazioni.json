@@ -4,7 +4,7 @@
       "numero": 1,
       "anno": 2003,
       "slug": "notiziario-01",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-01.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-01.webp",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-01-2003.pdf",
       "indice": [
         {
@@ -63,7 +63,7 @@
       "numero": 2,
       "anno": 2004,
       "slug": "notiziario-02",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-02.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-02.webp",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-02-2004.pdf",
       "indice": [
         {
@@ -122,7 +122,7 @@
       "numero": 3,
       "anno": 2005,
       "slug": "notiziario-03",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-03.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-03.webp",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-03-2005.pdf",
       "indice": [
         {
@@ -181,7 +181,7 @@
       "numero": 4,
       "anno": 2006,
       "slug": "notiziario-04",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-04.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-04.webp",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-04-2006.pdf",
       "indice": [
         {
@@ -235,7 +235,7 @@
       "numero": 5,
       "anno": 2007,
       "slug": "notiziario-05",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-05.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-05.webp",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-05-2007.pdf",
       "indice": [
         {
@@ -279,7 +279,7 @@
       "numero": 6,
       "anno": 2008,
       "slug": "notiziario-06",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-06.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-06.webp",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-06-2008.pdf",
       "indice": [
         {
@@ -328,7 +328,7 @@
       "numero": 7,
       "anno": 2009,
       "slug": "notiziario-07",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-07.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-07.webp",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-07-2009.pdf",
       "indice": [
         {
@@ -397,7 +397,7 @@
       "numero": 8,
       "anno": 2010,
       "slug": "notiziario-08",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-08.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-08.webp",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-08-2010.pdf",
       "indice": [
         {
@@ -466,7 +466,7 @@
       "numero": 9,
       "anno": 2011,
       "slug": "notiziario-09",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-09.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-09.webp",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-09-2011.pdf",
       "indice": [
         {
@@ -545,7 +545,7 @@
       "numero": 10,
       "anno": 2012,
       "slug": "notiziario-10",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-10.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-10.webp",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-10-2012.pdf",
       "indice": [
         {
@@ -619,7 +619,7 @@
       "numero": 11,
       "anno": 2013,
       "slug": "notiziario-11",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-11.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-11.webp",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-11-2013.pdf",
       "indice": [
         {
@@ -698,7 +698,7 @@
       "numero": 12,
       "anno": 2014,
       "slug": "notiziario-12",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-12.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-12.webp",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-12-2012.pdf",
       "indice": [
         {
@@ -846,7 +846,7 @@
       "numero": 14,
       "anno": 2016,
       "slug": "notiziario-14",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-14.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-14.webp",
       "download": null,
       "indice": [
         {
@@ -900,7 +900,7 @@
       "numero": 15,
       "anno": 2017,
       "slug": "notiziario-15",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-15.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-15.webp",
       "download": null,
       "indice": [
         {
@@ -984,7 +984,7 @@
       "numero": 16,
       "anno": 2018,
       "slug": "notiziario-16",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-16.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-16.webp",
       "download": null,
       "indice": [
         {
@@ -1058,7 +1058,7 @@
       "numero": 17,
       "anno": 2019,
       "slug": "notiziario-17",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-17.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-17.webp",
       "download": null,
       "indice": [
         {
@@ -1127,7 +1127,7 @@
       "numero": 18,
       "anno": 2020,
       "slug": "notiziario-18",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-18.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-18.webp",
       "download": null,
       "indice": [
         {
@@ -1201,7 +1201,7 @@
       "numero": 19,
       "anno": 2021,
       "slug": "notiziario-19",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-19.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-19.webp",
       "download": null,
       "indice": [
         {
@@ -1280,7 +1280,7 @@
       "numero": 20,
       "anno": 2022,
       "slug": "notiziario-20",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-20.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-20.webp",
       "download": null,
       "indice": [
         {
@@ -1354,7 +1354,7 @@
       "numero": 21,
       "anno": 2023,
       "slug": "notiziario-21",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-21.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-21.webp",
       "download": null,
       "indice": [
         {
@@ -1433,7 +1433,7 @@
       "numero": 22,
       "anno": 2024,
       "slug": "notiziario-22",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-22.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-22.webp",
       "download": null,
       "indice": [
         {
@@ -1527,7 +1527,7 @@
       "numero": 23,
       "anno": 2025,
       "slug": "notiziario-23",
-      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-23.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-23.webp",
       "download": null,
       "indice": [
         {
@@ -1616,7 +1616,7 @@
       "titolo": "Nuove acquisizioni antiquarie nel territorio di Teglio",
       "autori": "Davide Pace",
       "slug": "tellina-opuscola-1",
-      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscola/copertine/tellina-opuscola-1.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscola/copertine/tellina-opuscola-1.webp",
       "download": null
     },
     {
@@ -1625,7 +1625,7 @@
       "titolo": "Petroglifi di Grosio",
       "autori": "Davide Pace",
       "slug": "tellina-opuscola-1",
-      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscola/copertine/tellina-opuscola-2.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscola/copertine/tellina-opuscola-2.webp",
       "download": null
     },
     {
@@ -1634,7 +1634,7 @@
       "titolo": "Sviluppo nell'investigazione archeologica nel sistma petroglifico di Grosio",
       "autori": "Davide Pace",
       "slug": "tellina-opuscola-1",
-      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscola/copertine/tellina-opuscola-3.jpg",
+      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscola/copertine/tellina-opuscola-3.webp",
       "download": null
     }
   ]
