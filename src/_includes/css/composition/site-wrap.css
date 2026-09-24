@@ -6,6 +6,5 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-
   row-gap: var(--space-xl, 3rem);
 }

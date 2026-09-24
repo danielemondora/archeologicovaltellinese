@@ -1,0 +1,7 @@
+.footnotes {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: var(--step--1);
+}

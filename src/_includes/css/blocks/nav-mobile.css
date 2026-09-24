@@ -113,10 +113,6 @@
   border-top: 5px solid transparent;
 }
 
-.mobile-menu-inner {
-  padding-block-start: var(--space-m);
-}
-
 /* --- LISTA NAVIGAZIONE MOBILE --- */
 .mobile-nav-list {
   display: flex;
