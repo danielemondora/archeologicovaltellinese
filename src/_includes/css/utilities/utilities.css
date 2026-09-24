@@ -102,33 +102,6 @@
   color: var(--text-on-primary);
 }
 
-.text-on-secondary {
-  color: var(--text-on-secondary);
-}
-
-.text-on-tertiary {
-  color: var(--text-on-tertiary);
-}
-
-
-/* Header / Footer */
-.text-header {
-  color: var(--header-text);
-}
-
-.text-header-muted {
-  color: var(--header-text-muted);
-}
-
-.text-footer {
-  color: var(--footer-text);
-}
-
-.text-footer-muted {
-  color: var(--footer-text-muted);
-}
-
-
 /* ==================================================
    BORDERS
    ================================================== */

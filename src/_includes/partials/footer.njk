@@ -1,16 +1,16 @@
 <footer class="site-footer | text-on-primary">
 
-  <section class="site-footer__main">
+  <section>
     <div class="wrapper" data-variant="large">
-      <div class="grid" data-layout="thirds">
+      <div class="site-footer__grid">
 
         <header>
-          <h2 class="weight-bold text-step-2">{{ site.name }}</h2>
+          <h2 class="text-step-2">{{ site.name }}</h2>
           <p class="text-step--1">{{ site.description }}</p>
         </header>
 
         <div>
-          <h3>Sede</h3>
+          <h3 class="text-step-1">Sede</h3>
           <div class="text-step--1">
             <ul role="list" class="flow flow-space-3xs | text-step--1">
               <li>{{ site.address.street }}</li>
@@ -21,9 +21,9 @@
         </div>
 
         <div>
-          <h3>Contatti</h3>
+          <h3 class="text-step-1">Contatti</h3>
           <div class="text-step--1">
-            <ul role="list" class="flow text-step--1">
+            <ul role="list" class="flow flow-space-3xs | text-step--1">
               <li>
                 <a class="" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
               </li>
@@ -38,7 +38,7 @@
     </div>
   </section>
 
-  <section class="site-footer__bottom | text-step--2">
+  <section class="text-step--2 | text-on-primary">
     <div class="wrapper" data-variant="large">
       <span>
         Sito Web realizzato da

@@ -32,7 +32,6 @@ class ScrollTopButton extends HTMLElement {
         cursor: pointer;
         background: var(--_bg);
         color: #fff;
-        box-shadow: 0 4px 14px color-mix(in srgb, var(--_bg) 50%, transparent);
         display: grid;
         place-items: center;
         transition: opacity .25s ease, transform .25s ease;

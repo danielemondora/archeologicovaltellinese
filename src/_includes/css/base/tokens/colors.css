@@ -107,7 +107,8 @@
 
   --bg-tertiary: var(--color-forest-100);
 
-  --bg-footer-main: var(--color-slate-500);
+  --bg-footer-main: var(--color-slate-600);
+  --bg-footer-bottom: var(--color-slate-900);
 
   /* --------------------------------
      Typography

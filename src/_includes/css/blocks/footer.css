@@ -1,9 +1,15 @@
-.site-footer__main {
+.site-footer > :first-child {
   padding-block: var(--space-xl);
   background-color: var(--bg-footer-main);
 }
 
-.site-footer__bottom {
+.site-footer > :last-child {
   padding-block: var(--space-xs);
-  background-color: var(--bg-primary);
+  background-color: var(--bg-footer-bottom);
+}
+
+.site-footer__grid {
+  display: grid;
+  gap: var(--space-s-l);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }

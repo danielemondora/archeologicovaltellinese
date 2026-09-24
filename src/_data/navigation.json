@@ -1,88 +1,41 @@
 {
-	"items": [
-		{
-			"text": "Home",
-			"url": "/"
-		},
-		{
-			"text": "Istituto",
+  "items": [
+    { "text": "Home", "url": "/" },
+    { "text": "News", "url": "/news/" },
+    {
+      "text": "Istituto",
       "children": [
-        {
-          "text": "Chi Siamo",
-          "url": "/chi-siamo/"
-        },
-        {
-          "text": "Diventa Socio",
-          "url": "/diventa-socio/"
-        },
-        {
-          "text": "Storia",
-          "url": "/storia/"
-        },
-        {
-          "text": "Statuto",
-          "url": "/statuto/"
-        },
-        {
-          "text": "Direttivo",
-          "url": "/direttivo/"
-        }
+        { "text": "Chi Siamo", "url": "/chi-siamo/" },
+        { "text": "Storia", "url": "/storia/" },
+        { "text": "Statuto", "url": "/statuto/" },
+        { "text": "Direttivo", "url": "/direttivo/" },
+        { "text": "Diventa Socio", "url": "/diventa-socio/" }
       ]
-		},
+    },
     {
       "text": "Pubblicazioni",
       "children": [
-        {
-          "text": "Notiziario",
-          "url": "/pubblicazioni/notiziario/"
-        },
-        {
-          "text": "Tellina Opuscula",
-          "url": "/pubblicazioni/tellina-opuscula/"
-        },
-        {
-          "text": "Risorse",
-          "url": "/risorse/"
-        }
+        { "text": "Notiziario", "url": "/pubblicazioni/notiziario/" },
+        { "text": "Tellina Opuscula", "url": "/pubblicazioni/tellina-opuscula/" },
+        { "text": "Risorse", "url": "/risorse/" }
       ]
     },
     {
       "text": "Storie",
       "children": [
-        {
-          "text": "I Castelli di Grosio",
-          "url": "/grosio/"
-        },
-        {
-          "text": "Antiquarium Tellinum",
-          "url": "/antiquarium-tellinum/"
-        },
-        {
-          "text": "La Stele di Migiondo",
-          "url": "/migiondo/"
-        },
-        {
-          "text": "La Stele Cornal 5",
-          "url": "/cornal/"
-        }
+        { "text": "I Castelli di Grosio", "url": "/grosio/" },
+        { "text": "Antiquarium Tellinum", "url": "/antiquarium-tellinum/" },
+        { "text": "La Stele di Migiondo", "url": "/migiondo/" },
+        { "text": "La Stele Cornal 5", "url": "/cornal/" }
       ]
     },
     {
       "text": "Davide Pace",
       "children": [
-        {
-          "text": "Storia",
-          "url": "/davide-pace/"
-        },
-        {
-          "text": "Bibliografia",
-          "url": "/davide-pace/bibliografia/"
-        }
+        { "text": "Storia", "url": "/davide-pace/" },
+        { "text": "Bibliografia", "url": "/davide-pace/bibliografia/" }
       ]
     },
-    {
-			"text": "News",
-			"url": "/news/"
-		}
-	]
+    { "text": "Contatti", "url": "/contatti/" }
+  ]
 }

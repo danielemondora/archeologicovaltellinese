@@ -62,7 +62,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy({ "src/assets/favicon": "/" });
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
-  eleventyConfig.addPassthroughCopy({ "src/assets/images/grosio_giroldo_armigeri.png": "/og-image.png" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/og-image.jpg": "/" });
 
 
   eleventyConfig.addCollection("news", (collectionApi) => {
