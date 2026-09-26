@@ -1,3 +1,3 @@
-# Template 11ty
+# Istituto Archeologico Valtellinese
 
-Template pronto all'uso per la creazione di un sito web statico, installa le dipendenze con npm install.
+Sito web realizzato con 11ty e Web Awesome per la gestione dei form di contatto

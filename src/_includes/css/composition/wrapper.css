@@ -5,10 +5,13 @@
  */
 .wrapper {
   --_wrapper-max-width: var(--wrapper-max-width, 60rem);
-  --_wrapper-padding-inline: var(--wrapper-padding-inline, clamp(1rem, 5vw, var(--space-s-m)));
+  --_wrapper-padding-inline: var(
+    --wrapper-padding-inline,
+    clamp(1rem, 5vw, var(--space-s-m))
+  );
   --_wrapper-margin-inline: var(--wrapper-margin-inline, auto);
   --_wrapper-position: var(--wrapper-position, relative);
-  
+
   max-width: var(--_wrapper-max-width);
   padding-inline: var(--_wrapper-padding-inline);
   margin-inline: var(--_wrapper-margin-inline);

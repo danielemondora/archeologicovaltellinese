@@ -12,107 +12,151 @@ pagination:
 <h1>Scopri il Notiziario</h1>
 
 <p>
-  Il Notiziario dell'<strong>Istituto Archeologico Valtellinese</strong> è la pubblicazione ufficiale dedicata allo studio
-  e alla valorizzazione del <strong>patrimonio archeologico e storico della Valtellina</strong>.
-  L'opera offre un'indagine approfondita sulle radici del territorio, coniugando i dati emersi dalle ricerche
-  sul campo con l'analisi delle tradizioni, dell'etimologia e della toponomastica locale.
+  Il Notiziario dell'
+  <strong>Istituto Archeologico Valtellinese</strong>
+  è la pubblicazione ufficiale dedicata allo studio e alla valorizzazione del
+  <strong>patrimonio archeologico e storico della Valtellina</strong>
+  . L'opera offre un'indagine approfondita sulle radici del territorio, coniugando i dati emersi dalle ricerche sul campo con l'analisi delle tradizioni, dell'etimologia e della toponomastica locale.
 </p>
 
 <p>
-  In questa sezione è consultabile l'archivio storico dei volumi editi dal 2003 a oggi. Accedendo
-  alle singole schede è possibile visionare l'<strong>indice dettagliato</strong> dei contenuti.
+  In questa sezione è consultabile l'archivio storico dei volumi editi dal 2003 a oggi. Accedendo alle singole schede è possibile visionare l'
+  <strong>indice dettagliato</strong>
+  dei contenuti.
 </p>
 
 <p>
-  La maggior parte del pregresso editoriale è liberamente accessibile per il <strong>download</strong>.
-  I soci possono <a href="/contatti/">contattare direttamente l'Istituto</a> per richiedere
-  la consegna delle pubblicazioni a stampa più recenti.
+  La maggior parte del pregresso editoriale è liberamente accessibile per il
+  <strong>download</strong>
+  . I soci possono
+  <a href='/contatti/'>contattare direttamente l'Istituto</a>
+  per richiedere la consegna delle pubblicazioni a stampa più recenti.
 </p>
 
-<section class="flow">
+<section class='flow'>
 
-  <div class="grid">
+  <div class='grid'>
     {% for item in notiziari %}
-    <article class="flow">
-      <div class="card">
+      <article class='flow'>
+        <div class='card'>
 
-        {# COVER #}
-        {% if item.immagine %}
-        <img class="card__cover" src="{{ item.immagine }}" alt="" aria-hidden="true" eleventy:ignore>
-        {% else %}
-        <div class="card__cover card__cover--placeholder" aria-hidden="true"></div>
-        {% endif %}
-
-        {# TESTO #}
-        <div class="flow">
-          <h2>Notiziario N°{{ item.numero }}</h2>
-          <p>Anno {{ item.anno }}</p>
-        </div>
-
-        {# CTA #}
-        <div class="cluster" style="--gutter: var(--space-2xs)">
-
-          {% if item.download %}
-          <a class="button" data-button-variant="primary" href="{{ item.download }}" download>
-            Download
-            <span class="visually-hidden">
-              del Notiziario N°{{ item.numero }}
-            </span>
-          </a>
+          {# COVER #}
+          {% if item.immagine %}
+            <img
+              class='card__cover'
+              src='{{ item.immagine }}'
+              alt=''
+              aria-hidden='true'
+              eleventy:ignore
+            />
+          {% else %}
+            <div
+              class='card__cover card__cover--placeholder'
+              aria-hidden='true'
+            ></div>
           {% endif %}
 
-          <a class="button" data-button-variant="primary" href="/pubblicazioni/notiziario/item/{{ item.numero }}/">
-            Scopri di più
-            <span class="visually-hidden">
-              sul Notiziario N°{{ item.numero }}
-            </span>
-          </a>
+          {# TESTO #}
+          <div class='flow'>
+            <h2>Notiziario N°{{ item.numero }}</h2>
+            <p>Anno {{ item.anno }}</p>
+          </div>
+
+          {# CTA #}
+          <div class='cluster' style='--gutter: var(--space-2xs)'>
+
+            {% if item.download %}
+              <a
+                class='button'
+                data-button-variant='primary'
+                href='{{ item.download }}'
+                download
+              >
+                Download
+                <span class='visually-hidden'>del Notiziario N°{{ item.numero }}</span>
+              </a>
+            {% endif %}
+
+            <a
+              class='button'
+              data-button-variant='primary'
+              href='/pubblicazioni/notiziario/item/{{ item.numero }}/'
+            >
+              Scopri di più
+              <span class='visually-hidden'>sul Notiziario N°{{ item.numero }}</span>
+            </a>
+
+          </div>
 
         </div>
-
-      </div>
-    </article>
+      </article>
     {% endfor %}
 
   </div>
 
   {% if pagination.pages.length > 1 %}
-  <nav aria-label="Paginazione notiziari" class="notiziario__pagination">
-    <ul role="list" class="cluster">
-      {% if pagination.href.previous %}
-      <li>
-        <a class="" href="{{ pagination.href.previous }}" rel="prev">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true" width="1em" height="1em"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg>
-          <span class="visually-hidden">Pagina precedente</span>
-        </a>
-      </li>
-      {% endif %}
-
-      {% for pageHref in pagination.hrefs %}
-      <li>
-        {% if page.url == pageHref %}
-        <a class="" href="{{ pageHref }}" aria-current="page">
-          <span class="visually-hidden">Pagina </span>{{ loop.index }}
-        </a>
-        {% else %}
-        <a class="text-muted" href="{{ pageHref }}">
-          <span class="visually-hidden">Pagina </span>{{ loop.index }}
-        </a>
+    <nav class='notiziario__pagination' aria-label='Paginazione notiziari'>
+      <ul class='cluster' role='list'>
+        {% if pagination.href.previous %}
+          <li>
+            <a class='' href='{{ pagination.href.previous }}' rel='prev'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                viewBox='0 0 640 640'
+                viewBox='0 0 640 640'
+                fill='currentColor'
+                aria-hidden='true'
+                width='1em'
+                height='1em'
+              >
+                <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d='M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z'
+                />
+              </svg>
+              <span class='visually-hidden'>Pagina precedente</span>
+            </a>
+          </li>
         {% endif %}
-      </li>
-      {% endfor %}
 
-      {% if pagination.href.next %}
-      <li>
-        <a class="" href="{{ pagination.href.next }}" rel="next">
-          <span class="visually-hidden">Pagina successiva</span>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true" width="1em" height="1em"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg>
-        </a>
-      </li>
-      {% endif %}
-    </ul>
-  </nav>
+        {% for pageHref in pagination.hrefs %}
+          <li>
+            {% if page.url == pageHref %}
+              <a class='' href='{{ pageHref }}' aria-current='page'>
+                <span class='visually-hidden'>Pagina</span>
+                {{ loop.index }}
+              </a>
+            {% else %}
+              <a class='text-muted' href='{{ pageHref }}'>
+                <span class='visually-hidden'>Pagina</span>
+                {{ loop.index }}
+              </a>
+            {% endif %}
+          </li>
+        {% endfor %}
 
+        {% if pagination.href.next %}
+          <li>
+            <a class='' href='{{ pagination.href.next }}' rel='next'>
+              <span class='visually-hidden'>Pagina successiva</span>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                viewBox='0 0 640 640'
+                fill='currentColor'
+                aria-hidden='true'
+                width='1em'
+                height='1em'
+              >
+                <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d='M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z'
+                />
+              </svg>
+            </a>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
   {% endif %}
 
 </section>

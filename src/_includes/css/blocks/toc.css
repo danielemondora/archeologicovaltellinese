@@ -6,7 +6,7 @@
 }
 
 .toc::before {
-  content: "Indice dei contenuti";
+  content: 'Indice dei contenuti';
   display: block;
   padding-bottom: var(--space-2xs);
   margin-bottom: var(--space-2xs);

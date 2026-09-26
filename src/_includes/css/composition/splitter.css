@@ -1,6 +1,6 @@
 /**
- * Splitter 
- * A responsive flex container that pushes content away from each other 
+ * Splitter
+ * A responsive flex container that pushes content away from each other
  */
 .splitter {
   display: flex;

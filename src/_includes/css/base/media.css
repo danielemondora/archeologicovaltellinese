@@ -1,6 +1,6 @@
 /* base/media.css */
 img:not([src]),
-img[loading="eager"] {
+img[loading='eager'] {
   color: transparent;
   font-size: 0;
 }

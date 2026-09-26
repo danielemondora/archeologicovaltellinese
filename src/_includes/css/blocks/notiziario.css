@@ -6,6 +6,6 @@
 }
 
 /* notiziario-item.njk */
-.notiziario-item__index-element:not(:last-child){
+.notiziario-item__index-element:not(:last-child) {
   border-bottom: 1px solid var(--border-subtle);
 }

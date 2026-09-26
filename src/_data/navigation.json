@@ -16,7 +16,10 @@
       "text": "Pubblicazioni",
       "children": [
         { "text": "Notiziario", "url": "/pubblicazioni/notiziario/" },
-        { "text": "Tellina Opuscula", "url": "/pubblicazioni/tellina-opuscula/" },
+        {
+          "text": "Tellina Opuscula",
+          "url": "/pubblicazioni/tellina-opuscula/"
+        },
         { "text": "Risorse", "url": "/risorse/" }
       ]
     },

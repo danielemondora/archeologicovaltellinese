@@ -3,43 +3,49 @@
 <!DOCTYPE html>
 <html lang="{{ lang | default('it') }}">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 
-  {% include "partials/meta-head.njk" %}
+    {% include "partials/meta-head.njk" %}
 
-  <!-- Custom CSS e JS -->
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <script src="/assets/js/bundle.js" defer></script>
+    <!-- Custom CSS e JS -->
+    <link rel='stylesheet' href='/assets/css/main.css' />
+    <script src='/assets/js/bundle.js' defer></script>
 
-  {% if webAwesome %}
-  <link rel="stylesheet" href="https://ka-f.webawesome.com/webawesome@3.13.0/styles/themes/default.css" />
-  <script type="module" src="https://ka-f.webawesome.com/webawesome@3.13.0/webawesome.loader.js"></script>
-  {% endif %}
-
-
-</head>
-
-<body>
-
-
-
-  <div class="site-wrap">
-
-    {% include "partials/header.njk" %}
-
-    {% block content %}
-    {% if content %}
-    {{ content | safe }}
+    {% if webAwesome %}
+      <link
+        rel='stylesheet'
+        href='https://ka-f.webawesome.com/webawesome@3.13.0/styles/themes/default.css'
+      />
+      <script
+        type='module'
+        src='https://ka-f.webawesome.com/webawesome@3.13.0/webawesome.loader.js'
+      ></script>
     {% endif %}
-    {% endblock %}
 
-    {% include "partials/footer.njk" %}
-  </div>
+  </head>
 
-  <scroll-top-button color="var(--color-primary)" border="var(--color-primary-hover)"></scroll-top-button>
+  <body>
 
-</body>
+    <div class='site-wrap'>
+
+      {% include "partials/header.njk" %}
+
+      {% block content %}
+        {% if content %}
+          {{ content | safe }}
+        {% endif %}
+      {% endblock %}
+
+      {% include "partials/footer.njk" %}
+    </div>
+
+    <scroll-top-button
+      color='var(--color-primary)'
+      border='var(--color-primary-hover)'
+    ></scroll-top-button>
+
+  </body>
 
 </html>

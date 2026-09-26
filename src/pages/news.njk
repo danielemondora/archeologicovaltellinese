@@ -9,60 +9,56 @@ pagination:
   size: 10
   alias: news
 ---
-<section class="flow">
-  <header class="flow">
+<section class='flow'>
+  <header class='flow'>
     <h1>News</h1>
-    <p class="measure">
-      Tutte le novità, gli eventi e le comunicazioni.
-    </p>
+    <p class='measure'>Tutte le novità, gli eventi e le comunicazioni.</p>
   </header>
 
-  <div class="grid">
+  <div class='grid'>
     {% for item in news %}
-
-    {% include "partials/news-card.njk" %}
-
+      {% include "partials/news-card.njk" %}
     {% endfor %}
   </div>
 
   {% if pagination.pages.length > 1 %}
-  <nav aria-label="Paginazione news">
-    <ul role="list" class="cluster">
+    <nav aria-label='Paginazione news'>
+      <ul class='cluster' role='list'>
 
-      {% if pagination.href.previous %}
-      <li>
-        <a href="{{ pagination.href.previous }}" rel="prev">
-          &laquo;
-          <span class="visually-hidden">Pagina precedente</span>
-        </a>
-      </li>
-      {% endif %}
-
-      {% for pageHref in pagination.hrefs %}
-      <li>
-        {% if page.url == pageHref %}
-        <a href="{{ pageHref }}" aria-current="page">
-          {{ loop.index }}
-        </a>
-        {% else %}
-        <a href="{{ pageHref }}" class="text-muted">
-          {{ loop.index }}
-        </a>
+        {% if pagination.href.previous %}
+          <li>
+            <a href='{{ pagination.href.previous }}' rel='prev'>
+              &laquo;
+              <span class='visually-hidden'>Pagina precedente</span>
+            </a>
+          </li>
         {% endif %}
-      </li>
-      {% endfor %}
 
-      {% if pagination.href.next %}
-      <li>
-        <a href="{{ pagination.href.next }}" rel="next">
-          <span class="visually-hidden">Pagina successiva</span>
-          &raquo;
-        </a>
-      </li>
-      {% endif %}
+        {% for pageHref in pagination.hrefs %}
+          <li>
+            {% if page.url == pageHref %}
+              <a href='{{ pageHref }}' aria-current='page'>
+                {{ loop.index }}
+              </a>
+            {% else %}
+              <a class='text-muted' href='{{ pageHref }}'>
+                {{ loop.index }}
+              </a>
+            {% endif %}
+          </li>
+        {% endfor %}
 
-    </ul>
-  </nav>
+        {% if pagination.href.next %}
+          <li>
+            <a href='{{ pagination.href.next }}' rel='next'>
+              <span class='visually-hidden'>Pagina successiva</span>
+              &raquo;
+            </a>
+          </li>
+        {% endif %}
+
+      </ul>
+    </nav>
   {% endif %}
 
 </section>

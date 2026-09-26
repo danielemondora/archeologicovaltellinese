@@ -1,40 +1,40 @@
 /* 1. Fondamentali (Variabili e Reset) */
-@import "base/reset.css";
+@import 'base/reset.css';
 
-@import "base/tokens/fonts.css";
-@import "base/tokens/colors.css";
-@import "base/tokens/spacing.css";
-@import "base/tokens/typography.css";
+@import 'base/tokens/fonts.css';
+@import 'base/tokens/colors.css';
+@import 'base/tokens/spacing.css';
+@import 'base/tokens/typography.css';
 
-@import "base/global.css";
-@import "base/media.css";
+@import 'base/global.css';
+@import 'base/media.css';
 
 /* 2. Regole globali e utilità */
-@import "utilities/utilities.css";
-@import "utilities/visually-hidden.css";
+@import 'utilities/utilities.css';
+@import 'utilities/visually-hidden.css';
 
-@import "composition/flow.css";
-@import "composition/site-wrap.css";
-@import "composition/splitter.css";
-@import "composition/wrapper.css";
-@import "composition/cluster.css";
-@import "composition/grid.css";
-@import "composition/panel.css";
-@import "composition/repel.css";
-@import "composition/sidebar.css";
-@import "composition/full-width.css";
+@import 'composition/flow.css';
+@import 'composition/site-wrap.css';
+@import 'composition/splitter.css';
+@import 'composition/wrapper.css';
+@import 'composition/cluster.css';
+@import 'composition/grid.css';
+@import 'composition/panel.css';
+@import 'composition/repel.css';
+@import 'composition/sidebar.css';
+@import 'composition/full-width.css';
 
 /* 3. Blocchi e Componenti */
-@import "blocks/button.css";
-@import "blocks/footer.css";
-@import "blocks/header.css";
-@import "blocks/nav.css";
-@import "blocks/nav-desktop.css";
-@import "blocks/nav-mobile.css";
-@import "blocks/hero.css";
-@import "blocks/card.css";
-@import "blocks/skip-link.css";
-@import "blocks/notiziario.css";
-@import "blocks/toc.css";
-@import "blocks/footnotes.css";
-@import "blocks/prose.css";
+@import 'blocks/button.css';
+@import 'blocks/footer.css';
+@import 'blocks/header.css';
+@import 'blocks/nav.css';
+@import 'blocks/nav-desktop.css';
+@import 'blocks/nav-mobile.css';
+@import 'blocks/hero.css';
+@import 'blocks/card.css';
+@import 'blocks/skip-link.css';
+@import 'blocks/notiziario.css';
+@import 'blocks/toc.css';
+@import 'blocks/footnotes.css';
+@import 'blocks/prose.css';

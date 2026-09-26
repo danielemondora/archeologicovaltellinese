@@ -22,7 +22,9 @@ a:not([class]) {
 
   text-decoration-skip-ink: auto;
 
-  transition: text-decoration-thickness 0.2s ease, color 0.2s ease;
+  transition:
+    text-decoration-thickness 0.2s ease,
+    color 0.2s ease;
 }
 
 a:not([class]):hover {
@@ -49,7 +51,7 @@ h4 {
   margin-block-start: 0;
 }
 
-:is(h1, h2, h3, h4)+* {
+:is(h1, h2, h3, h4) + * {
   --flow-space: 0.5em;
   margin-block-start: var(--flow-space);
 }
@@ -68,7 +70,7 @@ ol[role='list'] {
 }
 
 *:focus-visible {
-  outline: 2px solid  var(--text-main);
+  outline: 2px solid var(--text-main);
   outline-offset: 4px;
 }
 

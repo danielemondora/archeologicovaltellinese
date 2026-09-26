@@ -787,7 +787,7 @@
       "numero": 13,
       "anno": 2015,
       "slug": "notiziario-13",
-      "immagine": null,
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-13.webp",
       "download": "https://media.archeologicovaltellinese.it/notiziari/notiziario-iav-13-2015.pdf",
       "indice": [
         {
@@ -990,7 +990,7 @@
         {
           "pagina": 1,
           "titolo": "Teglio (SO), località Cornal. Vecchi e nuovi dati",
-          "autori": "Roberto Caimi , Gianluigi Garbellini, Francesco Pace, Maria Giuseppina Ruggiero, Marco Tremari"
+          "autori": "Roberto Caimi, Gianluigi Garbellini, Francesco Pace, Maria Giuseppina Ruggiero, Marco Tremari"
         },
         {
           "pagina": 23,
@@ -1064,7 +1064,7 @@
         {
           "pagina": 5,
           "titolo": "Ritrovamento di una stele incisa dell'età del rame, a Sondalo (SO), località Migiondo. Prima nota.",
-          "autori": "Roberto Caimi , Ivano Gambarri , Angelo Martinotti, Francesco Pace, Maria Giuseppina Ruggiero"
+          "autori": "Roberto Caimi, Ivano Gambarri, Angelo Martinotti, Francesco Pace, Maria Giuseppina Ruggiero"
         },
         {
           "pagina": 25,
@@ -1301,7 +1301,7 @@
         {
           "pagina": 73,
           "titolo": "Antiquarium Tellinum di Palazzo Besta a Teglio; l'ampliamento del percorso espositivo tra studi, progettazione e interventi",
-          "autori": "Stefania Bossi , Maria Giuseppina Ruggiero, Angelo Martinotti, Chiara Cubito"
+          "autori": "Stefania Bossi, Maria Giuseppina Ruggiero, Angelo Martinotti, Chiara Cubito"
         },
         {
           "pagina": 99,
@@ -1385,7 +1385,7 @@
         {
           "pagina": 89,
           "titolo": "Segni rupestri \"minori\" nella media Valtellina. La roccia con pediforme in località Rodolo, Colorina (SO): documentazione e valorizzazione",
-          "autori": "Francesco Ghilotti , Angelo Martinotti, Gottfried Parrer"
+          "autori": "Francesco Ghilotti, Angelo Martinotti, Gottfried Parrer"
         },
         {
           "pagina": 115,
@@ -1444,7 +1444,7 @@
         {
           "pagina": 7,
           "titolo": "Manufatto ligne o da Piz Minor ( Livigno, SO )",
-          "autori": "Maria Giuseppina Ruggiero, Marco Baioni, Walter Basile, Nicoletta Martinelli , Olivia Pignatelli"
+          "autori": "Maria Giuseppina Ruggiero, Marco Baioni, Walter Basile, Nicoletta Martinelli, Olivia Pignatelli"
         },
         {
           "pagina": 17,

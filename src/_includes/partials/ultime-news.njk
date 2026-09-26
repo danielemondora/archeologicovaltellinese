@@ -1,20 +1,18 @@
-<section class="wrapper | flow">
+<section class='wrapper | flow'>
 
-    <header class="repel">
-      <h2>Ultime Notizie</h2>
-      <a href="/news/">Tutte le news</a>
-    </header>
+  <header class='repel'>
+    <h2>Ultime Notizie</h2>
+    <a href='/news/'>Tutte le news</a>
+  </header>
 
-    <div class="grid">
+  <div class='grid'>
 
-      {% for item in collections.news %}
+    {% for item in collections.news %}
       {% if loop.index <= 3 %}
-
-      {% include "partials/news-card.njk" %}
-
+        {% include "partials/news-card.njk" %}
       {% endif %}
-      {% endfor %}
+    {% endfor %}
 
-    </div>
+  </div>
 
 </section>

@@ -11,25 +11,35 @@ layout: page.njk
 eleventyComputed:
   title: "Notiziario N°{{ item.numero }}"
 ---
-<div class="notiziario-item | sidebar | wrapper">
+<div class='notiziario-item | sidebar | wrapper'>
 
   {# HEADER CON NAVIGAZIONE ED IMMAGINE #}
-  <header class="flow">
+  <header class='flow'>
 
     <h1>
-      Notiziario N° {{ item.numero }}
-      <span class="text-muted">({{ item.anno }})</span>
+      Notiziario N°
+      {{ item.numero }}
+      <span class='text-muted'>({{ item.anno }})</span>
     </h1>
 
-    <div class="cluster">
+    <div class='cluster'>
 
       {% if item.download %}
-      <a class="button" data-button-variant="primary" href="{{ item.download }}" download>
-        Scarica il PDF
-      </a>
+        <a
+          class='button'
+          data-button-variant='primary'
+          href='{{ item.download }}'
+          download
+        >
+          Scarica il PDF
+        </a>
       {% endif %}
 
-      <a class="button" data-button-variant="primary" href="/pubblicazioni/notiziario/">
+      <a
+        class='button'
+        data-button-variant='primary'
+        href='/pubblicazioni/notiziario/'
+      >
         Torna all'indice
       </a>
 
@@ -37,34 +47,39 @@ eleventyComputed:
 
     <div>
       {% if item.immagine %}
-      <img class="card__cover" src="{{ item.immagine }}" alt="" aria-hidden="true" eleventy:ignore>
+        <img
+          class='card__cover'
+          src='{{ item.immagine }}'
+          alt=''
+          aria-hidden='true'
+          eleventy:ignore
+        />
       {% else %}
-      <div class="card__cover card__cover--placeholder" aria-hidden="true"></div>
+        <div
+          class='card__cover card__cover--placeholder'
+          aria-hidden='true'
+        ></div>
       {% endif %}
     </div>
   </header>
 
   {# INDICE ELEMENTO #}
-  <article class="flow">
+  <article class='flow'>
 
     <h2>Indice</h2>
 
-    <div class="flow">
+    <div class='flow'>
 
       {% for articolo in item.indice %}
-      <div class="notiziario-item__index-element | flow">
-        {% if articolo.autori %}
-        <p class="text-step--1 text-muted">
-          {{ articolo.autori }}
-        </p>
-        {% endif %}
-        <span class="text-step--1 text-muted">
-          Pag. {{ articolo.pagina }}
-        </span>
-        <p class="font-bold">
-          {{ articolo.titolo }}
-        </p>
-      </div>
+        <div class='notiziario-item__index-element | flow'>
+          {% if articolo.autori %}
+            <p class='text-step--1 text-muted'>
+              {{ articolo.autori }}
+            </p>
+          {% endif %}
+          <span class='text-step--1 text-muted'>Pag. {{ articolo.pagina }}</span>
+          <p class='font-bold'>{{ articolo.titolo }}</p>
+        </div>
       {% endfor %}
 
     </div>

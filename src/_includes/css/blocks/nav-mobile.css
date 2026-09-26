@@ -58,7 +58,10 @@
 
   /* Animazione Base: parte fuori dallo schermo, a destra */
   transform: translateX(100%);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), overlay 0.4s allow-discrete, display 0.4s allow-discrete;
+  transition:
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    overlay 0.4s allow-discrete,
+    display 0.4s allow-discrete;
 }
 
 #mobile-popover::backdrop {
@@ -166,7 +169,7 @@
   text-decoration: none;
 }
 
-.mobile-sub-menu a[aria-current="page"] {
+.mobile-sub-menu a[aria-current='page'] {
   opacity: 1;
   font-weight: bold;
 }

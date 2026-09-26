@@ -1,34 +1,38 @@
-<footer class="site-footer | text-on-primary">
+<footer class='site-footer | text-on-primary'>
 
   <section>
-    <div class="wrapper" data-variant="large">
-      <div class="site-footer__grid">
+    <div class='wrapper' data-variant='large'>
+      <div class='site-footer__grid'>
 
         <header>
-          <h2 class="text-step-2">{{ site.name }}</h2>
-          <p class="text-step--1">{{ site.description }}</p>
+          <h2 class='text-step-2'>{{ site.name }}</h2>
+          <p class='text-step--1'>{{ site.description }}</p>
         </header>
 
         <div>
-          <h3 class="text-step-1">Sede</h3>
-          <div class="text-step--1">
-            <ul role="list" class="flow flow-space-3xs | text-step--1">
+          <h3 class='text-step-1'>Sede</h3>
+          <div class='text-step--1'>
+            <ul class='flow flow-space-3xs | text-step--1' role='list'>
               <li>{{ site.address.street }}</li>
               <li>{{ site.address.postalCode }} {{ site.address.city }}</li>
-              <li>C.F. {{site.company.codiceFiscale }} </li>
+              <li>C.F. {{ site.company.codiceFiscale }}</li>
             </ul>
           </div>
         </div>
 
         <div>
-          <h3 class="text-step-1">Contatti</h3>
-          <div class="text-step--1">
-            <ul role="list" class="flow flow-space-3xs | text-step--1">
+          <h3 class='text-step-1'>Contatti</h3>
+          <div class='text-step--1'>
+            <ul class='flow flow-space-3xs | text-step--1' role='list'>
               <li>
-                <a class="" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+                <a class='' href='mailto:{{ site.contact.email }}'>
+                  {{ site.contact.email }}
+                </a>
               </li>
               <li>
-                <a class="" href="{{ site.social.facebook }}">Vai alla pagina Facebook</a>
+                <a class='' href='{{ site.social.facebook }}'>
+                  Vai alla pagina Facebook
+                </a>
               </li>
             </ul>
           </div>
@@ -38,15 +42,17 @@
     </div>
   </section>
 
-  <section class="text-step--2 | text-on-primary">
-    <div class="wrapper | cluster" data-variant="large">
+  <section class='text-step--2 | text-on-primary'>
+    <div class='wrapper | cluster' data-variant='large'>
       <span>
         Sito Web realizzato da
-        <a href="mailto:{{- site.author.email -}}" class="weight-bold">{{- site.author.name-}}</a>
+        <a class='weight-bold' href='mailto:{{- site.author.email -}}'>
+          {{- site.author.name -}}
+        </a>
       </span>
-      <div class="cluster">
-        <a class="" href="/privacy-policy/">Privacy Policy</a>
-        <a class="" href="/contatti/">Contatti</a>
+      <div class='cluster'>
+        <a class='' href='/privacy-policy/'>Privacy Policy</a>
+        <a class='' href='/contatti/'>Contatti</a>
       </div>
     </div>
   </section>

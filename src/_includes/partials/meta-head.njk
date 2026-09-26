@@ -4,56 +4,61 @@
   {%- set pageTitle = title + site.seo.titleSeparator + site.seo.defaultTitle if title else site.name -%}
 {%- endif -%}
 
-{%- set autoDescription = site.seo.defaultDescription if page.url == '/' else (content | striptags | truncate(160) if content else site.description) -%}
+{%- set autoDescription = site.seo.defaultDescription if page.url == '/' else(
+    content | striptags | truncate(
+      160
+    ) if content else site.description
+  )
+-%}
 {%- set pageDescription = description if description else autoDescription -%}
 {%- set pageUrl = site.url + page.url -%}
 {% set socialImage = ogImage or site.seo.defaultImage %}
 
 <title>{{ pageTitle }}</title>
-<meta name="description" content="{{ pageDescription }}" />
+<meta name='description' content='{{ pageDescription }}' />
 
 <!-- Search Engines -->
 {% if noindex %}
-<meta name="robots" content="noindex,follow">
-<meta name="googlebot" content="noindex,follow">
+  <meta name='robots' content='noindex,follow' />
+  <meta name='googlebot' content='noindex,follow' />
 {% else %}
-<meta name="robots" content="noindex,follow">
-<meta name="googlebot" content="noindex,follow">
+  <meta name='robots' content='noindex,follow' />
+  <meta name='googlebot' content='noindex,follow' />
 {% endif %}
 
 <!-- Made with Eleventy! -->
-<meta name="generator" content="{{ eleventy.generator }}" />
+<meta name='generator' content='{{ eleventy.generator }}' />
 
 <!-- Disable automatic detection and formatting of possible phone numbers -->
-<meta name="format-detection" content="telephone=no" />
+<meta name='format-detection' content='telephone=no' />
 
-<link rel="canonical" href="{{ pageUrl }}" />
+<link rel='canonical' href='{{ pageUrl }}' />
 
 <!-- Immagine condivisione social -->
-<link rel="icon" href="/favicon.ico" sizes="any" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
+<link rel='icon' href='/favicon.ico' sizes='any' />
+<link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
+<link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
+<link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
+<link rel='manifest' href='/site.webmanifest' />
 
 {# Open Graph / Facebook #}
-<meta property="og:site_name" content="{{ site.name }}" />
-<meta property="og:title" content="{{ pageTitle }}" />
-<meta property="og:description" content="{{ pageDescription }}" />
-<meta property="og:url" content="{{ pageUrl }}" />
-<meta property="og:type" content="{{ ogType or 'website' }}"/>
-<meta property="og:locale" content="{{ site.locale }}" />
-<meta property="og:image" content="{{ site.url }}{{ socialImage }}" />
-<meta property="og:image:alt" content="{{ pageTitle }}" />
+<meta property='og:site_name' content='{{ site.name }}' />
+<meta property='og:title' content='{{ pageTitle }}' />
+<meta property='og:description' content='{{ pageDescription }}' />
+<meta property='og:url' content='{{ pageUrl }}' />
+<meta property='og:type' content="{{ ogType or 'website' }}" />
+<meta property='og:locale' content='{{ site.locale }}' />
+<meta property='og:image' content='{{ site.url }}{{ socialImage }}' />
+<meta property='og:image:alt' content='{{ pageTitle }}' />
 
 <!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ pageTitle }}" />
-<meta name="twitter:description" content="{{ pageDescription }}" />
-<meta name="twitter:image" content="{{ site.url }}{{ socialImage }}" />
+<meta name='twitter:card' content='summary_large_image' />
+<meta name='twitter:title' content='{{ pageTitle }}' />
+<meta name='twitter:description' content='{{ pageDescription }}' />
+<meta name='twitter:image' content='{{ site.url }}{{ socialImage }}' />
 
 {% if page.url == '/' %}
-<script type="application/ld+json">
+  <script type='application/ld+json'>
 {
   "@context": "https://schema.org",
   "@type": "Organization",

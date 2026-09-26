@@ -16,71 +16,68 @@
      Neutral / surfaces / typography
      ================================================== */
 
-  --color-stone-50: #F8F6F1;
-  --color-stone-100: #EEECE5;
-  --color-stone-200: #DCD9D0;
-  --color-stone-300: #C5C1B6;
-  --color-stone-400: #A5A198;
-  --color-stone-500: #817D74;
-  --color-stone-600: #625F58;
+  --color-stone-50: #f8f6f1;
+  --color-stone-100: #eeece5;
+  --color-stone-200: #dcd9d0;
+  --color-stone-300: #c5c1b6;
+  --color-stone-400: #a5a198;
+  --color-stone-500: #817d74;
+  --color-stone-600: #625f58;
   --color-stone-700: #494741;
-  --color-stone-800: #32332F;
+  --color-stone-800: #32332f;
   --color-stone-900: #252825;
-  --color-stone-950: #181B19;
-
+  --color-stone-950: #181b19;
 
   /* ==================================================
      SLATE
      Primary / institutional / mountain
      ================================================== */
 
-  --color-slate-50: #F1F5F5;
-  --color-slate-100: #DEE7E8;
-  --color-slate-200: #C5D2D4;
-  --color-slate-300: #A8BABD;
-  --color-slate-400: #8BA1A5;
-  --color-slate-500: #6D878C;
-  --color-slate-600: #536E73;
-  --color-slate-700: #405B61;
-  --color-slate-800: #31484D;
-  --color-slate-900: #263B3F;
-  --color-slate-950: #19282B;
-
+  --color-slate-50: #f1f5f5;
+  --color-slate-100: #dee7e8;
+  --color-slate-200: #c5d2d4;
+  --color-slate-300: #a8babd;
+  --color-slate-400: #8ba1a5;
+  --color-slate-500: #6d878c;
+  --color-slate-600: #536e73;
+  --color-slate-700: #405b61;
+  --color-slate-800: #31484d;
+  --color-slate-900: #263b3f;
+  --color-slate-950: #19282b;
 
   /* ==================================================
      EARTH
      Secondary / archaeology / material
      ================================================== */
 
-  --color-earth-50: #FAF5F1;
-  --color-earth-100: #F1E5DC;
-  --color-earth-200: #E3CEC0;
-  --color-earth-300: #D0AE99;
-  --color-earth-400: #B88E70;
-  --color-earth-500: #9D7057;
-  --color-earth-600: #82563F;
-  --color-earth-700: #704B38;
-  --color-earth-800: #5A3B2D;
+  --color-earth-50: #faf5f1;
+  --color-earth-100: #f1e5dc;
+  --color-earth-200: #e3cec0;
+  --color-earth-300: #d0ae99;
+  --color-earth-400: #b88e70;
+  --color-earth-500: #9d7057;
+  --color-earth-600: #82563f;
+  --color-earth-700: #704b38;
+  --color-earth-800: #5a3b2d;
   --color-earth-900: #493025;
-  --color-earth-950: #2E1D16;
-
+  --color-earth-950: #2e1d16;
 
   /* ==================================================
      FOREST
      Tertiary / landscape / Valtellina
      ================================================== */
 
-  --color-forest-50: #F2F6F2;
-  --color-forest-100: #E0EAE2;
-  --color-forest-200: #C7D7CA;
-  --color-forest-300: #A9BEAE;
-  --color-forest-400: #829D89;
-  --color-forest-500: #64866C;
-  --color-forest-600: #4F7158;
-  --color-forest-700: #3C6047;
-  --color-forest-800: #334F3A;
+  --color-forest-50: #f2f6f2;
+  --color-forest-100: #e0eae2;
+  --color-forest-200: #c7d7ca;
+  --color-forest-300: #a9beae;
+  --color-forest-400: #829d89;
+  --color-forest-500: #64866c;
+  --color-forest-600: #4f7158;
+  --color-forest-700: #3c6047;
+  --color-forest-800: #334f3a;
   --color-forest-900: #294635;
-  --color-forest-950: #1C3024;
+  --color-forest-950: #1c3024;
 }
 
 /* ======================================================
@@ -95,7 +92,7 @@
      -------------------------------- */
 
   --bg-body: var(--color-stone-50);
-  --bg-surface: #FFFFFF;
+  --bg-surface: #ffffff;
   --bg-surface-subtle: var(--color-stone-100);
   --bg-surface-muted: var(--color-stone-200);
 
@@ -119,10 +116,9 @@
   --text-muted: var(--color-stone-600);
   --text-disabled: var(--color-stone-400);
 
-  --text-on-primary: #FFFFFF;
+  --text-on-primary: #ffffff;
   --text-on-secondary: var(--color-earth-900);
   --text-on-tertiary: var(--color-forest-900);
-
 
   /* --------------------------------
      Primary — Slate
@@ -137,7 +133,6 @@
   --color-primary-subtle: var(--color-slate-100);
   --color-primary-glare: var(--color-slate-50);
 
-
   /* --------------------------------
      Secondary — Earth
      -------------------------------- */
@@ -151,7 +146,6 @@
   --color-secondary-subtle: var(--color-earth-100);
   --color-secondary-glare: var(--color-earth-50);
 
-
   /* --------------------------------
      Tertiary — Forest
      -------------------------------- */
@@ -164,7 +158,6 @@
 
   --color-tertiary-subtle: var(--color-forest-100);
 
-
   /* --------------------------------
      Borders
      -------------------------------- */
@@ -174,7 +167,6 @@
   --border-strong: var(--color-stone-400);
 
   --border-primary: var(--color-slate-400);
-
 
   /* --------------------------------
      Focus

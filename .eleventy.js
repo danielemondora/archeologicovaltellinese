@@ -1,33 +1,35 @@
-import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
-import { dateFilter, htmlDateFilter } from './src/_includes/filters/date-filters.js';
-import htmlmin from 'html-minifier-terser';
-import * as esbuild from 'esbuild';
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
+import {
+  dateFilter,
+  htmlDateFilter,
+} from './src/_includes/filters/date-filters.js'
+import htmlmin from 'html-minifier-terser'
+import * as esbuild from 'esbuild'
 
-import markdownIt from 'markdown-it';
-import markdownItFootnote from 'markdown-it-footnote';
-import markdownItAnchor from 'markdown-it-anchor';
-import markdownItTocDoneRight from 'markdown-it-toc-done-right';
-import implicitFigures from 'markdown-it-implicit-figures';
+import markdownIt from 'markdown-it'
+import markdownItFootnote from 'markdown-it-footnote'
+import markdownItAnchor from 'markdown-it-anchor'
+import markdownItTocDoneRight from 'markdown-it-toc-done-right'
+import implicitFigures from 'markdown-it-implicit-figures'
 
 export default function (eleventyConfig) {
-
   // PLUGIN
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    formats: ["avif"],
+    formats: ['avif'],
     widths: [320, 768, 1200],
     defaultAttributes: {
       loading: 'lazy',
       sizes: 'auto',
       decoding: 'async',
     },
-  });
+  })
 
-  const eleventySlugify = eleventyConfig.getFilter("slugify");
+  const eleventySlugify = eleventyConfig.getFilter('slugify')
 
   const markdownLib = markdownIt({
     html: true,
     breaks: true,
-    linkify: true
+    linkify: true,
   })
     .use(markdownItFootnote)
     .use(markdownItAnchor, {
@@ -35,41 +37,40 @@ export default function (eleventyConfig) {
       slugify: eleventySlugify,
       permalink: markdownItAnchor.permalink.headerLink({
         class: 'header-anchor',
-        symbol: '#'
-      })
+        symbol: '#',
+      }),
     })
     .use(markdownItTocDoneRight, {
       level: [2, 3],
       containerClass: 'toc',
-      slugify: eleventySlugify
+      slugify: eleventySlugify,
     })
     .use(implicitFigures, {
       figcaption: true,
       keepAlt: true,
-      link: false
-    });
+      link: false,
+    })
 
-  eleventyConfig.setLibrary("md", markdownLib);
+  eleventyConfig.setLibrary('md', markdownLib)
 
   // SHORTCODE
-  eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
+  eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`)
 
   // FILTRI
-  eleventyConfig.addFilter('dateFilter', dateFilter);
-  eleventyConfig.addFilter('htmlDateFilter', htmlDateFilter);
+  eleventyConfig.addFilter('dateFilter', dateFilter)
+  eleventyConfig.addFilter('htmlDateFilter', htmlDateFilter)
 
   // PASSTHROUGH
-  eleventyConfig.addPassthroughCopy("_redirects");
-  eleventyConfig.addPassthroughCopy({ "src/assets/favicon": "/" });
-  eleventyConfig.addPassthroughCopy("src/assets/fonts");
-  eleventyConfig.addPassthroughCopy({ "src/assets/og-image.jpg": "/" });
+  eleventyConfig.addPassthroughCopy('_redirects')
+  eleventyConfig.addPassthroughCopy({ 'src/assets/favicon': '/' })
+  eleventyConfig.addPassthroughCopy('src/assets/fonts')
+  eleventyConfig.addPassthroughCopy({ 'src/assets/og-image.jpg': '/' })
 
-
-  eleventyConfig.addCollection("news", (collectionApi) => {
+  eleventyConfig.addCollection('news', (collectionApi) => {
     return collectionApi
-      .getFilteredByGlob("./src/news/**/*.md")
-      .sort((a, b) => b.date - a.date);
-  });
+      .getFilteredByGlob('./src/news/**/*.md')
+      .sort((a, b) => b.date - a.date)
+  })
 
   // BUILD CON ESBUILD
   eleventyConfig.on('eleventy.before', async () => {
@@ -92,24 +93,24 @@ export default function (eleventyConfig) {
         sourcemap: true,
         outfile: 'dist/assets/css/main.css',
         external: ['*.woff2', '*.woff', '*.ttf'],
-      })
-    ]);
-  });
+      }),
+    ])
+  })
 
   // html minification
   eleventyConfig.addTransform('htmlmin', function (content) {
-    if ((this.page.outputPath || "").endsWith(".html")) {
+    if ((this.page.outputPath || '').endsWith('.html')) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
-      });
+      })
 
-      return minified;
+      return minified
     }
 
-    return content;
-  });
+    return content
+  })
 
   // DIRECTORY
   return {
@@ -119,8 +120,8 @@ export default function (eleventyConfig) {
       input: 'src',
       data: '_data',
       includes: '_includes',
-      layouts: '_layouts'
+      layouts: '_layouts',
     },
     verbose: true,
-  };
-};
+  }
+}

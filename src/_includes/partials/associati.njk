@@ -1,50 +1,56 @@
 {# assocaiti.njk #}
-<section class="associati | flow" id="associati" aria-labelledby="associati-title">
+<section
+  id='associati'
+  class='associati | flow'
+  aria-labelledby='associati-title'
+>
 
-  <header class="wrapper">
-    <h1 id="associati-title">Diventa Socio dell'Istituto Archeologico Valtellinese</h1>
+  <header class='wrapper'>
+    <h1 id='associati-title'>
+      Diventa Socio dell'Istituto Archeologico Valtellinese
+    </h1>
     <p>
-      Sostieni attivamente la ricerca, la tutela e la divulgazione del <strong>patrimonio archeologico della Valtellina</strong>.
+      Sostieni attivamente la ricerca, la tutela e la divulgazione del
+      <strong>patrimonio archeologico della Valtellina.</strong>
       L'associazione è aperta ad appassionati, studenti e studiosi tutti:
     </p>
   </header>
 
-  <div class="wrapper">
-    <div class="grid" data-layout="thirds">
+  <div class='wrapper'>
+    <div class='grid' data-layout='thirds'>
 
       {% include "partials/associati-form.njk" %}
 
-      <aside class="flow">
+      <aside class='flow'>
 
-        <section class="box flow">
+        <section class='box flow'>
           <h2>Quota associativa e Pagamento</h2>
 
           <p>
-            Il versamento della quota annuale supporta gli eventi organizzati dall'Istituto e le pubblicazioni scientifiche.
-            Il pagamento può essere effettuato di persona oppure tramite bonifico bancario:
+            Il versamento della quota annuale supporta gli eventi organizzati dall'Istituto e le pubblicazioni scientifiche. Il pagamento può essere effettuato di persona oppure tramite bonifico bancario:
           </p>
 
-          <div class="flow">
+          <div class='flow'>
             <p><strong>IBAN (Crédit Agricole)</strong></p>
-            <span class="text-step--1">{{ site.company.iban }}</span>
+            <span class='text-step--1'>{{ site.company.iban }}</span>
           </div>
 
-          <p class="text-step--1">
+          <p class='text-step--1'>
             L'iscrizione annuale in regola garantisce ai soci il diritto a ricevere gratuitamente l'edizione cartacea del
-            <a href="/pubblicazioni/notiziario/">Notiziario dell'Istituto</a>.
+            <a href='/pubblicazioni/notiziario/'>Notiziario dell'Istituto</a>.
           </p>
 
-          <hr>
+          <hr />
 
-          <div class="flow">
-            <h3 class="text-step-0">Quote annuali</h3>
+          <div class='flow'>
+            <h3 class='text-step-0'>Quote annuali</h3>
             <div>
-              <ul role="list">
-                <li class="repel">
+              <ul role='list'>
+                <li class='repel'>
                   <span>Socio Ordinario</span>
                   <strong>25&euro;</strong>
                 </li>
-                <li class="repel">
+                <li class='repel'>
                   <span>Socio Sostenitore</span>
                   <strong>30&euro;</strong>
                 </li>
@@ -53,16 +59,19 @@
           </div>
         </section>
 
-        <section class="box flow">
+        <section class='box flow'>
           <h3>Contatta la Segreteria</h3>
           <p>
-            Per richieste di chiarimento sulle procedure di tesseramento, sui rinnovi o sulle agevolazioni,
-            la nostra segreteria è a disposizione all'indirizzo email:
-            <a href="mailto:{{ site.contact.email }}">
+            Per richieste di chiarimento sulle procedure di tesseramento, sui rinnovi o sulle agevolazioni, la nostra segreteria è a disposizione all'indirizzo email:
+            <a href='mailto:{{ site.contact.email }}'>
               {{ site.contact.email }}
             </a>
           </p>
-          <p>Scopri di più nella <a href="/contatti/">sezione contatti</a> del sito web.</p>
+          <p>
+            Scopri di più nella
+            <a href='/contatti/'>sezione contatti</a>
+            del sito web.
+          </p>
         </section>
 
       </aside>

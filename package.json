@@ -33,6 +33,8 @@
     "markdown-it-implicit-figures": "^0.12.0",
     "markdown-it-toc-done-right": "^4.2.0",
     "npm-run-all": "^4.1.5",
+    "prettier": "^3.9.9",
+    "prettier-plugin-nunjucks": "^0.2.1",
     "rimraf": "^6.1.3",
     "wrangler": "^4.128.0"
   },

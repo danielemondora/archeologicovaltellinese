@@ -22,7 +22,6 @@
   background-color: var(--bg-surface-muted);
 }
 
-
 /* Primary */
 .bg-primary {
   background-color: var(--color-primary);
@@ -35,7 +34,6 @@
 .bg-primary-shade {
   background-color: var(--color-primary-shade);
 }
-
 
 /* Secondary */
 .bg-secondary {
@@ -50,7 +48,6 @@
   background-color: var(--color-secondary-shade);
 }
 
-
 /* Tertiary / Forest */
 .bg-tertiary {
   background-color: var(--color-tertiary);
@@ -59,7 +56,6 @@
 .bg-tertiary-glare {
   background-color: var(--color-tertiary-glare);
 }
-
 
 /* ==================================================
    TEXT COLOR
@@ -82,7 +78,6 @@
   color: var(--text-disabled);
 }
 
-
 /* Brand */
 .text-primary {
   color: var(--color-primary-text);
@@ -95,7 +90,6 @@
 .text-tertiary {
   color: var(--color-tertiary-text);
 }
-
 
 /* Text on dark/colored surfaces */
 .text-on-primary {
@@ -122,7 +116,6 @@
   border-color: var(--border-primary);
 }
 
-
 /* ==================================================
    TYPOGRAPHY — FONT FAMILY
    ================================================== */
@@ -134,7 +127,6 @@
 .font-display {
   font-family: var(--font-display);
 }
-
 
 /* ==================================================
    TYPOGRAPHY — WEIGHT
@@ -156,7 +148,6 @@
   font-weight: 700;
 }
 
-
 /* ==================================================
    TEXT ALIGNMENT
    ================================================== */
@@ -172,7 +163,6 @@
 .text-right {
   text-align: right;
 }
-
 
 /* ==================================================
    BUTTON / INTERACTIVE RESET
@@ -194,7 +184,6 @@
 .btn-reset:focus:not(:focus-visible) {
   outline: none;
 }
-
 
 /* ==================================================
    FOCUS
