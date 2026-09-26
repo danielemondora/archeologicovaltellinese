@@ -33,8 +33,6 @@ piuttosto, come frutto maturo della strategia d’amore intrapresa da Davide per
 ammaliare gli studiosi e gli incolti valtellinesi ai segreti ancestrali della
 propria terra.
 
-![Gli Armigeri della Rupe Magna a Grosio](/assets/images/grosio_giroldo_armigeri.png)
-
 La cultura locale, negli anni sessanta, era animata da valenti e stimati
 studiosi. Nel benemerito Bollettino della Società Storica Valtellinese si
 rispecchia fedelmente la elaborazione culturale di quel prestigioso, ancorché

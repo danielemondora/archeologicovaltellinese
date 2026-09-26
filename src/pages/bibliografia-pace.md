@@ -1,7 +1,7 @@
 ---
 title: 'Davide Pace: Articoli e Pubblicazioni'
 permalink: '/davide-pace/bibliografia/'
-layout: 'page.njk'
+layout: 'article.njk'
 description:
   "L'elenco completo delle pubblicazioni, degli articoli e dei Tellina Opuscola
   di Davide Pace"

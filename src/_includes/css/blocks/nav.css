@@ -2,38 +2,39 @@
    REGOLE CONDIVISE & ACCESSIBILITÀ
    ========================================================================== */
 
-.nav-item > a,
-.dropdown-trigger,
-.desktop-dropdown__panel a {
+:is(.nav-item > a, .dropdown-trigger, .desktop-dropdown__panel a) {
   position: relative;
   padding-block: var(--space-3xs);
   text-decoration: none;
 }
 
-.nav-item > a::after,
-.dropdown-trigger::after,
-.desktop-dropdown__panel a::after {
+:is(.nav-item > a, .dropdown-trigger, .desktop-dropdown__panel a)::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--header-text);
+  background-color: var(--header-border);
   transform: scaleX(0);
   transform-origin: center;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .desktop-dropdown__panel a::after {
   bottom: -2px;
 }
 
-.nav-item > a:hover::after,
-.dropdown-trigger:hover::after,
-.desktop-dropdown__panel a:hover::after,
-.desktop-dropdown__panel a:focus-visible::after {
+:is(.nav-item > a, .dropdown-trigger, .desktop-dropdown__panel a):is(
+    :hover,
+    :focus-visible
+  )::after {
   transform: scaleX(1);
+}
+
+:is(.nav-item > a, .desktop-dropdown__panel a)[aria-current='page'],
+.nav-item:has(a[aria-current='page']) > .dropdown-trigger {
+  font-weight: bold;
 }
 
 body:has(#mobile-popover:popover-open) {

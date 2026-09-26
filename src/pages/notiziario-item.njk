@@ -11,47 +11,27 @@ layout: page.njk
 eleventyComputed:
   title: "Notiziario N°{{ item.numero }}"
 ---
-<div class='notiziario-item | sidebar | wrapper'>
+<article class='notiziario-item | sidebar | wrapper'>
 
-  {# HEADER CON NAVIGAZIONE ED IMMAGINE #}
-  <header class='flow'>
+  {# COLONNA SINISTRA (Meta, Copertina, Azioni) #}
+  <div class='notiziario-item__meta | flow'>
 
-    <h1>
-      Notiziario N°
-      {{ item.numero }}
-      <span class='text-muted'>({{ item.anno }})</span>
-    </h1>
+    <header>
+      <h1>
+        Notiziario N°
+        {{- item.numero -}}
+        &nbsp;
+        <span class='text-muted'>({{ item.anno }})</span>
+      </h1>
+    </header>
 
-    <div class='cluster'>
-
-      {% if item.download %}
-        <a
-          class='button'
-          data-button-variant='primary'
-          href='{{ item.download }}'
-          download
-        >
-          Scarica il PDF
-        </a>
-      {% endif %}
-
-      <a
-        class='button'
-        data-button-variant='primary'
-        href='/pubblicazioni/notiziario/'
-      >
-        Torna all'indice
-      </a>
-
-    </div>
-
-    <div>
+    <div class='notiziario-item__cover'>
       {% if item.immagine %}
         <img
           class='card__cover'
           src='{{ item.immagine }}'
-          alt=''
-          aria-hidden='true'
+          alt='Copertina del Notiziario N°{{ item.numero }}'
+          loading='lazy'
           eleventy:ignore
         />
       {% else %}
@@ -61,28 +41,51 @@ eleventyComputed:
         ></div>
       {% endif %}
     </div>
-  </header>
 
-  {# INDICE ELEMENTO #}
-  <article class='flow'>
+    <nav class='cluster' aria-label='Azioni notiziario'>
+      <a class='button' href='/pubblicazioni/notiziario/'>Tutti i notiziari</a>
 
-    <h2>Indice</h2>
+      {% if item.download %}
+        <a
+          class='button'
+          data-button-variant='primary'
+          href='{{ item.download }}'
+          download
+        >
+          Download
+          <span class='visually-hidden'>del Notiziario N°{{- item.numero -}}</span>
+        </a>
+      {% endif %}
+    </nav>
 
-    <div class='flow'>
+  </div>
 
+  {# COLONNA DESTRA (Contenuto) #}
+  <section class='notiziario-item__content' aria-labelledby='indice-titolo'>
+
+    <h2 id='indice-titolo'>Indice</h2>
+
+    <ul class='flow flow-space-m' role='list'>
       {% for articolo in item.indice %}
-        <div class='notiziario-item__index-element | flow'>
-          {% if articolo.autori %}
-            <p class='text-step--1 text-muted'>
-              {{ articolo.autori }}
-            </p>
-          {% endif %}
-          <span class='text-step--1 text-muted'>Pag. {{ articolo.pagina }}</span>
-          <p class='font-bold'>{{ articolo.titolo }}</p>
-        </div>
+        <li class='notiziario-item__index-element'>
+          <div class='flow flow-space-3xs'>
+
+            <p class='text-step--1 text-muted'>Pag. {{ articolo.pagina }}</p>
+
+            {% if articolo.autori %}
+              <p class='text-step--1 text-muted'>
+                {{ articolo.autori }}
+              </p>
+            {% endif %}
+
+            <h3 class='text-step-0'>{{ articolo.titolo }}</h3>
+
+          </div>
+
+        </li>
       {% endfor %}
+    </ul>
 
-    </div>
-  </article>
+  </section>
 
-</div>
+</article>

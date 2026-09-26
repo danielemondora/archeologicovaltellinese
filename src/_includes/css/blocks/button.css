@@ -4,9 +4,9 @@
   --button-padding: 0.7em 1.2em;
   --button-gap: var(--space-2xs, 0.5em);
 
-  --button-bg: var(--text-main);
+  --button-bg: var(--color-stone-800);
   --button-color: var(--text-on-primary);
-  --button-hover-bg: var(--text-muted);
+  --button-hover-bg: var(--color-stone-600);
   --button-hover-color: var(--text-on-primary);
 
   --button-border-width: 2px;
@@ -72,6 +72,15 @@
   --button-border-color: var(--color-secondary);
 
   --button-hover-bg: var(--color-secondary-hover);
+  --button-hover-color: var(--text-on-primary);
+}
+
+.button[data-button-variant='tertiary'] {
+  --button-bg: var(--color-tertiary);
+  --button-color: var(--text-on-primary);
+  --button-border-color: var(--color-tertiary);
+
+  --button-hover-bg: var(--color-tertiary-hover);
   --button-hover-color: var(--text-on-primary);
 }
 
