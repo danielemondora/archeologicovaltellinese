@@ -32,4 +32,5 @@ Magna, un'occasione speciale riservata ai residenti dei comuni di Grosio e
 Grosotto per riscoprire da vicino il patrimonio storico e culturale del proprio
 territorio.
 
-[Link alla Conferenza su YouTube](https://www.youtube.com/watch?v=7tmDuGc9BRQ)
+## Registrazione della Conferenza
+{% youtube "7tmDuGc9BRQ", "Link alla Conferenza sulla Rupe Magna su YouTube" %}
