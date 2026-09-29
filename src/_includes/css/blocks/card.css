@@ -1,38 +1,78 @@
+/* REGOLE COMUNI PER CARD E BOX (Base chiara, ombre fisse) */
+.card,
+.box {
+  background-color: var(--bg-surface);
+  padding: var(--space-s);
+  border: solid 1px var(--border-subtle);
+
+  /* Ombra leggerissima e statica (non cambia sull'hover) */
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+
+  /* Transizione dolce applicata solo al colore e al bordo (niente zoom) */
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Hover di base (per card generiche senza variante) */
+.card:hover,
+.box:hover {
+  background-color: var(--bg-surface-subtle);
+  border-color: var(--border-default);
+}
+
+/* REGOLE SPECIFICHE PER IL LAYOUT DELLA CARD */
 .card {
   display: flex;
   flex-direction: column;
-
   gap: var(--gutter, var(--space-xs));
-
-  background-color: var(--bg-surface-subtle);
-  padding: var(--space-xs);
-
-  border: solid 1px var(--border-strong);
 }
 
 .card > :last-child {
   margin-block-start: auto;
 }
 
-/* CARD COVER PER PUBBLICAZIONI */
-.card__cover {
-  width: min(100%, 20rem);
-  margin-inline: auto;
+/*
+  VARIANTI DI COLORE ALLEGGERITE
+  Sfruttano le tue variabili "-glare" e "-subtle"
+*/
 
-  aspect-ratio: 2 / 3;
-  object-fit: cover;
-  display: block;
+/* 1. Primary (Slate) */
+.card[data-variant='primary'],
+.box[data-variant='primary'] {
+  background-color: var(--color-primary-glare);
+  color: var(--color-primary-text);
+  border-color: var(--color-primary-subtle);
+}
+.card[data-variant='primary']:hover,
+.box[data-variant='primary']:hover {
+  background-color: var(--color-primary-subtle);
+  border-color: var(--border-primary);
 }
 
-.card__cover--placeholder {
-  background-color: var(--bg-surface-subtle);
-  border: 1px dashed var(--border-strong);
-  border-radius: 4px;
+/* 2. Secondary (Earth) */
+.card[data-variant='secondary'],
+.box[data-variant='secondary'] {
+  background-color: var(--color-secondary-glare);
+  color: var(--color-secondary-text);
+  border-color: var(--color-secondary-subtle);
+}
+.card[data-variant='secondary']:hover,
+.box[data-variant='secondary']:hover {
+  background-color: var(--color-secondary-subtle);
+  border-color: var(--color-secondary);
 }
 
-.box {
-  background-color: var(--bg-surface-subtle);
-  padding: var(--space-xs);
-
-  border: solid 1px var(--border-strong);
+/* 3. Tertiary (Forest) */
+.card[data-variant='tertiary'],
+.box[data-variant='tertiary'] {
+  /* Dato che non c'è il glare, partiamo dal surface pulito e andiamo verso il subtle */
+  background-color: var(--bg-surface);
+  color: var(--color-tertiary-text);
+  border-color: var(--color-tertiary-subtle);
+}
+.card[data-variant='tertiary']:hover,
+.box[data-variant='tertiary']:hover {
+  background-color: var(--color-tertiary-subtle);
+  border-color: var(--color-tertiary);
 }

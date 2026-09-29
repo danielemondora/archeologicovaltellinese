@@ -19,10 +19,10 @@
 @import 'composition/wrapper.css';
 @import 'composition/cluster.css';
 @import 'composition/grid.css';
-@import 'composition/panel.css';
 @import 'composition/repel.css';
 @import 'composition/sidebar.css';
 @import 'composition/full-width.css';
+@import 'composition/reel.css';
 
 /* 3. Blocchi e Componenti */
 @import 'blocks/button.css';

@@ -1,0 +1,23 @@
+/*
+REEL
+A utility that provides robust horizontal scrolling
+More info: https://every-layout.dev/layouts/reel/
+*/
+.reel {
+  display: flex;
+  block-size: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Nasconde la scrollbar su Firefox */
+  gap: var(--gutter, var(--space-s));
+}
+
+.reel::-webkit-scrollbar {
+  display: none; /* Nasconde la scrollbar su Chrome/Safari/Edge */
+}
+
+.reel > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start; /* Aggancia l'inizio della card al bordo sinistro */
+}

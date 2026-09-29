@@ -16,6 +16,7 @@
 
   /* Layout and spacing */
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   gap: var(--button-gap);
   padding: var(--button-padding);

@@ -28,7 +28,7 @@ export default function (eleventyConfig) {
 
   const markdownLib = markdownIt({
     html: true,
-    breaks: true,
+    breaks: false,
     linkify: true,
   })
     .use(markdownItFootnote)

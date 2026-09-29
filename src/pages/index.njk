@@ -3,44 +3,23 @@ permalink: /
 title: Home
 layout: base.njk
 ---
-<main id='main-content' class='flow'>
+<main id='main-content' class='flow flow-space-xl'>
 
   {% include "partials/hero.njk" %}
 
-  <figure class='wrapper | flow'>
-
-    <h2>{{ site.name }}</h2>
-
-    <blockquote class='flow'>
-      <p>
-        "Suggestiva la scena corale di sei 'oranti' 'danzanti' la cui religiosa eccitazione sembra essersi fermata in estatica stasi captante l'eterno divino..."
-      </p>
-
-      <p>
-        "La scena [...] volge all'oriente nella stupenda rupe che io amo denominare 'magna', la più ammirevole fra le mirabili che il ghiacciaio aveva 'exarato' provvido alla futura funzione mistica di aprichi templi cui fosse suolo divino la terra e divina volta il cielo e in cui la polita superficie rupestre offrisse ai sacri testi glifici le dolci convessità e le tenui concavità delle ondulanti pagine perenni..."
-      </p>
-
-      <p>
-        "Fu inspirata da preciso intento religioso la posizione prescelta? Ossia si dedicò al sole nascente — al divino miracolo eliofanico — la sacra rappresentazione?"
-      </p>
-    </blockquote>
-
-    <figcaption class='text-step--1 text-muted text-right'>
-      &mdash;
-      <strong class='weight-bold'>
-        <a href='/davide-pace/'>Davide Pace</a>
-      </strong>,<cite>1970</cite>
-    </figcaption>
-
-  </figure>
+  {% include "partials/attivita.njk" %}
 
   <img
     class='full-width'
-    src='/assets/images/grosio_giroldo_coppelle_08_1966.png'
+    src='/assets/images/incisioni.jpeg'
     alt=''
     loading='lazy'
     decoding='async'
   />
+
+  {% include "partials/citazione.njk" %}
+
+  {% include "partials/sostienici.njk" %}
 
   {% include "partials/ultime-news.njk" %}
 

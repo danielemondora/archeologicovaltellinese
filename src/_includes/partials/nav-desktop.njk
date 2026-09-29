@@ -33,8 +33,16 @@
           >
             <ul class='flow' role='list'>
               {% for child in item.children %}
+                {% set isChildCurrent =(
+                    child.url == '/' and page.url == '/'
+                  ) or(
+                    child.url != '/' and page.url and page.url.startsWith(
+                      child.url
+                    )
+                  )
+                %}
                 <li>
-                  <a class='' href='{{ child.url }}' {% if page.url==child.url %}aria-current="page"{% endif %}>{{ child.text }}</a>
+                  <a class='' href='{{ child.url }}' {% if isChildCurrent %}aria-current="page"{% endif %}>{{ child.text }}</a>
                 </li>
               {% endfor %}
             </ul>

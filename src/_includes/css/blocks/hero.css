@@ -23,8 +23,8 @@
   content: '';
   background: linear-gradient(
     135deg,
-    rgb(0 0 0 / 0.8),
-    rgb(0 0 0 / 0.6) 50%,
+    rgb(0 0 0 / 0.7),
+    rgb(0 0 0 / 0.5) 50%,
     rgb(0 0 0 / 0.4)
   );
 }
