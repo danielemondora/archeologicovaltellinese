@@ -10,8 +10,12 @@ layout: page.njk
 
 eleventyComputed:
   title: "Notiziario N°{{ item.numero }}"
+
+eleventyNavigation:
+  key: Notiziario
+  parent: Notiziari
 ---
-<article class='notiziario-item | sidebar | wrapper'>
+<article class='notiziario-item | sidebar'>
 
   {# COLONNA SINISTRA (Meta, Copertina, Azioni) #}
   <div class='notiziario-item__meta | flow'>

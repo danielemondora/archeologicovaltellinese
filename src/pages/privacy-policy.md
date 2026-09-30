@@ -7,6 +7,9 @@ description:
 permalink: /privacy-policy/
 date: 'Last Modified'
 noindex: true
+eleventyNavigation:
+  key: Privacy Policy
+  parent: Home
 ---
 
 # Regolamento Generale sulla Protezione dei Dati dell'UE (GDPR)

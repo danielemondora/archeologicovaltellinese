@@ -33,11 +33,6 @@ to change how empty grid tracks are handled */
   --grid-min-item-size: clamp(16rem, 50vw, 28rem);
 }
 
-.grid[data-layout='spezza'] {
-  --grid-placement: auto-fit;
-  --grid-min-item-size: clamp(16rem, 48%, 28rem);
-}
-
 .grid[data-layout='thirds'] {
   --grid-placement: auto-fit;
   --grid-min-item-size: clamp(16rem, 33%, 20rem);

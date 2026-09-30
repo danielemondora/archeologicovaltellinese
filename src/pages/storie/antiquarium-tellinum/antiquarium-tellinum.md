@@ -5,6 +5,9 @@ permalink: /antiquarium-tellinum/
 description:
   "L'Antiquarium Tellinum, la collezione archeologica conservata presso Palazzo
   Besta di Teglio"
+eleventyNavigation:
+  key: Antiquarium Tellinum
+  parent: Home
 ---
 
 > "Antiquarium Tellinum: tale la denominazione che giudico degna del museo

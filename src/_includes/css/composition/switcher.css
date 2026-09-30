@@ -1,0 +1,23 @@
+/* blocks/switcher.css */
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s));
+  align-items: center;
+}
+
+.switcher > * {
+  flex: 1 1 var(--switcher-min, 16rem);
+}
+
+.switcher > img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+@media (min-width: 48rem) {
+  .switcher[data-direction='reverse'] {
+    flex-direction: row-reverse;
+  }
+}

@@ -1,10 +1,14 @@
 ---
 title: 'Risorse e Link Utili'
-layout: 'article.njk'
+layout: 'page.njk'
 permalink: '/risorse/'
 description:
   'Elenco di siti web, musei, riviste e associazioni in ambito archeologico e
   storico.'
+
+eleventyNavigation:
+  key: Risorse
+  parent: Home
 ---
 
 # Siti Web e Associazioni

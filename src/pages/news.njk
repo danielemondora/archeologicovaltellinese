@@ -3,7 +3,9 @@ layout: page.njk
 title: News
 permalink: "/news/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}"
 templateEngine: njk
-
+eleventyNavigation:
+  key: News
+  parent: Home
 pagination:
   data: collections.news
   size: 10

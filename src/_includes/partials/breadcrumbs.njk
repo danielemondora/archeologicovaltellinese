@@ -1,0 +1,24 @@
+{% if eleventyNavigation and eleventyNavigation.key %}
+  {% set breadcrumbs = collections.all | eleventyNavigationBreadcrumb(
+      eleventyNavigation.key
+    )
+  %}
+
+  {% if breadcrumbs | length %}
+    <nav class='breadcrumb' aria-label='Breadcrumb'>
+      <ol role='list'>
+
+        {% for crumb in breadcrumbs %}
+          <li>
+            <a href='{{ crumb.url }}'>{{ crumb.title }}</a>
+          </li>
+        {% endfor %}
+
+        <li>
+          <span aria-current='page'>{{ title }}</span>
+        </li>
+
+      </ol>
+    </nav>
+  {% endif %}
+{% endif %}

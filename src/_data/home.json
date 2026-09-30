@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "Viaggia nella storia delle Alpi"
+  },
+  "accordion": {
+    "title": "Studio e valorizzazione del patrimonio archeologico valtellinese",
+    "text": "Fondato nel solco dell’attività e dell’insegnamento del prof. Davide Pace, l’Istituto Archeologico Valtellinese (IAV) opera per promuovere lo studio, la conoscenza e la valorizzazione del patrimonio archeologico, storico e antiquario della provincia di Sondrio. Attraverso attività di ricerca, pubblicazione, divulgazione e collaborazione con istituzioni, musei ed enti del territorio, l’IAV contribuisce alla conoscenza e alla conservazione della memoria storica e archeologica della Valtellina.",
+    "items": [
+      {
+        "text": "L’Istituto sostiene e diffonde la ricerca archeologica e storico-antiquaria relativa alla Valtellina ed alle Valli del Mera. Pubblica annualmente il proprio Notiziario, raccogliendo contributi, studi e approfondimenti dedicati al patrimonio archeologico locale curandone la redazione e la revisione scientifica.",
+        "title": "Pubblicazioni e Ricerca",
+        "image": "../assets/images/giroldo-incisioni.jpg",
+        "alt": "Incisioni rupestri a Giroldo"
+      },
+      {
+        "title": "Eventi e Divulgazione",
+        "text": "L’IAV promuove e sostiene iniziative culturali dedicate alla storia e all’archeologia della Provincia di Sondrio. Conferenze, incontri, visite e attività didattiche favoriscono la diffusione della conoscenza del patrimonio archeologico e il dialogo con cittadini, studiosi, scuole, giovani e appassionati.",
+        "image": "../assets/images/conferenza-pace-grosio.jpeg",
+        "alt": "Conferenza a Grosio per i 60 anni dalla scoperta delle incisioni rupestri"
+      },
+      {
+        "title": "Tutela del Territorio",
+        "text": "L’Istituto dedica particolare attenzione ai principali contesti archeologici della provincia di Sondrio, dalle incisioni rupestri della Rupe Magna di Grosio alle stele e alle testimonianze archeologiche di Teglio. Attraverso attività di studio, divulgazione e collaborazione con musei, enti e istituzioni locali, contribuisce alla conoscenza e alla valorizzazione del patrimonio archeologico valtellinese.",
+        "image": "../assets/images/visita-alla-ganda.jpg",
+        "alt": "Visita al sito archeologico Ganda"
+      }
+    ]
+  },
+  "quote": {
+    "title": "L'istituto e la sua memoria",
+    "paragraphs": [
+      "Suggestiva la scena corale di sei 'oranti' 'danzanti' la cui religiosa eccitazione sembra essersi fermata in estatica stasi captante l'eterno divino...",
+      "La scena [...] volge all'oriente nella stupenda rupe che io amo denominare 'magna', la più ammirevole fra le mirabili che il ghiacciaio aveva 'exarato' provvido alla futura funzione mistica di aprichi templi cui fosse suolo divino la terra e divina volta il cielo e in cui la polita superficie rupestre offrisse ai sacri testi glifici le dolci convessità e le tenui concavità delle ondulanti pagine perenni...",
+      "Fu inspirata da preciso intento religioso la posizione prescelta? Ossia si dedicò al sole nascente — al divino miracolo eliofanico — la sacra rappresentazione?"
+    ],
+    "author": "Davide Pace",
+    "year": "1970",
+    "authorUrl": "/davide-pace/"
+  }
+}

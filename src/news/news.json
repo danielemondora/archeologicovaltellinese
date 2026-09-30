@@ -1,4 +1,8 @@
 {
   "layout": "article.njk",
-  "permalink": "/news/{{ title | slugify }}/index.html"
+  "permalink": "/news/{{ title | slugify }}/index.html",
+  "eleventyNavigation": {
+    "key": "Notizia",
+    "parent": "News"
+  }
 }

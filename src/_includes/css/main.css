@@ -23,6 +23,7 @@
 @import 'composition/sidebar.css';
 @import 'composition/full-width.css';
 @import 'composition/reel.css';
+@import 'composition/switcher.css';
 
 /* 3. Blocchi e Componenti */
 @import 'blocks/button.css';
@@ -39,3 +40,4 @@
 @import 'blocks/footnotes.css';
 @import 'blocks/prose.css';
 @import 'blocks/accordion.css';
+@import 'blocks/breadcrumbs.css';

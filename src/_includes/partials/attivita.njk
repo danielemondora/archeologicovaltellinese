@@ -2,96 +2,39 @@
 
   <div class='flow flow-space-s'>
     <header class='flow'>
-      <h2 class='text-step-3'>
-        Tuteliamo e valorizziamo il patrimonio archeologico
-      </h2>
+      <h2 class='text-step-3'>{{- home.accordion.title -}}</h2>
       <div>
-        <p>
-          Fondato seguendo lo spirito del prof. Davide Pace,
-          <strong>l'Istituto Archeologico Valtellinese (IAV)</strong>
-          si dedica allo studio, alla tutela e alla divulgazione del patrimonio storico e antiquario della Provincia di Sondrio, operando in costante sinergia con le istituzioni del territorio.
-        </p>
+        <p>{{- home.accordion.text -}}</p>
       </div>
     </header>
 
     <div class='flow'>
-      <article>
-        <details class='accordion'>
+      {% for item in home.accordion.items %}
+        <article>
+          <details class='accordion'>
 
-          <summary>
-            <div class='splitter'>
-              <h3 class='text-step-1'>Pubblicazioni e Ricerca</h3>
-              {% include "svg/chevron-down-solid-full.svg" %}
-            </div>
-          </summary>
-
-          <div class='accordion__content py-s'>
-            <div class='grid' data-layout='spezza'>
-              <div class='flow'>
-                <p class='text-muted'>
-                  Ogni anno pubblichiamo il
-                  <a href='/pubblicazioni/notiziario/'>Notiziario</a>
-                  curando rigorosamente la redazione e la revisione scientifica degli articoli per diffondere gli studi e le ultime scoperte sul patrimonio archeologico valtellinese.
-                </p>
+            <summary>
+              <div class='splitter'>
+                <h3 class='text-step-1'>{{- item.title -}}</h3>
+                {% include "svg/chevron-down-solid-full.svg" %}
               </div>
-              <img src='/assets/images/hero.jpg' alt='' loading='lazy' />
-            </div>
-          </div>
+            </summary>
 
-        </details>
-      </article>
-
-      <article>
-        <details class='accordion'>
-
-          <summary>
-            <div class='splitter'>
-              <h3 class='text-step-1'>Eventi e Divulgazione</h3>
-              {% include "svg/chevron-down-solid-full.svg" %}
-            </div>
-          </summary>
-
-          <div class='accordion__content py-s'>
-            <div class='grid' data-layout='spezza'>
-              <div class='flow'>
-                <p class='text-muted'>
-                  Promuoviamo e patrociniamo iniziative culturali sul territorio. Organizziamo regolarmente
-                  <strong>conferenze, incontri e percorsi didattici</strong>
-                  per avvicinare il pubblico, i giovani e gli appassionati alla storia delle nostre Alpi.
-                </p>
+            <div class='accordion-content'>
+              <div
+                class='switcher | py-s'
+                {% if loop.index0 % 2 == 1 %}
+                  data-direction="reverse"
+                {% endif %}
+              >
+                <img src='{{ item.image }}' alt='{{ item.alt }}' />
+                <p class='text-muted'>{{- item.text -}}</p>
               </div>
-              <img src='/assets/images/hero.jpg' alt='' loading='lazy' />
             </div>
-          </div>
 
-        </details>
-      </article>
-
-      <article>
-        <details class='accordion'>
-
-          <summary>
-            <div class='splitter'>
-              <h3 class='text-step-1'>Tutela del Territorio</h3>
-              {% include "svg/chevron-down-solid-full.svg" %}
-            </div>
-          </summary>
-
-          <div class='accordion__content py-s'>
-            <div class='grid' data-layout='spezza'>
-              <div class='flow'>
-                <p class='text-muted'>
-                  Dallo storico disvelamento dei petroglifi della Rupe Magna di Grosio alle stele di Teglio. Collaboriamo con musei ed enti locali per la salvaguardia delle
-                  <strong>aree archeologiche monumentali</strong>
-                  e per valorizzare i reperti locali.
-                </p>
-              </div>
-              <img src='/assets/images/hero.jpg' alt='' loading='lazy' />
-            </div>
-          </div>
-
-        </details>
-      </article>
+          </details>
+        </article>
+      {% endfor %}
     </div>
   </div>
 

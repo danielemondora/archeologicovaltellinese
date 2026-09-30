@@ -5,7 +5,6 @@
     {
       "text": "Istituto",
       "children": [
-        { "text": "Chi Siamo", "url": "/chi-siamo/" },
         { "text": "Storia", "url": "/storia/" },
         { "text": "Statuto", "url": "/statuto/" },
         { "text": "Direttivo", "url": "/direttivo/" },

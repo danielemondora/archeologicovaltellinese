@@ -1,4 +1,5 @@
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
+import eleventyNavigationPlugin from '@11ty/eleventy-navigation'
 import {
   dateFilter,
   htmlDateFilter,
@@ -23,6 +24,8 @@ export default function (eleventyConfig) {
       decoding: 'async',
     },
   })
+
+  eleventyConfig.addPlugin(eleventyNavigationPlugin)
 
   const eleventySlugify = eleventyConfig.getFilter('slugify')
 
