@@ -1,0 +1,40 @@
+/* blocks/accordion.css */
+.accordion {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: var(--space-s);
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.accordion:hover {
+  background-color: var(--bg-surface-subtle);
+}
+
+.accordion summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion summary svg {
+  margin: 0;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.accordion[open] svg {
+  transform: rotate(180deg);
+}
+
+.accordion__content {
+  margin-block-start: var(--space-s);
+  border-block-start: 1px solid var(--border-subtle);
+}

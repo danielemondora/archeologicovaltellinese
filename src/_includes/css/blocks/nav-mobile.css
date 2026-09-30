@@ -122,11 +122,11 @@
 }
 
 .mobile-accordion > summary svg {
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 .mobile-accordion[open] > summary svg {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 .mobile-accordion .mobile-sub-menu {

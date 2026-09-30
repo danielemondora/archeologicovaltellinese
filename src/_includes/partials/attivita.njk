@@ -14,34 +14,83 @@
       </div>
     </header>
 
-    <div class='grid'>
+    <div class='flow'>
+      <article>
+        <details class='accordion'>
 
-      <article class='box | flow flow-space-xs'>
-        <h3 class='text-step-1'>Pubblicazioni e Ricerca</h3>
-        <p class='text-step--1'>
-          Ogni anno pubblichiamo il
-          <strong>Notiziario</strong>
-          curando rigorosamente la redazione e la revisione scientifica degli articoli per diffondere gli studi e le ultime scoperte sul patrimonio archeologico valtellinese.
-        </p>
+          <summary>
+            <div class='splitter'>
+              <h3 class='text-step-1'>Pubblicazioni e Ricerca</h3>
+              {% include "svg/chevron-down-solid-full.svg" %}
+            </div>
+          </summary>
+
+          <div class='accordion__content py-s'>
+            <div class='grid' data-layout='spezza'>
+              <div class='flow'>
+                <p class='text-muted'>
+                  Ogni anno pubblichiamo il
+                  <a href='/pubblicazioni/notiziario/'>Notiziario</a>
+                  curando rigorosamente la redazione e la revisione scientifica degli articoli per diffondere gli studi e le ultime scoperte sul patrimonio archeologico valtellinese.
+                </p>
+              </div>
+              <img src='/assets/images/hero.jpg' alt='' loading='lazy' />
+            </div>
+          </div>
+
+        </details>
       </article>
 
-      <article class='box | flow flow-space-xs'>
-        <h3 class='text-step-1'>Eventi e Divulgazione</h3>
-        <p class='text-step--1'>
-          Promuoviamo e patrociniamo iniziative culturali sul territorio. Organizziamo regolarmente
-          <strong>conferenze, incontri e percorsi didattici</strong>
-          per avvicinare il pubblico, i giovani e gli appassionati alla storia delle nostre Alpi. .
-        </p>
+      <article>
+        <details class='accordion'>
+
+          <summary>
+            <div class='splitter'>
+              <h3 class='text-step-1'>Eventi e Divulgazione</h3>
+              {% include "svg/chevron-down-solid-full.svg" %}
+            </div>
+          </summary>
+
+          <div class='accordion__content py-s'>
+            <div class='grid' data-layout='spezza'>
+              <div class='flow'>
+                <p class='text-muted'>
+                  Promuoviamo e patrociniamo iniziative culturali sul territorio. Organizziamo regolarmente
+                  <strong>conferenze, incontri e percorsi didattici</strong>
+                  per avvicinare il pubblico, i giovani e gli appassionati alla storia delle nostre Alpi.
+                </p>
+              </div>
+              <img src='/assets/images/hero.jpg' alt='' loading='lazy' />
+            </div>
+          </div>
+
+        </details>
       </article>
 
-      <!-- Usiamo il colore secondario -->
-      <article class='box | flow flow-space-xs'>
-        <h3 class='text-step-1'>Tutela del Territorio</h3>
-        <p class='text-step--1'>
-          Dallo storico disvelamento dei petroglifi della Rupe Magna di Grosio alle stele di Teglio. Collaboriamo con musei ed enti locali per la salvaguardia delle
-          <strong>aree archeologiche monumentali</strong>
-          e per valorizzare i reperti locali.
-        </p>
+      <article>
+        <details class='accordion'>
+
+          <summary>
+            <div class='splitter'>
+              <h3 class='text-step-1'>Tutela del Territorio</h3>
+              {% include "svg/chevron-down-solid-full.svg" %}
+            </div>
+          </summary>
+
+          <div class='accordion__content py-s'>
+            <div class='grid' data-layout='spezza'>
+              <div class='flow'>
+                <p class='text-muted'>
+                  Dallo storico disvelamento dei petroglifi della Rupe Magna di Grosio alle stele di Teglio. Collaboriamo con musei ed enti locali per la salvaguardia delle
+                  <strong>aree archeologiche monumentali</strong>
+                  e per valorizzare i reperti locali.
+                </p>
+              </div>
+              <img src='/assets/images/hero.jpg' alt='' loading='lazy' />
+            </div>
+          </div>
+
+        </details>
       </article>
     </div>
   </div>

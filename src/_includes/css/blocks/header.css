@@ -29,6 +29,12 @@
 .site-head__brand img,
 .site-head__brand svg {
   display: block;
-  height: 64px;
+  height: 63px;
   width: auto;
+}
+
+.site-head svg {
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
 }
