@@ -8,80 +8,87 @@ eleventyNavigation:
   key: Contatti
   parent: Home
 ---
+<div class='flow'>
 
-<header class='flow'>
-  <h1>Contatti</h1>
+  <header>
+    <h1>Contatti</h1>
 
-  <p>
-    Per richiedere informazioni sulle nostre attività di ricerca, per la consultazione dell'archivio storico o per qualsiasi altra comunicazione, è possibile mettersi in contatto con la segreteria dell'
-    <strong>{{ site.name }}</strong>
-    attraverso i seguenti recapiti.
-  </p>
-</header>
+    <p>
+      Per richiedere informazioni sulle nostre attività di ricerca, per la
+      consultazione dell'archivio storico o per qualsiasi altra comunicazione, è
+      possibile mettersi in contatto con la segreteria dell'
+      <strong>{{ site.name }}</strong>
+      attraverso i seguenti recapiti.
+    </p>
+  </header>
 
-<section class='flow'>
-  <h2>Sede e Recapiti</h2>
-  <address class='flow' style='font-style: normal;'>
-    <h3>Indirizzo</h3>
+  <section>
+    <h2>Sede e Recapiti</h2>
+    <address class='flow' style='font-style: normal;'>
+      <h3>Indirizzo</h3>
+      <div>
+        <ul role='list'>
+          <li>{{ site.address.street }}</li>
+          <li>
+            {{ site.address.postalCode }}
+            {{ site.address.city }}
+            (
+            {{- site.address.province -}}
+            )
+          </li>
+          <li>{{ site.address.country }}</li>
+        </ul>
+      </div>
+
+      <h3>Email</h3>
+      <a href='mailto:{{ site.contact.email }}'>{{ site.contact.email }}</a>
+    </address>
+  </section>
+
+  {% if site.social.facebook %}
+    <section>
+      <h2>Canali Ufficiali</h2>
+      <p>
+        Per rimanere aggiornati sulle ultime scoperte, conferenze e
+        pubblicazioni, vi invitiamo a seguire, oltre a questo sito web, la
+        nostra pagina
+        <a
+          href='{{ site.social.facebook }}'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Facebook ufficiale
+        </a>.
+      </p>
+    </section>
+  {% endif %}
+
+  <section>
+    <h2>Dati Istituzionali</h2>
     <div>
       <ul role='list'>
-        <li>{{ site.address.street }}</li>
         <li>
-          {{ site.address.postalCode }}
-          {{ site.address.city }}
-          (
-          {{- site.address.province -}}
-          )
+          <strong>Anno di fondazione:</strong>
+          {{ site.company.founded }}
         </li>
-        <li>{{ site.address.country }}</li>
+        <li>
+          <strong>Codice Fiscale:</strong>
+          {{ site.company.codiceFiscale }}
+        </li>
+        <li>
+          <strong>IBAN:</strong>
+          <span>{{ site.company.iban }}</span>
+          <br />
+          <small>
+            <em>
+              (Attivo per il versamento delle quote associative e le erogazioni
+              liberali)
+            </em>
+          </small>
+        </li>
       </ul>
     </div>
-
-    <h3>Email</h3>
-    <a href='mailto:{{ site.contact.email }}'>{{ site.contact.email }}</a>
-  </address>
-</section>
-
-{% if site.social.facebook %}
-  <section class='flow'>
-    <h2>Canali Ufficiali</h2>
-    <p>
-      Per rimanere aggiornati sulle ultime scoperte, conferenze e pubblicazioni, vi invitiamo a seguire, oltre a questo sito web, la nostra pagina
-      <a
-        href='{{ site.social.facebook }}'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        Facebook ufficiale
-      </a>.
-    </p>
   </section>
-{% endif %}
 
-<section class='flow'>
-  <h2>Dati Istituzionali</h2>
-  <div>
-    <ul role='list'>
-      <li>
-        <strong>Anno di fondazione:</strong>
-        {{ site.company.founded }}
-      </li>
-      <li>
-        <strong>Codice Fiscale:</strong>
-        {{ site.company.codiceFiscale }}
-      </li>
-      <li>
-        <strong>IBAN:</strong>
-        <span>{{ site.company.iban }}</span>
-        <br />
-        <small>
-          <em>
-            (Attivo per il versamento delle quote associative e le erogazioni liberali)
-          </em>
-        </small>
-      </li>
-    </ul>
-  </div>
-</section>
-
-{% include "partials/associati-form.njk" %}
+  {% include "partials/associati-form.njk" %}
+</div>

@@ -4,7 +4,7 @@
     <header class='flow'>
       <h2 class='text-step-3'>{{- home.accordion.title -}}</h2>
       <div>
-        <p>{{- home.accordion.text -}}</p>
+        <p>{{- home.accordion.text | safe -}}</p>
       </div>
     </header>
 
@@ -28,7 +28,7 @@
                 {% endif %}
               >
                 <img src='{{ item.image }}' alt='{{ item.alt }}' />
-                <p class='text-muted'>{{- item.text -}}</p>
+                <p class='text-muted'>{{- item.text | safe -}}</p>
               </div>
             </div>
 

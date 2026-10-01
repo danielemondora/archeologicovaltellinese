@@ -1,5 +1,8 @@
 ---
 title: Storia
+description:
+  "Profilo storico dell'Istituto Archeologico Valtellinese: le origini, la
+  fondazione e le tappe fondamentali della ricerca archeologica nel territorio."
 ---
 
 # Reviviscenza dell’Istituto Archeologico Valtellinese

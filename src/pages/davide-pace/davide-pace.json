@@ -1,8 +1,0 @@
-{
-  "layout": "article.njk",
-  "permalink": "/davide-pace/{{ page.fileSlug }}/",
-  "eleventyNavigation": {
-    "key": "Davide Pace",
-    "parent": "Home"
-  }
-}

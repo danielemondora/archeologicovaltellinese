@@ -1,6 +1,7 @@
 ---
 layout: page.njk
 title: Notiziario
+description: "Accedi all'archivio storico del Notiziario dell'Istituto Archeologico Valtellinese. Consulta gli indici tematici e scarica i volumi in digitale."
 permalink: "/pubblicazioni/notiziario/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}"
 templateEngine: njk
 pagination:
@@ -12,33 +13,41 @@ eleventyNavigation:
   key: Notiziario
   parent: Home
 ---
-<h1>Scopri il Notiziario</h1>
+<div class='flow'>
+  <h1>Scopri il Notiziario</h1>
 
-<p>
-  Il Notiziario dell'
-  <strong>Istituto Archeologico Valtellinese</strong>
-  rappresenta la principale pubblicazione scientifica e divulgativa dedicata allo studio, alla tutela e alla valorizzazione del
-  <strong>patrimonio archeologico e storico della Valtellina.</strong>
-  Attraverso un rigoroso approccio multidisciplinare, l'opera documenta i risultati delle ricerche sul campo e degli scavi archeologici, integrandoli con studi specialistici dedicati alle tradizioni locali, all'etimologia e alla toponomastica valtellinese.
-</p>
+  <p>
+    Il Notiziario dell'
+    <strong>Istituto Archeologico Valtellinese</strong>
+    rappresenta la principale pubblicazione scientifica e divulgativa dedicata
+    allo studio, alla tutela e alla valorizzazione del
+    <strong>patrimonio archeologico e storico della Valtellina.</strong>
+    Attraverso un rigoroso approccio multidisciplinare, l'opera documenta i
+    risultati delle ricerche sul campo e degli scavi archeologici, integrandoli
+    con studi specialistici dedicati alle tradizioni locali, all'etimologia e
+    alla toponomastica valtellinese.
+  </p>
 
-<p>
-  All'interno di questa sezione è a disposizione di studiosi, ricercatori e appassionati
-  <strong>l'archivio storico completo</strong>
-  dei volumi editi dal 2003 a oggi. Consultando le singole schede editoriali è possibile analizzare
-  <strong>l'indice analitico dettagliato</strong>
-  degli articoli, agevolando la ricerca di specifiche tematiche storiche e contributi autoriali.
-</p>
+  <p>
+    All'interno di questa sezione è a disposizione di studiosi, ricercatori e
+    appassionati
+    <strong>l'archivio storico completo</strong>
+    dei volumi editi dal 2003 a oggi. Consultando le singole schede editoriali è
+    possibile analizzare
+    <strong>l'indice analitico dettagliato</strong>
+    degli articoli, agevolando la ricerca di specifiche tematiche storiche e
+    contributi autoriali.
+  </p>
 
-<p>
-  Al fine di promuovere la libera diffusione della cultura storica locale, la maggior parte dell'archivio editoriale è accessibile tramite
-  <strong>download gratuito in formato digitale.</strong>
-  I soci regolarmente iscritti possono inoltre
-  <a href='/contatti/'>contattare la segreteria dell'Istituto</a>
-  per richiedere la spedizione o il ritiro delle edizioni a stampa delle pubblicazioni più recenti.
-</p>
-
-<section class='flow'>
+  <p>
+    Al fine di promuovere la libera diffusione della cultura storica locale, la
+    maggior parte dell'archivio editoriale è accessibile tramite
+    <strong>download gratuito in formato digitale.</strong>
+    I soci regolarmente iscritti possono inoltre
+    <a href='/contatti/'>contattare la segreteria dell'Istituto</a>
+    per richiedere la spedizione o il ritiro delle edizioni a stampa delle
+    pubblicazioni più recenti.
+  </p>
 
   <div class='grid'>
     {% for item in notiziari %}
@@ -76,7 +85,8 @@ eleventyNavigation:
               href='/pubblicazioni/notiziario/item/{{ item.numero }}/'
             >
               Scopri di più
-              <span class='visually-hidden'>sul Notiziario N°{{ item.numero }}</span>
+              <span class='visually-hidden'>sul Notiziario
+                N°{{ item.numero }}</span>
             </a>
 
             {% if item.download %}
@@ -87,7 +97,8 @@ eleventyNavigation:
                 download
               >
                 Download
-                <span class='visually-hidden'>del Notiziario N°{{ item.numero }}</span>
+                <span class='visually-hidden'>del Notiziario
+                  N°{{ item.numero }}</span>
               </a>
             {% endif %}
 
@@ -163,5 +174,4 @@ eleventyNavigation:
       </ul>
     </nav>
   {% endif %}
-
-</section>
+</div>

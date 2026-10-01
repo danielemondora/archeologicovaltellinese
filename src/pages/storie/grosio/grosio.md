@@ -2,8 +2,8 @@
 title: 'La Storia dei Castelli di Grosio'
 author: 'Gabriele Antonioli'
 description:
-  'Approfondimento storico sui castelli di Grosio: dal castrum vecchio o di San
-  Faustino al castello nuovo o visconteo, fino alla Serra di Grosio.'
+  'Approfondimento storico sui castelli di Grosio: dal Castrum vecchio o di San
+  Faustino al castello nuovo o visconteo.'
 ---
 
 > Grosio, che religiosamente ancora si avvince alla propria natura e alle

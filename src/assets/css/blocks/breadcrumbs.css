@@ -29,3 +29,7 @@
   font-weight: 600;
   color: var(--text-main);
 }
+
+.breadcrumbs__wrapper {
+  margin-block-end: var(--space-s);
+}

@@ -55,7 +55,7 @@
 }
 
 .button:active {
-  transform: scale(99%);
+  transform: scale(0.99);
 }
 
 .button[data-button-variant='primary'] {

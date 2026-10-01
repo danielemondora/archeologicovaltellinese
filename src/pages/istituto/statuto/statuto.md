@@ -1,5 +1,8 @@
 ---
 title: Statuto
+description:
+  "Testo integrale dello Statuto dell'Istituto Archeologico Valtellinese: scopi
+  associativi, struttura organizzativa e norme per i soci."
 ---
 
 # Statuto dell'Istituto Archeologico Valtellinese

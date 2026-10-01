@@ -1,15 +1,16 @@
 {
   "name": "Istituto Archeologico Valtellinese",
   "legalName": "Istituto Archeologico Valtellinese",
-  "description": "Dal 1973 tuteliamo e valorizziamo il patrimonio archeologico della Valtellina. Un viaggio nella nostra storia, dalle antiche incisioni rupestri alle grandi scoperte in Provincia di Sondrio.",
-  "url": "https://www.archeologicovaltellinese.it",
+  "description": "Dal 1973 tuteliamo e valorizziamo il patrimonio archeologico della Valtellina. Un percorso nella nostra storia, dalle antiche incisioni rupestri alle grandi scoperte in Provincia di Sondrio.",
+  "url": "https://archeologicovaltellinese.it",
   "domain": "archeologicovaltellinese.it",
   "language": "it",
   "locale": "it_IT",
 
   "author": {
     "name": "Daniele Mondora",
-    "email": "info@mondora.eu"
+    "email": "info@mondora.eu",
+    "site": "https://danielemondora.it"
   },
 
   "company": {

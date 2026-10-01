@@ -2,8 +2,10 @@
 layout: base.njk
 ---
 <main id='main-content'>
-  <div class='wrapper | flow'>
-    {% include "partials/breadcrumbs.njk" %}
-    {{ content | safe }}
-  </div>
+  {% if eleventyNavigation and eleventyNavigation.key %}
+    <div class='wrapper | breadcrumbs__wrapper '>
+      {% include "partials/breadcrumbs.njk" %}
+    </div>
+  {% endif %}
+  <div class='wrapper'>{{ content | safe }}</div>
 </main>

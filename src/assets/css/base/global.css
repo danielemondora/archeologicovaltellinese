@@ -56,7 +56,7 @@ h4 {
 }
 
 :is(h1, h2, h3, h4) + * {
-  --flow-space: 0.5em;
+  --flow-space: var(--space-2xs);
   margin-block-start: var(--flow-space);
 }
 

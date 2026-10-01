@@ -4,23 +4,23 @@
   },
   "accordion": {
     "title": "Studio e valorizzazione del patrimonio archeologico valtellinese",
-    "text": "Fondato nel solco dell’attività e dell’insegnamento del prof. Davide Pace, l’Istituto Archeologico Valtellinese (IAV) opera per promuovere lo studio, la conoscenza e la valorizzazione del patrimonio archeologico, storico e antiquario della provincia di Sondrio. Attraverso attività di ricerca, pubblicazione, divulgazione e collaborazione con istituzioni, musei ed enti del territorio, l’IAV contribuisce alla conoscenza e alla conservazione della memoria storica e archeologica della Valtellina.",
+    "text": "Fondato nel solco dell’attività e dell’insegnamento del prof. Davide Pace, l'<strong>Istituto Archeologico Valtellinese (IAV)</strong> opera per promuovere lo studio, la conoscenza e la valorizzazione del patrimonio archeologico, storico e antiquario della <strong>Provincia di Sondrio</strong>. Attraverso attività di ricerca, pubblicazione, divulgazione e collaborazione con istituzioni, musei ed enti del territorio, l'<strong>IAV contribuisce alla conoscenza e alla conservazione della memoria storica e archeologica della Valtellina</strong>.",
     "items": [
       {
-        "text": "L’Istituto sostiene e diffonde la ricerca archeologica e storico-antiquaria relativa alla Valtellina ed alle Valli del Mera. Pubblica annualmente il proprio Notiziario, raccogliendo contributi, studi e approfondimenti dedicati al patrimonio archeologico locale curandone la redazione e la revisione scientifica.",
+        "text": "L’IAV <strong>sostiene e diffonde la ricerca archeologica e storico-antiquaria relativa alla Valtellina ed alle Valli del Mera</strong>. Pubblica annualmente il proprio <strong>Notiziario</strong>, raccogliendo contributi, studi e approfondimenti dedicati al <strong>patrimonio archeologico locale</strong> curandone la redazione e la revisione scientifica.",
         "title": "Pubblicazioni e Ricerca",
         "image": "../assets/images/giroldo-incisioni.jpg",
         "alt": "Incisioni rupestri a Giroldo"
       },
       {
         "title": "Eventi e Divulgazione",
-        "text": "L’IAV promuove e sostiene iniziative culturali dedicate alla storia e all’archeologia della Provincia di Sondrio. Conferenze, incontri, visite e attività didattiche favoriscono la diffusione della conoscenza del patrimonio archeologico e il dialogo con cittadini, studiosi, scuole, giovani e appassionati.",
+        "text": "L’IAV <strong>promuove ed organizza iniziative culturali dedicate alla storia e all’archeologia della Provincia di Sondrio</strong>. Conferenze, incontri, visite e attività didattiche favoriscono la <strong>diffusione della conoscenza</strong> del patrimonio archeologico e il dialogo con cittadini, studiosi, scuole, giovani e appassionati.",
         "image": "../assets/images/conferenza-pace-grosio.jpeg",
         "alt": "Conferenza a Grosio per i 60 anni dalla scoperta delle incisioni rupestri"
       },
       {
         "title": "Tutela del Territorio",
-        "text": "L’Istituto dedica particolare attenzione ai principali contesti archeologici della provincia di Sondrio, dalle incisioni rupestri della Rupe Magna di Grosio alle stele e alle testimonianze archeologiche di Teglio. Attraverso attività di studio, divulgazione e collaborazione con musei, enti e istituzioni locali, contribuisce alla conoscenza e alla valorizzazione del patrimonio archeologico valtellinese.",
+        "text": "L’Istituto dedica particolare attenzione ai <strong>principali contesti archeologici della provincia di Sondrio</strong>, dalle incisioni rupestri della Rupe Magna di Grosio alle stele e alle testimonianze archeologiche di Teglio. Attraverso <strong>attività di studio, divulgazione e collaborazione</strong> con musei, enti e istituzioni locali, contribuisce alla conoscenza e alla valorizzazione del patrimonio archeologico valtellinese.",
         "image": "../assets/images/visita-alla-ganda.jpg",
         "alt": "Visita al sito archeologico Ganda"
       }

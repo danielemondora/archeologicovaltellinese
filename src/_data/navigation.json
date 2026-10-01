@@ -25,6 +25,7 @@
     {
       "text": "Storie",
       "children": [
+        { "text": "Davide Pace", "url": "/storie/davide-pace/" },
         { "text": "I Castelli di Grosio", "url": "/storie/grosio/" },
         {
           "text": "Antiquarium Tellinum",
@@ -34,13 +35,7 @@
         { "text": "La Stele Cornal 5", "url": "/storie/cornal/" }
       ]
     },
-    {
-      "text": "Davide Pace",
-      "children": [
-        { "text": "Storia", "url": "/davide-pace/storia/" },
-        { "text": "Bibliografia", "url": "/davide-pace/bibliografia/" }
-      ]
-    },
+
     { "text": "Contatti", "url": "/contatti/" }
   ]
 }

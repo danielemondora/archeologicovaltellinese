@@ -103,8 +103,21 @@ cura per il dettaglio che lo accompagnava in ogni aspetto della vita.
 
 ## Le Pubblicazioni
 
-L'instancabile lavoro di ricerca e la profonda vocazione letteraria di Davide
-Pace ci hanno lasciato in eredità numerosi scritti, saggi e i celebri Tellina
-Opuscola.
+L'instancabile lavoro di ricerca di **Davide Pace** è documentato in una ricca
+serie di articoli, saggi e nei suoi celebri _"Tellina Opuscola"_, trattati in
+cui il rigore archeologico si fonde con la sua inconfondibile vocazione
+letteraria.
 
-[Scopri l'elenco completo delle sue pubblicazioni](/davide-pace/bibliografia/)
+Di seguito l'elenco delle sue pubblicazioni:
+
+<div>
+  <ol class="flow">
+  {%- for pub in bibliografiaDavidePace -%}
+    <li>
+      <strong>{{- pub.title -}}</strong><br>
+      <em>{{- pub.source -}}</em>,&nbsp;{{- pub.date -}}
+      {%- if pub.note -%}<br><small>{{- pub.notes -}}</small>{%- endif -%}
+    </li>
+  {%- endfor -%}
+  </ol>
+</div>

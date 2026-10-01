@@ -7,17 +7,12 @@ eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 lang: "it"
 solidHeader: true
+layout: page.njk
 ---
-{% extends "../_layouts/base.njk" %}
-{% block content %}
-<main id="main-content">
-  <section class="wrapper | flow">
-    <h1 class="font-base">404</h1>
-    <p>Quello che cercavi non è qui!</p>
-    <div>
-      <a class="button" href="/">Torna alla Home</a>
-    </div>
-
-  </section>
-</main>
-{% endblock %}
+<section class="flow">
+  <h1 class="font-base">404</h1>
+  <p>Quello che cercavi non è qui!</p>
+  <div>
+    <a class="button" href="/">Torna alla Home</a>
+  </div>
+</section>
