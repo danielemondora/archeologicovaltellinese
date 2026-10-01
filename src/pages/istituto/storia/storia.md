@@ -11,8 +11,8 @@ di _Mario Giovanni Simonelli_
 
 Il quattro ottobre 1973 a Sondrio, presso lo studio notarile Surace, si costituì
 l’Istituto Archeologico Valtellinese. I soci fondatori:
-[Davide Pace](/davide-pace/), Guiscardo Guicciardi, Elisabetta Sertoli, Carlo
-Bozzi, Costantino Storti, Francesco Pace e Pierluigi Annibaldi.
+[Davide Pace](/storie/davide-pace/), Guiscardo Guicciardi, Elisabetta Sertoli,
+Carlo Bozzi, Costantino Storti, Francesco Pace e Pierluigi Annibaldi.
 
 ![](introduzione.jpg)
 
@@ -20,7 +20,7 @@ Già nella primavera di quello stesso anno, il primo direttore dell’Istituto,
 Davide Pace, aveva anticipato alla stampa locale l’avvento della nuova
 associazione culturale:
 
-> “È nato l’Istituto Archeologico Valtellinese. È nato in semplicità. In alacre
+> È nato l’Istituto Archeologico Valtellinese. È nato in semplicità. In alacre
 > semplicità intende germinare fiorire fruttificare. È nato dal fervore fausto
 > per cui Teglio può comporre nell’Antiquarium Tellinum la stupenda
 > documentazione megalitica. È nato dal fervore strenuo per cui Grosio può
@@ -29,7 +29,7 @@ associazione culturale:
 > valtellinese, degna di essere perseguita con matura autonoma coscienza ovunque
 > la valle dell’Adda e le terre contigue arrisero all’avvento primigenio
 > dell’uomo e si stimarono felici dello spirito creatore dell’uomo e si
-> dischiusero sacre alle reliquie dell’uomo”[^2].
+> dischiusero sacre alle reliquie dell’uomo[^2].
 
 La fondazione dell’Istituto non si concretizzò all’improvviso, apparve,
 piuttosto, come frutto maturo della strategia d’amore intrapresa da Davide per
@@ -51,7 +51,7 @@ altri studiosi suscitò l’effetto di un sasso lanciato in uno stagno. Così,
 infatti, Davide Pace descrisse, con stile inconfondibile, il suo incedere
 nell’avventura tellina:
 
-> “Non è incongruo né forse è immodesto che io riveli la decisiva influenza che
+> Non è incongruo né forse è immodesto che io riveli la decisiva influenza che
 > l’avvento archeologico delle stele di Valgella e delle incisioni rupestri del
 > Doss de la Forca esercitò nel riaccendere vivissimo quel prestigio antiquario
 > che repentinamente nel 1941 era stato inaugurato dalle stele di Caven: benché
@@ -62,7 +62,7 @@ nell’avventura tellina:
 > si ridestò alla prima indagazione sistematica. Gl’intorpiditi cimeli di Caven
 > furono sottratti all’umbratile requie del portichetto dei Besta e immessi a
 > vivere con i nuovi monumenti la raccolta ma fervida vita del nascente
-> antiquarium”[^7].
+> antiquarium[^7].
 
 I contadini, i pastori ed i semplici[^8] ebbero un ruolo non secondario
 nell’attività pedagogica di Davide. Alcuni rinvenimenti di notevole interesse si
@@ -101,7 +101,7 @@ statuale in materia, con la Soprintendenza Archeologica della Lombardia, con gli
 Enti locali e con gli istituti di formazione e di cultura presenti sul
 territorio.
 
-### NOTE
+## Note
 
 [^1]: _Corriere della Valtellina_, sabato 7 aprile 1973.
 

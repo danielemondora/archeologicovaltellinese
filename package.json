@@ -1,7 +1,7 @@
 {
-  "name": "sitoweb",
+  "name": "archeologicovaltellinese",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sito Web realizzato per l'Istituto Archeologico Valtellinese",
   "main": ".eleventy.js",
   "scripts": {
     "clean": "rimraf dist",

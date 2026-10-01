@@ -108,16 +108,26 @@ serie di articoli, saggi e nei suoi celebri _"Tellina Opuscola"_, trattati in
 cui il rigore archeologico si fonde con la sua inconfondibile vocazione
 letteraria.
 
-Di seguito l'elenco delle sue pubblicazioni:
-
-<div>
-  <ol class="flow">
-  {%- for pub in bibliografiaDavidePace -%}
-    <li>
-      <strong>{{- pub.title -}}</strong><br>
-      <em>{{- pub.source -}}</em>,&nbsp;{{- pub.date -}}
-      {%- if pub.note -%}<br><small>{{- pub.notes -}}</small>{%- endif -%}
-    </li>
-  {%- endfor -%}
-  </ol>
-</div>
+<section class="py-s">
+  <details class='accordion'>
+    <summary>
+      <div class='splitter'>
+        <h3 class='text-step-1'>Elenco Pubblicazioni</h3>
+        {% include "svg/chevron-down-solid-full.svg" %}
+      </div>
+    </summary>
+    <div class='accordion-content'>
+      <div class="py-s">
+        <ol class="flow">
+        {%- for pub in bibliografiaDavidePace -%}
+          <li>
+            <strong>{{- pub.title -}}</strong><br>
+            <em>{{- pub.source -}}</em>,&nbsp;{{- pub.date -}}
+            {%- if pub.note -%}<br><small>{{- pub.notes -}}</small>{%- endif -%}
+          </li>
+        {%- endfor -%}
+        </ol>
+      </div>
+    </div>
+  </details>
+</section>

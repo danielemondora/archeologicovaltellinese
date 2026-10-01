@@ -46,8 +46,8 @@ all'Associazione in regola con il pagamento delle quote associative._
 Al termine della seduta ordinaria, si terrà la conferenza ad ingresso libero
 dedicata alle recenti scoperte e ricerche sul territorio alpino:
 
-> **"Nuovi dati sulla lunga continuità dei siti alpini. Il castello di Tresivio
-> tra protostoria e medioevo"**
+> Nuovi dati sulla lunga continuità dei siti alpini. Il castello di Tresivio tra
+> protostoria e medioevo
 
 ### Interverranno:
 
