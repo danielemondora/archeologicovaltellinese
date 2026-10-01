@@ -1,0 +1,8 @@
+{
+  "layout": "article.njk",
+  "permalink": "/{{ page.fileSlug }}/",
+  "eleventyNavigation": {
+    "key": "Istituto",
+    "parent": "Home"
+  }
+}

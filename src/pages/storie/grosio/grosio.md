@@ -1,15 +1,13 @@
 ---
 title: 'La Storia dei Castelli di Grosio'
 author: 'Gabriele Antonioli'
-layout: 'article.njk'
-permalink: /grosio/
 description:
   'Approfondimento storico sui castelli di Grosio: dal castrum vecchio o di San
   Faustino al castello nuovo o visconteo, fino alla Serra di Grosio.'
 ---
 
-> "Grosio, che religiosamente ancora si avvince alla propria natura e alle
-> proprie tradizioni". <cite>— Davide Pace</cite>
+> Grosio, che religiosamente ancora si avvince alla propria natura e alle
+> proprie tradizioni. <cite>Davide Pace</cite>
 
 # La Storia dei Castelli di Grosio
 

@@ -1,10 +1,5 @@
 ---
-layout: article.njk
 title: Storia
-permalink: /storia/
-eleventyNavigation:
-  key: Storia
-  parent: Home
 ---
 
 # Reviviscenza dell’Istituto Archeologico Valtellinese

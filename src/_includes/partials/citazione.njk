@@ -1,29 +1,19 @@
 <section class='wrapper'>
-  <div class='flow flow-space-s'>
 
-    <h2 class='text-step-3'>{{- home.quote.title -}}</h2>
+  <h2 class='text-step-3'>{{- home.quote.title -}}</h2>
+  <div>
 
-    <figure class='flow'>
-
-      <blockquote class='flow'>
-        {% for paragraph in home.quote.paragraphs %}
-          <p>
-            {{- paragraph -}}
-          </p>
-        {% endfor %}
-      </blockquote>
-
-      <figcaption class='text-step--1 text-muted text-right'>
-        <span aria-hidden='true'>&mdash;</span>
-
-        <a class='weight-bold' href='{{ home.quote.authorUrl }}'>
-          {{- home.quote.author -}}
-        </a>
-
-        <cite>{{- home.quote.year -}}</cite>
-      </figcaption>
-
-    </figure>
+    <blockquote class='flow'>
+      {% for paragraph in home.quote.paragraphs %}
+        <p>
+          {{- paragraph -}}
+        </p>
+      {% endfor %}
+      <cite>
+        <a class='' href='{{ home.quote.authorUrl }}'>{{- home.quote.author }},</a>
+        {{ home.quote.year -}}
+      </cite>
+    </blockquote>
 
   </div>
 </section>

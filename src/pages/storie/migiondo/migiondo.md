@@ -1,7 +1,5 @@
 ---
 title: 'La Stele di Migiondo'
-layout: 'article.njk'
-permalink: /migiondo/
 description:
   'Il ritrovamento e la conservazione della Stele di Migiondo scoperta a Sondalo'
 ---

@@ -1,10 +1,5 @@
 ---
-layout: article.njk
 title: Statuto
-permalink: /statuto/
-eleventyNavigation:
-  key: Statuto
-  parent: Home
 ---
 
 # Statuto dell'Istituto Archeologico Valtellinese

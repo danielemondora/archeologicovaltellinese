@@ -25,16 +25,19 @@
     {
       "text": "Storie",
       "children": [
-        { "text": "I Castelli di Grosio", "url": "/grosio/" },
-        { "text": "Antiquarium Tellinum", "url": "/antiquarium-tellinum/" },
-        { "text": "La Stele di Migiondo", "url": "/migiondo/" },
-        { "text": "La Stele Cornal 5", "url": "/cornal/" }
+        { "text": "I Castelli di Grosio", "url": "/storie/grosio/" },
+        {
+          "text": "Antiquarium Tellinum",
+          "url": "/storie/antiquarium-tellinum/"
+        },
+        { "text": "La Stele di Migiondo", "url": "/storie/migiondo/" },
+        { "text": "La Stele Cornal 5", "url": "/storie/cornal/" }
       ]
     },
     {
       "text": "Davide Pace",
       "children": [
-        { "text": "Storia", "url": "/davide-pace/" },
+        { "text": "Storia", "url": "/davide-pace/storia/" },
         { "text": "Bibliografia", "url": "/davide-pace/bibliografia/" }
       ]
     },

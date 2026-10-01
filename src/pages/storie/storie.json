@@ -1,0 +1,8 @@
+{
+  "layout": "article.njk",
+  "permalink": "/storie/{{ page.fileSlug }}/",
+  "eleventyNavigation": {
+    "key": "Storia",
+    "parent": "Home"
+  }
+}

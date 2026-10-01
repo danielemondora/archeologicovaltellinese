@@ -96,34 +96,3 @@ p {
 address {
   font-style: normal;
 }
-
-/* BLOCKQUOTE */
-blockquote {
-  position: relative;
-
-  margin-inline: 0;
-  margin-block: var(--space-m);
-
-  padding-inline-start: var(--space-xs);
-
-  border-inline-start: 4px solid var(--color-primary);
-
-  font-size: var(--step-1);
-  font-style: italic;
-}
-
-blockquote::before {
-  content: '“';
-  font-family: Georgia, serif;
-  font-size: 3em;
-  line-height: 0;
-  vertical-align: -0.3em;
-  color: var(--color-primary-subtle);
-
-  display: inline-block;
-  margin-inline-end: var(--space-3xs);
-}
-
-blockquote::after {
-  content: none;
-}

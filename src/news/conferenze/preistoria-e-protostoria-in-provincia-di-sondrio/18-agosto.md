@@ -5,9 +5,6 @@ description:
   'Partecipa alla conferenza su Preistoria e Protostoria in provincia di Sondrio
   con Francesco Pace. Martedì 18 agosto 2026 al Museo Civico di Bormio. Ingresso
   libero.'
-keywords:
-  'Preistoria provincia di Sondrio, Protostoria Valtellina, Francesco Pace,
-  Museo Civico Bormio, Palazzo De Simoni, eventi Bormio, archeologia Valtellina'
 ---
 
 # Preistoria e Protostoria in Provincia di Sondrio: Incontro al Museo Civico di Bormio

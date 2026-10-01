@@ -1,10 +1,8 @@
 ---
 title: 'Davide Pace: Articoli e Pubblicazioni'
-permalink: '/davide-pace/bibliografia/'
-layout: 'article.njk'
 description:
-  "L'elenco completo delle pubblicazioni, degli articoli e dei Tellina Opuscola
-  di Davide Pace"
+  "L'elenco completo delle pubblicazioni di Davide Pace, fondatore dell'Istituto
+  Archeologico Valtellinese"
 ---
 
 # L'opera letteraria e scientifica

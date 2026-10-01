@@ -122,7 +122,7 @@ export default function (eleventyConfig) {
       }),
       // 2. Bundle CSS
       esbuild.build({
-        entryPoints: ['src/_includes/css/main.css'],
+        entryPoints: ['src/assets/css/main.css'],
         bundle: true,
         minify: true,
         sourcemap: true,

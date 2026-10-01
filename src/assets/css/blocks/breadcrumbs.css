@@ -1,0 +1,31 @@
+/* COMPONENT: Breadcrumb */
+.breadcrumb ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2xs);
+
+  font-size: var(--step--1);
+  color: var(--text-muted);
+}
+
+.breadcrumb li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: '/';
+  color: var(--border-strong);
+  font-weight: 300;
+}
+
+.breadcrumb [aria-current='page'] {
+  font-weight: 600;
+  color: var(--text-main);
+}

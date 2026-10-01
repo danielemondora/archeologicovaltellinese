@@ -1,7 +1,5 @@
 ---
 title: 'La Stele Cornal 5 a Teglio'
-layout: 'article.njk'
-permalink: /cornal/
 description:
   "Recupero e trasporto presso l'Antiquarium Tellinum (Palazzo Besta di Teglio -
   Museo MiBACT- SO) dei due frammenti della stele Cornal 5 in collaborazione con

@@ -1,42 +1,40 @@
 ---
 title: 'Davide Pace: Storia, Scoperte e Memorie'
-permalink: '/davide-pace/'
-layout: 'article.njk'
 description:
   "Le scoperte archeologiche in Valtellina, la Rupe Magna e l'eredità di Davide
   Pace."
 ---
 
-# Il Fondatore: Davide Pace
+# Davide Pace
 
 [[toc]]
 
-## L'Intuizione e la Scoperta della Rupe Magna
-
-> "Improvvisamente - a me perscrutante attentissimo dalla vettura rapida il
+> Improvvisamente - a me perscrutante attentissimo dalla vettura rapida il
 > fianco della valle sciorinantesi nuova - apparve fugace l'arce. L'arce che
 > presentivo: quale vagamente avevo ambito esistesse, quale mi attendevo che
-> anche l'alta Valtellina potesse ostendere". <cite>— Davide Pace, 1969</cite>
+> anche l'alta Valtellina potesse ostendere. <cite>Davide Pace, 1969</cite>
+
+## L'Intuizione e la Scoperta della Rupe Magna
 
 Nel 1970 Davide Pace scopre la roccia istoriata più grande delle Alpi, con circa
 cinquemila incisioni, alla quale attribuisce il nome di **"Rupe Magna"**.
 
 ![La Rupe Magna come si presentava agli occhi dell'archeologo; totalmente coperta di muschi e licheni celava ogni traccia dell'antica frequentazione antropica.](grosio-rupe-magna-coperta.jpg)
 
-> "L'avvento archeologico della rupestre silloge glifica di Grosio è premio alla
+> L'avvento archeologico della rupestre silloge glifica di Grosio è premio alla
 > fede pertinace di chi - quasi solo - amò credere nella feracità antiquaria
-> della valle Tellina". <cite>— Davide Pace, 1970</cite>
+> della valle Tellina. <cite>Davide Pace, 1970</cite>
 
 La visione di Pace andava oltre la singola scoperta. Aveva già intuito il
 potenziale dell'intera area grosina:
 
-> "La caratteristica morfologia delle rupi levigate dall'antico ghiacciaio, lo
+> La caratteristica morfologia delle rupi levigate dall'antico ghiacciaio, lo
 > spettacolo mirabile delle arci naturali elevatisi fra l'alveo del Roasco
 > irruente e la piana dell'Adda placata, i ruderi ancora grandiosi dei vetusti
 > castelli e del vetere tempio dei santi Faustino e Giovita, il sacro poema
 > glifico reviviscente su le curve pagine rupestri, il deposito antiquario
 > tuttora occulto: tutto proclama la necessità che il dosso del castello assurga
-> alla pubblica dignità di «riserva geologica e archeologica»". <cite>— Davide
+> alla pubblica dignità di «riserva geologica e archeologica». <cite>Davide
 > Pace, 1970</cite>
 
 ## Il Lavoro sul Campo
@@ -46,16 +44,16 @@ intellettuale non indifferente.
 
 ![Davide Pace mentre esegue un calco cartaceo su "l'abraso dorso mirabilmente cetaceo della rupe magna" dopo il meticoloso lavoro di ripulitura dai muschi e dai licheni.](davide-pace-rupe-magna.jpg)
 
-> "Precipuamente mia la fatica estenuante del calco. Principalmente di Francesco
-> Pace la tormentosa traduzione critica del calco in definitivo disegno
-> grafico". <cite>— Davide Pace, 1972</cite>
+> Precipuamente mia la fatica estenuante del calco. Principalmente di Francesco
+> Pace la tormentosa traduzione critica del calco in definitivo disegno grafico.
+> <cite>Davide Pace, 1972</cite>
 
 ![Davide Pace il 25 agosto 1994 davanti alla "Rupe dei Fimorfoidi", a Villanuova di Teglio (SO), in uno dei suoi ultimi viaggi in Valtellina in qualità di Ispettore Onorario della Soprintendenza Archeologica della Lombardia.](davide-pace-1994.jpg)
 
-> "Avvinto - saltica la psiche - alla tellina grazia, non accadrà che io vacilli
+> Avvinto - saltica la psiche - alla tellina grazia, non accadrà che io vacilli
 > o claudichi o allenti, benchè ormai tanto grave dei concitati anni densi: o
-> psiche mia, mai tanto ti piacque libera e alta e profonda l'audacia delle
-> ali". <cite>— Davide Pace, 1995</cite>
+> psiche mia, mai tanto ti piacque libera e alta e profonda l'audacia delle ali.
+> <cite>Davide Pace, 1995</cite>
 
 ## L'Impegno Didattico in Brianza e Lomellina
 
@@ -78,7 +76,7 @@ archeologica da parte della marchesa Margherita Pallavicino Mossi (vedova di
 Giovanni Visconti Venosta), ultima erede della nobile famiglia un tempo
 feudataria dei manieri grosini.
 
-![*"Ca del Cap",  Centro studi e documentazione "Davide Pace"*](ca-del-cap.jpg)
+![Ca del Cap,  Centro studi e documentazione "Davide Pace"](ca-del-cap.jpg)
 
 Nel 1998, con scopo archivistico-museale, viene ristrutturato l'antico edificio
 rurale situato all'interno del parco. L'edificio, noto come _Ca del Cap_, viene
@@ -97,7 +95,7 @@ latinismi e arcaismi:
 
 ![Lettera di Davide Pace del 1993 -2](lettera-2.jpg)
 
-> "Conio della fervida officina lessica di cui pertinacemente mi diletto."
+> Conio della fervida officina lessica di cui pertinacemente mi diletto.
 
 Le lettere viaggiavano in caratteristiche buste gialle, minuziosamente
 affrancate con francobolli scelti tra quelli meno comuni, a testimonianza di una
@@ -106,7 +104,7 @@ cura per il dettaglio che lo accompagnava in ogni aspetto della vita.
 ## Le Pubblicazioni
 
 L'instancabile lavoro di ricerca e la profonda vocazione letteraria di Davide
-Pace ci hanno lasciato in eredità numerosi scritti, saggi e i celebri _Tellina
-Opuscola_.
+Pace ci hanno lasciato in eredità numerosi scritti, saggi e i celebri Tellina
+Opuscola.
 
 [Scopri l'elenco completo delle sue pubblicazioni](/davide-pace/bibliografia/)
