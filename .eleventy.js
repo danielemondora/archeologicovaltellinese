@@ -121,7 +121,7 @@ export default function (eleventyConfig) {
         entryPoints: ['src/assets/css/main.css'],
         bundle: true,
         minify: true,
-        sourcemap: true,
+        sourcemap: !isProduction,
         outfile: 'dist/assets/css/main.css',
         external: ['*.woff2', '*.woff', '*.ttf'],
       }),
