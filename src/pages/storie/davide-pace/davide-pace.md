@@ -113,7 +113,9 @@ letteraria.
     <summary>
       <div class='splitter'>
         <h3 class='text-step-1'>Elenco Pubblicazioni</h3>
+        <div class="icon-wrapper">
         {% include "svg/chevron-down-solid-full.svg" %}
+        </div>
       </div>
     </summary>
     <div class='accordion-content'>
@@ -123,7 +125,7 @@ letteraria.
           <li>
             <strong>{{- pub.title -}}</strong><br>
             <em>{{- pub.source -}}</em>,&nbsp;{{- pub.date -}}
-            {%- if pub.note -%}<br><small>{{- pub.notes -}}</small>{%- endif -%}
+            {%- if pub.notes -%}<br><small>{{- pub.notes -}}</small>{%- endif -%}
           </li>
         {%- endfor -%}
         </ol>

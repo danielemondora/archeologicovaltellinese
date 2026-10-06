@@ -23,7 +23,19 @@
   display: none;
 }
 
+.accordion summary .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.accordion summary h3 {
+  margin: 0;
+}
+
 .accordion summary svg {
+  display: block;
   margin: 0;
   width: 1em;
   height: 1em;
