@@ -12,6 +12,7 @@ pagination:
 eleventyNavigation:
   key: Notiziario
   parent: Home
+pagefind: true
 ---
 <div class='flow'>
   <h1>Scopri il Notiziario</h1>
@@ -48,6 +49,8 @@ eleventyNavigation:
     per richiedere la spedizione o il ritiro delle edizioni a stampa delle
     pubblicazioni più recenti.
   </p>
+
+  {% include "partials/notiziario-search.njk" %}
 
   <div class='grid'>
     {% for item in notiziari %}

@@ -3,18 +3,24 @@ pagination:
   data: pubblicazioni.notiziari
   size: 1
   alias: item
+  addAllPagesToCollections: true
 
 permalink: "/pubblicazioni/notiziario/item/{{ item.numero | slugify }}/index.html"
 
 layout: page.njk
 
 eleventyComputed:
-  title: "Notiziario N°{{ item.numero }}"
-  description: Scopri gli articoli e le ricerche del {{ title }} edito dall'Istituto Archeologico Valtellinese. Consulta l'indice analitico e scarica il volume.
+  title:
+    "Notiziario N°{{ item.numero }}"
+  description:
+    Scopri gli articoli e le ricerche del {{ title }} edito dall'Istituto Archeologico Valtellinese.
+    Consulta l'indice analitico e scarica il volume.
 
 eleventyNavigation:
   key: Item
   parent: Notiziario
+
+pagefind: true
 ---
 <article class='notiziario-item | sidebar'>
 
@@ -46,6 +52,7 @@ eleventyNavigation:
       {% endif %}
     </div>
 
+    {% include "partials/notiziario-search.njk" %}
     <nav class='cluster' aria-label='Azioni notiziario'>
       <a class='button' href='/pubblicazioni/notiziario/'>Tutti i notiziari</a>
 
@@ -67,31 +74,61 @@ eleventyNavigation:
   </div>
 
   {# COLONNA DESTRA (Contenuto) #}
-  <section class='notiziario-item__content' aria-labelledby='indice-titolo'>
+  <section
+    class='notiziario-item__content | flow'
+    aria-labelledby='indice-titolo'
+  >
 
-    <h2 id='indice-titolo'>Indice</h2>
+    <h2 id='indice-titolo' data-pagefind-ignore>Indice</h2>
 
     <ul class='flow flow-space-m' role='list'>
       {% for articolo in item.indice %}
-        <li class='notiziario-item__index-element'>
+        <li class='notiziario-item__index-element' data-pagefind-body>
+
+          <span class='visually-hidden' data-pagefind-filter='Sezione'>
+            Notiziario
+          </span>
+
           <div class='flow flow-space-3xs'>
+            <div
+              class='splitter'
+              style='flex-wrap: nowrap; align-items: baseline; gap: var(--space-s);'
+            >
 
-            <p class='text-step--1 text-muted'>Pag. {{ articolo.pagina }}</p>
+              <h3
+                id='{{ articolo.titolo | slugify }}'
+                class='text-step-0'
+                data-pagefind-weight='5'
+              >
+                {{ articolo.titolo }}
+              </h3>
 
-            {% if articolo.autori %}
+              <p
+                class='text-step--1 text-muted'
+                style='flex-shrink: 0; text-align: right;'
+              >
+                Pag. {{ articolo.pagina }}
+              </p>
+
+            </div>
+
+            {# AUTORI SOTTO #}
+            {% set listaAutori = articolo.autori | separaAutori %}
+            {% if listaAutori %}
               <p class='text-step--1 text-muted'>
-                {{ articolo.autori }}
+                {% for autore in listaAutori %}
+                  <span data-pagefind-filter='Autore'>
+                    {{- autore -}}
+                  </span>
+                  {%- if not loop.last -%}&comma;{% endif -%}
+                {% endfor %}
               </p>
             {% endif %}
 
-            <h3 class='text-step-0'>{{ articolo.titolo }}</h3>
-
           </div>
-
         </li>
       {% endfor %}
     </ul>
 
   </section>
-
 </article>

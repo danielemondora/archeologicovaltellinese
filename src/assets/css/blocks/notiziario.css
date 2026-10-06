@@ -7,6 +7,8 @@
 
 /* notiziario-item.njk */
 .notiziario-item__index-element {
-  padding-block-end: var(--space-3xs);
   border-bottom: 1px solid var(--border-subtle);
+}
+.notiziario-item__content #indice-titolo {
+  margin-block-end: var(--space-s);
 }
