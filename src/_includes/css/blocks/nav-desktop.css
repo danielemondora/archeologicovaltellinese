@@ -21,7 +21,7 @@
     aspect-ratio: 1;
     border-radius: 50%;
 
-    background-color: var(--bg-surface-subtle);
+    background-color: var(--bg-surface-muted);
     color: var(--header-text);
     text-decoration: none;
 
@@ -47,11 +47,28 @@
   .dropdown-trigger {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-3xs);
     background: transparent;
+    isolation: isolate;
   }
 
-  .dropdown-trigger svg {
+  .desktop-nav .dropdown-trigger svg {
+    --chevron-size: 64px;
+    --chevron-x: 70%;
+
+    position: absolute;
+    z-index: -1;
+    inset-block-start: 45%;
+    inset-inline-start: var(--chevron-x);
+    translate: -50% -50%;
+
+    width: var(--chevron-size);
+    height: var(--chevron-size);
+    max-width: none;
+    flex: none;
+
+    color: var(--bg-surface-muted);
+    pointer-events: none;
+
     transition: transform 0.3s ease;
   }
 
