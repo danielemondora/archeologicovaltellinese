@@ -32,7 +32,13 @@
                   )
                 %}
                 <li>
-                  <a class='' href='{{ child.url }}' {% if isChildCurrent %}aria-current="page"{% endif %}>{{ child.text }}</a>
+                  <a
+                    class=''
+                    href='{{ child.url }}'
+                    {% if isChildCurrent %}
+                      aria-current="page"
+                    {% endif %}
+                  >{{ child.text }}</a>
                 </li>
               {% endfor %}
             </ul>
@@ -40,10 +46,22 @@
         </li>
       {% else %}
         <li class='nav-item'>
-          <a class='' href='{{ item.url }}' {% if page.url==item.url %}aria-current="page"{% endif %}>{{ item.text }}</a>
+          <a
+            class=''
+            href='{{ item.url }}'
+            {% if page.url==item.url %}
+              aria-current="page"
+            {% endif %}
+          >{{ item.text }}</a>
         </li>
       {% endif %}
     {% endfor %}
+    <li>
+      <a
+        class='nav-search-btn'
+        href='/archivio/'
+        aria-label='Cerca nell&apos;archivio'
+      >{% include "svg/magnifying-glass-solid-full.svg" %}</a>
+    </li>
   </ul>
-
 </nav>

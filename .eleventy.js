@@ -109,7 +109,7 @@ export default function (eleventyConfig) {
     await Promise.all([
       // 1. Bundle JavaScript
       esbuild.build({
-        entryPoints: ['src/assets/js/bundle.js'],
+        entryPoints: ['src/_includes/js/bundle.js'],
         bundle: true,
         minify: isProduction,
         sourcemap: !isProduction,
@@ -118,7 +118,7 @@ export default function (eleventyConfig) {
       }),
       // 2. Bundle CSS
       esbuild.build({
-        entryPoints: ['src/assets/css/main.css'],
+        entryPoints: ['src/_includes/css/main.css'],
         bundle: true,
         minify: true,
         sourcemap: !isProduction,

@@ -6,7 +6,9 @@
   "scripts": {
     "clean": "rimraf dist",
     "util:killport": "kill-port 8787",
-    "build": "cross-env NODE_ENV=production eleventy",
+    "build:11ty": "cross-env NODE_ENV=production eleventy",
+    "build:pagefind": "pagefind --site dist",
+    "build": "npm run build:11ty && npm run build:pagefind",
     "watch": "eleventy --watch --quiet",
     "start": "npm-run-all clean util:killport build --parallel watch wrangler:dev",
     "wrangler:dev": "wrangler dev --live-reload",
@@ -31,6 +33,7 @@
     "markdown-it-implicit-figures": "^0.12.0",
     "markdown-it-toc-done-right": "^4.2.0",
     "npm-run-all": "^4.1.5",
+    "pagefind": "^1.5.2",
     "prettier": "^3.9.9",
     "prettier-plugin-nunjucks": "^0.2.1",
     "rimraf": "^6.1.3",

@@ -1,0 +1,48 @@
+.notiziario-search {
+  --pf-font: var(--font-base);
+  --pf-text: var(--text-main);
+  --pf-text-secondary: var(--text-secondary);
+  --pf-text-muted: var(--text-muted);
+  --pf-background: var(--bg-surface);
+  --pf-border: var(--border-default);
+  --pf-border-focus: var(--color-focus);
+  --pf-border-radius: var(--border-radius);
+  --pf-hover: var(--bg-surface-subtle);
+  --pf-primary: var(--color-primary);
+  --pf-primary-text: var(--text-on-primary);
+  --pf-outline-focus: var(--color-focus);
+}
+
+.notiziario-search__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-m);
+  align-items: start;
+}
+
+.notiziario-search__sidebar pagefind-input {
+  --pf-font-size: var(--step-0);
+  width: 100%;
+}
+
+.notiziario-search__filters-title {
+  margin: 0 0 var(--space-xs);
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: var(--space-3xs);
+}
+
+.notiziario-search__results {
+  min-width: 0;
+}
+
+@media (min-width: 48rem) {
+  .notiziario-search__layout {
+    grid-template-columns: minmax(16rem, 18rem) minmax(0, 1fr);
+    gap: var(--space-l);
+  }
+
+  .notiziario-search__sidebar {
+    position: sticky;
+    top: var(--space-m);
+  }
+}

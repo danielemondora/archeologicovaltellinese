@@ -74,7 +74,7 @@
         {
           "pagina": 28,
           "titolo": "San Martino di Serravalle \" Tempio viario\"",
-          "autori": "Daide Pace"
+          "autori": "Davide Pace"
         },
         {
           "pagina": 38,
@@ -94,7 +94,7 @@
         {
           "pagina": 62,
           "titolo": "Rivisitazione di alcuni siti di atre rupestre schematica in Valtellina",
-          "autori": "Ivano Gambarri Francesco Pace"
+          "autori": "Ivano Gambarri, Francesco Pace"
         },
         {
           "pagina": 73,
@@ -158,12 +158,12 @@
         {
           "pagina": 71,
           "titolo": "San Martino di Serravalle, nella documentazione dell'Archivio Davide Pace",
-          "autori": "Francesco Pace ( a cura di )"
+          "autori": "Francesco Pace"
         },
         {
           "pagina": 89,
           "titolo": "Segnalazioni in breve",
-          "autori": "Francesco Pace ( a cura di )"
+          "autori": "Francesco Pace"
         },
         {
           "pagina": 93,
@@ -315,7 +315,7 @@
         {
           "pagina": 89,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 99,
@@ -344,7 +344,7 @@
         {
           "pagina": 29,
           "titolo": "Il veterano Caius Kaninius Sissius",
-          "autori": "Davide Pace +"
+          "autori": "Davide Pace"
         },
         {
           "pagina": 37,
@@ -354,7 +354,7 @@
         {
           "pagina": 51,
           "titolo": "Incisioni coppelliformi nel territorio di Grosio e Grosotto",
-          "autori": "Ivano Gambarri - Francesco Pace"
+          "autori": "Ivano Gambarri, Francesco Pace"
         },
         {
           "pagina": 65,
@@ -364,7 +364,7 @@
         {
           "pagina": 73,
           "titolo": "Boschi, colture e pascoli nella media Valtellina durante gli ultimi settemila anni",
-          "autori": "Roberta Pini - Cesare Ravazzi"
+          "autori": "Roberta Pini, Cesare Ravazzi"
         },
         {
           "pagina": 83,
@@ -384,7 +384,7 @@
         {
           "pagina": 107,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 121,
@@ -423,7 +423,7 @@
         {
           "pagina": 61,
           "titolo": "Petroglifici schematici nel territorio di Valdisotto ( SO )",
-          "autori": "Francesco Pace - Ivano Gambarri"
+          "autori": "Francesco Pace, Ivano Gambarri"
         },
         {
           "pagina": 73,
@@ -453,7 +453,7 @@
         {
           "pagina": 141,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 159,
@@ -481,7 +481,7 @@
         },
         {
           "pagina": 26,
-          "titolo": "Petroglifi schematici nella valle del Bitto di Albaredo ( Orobie Valtel linesi )",
+          "titolo": "Petroglifi schematici nella valle del Bitto di Albaredo ( Orobie Valtellinesi )",
           "autori": "Francesco Pace"
         },
         {
@@ -532,7 +532,7 @@
         {
           "pagina": 117,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 135,
@@ -555,7 +555,7 @@
         },
         {
           "pagina": 26,
-          "titolo": "Asce enee rinvenute in Valtellina",
+          "titolo": "Asce lignee rinvenute in Valtellina",
           "autori": "Francesco Pace"
         },
         {
@@ -565,7 +565,7 @@
         },
         {
           "pagina": 41,
-          "titolo": "P etroglifi antropomorfi e pediformi nel territorio comunale di Sondrio - Nota preliminare -",
+          "titolo": "Petroglifi antropomorfi e pediformi nel territorio comunale di Sondrio - Nota preliminare -",
           "autori": "Francesco Pace"
         },
         {
@@ -606,7 +606,7 @@
         {
           "pagina": 138,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 149,
@@ -685,7 +685,7 @@
         {
           "pagina": 123,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 143,
@@ -774,7 +774,7 @@
         {
           "pagina": 149,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 163,
@@ -833,7 +833,7 @@
         {
           "pagina": 149,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 153,
@@ -852,7 +852,7 @@
         {
           "pagina": 1,
           "titolo": "Vestigia di culto arcaico su rupi del territorio grosino",
-          "autori": "Davide Pace +"
+          "autori": "Davide Pace"
         },
         {
           "pagina": 29,
@@ -887,7 +887,7 @@
         {
           "pagina": 161,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 167,
@@ -971,7 +971,7 @@
         {
           "pagina": 173,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 185,
@@ -1034,7 +1034,7 @@
         },
         {
           "pagina": 207,
-          "titolo": "L' iscrizione di Cividate Camuno rivisitata. Una nota",
+          "titolo": "L'iscrizione di Cividate Camuno rivisitata. Una nota",
           "autori": "Alessandro Morandi"
         },
         {
@@ -1045,7 +1045,7 @@
         {
           "pagina": 237,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 245,
@@ -1078,7 +1078,7 @@
         },
         {
           "pagina": 57,
-          "titolo": "Gli hoenfunde protostorici delle Alpi Lombarde: censimento, disribuzione geografica e loro significato storico culturale",
+          "titolo": "Gli hoenfunde protostorici delle Alpi Lombarde: censimento, distribuzione geografica e loro significato storico culturale",
           "autori": "Lorenzo Catena, Umberto Tecchiati"
         },
         {
@@ -1103,7 +1103,7 @@
         },
         {
           "pagina": 147,
-          "titolo": "\"Conservare e valorizzare il paesaggio della media Valtellina\"",
+          "titolo": "Conservare e valorizzare il paesaggio della media Valtellina",
           "autori": "Severino Bongiolatti"
         },
         {
@@ -1114,7 +1114,7 @@
         {
           "pagina": 171,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 177,
@@ -1148,7 +1148,7 @@
         {
           "pagina": 33,
           "titolo": "Elementi per lo studio dell'insediamento pre-protostorico in Valtellina",
-          "autori": "Raffaella Poggiani Keller, Franco Magri, con appendice di Domenico Lo Vetro"
+          "autori": "Raffaella Poggiani Keller, Franco Magri, Domenico Lo Vetro"
         },
         {
           "pagina": 75,
@@ -1188,7 +1188,7 @@
         {
           "pagina": 215,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 225,
@@ -1212,7 +1212,7 @@
         {
           "pagina": 21,
           "titolo": "Studio del contenuto in fosforo organico e inorganico in suoli di interesse archeologico: il caso di Pian dei Cavalli",
-          "autori": "Roberto Castaldi, Francesco Fedele (premessa)"
+          "autori": "Roberto Castaldi, Francesco Fedele"
         },
         {
           "pagina": 49,
@@ -1227,7 +1227,7 @@
         {
           "pagina": 73,
           "titolo": "Castione Andevenno (SO), petroglifi in località Ca di Bungi.",
-          "autori": "Francesco Pace,"
+          "autori": "Francesco Pace"
         },
         {
           "pagina": 83,
@@ -1267,7 +1267,7 @@
         {
           "pagina": 251,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 267,
@@ -1341,7 +1341,7 @@
         {
           "pagina": 201,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 215,
@@ -1420,7 +1420,7 @@
         {
           "pagina": 227,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 235,
@@ -1508,13 +1508,13 @@
         },
         {
           "pagina": 207,
-          "titolo": "Gli incisori dei petrglifi valtellinesi e l'Uomo del Similaun parlavano la stessa lingua?",
+          "titolo": "Gli incisori dei petroglifi valtellinesi e l'Uomo del Similaun parlavano la stessa lingua?",
           "autori": "Guido Borghi"
         },
         {
           "pagina": 225,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 233,
@@ -1533,7 +1533,7 @@
         {
           "pagina": 5,
           "titolo": "Scoperto ricchissimo sito paleontologico nel Parco delle Orobie Valtellinesi con fossili che risalgono a 280 milioni di anni fa",
-          "autori": "Comunicato Stampa"
+          "autori": null
         },
         {
           "pagina": 15,
@@ -1562,7 +1562,7 @@
         },
         {
           "pagina": 85,
-          "titolo": "L' iscrizione di S. Giorgio di Cola: appunti per una storia della ricerca. 2. La prima ipotesi di lettura (Remo Bracchi) e conseguenti interpretazioni",
+          "titolo": "L'iscrizione di S. Giorgio di Cola: appunti per una storia della ricerca. 2. La prima ipotesi di lettura (Remo Bracchi) e conseguenti interpretazioni",
           "autori": "Guido Borghi"
         },
         {
@@ -1593,7 +1593,7 @@
         {
           "pagina": 151,
           "titolo": "Segnalazioni in breve",
-          "autori": "Autori vari"
+          "autori": null
         },
         {
           "pagina": 165,
