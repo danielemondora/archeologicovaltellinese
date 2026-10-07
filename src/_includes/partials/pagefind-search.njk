@@ -1,0 +1,34 @@
+<section class='notiziario-search' aria-labelledby='search-title'>
+  <pagefind-config
+    lang='it'
+    excerpt-length='35'
+    faceted
+    preload
+  ></pagefind-config>
+
+  <div class='notiziario-search__layout'>
+
+    <aside class='notiziario-search__sidebar flow'>
+      <pagefind-input
+        placeholder='Cerca per parola chiave, autore o capitolo...'
+        debounce='250'
+      ></pagefind-input>
+
+      <div class='notiziario-search__filters box'>
+        <h2 class='notiziario-search__filters-title text-step-0'>
+          Filtra i risultati
+        </h2>
+        <pagefind-filter-pane sort='alphabetical'></pagefind-filter-pane>
+      </div>
+      <p class='text-step--1 text-muted'>
+        Digita una parola chiave, il nome di un reperto, di una località o di un
+        autore. Usa il filtro per separare i risultati per autore.
+      </p>
+    </aside>
+
+    <div class='notiziario-search__results flow'>
+      <pagefind-results show-images='true'></pagefind-results>
+    </div>
+
+  </div>
+</section>

@@ -10,9 +10,13 @@ solidHeader: true
 layout: page.njk
 ---
 <section class="flow">
-  <h1 class="font-base">404</h1>
-  <p>Quello che cercavi non è qui!</p>
-  <div>
-    <a class="button" href="/">Torna alla Home</a>
-  </div>
+  <h1 class="font-base">404! Pagina non trovata</h1>
+  <p>Il reperto che cercavi non è qui, prova a scavare ancora!</p>
+  <div class="cluster justify-center mt-m">
+      <a href="/archivio/" class="button" data-button-variant="primary">
+        {% include "svg/magnifying-glass-solid-full.svg" %}
+        Cerca nell'Archivio
+      </a>
+      <a href="/" class="button" data-ghost-button>Torna alla Home</a>
+    </div>
 </section>

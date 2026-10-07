@@ -8,6 +8,7 @@
         { "text": "Storia", "url": "/storia/" },
         { "text": "Statuto", "url": "/statuto/" },
         { "text": "Direttivo", "url": "/direttivo/" },
+        { "text": "Contatti", "url": "/contatti/" },
         { "text": "Diventa Socio", "url": "/diventa-socio/" }
       ]
     },
@@ -34,8 +35,6 @@
         { "text": "La Stele di Migiondo", "url": "/storie/migiondo/" },
         { "text": "La Stele Cornal 5", "url": "/storie/cornal/" }
       ]
-    },
-
-    { "text": "Contatti", "url": "/contatti/" }
+    }
   ]
 }

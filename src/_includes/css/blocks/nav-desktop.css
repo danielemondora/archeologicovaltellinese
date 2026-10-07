@@ -7,9 +7,41 @@
   display: none;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 64em) {
   .desktop-nav {
     display: block;
+  }
+
+  .nav-search-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    background-color: var(--bg-surface-subtle);
+    color: var(--header-text);
+    text-decoration: none;
+
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .nav-search-btn svg {
+    width: 1.2em;
+    height: 1.2em;
+    display: block;
+  }
+
+  .nav-search-btn:hover,
+  .nav-search-btn:focus-visible {
+    background-color: var(--color-primary);
+    color: var(--text-on-primary);
+    transform: scale(1.05);
   }
 
   .dropdown-trigger {

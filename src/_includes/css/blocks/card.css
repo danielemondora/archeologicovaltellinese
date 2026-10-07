@@ -38,25 +38,3 @@
   border-color: var(--border-default);
   box-shadow: 0 0 0 2px var(--border-subtle);
 }
-
-/* Primary */
-
-.card[data-variant='primary'],
-.box[data-variant='primary'] {
-  --card-bg: var(--color-primary-glare);
-  --card-color: var(--color-primary-text);
-  --card-border: var(--color-primary-subtle);
-  --card-hover-bg: var(--color-primary-subtle);
-  --card-hover-border: var(--border-primary);
-}
-
-/* Secondary */
-
-.card[data-variant='secondary'],
-.box[data-variant='secondary'] {
-  --card-bg: var(--color-secondary-glare);
-  --card-color: var(--color-secondary-text);
-  --card-border: var(--color-secondary-subtle);
-  --card-hover-bg: var(--color-secondary-subtle);
-  --card-hover-border: var(--color-secondary);
-}

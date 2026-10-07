@@ -19,8 +19,6 @@ eleventyComputed:
 eleventyNavigation:
   key: Item
   parent: Notiziario
-
-pagefind: true
 ---
 <article class='notiziario-item | sidebar'>
 
@@ -52,9 +50,12 @@ pagefind: true
       {% endif %}
     </div>
 
-    {% include "partials/notiziario-search.njk" %}
     <nav class='cluster' aria-label='Azioni notiziario'>
-      <a class='button' href='/pubblicazioni/notiziario/'>Tutti i notiziari</a>
+      <a class='button' href='/pubblicazioni/notiziario/'>Notiziari</a>
+      <a
+        class='button'
+        href='/archivio/'
+      >{% include "svg/magnifying-glass-solid-full.svg" %}Cerca</a>
 
       {% if item.download %}
         <a
@@ -85,9 +86,7 @@ pagefind: true
       {% for articolo in item.indice %}
         <li class='notiziario-item__index-element' data-pagefind-body>
 
-          <span class='visually-hidden' data-pagefind-filter='Sezione'>
-            Notiziario
-          </span>
+          <span class='visually-hidden'>Notiziario</span>
 
           <div class='flow flow-space-3xs'>
             <div

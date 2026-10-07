@@ -12,14 +12,13 @@ pagination:
 eleventyNavigation:
   key: Notiziario
   parent: Home
-pagefind: true
 ---
 <div class='flow'>
   <h1>Scopri il Notiziario</h1>
 
   <p>
-    Il Notiziario dell'
-    <strong>Istituto Archeologico Valtellinese</strong>
+    Il
+    <strong>Notiziario dell'Istituto Archeologico Valtellinese</strong>
     rappresenta la principale pubblicazione scientifica e divulgativa dedicata
     allo studio, alla tutela e alla valorizzazione del
     <strong>patrimonio archeologico e storico della Valtellina.</strong>
@@ -50,7 +49,14 @@ pagefind: true
     pubblicazioni più recenti.
   </p>
 
-  {% include "partials/notiziario-search.njk" %}
+  <div class='text-center'>
+    <a
+      class='button'
+      href='/archivio/'
+      data-button-variant='primary'
+    >{% include "svg/magnifying-glass-solid-full.svg" %}Cerca Autori e Articoli
+      nell'Archivio</a>
+  </div>
 
   <div class='grid'>
     {% for item in notiziari %}
