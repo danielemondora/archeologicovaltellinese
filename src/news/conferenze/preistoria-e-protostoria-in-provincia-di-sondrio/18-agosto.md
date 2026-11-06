@@ -9,6 +9,10 @@ description:
 
 # Preistoria e Protostoria in Provincia di Sondrio: Incontro al Museo Civico di Bormio
 
+---
+
+_{{ page.date | dateFilter }}_
+
 [[toc]]
 
 Un affascinante viaggio nel tempo alla scoperta delle origini più antiche della

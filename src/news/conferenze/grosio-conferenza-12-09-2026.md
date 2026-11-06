@@ -9,6 +9,10 @@ description:
 
 # 60 Anni dalla Scoperta della Rupe Magna: Evento e Visite Guidate a Grosio
 
+---
+
+_{{ page.date | dateFilter }}_
+
 [[toc]]
 
 A sessant'anni dalla storica scoperta delle incisioni rupestri, Grosio celebra

@@ -1607,16 +1607,95 @@
           "volume": 2
         }
       ]
+    },
+    {
+      "numero": 24,
+      "anno": 2026,
+      "slug": "notiziario-24",
+      "immagine": "https://media.archeologicovaltellinese.it/notiziari/copertine/copertina-24.webp",
+      "download": null,
+      "indice": [
+        {
+          "pagina": 5,
+          "titolo": "Scoperto ricchissimo sito paleontologico nel Parco delle Orobie Valtellinesi con fossili che risalgono a 280 milioni di anni fa",
+          "autori": null
+        },
+        {
+          "pagina": 15,
+          "titolo": "Le piattaforme carbonatiche",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 19,
+          "titolo": "Sessanta anni fa la scoperta dei petroglifi di Grosio  ",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 53,
+          "titolo": "I Petroglifi del Tresero. Opinioni a confronto",
+          "autori": "Giuseppe Cola, Ausilio Priuli"
+        },
+        {
+          "pagina": 53,
+          "titolo": "Memorie celate nella pietra",
+          "autori": "Giuseppe Cola"
+        },
+        {
+          "pagina": 163,
+          "titolo": "Le incisioni rupestri del Tresero in Alta Val Furva. Considerazioni preliminari a seguito di analisi autoptica",
+          "autori": "Ausilio Priuli"
+        },
+        {
+          "pagina": 175,
+          "titolo": "Castione Andevenno (SO), Castello del Leone, un’antica casa del vino",
+          "autori": "Marco Redaelli"
+        },
+        {
+          "pagina": 183,
+          "titolo": "L'antropizzazione delle valli e della montagna in rapporto agli eventi climatici degli ultimi 15000 anni",
+          "autori": "Ausilio Priuli"
+        },
+        {
+          "pagina": 205,
+          "titolo": "Grosio, Rupe Magna. La prima documentazione delle incisioni mediante Reflectance Transformation Imaging (RTI)              ",
+          "autori": "Hüseyin Erdoğan, Cristiano Putzolu, Federico Zoni"
+        },
+        {
+          "pagina": 233,
+          "titolo": "Rupe Magna di Grosio. Individuati nuovi settori con petroglifi",
+          "autori": "Chiara Marveggio"
+        },
+        {
+          "pagina": 239,
+          "titolo": "Petroglifi del Tresero, la levata del Sole nel giorno del Solstizio d’estate",
+          "autori": "Giuseppe Cola"
+        },
+        {
+          "pagina": 245,
+          "titolo": "Teglio (SO), petroglifi su rupi del Dos de la Forca",
+          "autori": "Francesco Pace"
+        },
+        {
+          "pagina": 251,
+          "titolo": "Segnalazioni in Breve",
+          "autori": null
+        },
+        {
+          "pagina": 255,
+          "titolo": "Atti dell'Istituto",
+          "autori": null
+        }
+      ]
     }
   ],
-  "tellinaOpuscola": [
+  "tellinaOpuscula": [
     {
       "numero": 1,
       "anno": 1969,
       "titolo": "Nuove acquisizioni antiquarie nel territorio di Teglio",
       "autori": "Davide Pace",
       "slug": "tellina-opuscola-1",
-      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscola/copertine/tellina-opuscola-1.webp",
+      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscula/copertine/tellina-opuscula-1.webp",
       "download": null
     },
     {
@@ -1625,7 +1704,7 @@
       "titolo": "Petroglifi di Grosio",
       "autori": "Davide Pace",
       "slug": "tellina-opuscola-1",
-      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscola/copertine/tellina-opuscola-2.webp",
+      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscula/copertine/tellina-opuscula-2.webp",
       "download": null
     },
     {
@@ -1634,7 +1713,7 @@
       "titolo": "Sviluppo nell'investigazione archeologica nel sistma petroglifico di Grosio",
       "autori": "Davide Pace",
       "slug": "tellina-opuscola-1",
-      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscola/copertine/tellina-opuscola-3.webp",
+      "immagine": "https://media.archeologicovaltellinese.it/tellina-opuscula/copertine/tellina-opuscula-3.webp",
       "download": null
     }
   ]
