@@ -1,0 +1,184 @@
+<!-- HTML PULITO (Nessuno stile in linea, usa solo le classi) -->
+<section class="associati__form-wrapper | box flow">
+  <header>
+    <h2>Contattaci</h2>
+    <p>Compila tutti i campi obbligatori contrassegnati.</p>
+  </header>
+
+  <form id="form-associati" class="flow | text-step--1">
+    <div class="grid">
+      <div class="form-control">
+        <label for="nome">Nome *</label>
+        <input type="text" id="nome" name="nome" required placeholder="Mario" />
+      </div>
+      <div class="form-control">
+        <label for="cognome">Cognome *</label>
+        <input
+          type="text"
+          id="cognome"
+          name="cognome"
+          required
+          placeholder="Rossi"
+        />
+      </div>
+    </div>
+
+    <div class="grid form-grid-address">
+      <div class="form-control">
+        <label for="indirizzo">Indirizzo *</label>
+        <input
+          type="text"
+          id="indirizzo"
+          name="indirizzo"
+          required
+          placeholder="Via Fabio Besta 8"
+        />
+      </div>
+      <div class="form-control">
+        <label for="cap">Codice Postale *</label>
+        <input
+          type="text"
+          id="cap"
+          name="cap"
+          required
+          pattern="[0-9]{5}"
+          inputmode="numeric"
+          placeholder="23036"
+        />
+      </div>
+    </div>
+
+    <div class="grid form-grid-location">
+      <div class="form-control">
+        <label for="citta">Città *</label>
+        <input
+          type="text"
+          id="citta"
+          name="citta"
+          required
+          placeholder="Teglio"
+        />
+      </div>
+      <div class="form-control">
+        <label for="provincia">Provincia *</label>
+        <input
+          class="uppercase-input"
+          type="text"
+          id="provincia"
+          name="provincia"
+          required
+          pattern="[a-zA-Z]{2}"
+          maxlength="2"
+          placeholder="SO"
+        />
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="form-control">
+        <label for="data-nascita">Data di Nascita *</label>
+        <input type="date" id="data-nascita" name="data-nascita" required />
+      </div>
+      <div class="form-control">
+        <label for="cf">Codice Fiscale *</label>
+        <input
+          class="uppercase-input"
+          type="text"
+          id="cf"
+          name="cf"
+          required
+          pattern="[a-zA-Z0-9]{16}"
+          placeholder="RSSMRA92S08F205F"
+        />
+      </div>
+    </div>
+
+    <div class="form-control">
+      <label for="note">Note</label>
+      <textarea
+        id="note"
+        name="note"
+        rows="4"
+        placeholder="Lasciaci un messaggio"
+      ></textarea>
+    </div>
+
+    <button class="button" type="submit">Invia Richiesta</button>
+  </form>
+
+  <div class="form-associati__privacy">
+    <p class="text-step--2">
+      Cliccando su Invia, si aprirà il tuo client di posta elettronica con i
+      dati precompilati, i dati non vengono salvati su questo sito. Leggi la
+      nostra
+      <a href="/privacy-policy/">Privacy Policy</a>.
+    </p>
+  </div>
+</section>
+
+<style webc:scoped>
+  :host input,
+  :host textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem 1rem;
+  }
+
+  :host .uppercase-input {
+    text-transform: uppercase;
+  }
+
+  :host .form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+
+  :host .form-grid-address {
+    --grid-min-item-size: 15rem;
+  }
+
+  :host .form-grid-location {
+    --grid-min-item-size: 10rem;
+  }
+</style>
+
+<script>
+  const formAssociati = document.getElementById('form-associati')
+
+  if (formAssociati) {
+    formAssociati.addEventListener('submit', function (event) {
+      event.preventDefault()
+
+      const emailDestinazione = 'info@archeologicovaltellinese.it'
+
+      const nome = document.getElementById('nome').value
+      const cognome = document.getElementById('cognome').value
+
+      const indirizzo = document.getElementById('indirizzo').value
+      const cap = document.getElementById('cap').value
+      const citta = document.getElementById('citta').value
+      const provincia = document.getElementById('provincia').value.toUpperCase()
+
+      const indirizzoCompleto = `${indirizzo}, ${cap} ${citta} (${provincia})`
+
+      const cf = document.getElementById('cf').value.toUpperCase()
+      const dataNascitaRaw = document.getElementById('data-nascita').value
+
+      let dataNascitaFormat = ''
+      if (dataNascitaRaw) {
+        const [anno, mese, giorno] = dataNascitaRaw.split('-')
+        dataNascitaFormat = `${giorno}/${mese}/${anno}`
+      }
+
+      const note = document.getElementById('note').value
+
+      const subject = `Richiesta Associazione: ${nome} ${cognome}`
+      const body = `Salve, vorrei inviare la mia richiesta di associazione all'Istituto Archeologico Valtellinese.\n\nDati Personali:\nNome: ${nome}\nCognome: ${cognome}\nIndirizzo: ${indirizzoCompleto}\nData di Nascita: ${dataNascitaFormat}\nCodice Fiscale: ${cf}\n\nNote:\n${note || 'Niente da aggiungere.'}`
+
+      window.location.href = `mailto:${emailDestinazione}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    })
+  }
+</script>

@@ -1,4 +1,4 @@
-{# assocaiti.njk #}
+{# associati.njk #}
 <section
   id='associati'
   class='associati | flow'
@@ -19,7 +19,9 @@
   <div>
     <div class='grid' data-layout='thirds'>
 
-      {% include "partials/associati-form.njk" %}
+      {% renderTemplate "webc" %}
+      <form-diventa-socio></form-diventa-socio>
+      {% endrenderTemplate %}
 
       <aside class='flow'>
 

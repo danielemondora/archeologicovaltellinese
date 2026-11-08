@@ -8,7 +8,7 @@
   --header-text: var(--color-stone-900);
   --header-text-muted: var(--color-stone-600);
 
-  --header-border: var(--color-secondary);
+  --header-border: var(--color-primary);
 
   --header-accent: var(--color-earth-600);
   --header-accent-hover: var(--color-earth-700);

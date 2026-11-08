@@ -1,0 +1,127 @@
+<button
+  class="scroll-btn"
+  hidden
+  :aria-label="label || 'Torna in cima alla pagina'"
+  :title="label || 'Torna in cima alla pagina'"
+  :style="`
+    --_bg: ${color || 'var(--scroll-btn-bg, #06b6d4)'};
+    --_border: ${border || 'var(--scroll-btn-border, #06b6d4)'};
+  `"
+  :data-focus-target="focusTarget || 'main h1, main'"
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    fill="currentColor"
+    viewBox="0 0 640 640"
+  >
+    <path
+      d="M342.6 73.4C330.1 60.9 309.8 60.9 297.3 73.4L137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7C149.8 291.2 170.1 291.2 182.6 278.7L288 173.3L288 544C288 561.7 302.3 576 320 576C337.7 576 352 561.7 352 544L352 173.3L457.4 278.7C469.9 291.2 490.2 291.2 502.7 278.7C515.2 266.2 515.2 245.9 502.7 233.4L342.7 73.4z"
+    />
+  </svg>
+</button>
+
+<style webc:scoped>
+  :host {
+    display: contents;
+  }
+
+  .scroll-btn {
+    position: fixed;
+    bottom: var(--scroll-btn-bottom, 2rem);
+    right: var(--scroll-btn-right, 2rem);
+    z-index: var(--scroll-btn-zindex, 9999);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid var(--_border);
+    cursor: pointer;
+    background: var(--_bg);
+    color: var(--scroll-btn-color, #fff);
+    display: grid;
+    place-items: center;
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease;
+
+    @starting-style {
+      opacity: 0;
+      transform: translateY(12px) scale(0.8);
+    }
+  }
+
+  .scroll-btn[hidden] {
+    display: none;
+  }
+
+  .scroll-btn:hover {
+    filter: brightness(0.9);
+    transform: translateY(-2px);
+  }
+
+  .scroll-btn:focus-visible {
+    outline: 3px solid var(--_bg);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scroll-btn {
+      transition: opacity 0.1s linear;
+    }
+  }
+</style>
+
+<script>
+  if (!customElements.get('scroll-top-button')) {
+    customElements.define(
+      'scroll-top-button',
+      class extends HTMLElement {
+        #btn = null
+        #observer = null
+        #sentinel = null
+
+        connectedCallback() {
+          this.#btn = this.querySelector('button')
+          if (!this.#btn) return
+
+          this.#setupObserver()
+          this.#btn.addEventListener('click', this.#handleClick.bind(this))
+        }
+
+        #setupObserver() {
+          this.#sentinel = document.createElement('div')
+          this.#sentinel.setAttribute('aria-hidden', 'true')
+          this.#sentinel.style.cssText =
+            'position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none;'
+          document.body.prepend(this.#sentinel)
+
+          this.#observer = new IntersectionObserver(
+            ([entry]) => {
+              if (this.#btn) this.#btn.hidden = entry.isIntersecting
+            },
+            { threshold: 0 },
+          )
+          this.#observer.observe(this.#sentinel)
+        }
+
+        #handleClick() {
+          window.scrollTo({ top: 0, behavior: 'smooth' })
+
+          const targetSelector = this.#btn.dataset.focusTarget
+          const target = document.querySelector(targetSelector) ?? document.body
+
+          target.setAttribute('tabindex', '-1')
+          target.focus({ preventScroll: true })
+        }
+
+        disconnectedCallback() {
+          this.#observer?.disconnect()
+          this.#sentinel?.remove()
+        }
+      },
+    )
+  }
+</script>

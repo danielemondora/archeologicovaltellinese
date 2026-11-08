@@ -26,18 +26,9 @@
       crossorigin
     />
     <link rel='stylesheet' href='/assets/css/main.css' />
-    <script src='/assets/js/bundle.js' defer></script>
+    <style>{% getBundle "css" %}</style>
 
-    {% if webAwesome %}
-      <link
-        rel='stylesheet'
-        href='https://ka-f.webawesome.com/webawesome@3.13.0/styles/themes/default.css'
-      />
-      <script
-        type='module'
-        src='https://ka-f.webawesome.com/webawesome@3.13.0/webawesome.loader.js'
-      ></script>
-    {% endif %}
+    <script src='/assets/js/bundle.js' defer></script>
 
     {% if pagefind %}
       <link href='/pagefind/pagefind-component-ui.css' rel='stylesheet' />
@@ -60,11 +51,14 @@
       {% include "partials/footer.njk" %}
     </div>
 
+    {% renderTemplate "webc" %}
     <scroll-top-button
       color='var(--color-primary)'
       border='var(--color-primary-hover)'
     ></scroll-top-button>
+    {% endrenderTemplate %}
 
+    <script>{% getBundle "js" %}</script>
   </body>
 
 </html>

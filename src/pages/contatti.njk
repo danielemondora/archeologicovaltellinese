@@ -3,7 +3,6 @@ layout: article.njk
 title: Contatti
 description: "Recapiti e dati istituzionali dell'Istituto Archeologico Valtellinese."
 permalink: /contatti/
-webAwesome: true
 eleventyNavigation:
   key: Contatti
   parent: Home
@@ -30,11 +29,8 @@ eleventyNavigation:
         <ul role='list'>
           <li>{{ site.address.street }}</li>
           <li>
-            {{ site.address.postalCode }}
-            {{ site.address.city }}
-            (
-            {{- site.address.province -}}
-            )
+            {{ site.address.postalCode }} {{ site.address.city }} (
+            {{- site.address.province -}} )
           </li>
           <li>{{ site.address.country }}</li>
         </ul>
@@ -56,9 +52,7 @@ eleventyNavigation:
           href='{{ site.social.facebook }}'
           target='_blank'
           rel='noopener noreferrer'
-        >
-          Facebook ufficiale
-        </a>.
+        >Facebook ufficiale</a>.
       </p>
     </section>
   {% endif %}
@@ -89,6 +83,10 @@ eleventyNavigation:
       </ul>
     </div>
   </section>
+  <section>
+    {% renderTemplate "webc" %}
+    <form-contatti></form-contatti>
+    {% endrenderTemplate %}
+  </section>
 
-  {% include "partials/associati-form.njk" %}
 </div>

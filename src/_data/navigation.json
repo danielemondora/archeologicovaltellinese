@@ -1,7 +1,7 @@
 {
   "items": [
     { "text": "Home", "url": "/" },
-    { "text": "News", "url": "/news/" },
+
     {
       "text": "Istituto",
       "children": [
@@ -35,6 +35,7 @@
         { "text": "La Stele di Migiondo", "url": "/storie/migiondo/" },
         { "text": "La Stele Cornal 5", "url": "/storie/cornal/" }
       ]
-    }
+    },
+    { "text": "News", "url": "/news/" }
   ]
 }

@@ -1,0 +1,91 @@
+<div class="box flow">
+  <header>
+    <h2>Scrivici un messaggio</h2>
+    <p>Compila i campi qui sotto per contattarci direttamente.</p>
+  </header>
+
+  <form id="form-contatti" class="flow | text-step--1">
+    <!-- NOME E COGNOME -->
+    <div class="grid">
+      <div class="form-control">
+        <label for="nome">Nome *</label>
+        <input type="text" id="nome" name="nome" required placeholder="Mario" />
+      </div>
+      <div class="form-control">
+        <label for="cognome">Cognome *</label>
+        <input
+          type="text"
+          id="cognome"
+          name="cognome"
+          required
+          placeholder="Rossi"
+        />
+      </div>
+    </div>
+
+    <!-- MESSAGGIO -->
+    <div class="form-control">
+      <label for="messaggio">Messaggio *</label>
+      <textarea
+        id="messaggio"
+        name="messaggio"
+        rows="6"
+        required
+        placeholder="Come possiamo aiutarti?"
+      ></textarea>
+    </div>
+
+    <button class="button" type="submit">Invia Messaggio</button>
+  </form>
+
+  <div>
+    <p class="text-step--2">
+      Cliccando su Invia, si aprirà il tuo client di posta elettronica con il
+      tuo messaggio precompilato, i dati non vengono salvati su questo sito.
+      Leggi la nostra
+      <a href="/privacy-policy/">Privacy Policy</a>.
+    </p>
+  </div>
+</div>
+
+<!-- STILI SCOPED: isolati al componente -->
+<style webc:scoped>
+  :host input,
+  :host textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem 1rem;
+  }
+
+  :host .form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+</style>
+
+<!-- LOGICA JAVASCRIPT: Client Email via mailto -->
+<script>
+  const formContatti = document.getElementById('form-contatti')
+
+  if (formContatti) {
+    formContatti.addEventListener('submit', function (event) {
+      event.preventDefault()
+
+      const emailDestinazione = 'info@archeologicovaltellinese.it'
+
+      const nome = document.getElementById('nome').value
+      const cognome = document.getElementById('cognome').value
+      const messaggio = document.getElementById('messaggio').value
+
+      const subject = `Nuovo messaggio da: ${nome} ${cognome}`
+
+      // Corpo dell'email formattato in modo pulito
+      const body = `Salve,\n\nAvete ricevuto un nuovo messaggio tramite il form contatti del sito.\n\nDa: ${nome} ${cognome}\n\nMessaggio:\n${messaggio}`
+
+      window.location.href = `mailto:${emailDestinazione}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    })
+  }
+</script>
