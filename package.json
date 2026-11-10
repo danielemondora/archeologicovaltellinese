@@ -16,7 +16,7 @@
   },
   "keywords": [],
   "author": "Daniele Mondora",
-  "license": "ISC",
+  "license": "AGPL-3.0-or-later",
   "type": "module",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.8",
